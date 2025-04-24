@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "organosulfur compound",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An organosulfur compound is any organic compound that contains sulfur, whereas an organic sulfide is a specific type of organosulfur compound characterized by a sulfur atom bonded to two carbon atoms. Not all organosulfur compounds are organic sulfides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "disulfides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "disulfides are a specific type of organic sulfide containing two sulfur atoms bonded together, but not all organic sulfides are disulfides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thioether and organic sulfide are synonyms, both referring to compounds containing a sulfur atom bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "Thioethers",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Thioethers and organic sulfides are synonyms, both referring to compounds containing a sulfur atom bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thioether and organic sulfide are synonyms, both referring to compounds containing a sulfur atom bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thioether and organic sulfide are synonyms, both referring to a compound containing a sulfur atom bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "disulfides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "disulfides are a specific type of organic sulfide containing two sulfur atoms bonded together, but not all organic sulfides are disulfides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "Organosulfides",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Organosulfides and organic sulfides refer to the same class of compounds containing sulfur atoms bonded to organic groups.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thioether and organic sulfide are synonyms; both refer to the same class of organic compounds containing a sulfur atom bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thioether and organic sulfide are synonyms; both refer to organic compounds containing a sulfur atom bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thioether and organic sulfide are synonyms, both referring to a class of organic compounds containing a sulfur atom connected to two alkyl or aryl groups.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "disulfides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Disulfides are a specific type of organic sulfide containing two sulfur atoms bonded together, but not all organic sulfides are disulfides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thioether and organic sulfide are synonyms, both referring to a functional group characterized by a sulfur atom bonded to two alkyl or aryl groups.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "Disulfides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Disulfides are a specific type of organic sulfide containing a -S-S- linkage, but not all organic sulfides are disulfides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "Thioethers",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Thioethers and organic sulfides are synonyms in organic chemistry, both referring to compounds containing a sulfur atom bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "organic sulfide",
+        "domain": "chemistry",
+        "response": "Concept: \"aryl\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "aryl refers to a functional group derived from aromatic rings, whereas organic sulfide refers to a compound containing sulfur bonded to two organic groups. They are different chemical entities.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

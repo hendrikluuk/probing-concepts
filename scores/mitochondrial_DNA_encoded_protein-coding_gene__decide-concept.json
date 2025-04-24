@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mitochondrial gene refers to any gene located in the mitochondrial DNA, which can include protein-coding genes, rRNA genes, and tRNA genes. A mitochondrial DNA encoded protein-coding gene is a specific subset of mitochondrial genes that specifically code for proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mitochondrial genes include protein-coding genes, rRNA genes, and tRNA genes, whereas mitochondrial DNA encoded protein-coding genes are only a subset of mitochondrial genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "Mitochondrial protein-coding gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Mitochondrial protein-coding genes are encoded by mitochondrial DNA.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "Mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mitochondrial gene refers to any gene located in the mitochondria, which can include protein-coding genes, rRNA genes, and tRNA genes. Mitochondrial DNA encoded protein-coding gene specifically refers to the subset of mitochondrial genes that code for proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mitochondrial gene refers to any gene located in the mitochondrial DNA, which can include protein-coding genes, rRNA genes, and tRNA genes. Mitochondrial DNA encoded protein-coding gene specifically refers to genes in mitochondrial DNA that encode proteins, excluding rRNA and tRNA genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mitochondrial gene can be any gene located in the mitochondrial DNA, including those encoding rRNA or tRNA, while a mitochondrial DNA encoded protein-coding gene specifically refers to genes that encode proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "Mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mitochondrial gene refers to any gene located in the mitochondria, which includes both protein-coding genes and non-coding genes, whereas mitochondrial DNA encoded protein-coding gene specifically refers to genes in the mitochondrial DNA that code for proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "Mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mitochondrial gene refers to any gene located in the mitochondria, which includes protein-coding genes, rRNA genes, and tRNA genes. Mitochondrial DNA encoded protein-coding gene specifically refers to genes in the mitochondrial DNA that code for proteins, excluding rRNA and tRNA genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all mitochondrial DNA encoded protein-coding genes are mitochondrial genes, not all mitochondrial genes are protein-coding. Mitochondrial genes can include rRNA and tRNA genes as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mitochondrial gene refers to any gene located in the mitochondrial DNA, which can include protein-coding genes, rRNA genes, and tRNA genes. A mitochondrial DNA encoded protein-coding gene is specifically a subset of mitochondrial genes that code for proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mitochondrial gene can include various types of genes such as rRNA and tRNA genes, not just protein-coding genes. Therefore, not all mitochondrial genes are mitochondrial DNA encoded protein-coding genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mitochondrial gene refers to any gene located in the mitochondria, including protein-coding genes, rRNA, and tRNA genes. A mitochondrial DNA encoded protein-coding gene specifically refers to genes that code for proteins, thus not all mitochondrial genes are protein-coding.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mitochondrial gene refers to any gene located in the mitochondrial DNA, which includes protein-coding genes, rRNA genes, and tRNA genes. Mitochondrial DNA encoded protein-coding gene is a specific type of mitochondrial gene that only includes genes coding for proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "Mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mitochondrial gene refers to any gene found in the mitochondrial genome, which includes protein-coding genes, rRNA genes, and tRNA genes. A mitochondrial DNA encoded protein-coding gene is a specific type of mitochondrial gene that codes for proteins. Therefore, not all mitochondrial genes are protein-coding genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "Mitochondrial gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mitochondrial gene refers to any gene located in the mitochondria, which can include protein-coding genes, rRNA genes, and tRNA genes. Mitochondrial DNA encoded protein-coding gene specifically refers to genes in the mitochondrial DNA that code for proteins, which is a subset of all mitochondrial genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "mitochondrial DNA encoded protein-coding gene",
+        "domain": "biology",
+        "response": "Mitochondrial DNA gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mitochondrial DNA gene can include protein-coding genes as well as genes that code for rRNA and tRNA, so not all mitochondrial DNA genes are protein-coding.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

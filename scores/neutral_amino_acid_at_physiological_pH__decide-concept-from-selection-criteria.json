@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "aliphatic amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Aliphatic amino acids are a subset of amino acids with non-aromatic hydrocarbon side chains, while neutral amino acids at physiological pH refer to those that do not carry a net charge at pH 7.4. Not all neutral amino acids are aliphatic, and not all aliphatic amino acids are neutral at physiological pH.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "Neutral amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neutral amino acid refers to amino acids that are uncharged, while 'neutral amino acid at physiological pH' specifies that the amino acid is uncharged at a specific pH (approximately 7.4). Some amino acids may be neutral at other pH levels but not at physiological pH.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "Nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are nonpolar.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "Nonpolar amino acids",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are nonpolar.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "polar uncharged amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A polar uncharged amino acid is a type of neutral amino acid at physiological pH, but not all neutral amino acids are polar. Neutral amino acids can be either polar or nonpolar.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are nonpolar. Neutral amino acids can also include polar uncharged amino acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "Nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are nonpolar. Neutral amino acids can also include polar uncharged amino acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "Nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are nonpolar. Some neutral amino acids can be polar, such as serine and threonine.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "neutral amino acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neutral amino acid and neutral amino acid at physiological pH are equivalent as neutrality is typically considered at physiological pH in biological contexts",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are nonpolar.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a type of amino acid with hydrophobic side chains, whereas neutral amino acids at physiological pH refer to amino acids that do not carry a net charge at physiological pH. Not all nonpolar amino acids are neutral at physiological pH, and not all neutral amino acids are nonpolar.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are nonpolar.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are a subset of amino acids characterized by their hydrophobic side chains, while neutral amino acids at physiological pH refer to amino acids that do not carry a net electric charge at physiological pH. Not all nonpolar amino acids are neutral at physiological pH, as some can have charged side chains depending on the pH.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "Aliphatic amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Aliphatic amino acids are a subset of neutral amino acids at physiological pH, but not all neutral amino acids are aliphatic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "Nonpolar amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nonpolar amino acids are characterized by having side chains that are hydrophobic, while neutral amino acids at physiological pH refer to those that do not carry a net charge at pH 7.4. Not all neutral amino acids are nonpolar, as some can be polar but uncharged.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "neutral amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": "amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An amino acid can be acidic, basic, or neutral depending on its side chain, but a neutral amino acid at physiological pH specifically refers to amino acids with side chains that do not carry a net charge at physiological pH.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

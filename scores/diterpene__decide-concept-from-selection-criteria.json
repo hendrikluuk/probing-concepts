@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "sesquiterpenes and diterpenes are both classes of terpenes, but they differ in their carbon skeletons; sesquiterpenes have 15 carbon atoms, while diterpenes have 20 carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "diterpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "diterpene and diterpene are identical terms, referring to the same class of chemical compounds.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "Sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Sesquiterpenes and diterpenes are both classes of terpenes, but they differ in their carbon skeletons. Sesquiterpenes have 15 carbon atoms, while diterpenes have 20 carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "Sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Sesquiterpenes and diterpenes are both classes of terpenes, but they differ in the number of isoprene units they contain. Sesquiterpenes consist of three isoprene units, while diterpenes consist of four isoprene units.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Sesquiterpenes and diterpenes are both classes of terpenes, but they differ in the number of isoprene units. Sesquiterpenes consist of three isoprene units, while diterpenes consist of four isoprene units.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A sesquiterpene is a class of terpenes consisting of three isoprene units, whereas a diterpene consists of four isoprene units. They are different types of terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "diterpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "diterpene and diterpene are identical terms referring to the same class of chemical compounds composed of four isoprene units.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A sesquiterpene is a type of terpene consisting of three isoprene units, while a diterpene consists of four isoprene units. They are different classes of terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "diterpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "diterpene and diterpene are identical terms referring to the same class of chemical compounds.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "sesquiterpenes and diterpenes are both classes of terpenes but differ in their structure; sesquiterpenes contain 15 carbon atoms, while diterpenes contain 20 carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "diterpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "diterpene and diterpene are identical terms referring to the same class of chemical compounds.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "diterpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "diterpene and diterpene are the same term and thus equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "sesquiterpenes and diterpenes are both classes of terpenes but differ in their carbon count; sesquiterpenes have 15 carbon atoms, whereas diterpenes have 20 carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "sesquiterpenes and diterpenes are both classes of terpenes but differ in the number of isoprene units; sesquiterpenes have three isoprene units while diterpenes have four.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "sesquiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Sesquiterpenes and diterpenes are both classes of terpenes, but they differ in their structure and molecular formula. Sesquiterpenes consist of three isoprene units, while diterpenes consist of four isoprene units.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "diterpene",
+        "domain": "chemistry",
+        "response": "monoterpenes",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monoterpenes and diterpenes are both classes of terpenes, but they differ in the number of isoprene units; monoterpenes have two isoprene units, while diterpenes have four.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

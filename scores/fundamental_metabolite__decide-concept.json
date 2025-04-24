@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "primary metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "primary metabolites are essential for cell growth and development, while fundamental metabolites refer to basic compounds involved in essential metabolic processes, but not all fundamental metabolites are classified as primary metabolites",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A metabolite is any substance involved in metabolism, while a fundamental metabolite is specifically one that is produced by all living organisms. Not all metabolites are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fundamental metabolite is a specific type of metabolite that is essential for life, but not all metabolites are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "Primary metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Primary metabolites are essential for basic cellular functions and are produced by all living organisms, while fundamental metabolites refer to those necessary for a cell's growth and homeostasis, which may not encompass all primary metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "Universal metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A universal metabolite is present in all living organisms, while a fundamental metabolite is essential for basic cellular functions but may not be present in all organisms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "primary metabolite",
+        "judgement": {
+            "equivalent": true,
+            "reason": "primary metabolite and fundamental metabolite are often used interchangeably to refer to metabolites essential for cell growth and function",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fundamental metabolite is a type of metabolite, but not all metabolites are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "biomolecule",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A biomolecule is any molecule that is present in living organisms, including macromolecules like proteins, nucleic acids, carbohydrates, and lipids, as well as small molecules like primary and secondary metabolites. A fundamental metabolite is a specific type of biomolecule that is involved in essential metabolic processes. Therefore, while all fundamental metabolites are biomolecules, not all biomolecules are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "Primary metabolite",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Primary metabolite and fundamental metabolite are often used interchangeably to refer to metabolites necessary for growth, development, and reproduction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "primary metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A primary metabolite is a type of fundamental metabolite, but not all fundamental metabolites are primary metabolites. Primary metabolites are directly involved in normal growth, development, and reproduction, while fundamental metabolites include both primary and secondary metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "primary metabolite",
+        "judgement": {
+            "equivalent": true,
+            "reason": "primary metabolite and fundamental metabolite are used interchangeably to describe metabolites essential for normal growth, development, and reproduction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "primary metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A primary metabolite is a type of fundamental metabolite involved in growth, development, and reproduction, but not all fundamental metabolites are primary metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "biomolecule",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A biomolecule is any molecule that is present in living organisms, including proteins, nucleic acids, carbohydrates, and lipids. A fundamental metabolite is a specific type of biomolecule that is involved in metabolic processes. Therefore, while all fundamental metabolites are biomolecules, not all biomolecules are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fundamental metabolite is a specific type of metabolite essential for life, but not all metabolites are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fundamental metabolite is a type of metabolite that is essential for the survival of an organism, but not all metabolites are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "fundamental metabolite",
+        "domain": "biology",
+        "response": "The closest conceptual category that includes all entities that comply with the definition is \"metabolite\".",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fundamental metabolite is a specific type of metabolite essential for an organism's basic functions, but not all metabolites are fundamental metabolites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation",
+        "judgement": {
+            "equivalent": false,
+            "reason": "oxidation is a process that involves the loss of electrons, while an oxidation reaction specifically refers to a chemical reaction in which oxidation occurs. Not all oxidation processes are described as reactions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'oxidation reaction' and 'oxidation reaction' are identical and refer to the same chemical process.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "Oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Oxidation reaction' and 'oxidation reaction' are strictly equivalent as they refer to the same chemical process, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "Oxidation",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Oxidation is a process involving the loss of electrons, while an oxidation reaction is a specific type of chemical reaction where oxidation occurs. Not all oxidation processes are classified as oxidation reactions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical process involving the transfer of electrons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical process involving the loss of electrons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical process where a substance loses electrons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "Oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Oxidation reaction' and 'oxidation reaction' refer to the same chemical process, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation",
+        "judgement": {
+            "equivalent": false,
+            "reason": "oxidation is a process that involves the loss of electrons, while an oxidation reaction is a specific chemical reaction involving oxidation. Not all instances of oxidation are reactions, and not all reactions are solely oxidation.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical process involving the transfer of electrons, and they are identical in meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation",
+        "judgement": {
+            "equivalent": false,
+            "reason": "oxidation is a process that involves the loss of electrons, whereas an oxidation reaction specifically refers to a chemical reaction where oxidation occurs. Not all oxidation processes are classified as oxidation reactions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical process where a substance loses electrons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical process involving the loss of electrons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "Oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Oxidation reaction' and 'oxidation reaction' are identical except for capitalization, which does not affect their meaning in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "Oxidation reaction",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Oxidation reaction' and 'oxidation reaction' differ only in capitalization and refer to the same chemical process.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "oxidation reaction",
+        "domain": "chemistry",
+        "response": "oxidation-reduction reaction",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxidation-reduction reaction (redox reaction) involves both oxidation and reduction processes, whereas an oxidation reaction only involves the loss of electrons. Not all oxidation reactions are redox reactions, as they may not involve a corresponding reduction process.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

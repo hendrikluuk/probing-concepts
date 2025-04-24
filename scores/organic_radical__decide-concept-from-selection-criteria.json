@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An organic radical is a specific type of radical in organic chemistry, but not all radicals are organic radicals. Radicals can also be found in other branches of chemistry.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An organic radical is a specific type of radical, but not all radicals are organic radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom, molecule, or ion with unpaired electrons, while an organic radical specifically refers to a free radical within organic compounds. Not all free radicals are organic radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any molecule with an unpaired electron, which can include inorganic species as well. An organic radical specifically refers to a free radical that contains carbon, so not all free radicals are organic radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is an atom, molecule, or ion with unpaired valence electrons, which can be organic or inorganic, whereas an organic radical specifically refers to a free radical that contains carbon and is part of an organic compound.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom, molecule, or ion with unpaired valence electrons, while an organic radical specifically refers to free radicals that are part of organic compounds. Not all free radicals are organic radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom, molecule, or ion with unpaired valence electrons, while an organic radical specifically refers to a free radical derived from organic compounds. Therefore, all organic radicals are free radicals, but not all free radicals are organic radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An organic radical is a type of free radical that specifically contains carbon, but not all free radicals are organic radicals as they may not contain carbon.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "organic radical",
+        "judgement": {
+            "equivalent": true,
+            "reason": "organic radical and organic radical are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom, molecule, or ion with unpaired valence electrons, while an organic radical specifically refers to a free radical that is part of an organic compound. Therefore, not all free radicals are organic radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom, molecule, or ion with unpaired valence electrons, whereas an organic radical specifically refers to a free radical that contains carbon, so not all free radicals are organic radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom, molecule, or ion with unpaired valence electrons, while an organic radical specifically refers to a free radical that is part of an organic compound. Not all free radicals are organic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom or molecule with an unpaired electron, which can be organic or inorganic, while an organic radical specifically refers to a radical that is part of an organic compound.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any molecule with an unpaired electron, which can be organic or inorganic. An organic radical specifically refers to free radicals with carbon-based structures.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any molecule with an unpaired electron, which can be organic or inorganic, while an organic radical specifically refers to a free radical within organic compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "organic radical",
+        "domain": "chemistry",
+        "response": "Organic compound",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An organic compound is a molecule containing carbon, whereas an organic radical is a specific type of reactive species derived from organic compounds, often with an unpaired electron. Not all organic compounds are radicals, and not all radicals are stable organic compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

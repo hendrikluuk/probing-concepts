@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "chlorophyll",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Chlorophyll is a type of tetrapyrrole, but not all tetrapyrroles are chlorophyll. Tetrapyrroles are a class of organic compounds that include chlorophyll, heme, and others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "tetrapyrrole",
+        "judgement": {
+            "equivalent": true,
+            "reason": "tetrapyrrole and tetrapyrrole are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent as porphyrins are a type of tetrapyrrole structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "Porphyrin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Porphyrin is a type of tetrapyrrole, but not all tetrapyrroles are porphyrins. Tetrapyrrole is a broader category that includes porphyrins and other related structures.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent as porphyrins are a type of tetrapyrrole.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent as porphyrins are a type of tetrapyrrole, and tetrapyrrole structure defines porphyrins.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent as porphyrins are a class of tetrapyrrole macrocycles.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Porphyrin is a type of tetrapyrrole, but not all tetrapyrroles are porphyrins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent as porphyrins are a specific type of tetrapyrrole structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Porphyrins are a specific class of tetrapyrroles, and the terms are often used interchangeably in the context of their structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent as porphyrins are a subset of tetrapyrroles, and the term is often used interchangeably in the context of organic chemistry.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "tetrapyrrole",
+        "judgement": {
+            "equivalent": true,
+            "reason": "tetrapyrrole and tetrapyrrole are identical terms, referring to the same chemical structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "tetrapyrrole",
+        "judgement": {
+            "equivalent": true,
+            "reason": "tetrapyrrole and tetrapyrrole are identical terms and refer to the same chemical structure",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "bilirubin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "bilirubin is a type of tetrapyrrole, but not all tetrapyrroles are bilirubin",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent because porphyrins are a specific type of tetrapyrrole structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "CHOLOROPHYLL",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Chlorophyll is a type of tetrapyrrole, but not all tetrapyrroles are chlorophyll. Tetrapyrroles are a class of compounds that include chlorophyll, heme, and others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

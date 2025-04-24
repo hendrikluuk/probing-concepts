@@ -1,0 +1,1846 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-5-enoic acid",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate",
+            "(9Z)-heptadecenoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate",
+                "(9Z)-heptadecenoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(8Z,11Z,14Z)-icosatrienoyl]-sn-glycerol",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+            ],
+            "mismatches": [
+                "1-palmitoyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-alpha-linolenoyl-2-[(8Z,11Z,14Z)-icosatrienoyl]-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+            "cis-tetradec-5-enoic acid",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-5-enoic acid",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "cholesteryl (9Z)-heptadecenoate",
+            "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "cholesteryl (9Z)-heptadecenoate",
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+            "cis-tetradec-5-enoic acid",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "cis-tetradec-5-enoic acid",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+            "15-HETrE"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "15-HETrE"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-tetradec-5-enoic acid",
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-tetradec-5-enoic acid",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-tetradec-5-enoic acid",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+            "(9Z)-heptadecenoic acid",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-5-enoic acid",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+            "(9Z)-heptadecenoic acid",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "(9Z)-heptadecenoic acid",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-tetradec-5-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-tetradec-5-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "(9Z,11E,13S,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,11E,13S,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "DHET",
+        "domain": "chemistry",
+        "response": [
+            "(5Z,8Z,11Z,14R,15R)-14,15-dihydroxyicosatrienoic acid",
+            "(5Z,8Z,11S,12S,14Z)-11,12-dihydroxyicosatrienoic acid",
+            "(5Z,8R,9R,11Z,14Z)-8,9-dihydroxyicosatrienoic acid",
+            "(5Z,8Z,11R,12R,14Z)-11,12-dihydroxyicosatrienoic acid",
+            "(5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid",
+            "5,6-DHET"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(5Z,8Z,11Z,14R,15R)-14,15-dihydroxyicosatrienoic acid",
+                "(5Z,8Z,11S,12S,14Z)-11,12-dihydroxyicosatrienoic acid",
+                "(5Z,8R,9R,11Z,14Z)-8,9-dihydroxyicosatrienoic acid",
+                "(5Z,8Z,11R,12R,14Z)-11,12-dihydroxyicosatrienoic acid",
+                "(5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid"
+            ],
+            "mismatches": [
+                "5,6-DHET"
+            ],
+            "true_referents": [
+                "(5Z,8Z,11R,12R,14Z)-11,12-dihydroxyicosatrienoic acid",
+                "(5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid",
+                "(5Z,8Z,11S,12S,14Z)-11,12-dihydroxyicosatrienoic acid",
+                "5,6-DHET",
+                "(5Z,8R,9R,11Z,14Z)-8,9-dihydroxyicosatrienoic acid",
+                "(5Z,8Z,11Z,14R,15R)-14,15-dihydroxyicosatrienoic acid"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "docosapentaenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-[(7Z,10Z,13Z,16Z,19Z)-docosapentaenoyl]-sn-glycero-3-phosphocholine",
+            "1-(1Z-octadecenyl)-2-(4Z,7Z,10Z,13Z,16Z-docosapentaenoyl)-sn-glycero-3-phosphoethanolamine",
+            "(7Z,10Z,13Z,16Z)-19,20-epoxydocosatetraenoic acid",
+            "(4Z,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA",
+            "(7Z,10Z,12E,16Z,19Z)-14-hydroperoxydocosapentaenoic acid",
+            "(7Z,10Z,12E,14S,16Z,19Z)-14-hydroperoxydocosapentaenoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-[(7Z,10Z,13Z,16Z,19Z)-docosapentaenoyl]-sn-glycero-3-phosphocholine",
+                "1-(1Z-octadecenyl)-2-(4Z,7Z,10Z,13Z,16Z-docosapentaenoyl)-sn-glycero-3-phosphoethanolamine",
+                "(7Z,10Z,13Z,16Z)-19,20-epoxydocosatetraenoic acid",
+                "(4Z,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA",
+                "(7Z,10Z,12E,16Z,19Z)-14-hydroperoxydocosapentaenoic acid",
+                "(7Z,10Z,12E,14S,16Z,19Z)-14-hydroperoxydocosapentaenoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-(1Z-octadecenyl)-2-(4Z,7Z,10Z,13Z,16Z-docosapentaenoyl)-sn-glycero-3-phosphoethanolamine",
+                "(7Z,10Z,12E,14S,16Z,19Z)-14-hydroperoxydocosapentaenoic acid",
+                "(4Z,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA",
+                "(7Z,10Z,13Z,16Z)-19,20-epoxydocosatetraenoic acid",
+                "1-[(7Z,10Z,13Z,16Z,19Z)-docosapentaenoyl]-sn-glycero-3-phosphocholine",
+                "(7Z,10Z,12E,16Z,19Z)-14-hydroperoxydocosapentaenoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "arachidonic acid",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "all-cis-icosa-8,11,14-trienoic acid",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "15-HETrE"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15-HETrE"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-tetradec-5-enoic acid",
+            "cis-tetradec-7-enoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-palmitoyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycerol",
+            "15-HETrE"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycerol",
+                "15-HETrE"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-5-enoic acid",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+            "(R)-2-hydroxy-alpha-linolenic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-5-enoic acid",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+            "15-HETrE",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "15-HETrE"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-tetradec-5-enoic acid",
+            "cis-tetradec-7-enoic acid",
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-(9Z,12Z,15Z)-octadecatrienoyl-sn-glycero-3-phosphocholine",
+            "(9Z,12Z,15Z)-octadecatrienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "1-palmitoyl-2-(9Z,12Z,15Z)-octadecatrienoyl-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-octadecatrienoic acid"
+            ],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+            "(9Z)-heptadecenoic acid",
+            "cis-tetradec-7-enoic acid",
+            "cis-tetradec-5-enoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "(9Z)-heptadecenoic acid",
+                "cis-tetradec-7-enoic acid",
+                "cis-tetradec-5-enoic acid"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "cis-tetradec-5-enoic acid",
+            "cis-tetradec-7-enoic acid",
+            "(5E)-tetradecenoyl-L-carnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "(5E)-tetradecenoyl-L-carnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "heptadecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z)-heptadecenoic acid",
+            "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+            "cholesteryl (9Z)-heptadecenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z)-heptadecenoic acid",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-palmitoyl-2-(9Z-heptadecenoyl)-sn-glycero-3-phosphocholine",
+                "N-(heptadecenoyl)nonadecasphingosine-1-phosphocholine",
+                "(9Z)-heptadecenoic acid",
+                "ascr#29",
+                "oscr#29-CoA",
+                "cholesteryl (9Z)-heptadecenoate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fatty acid 20:3",
+        "domain": "chemistry",
+        "response": [
+            "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+            "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+            "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol"
+            ],
+            "mismatches": [
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-palmitoyl-2-(8Z,11Z,14Z-eicosatrienoyl)-sn-glycerol",
+                "1-meadoyl-sn-glycero-3-phosphocholine",
+                "15-HETrE",
+                "hepoxilin A3",
+                "trioxilin A3",
+                "1-octadecyl-2-[(8Z,11Z,14Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tetradecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-tetradec-5-enoic acid",
+            "cis-tetradec-7-enoic acid",
+            "O-[(9Z)-tetradecenoyl]-L-carnitine",
+            "O-[(5Z)-tetradecenoyl]-L-carnitine",
+            "(5E)-tetradecenoyl-L-carnitine",
+            "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine",
+                "(5E)-tetradecenoyl-L-carnitine",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(5E)-tetradecenoyl-L-carnitine",
+                "cis-tetradec-5-enoic acid",
+                "cis-tetradec-7-enoic acid",
+                "1-[(9Z)-hexadecenyl]--[(9Z)-tetradecenoyl]-sn-glycero-3-phosphocholine",
+                "O-[(9Z)-tetradecenoyl]-L-carnitine",
+                "O-[(5Z)-tetradecenoyl]-L-carnitine"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "octadecatrienoic acid",
+        "domain": "chemistry",
+        "response": [
+            "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+            "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(9Z,11E,13S,15Z)-13-hydroperoxyoctadeca-9,11,15-trienoic acid",
+                "1-palmitoyl-2-[(6Z,9Z,12Z)-octadecatrienoyl]-sn-glycero-3-phosphocholine",
+                "(9Z,12Z,15Z)-(7S,8S)-Dihydroxyoctadeca-9,12,15-trienoic acid",
+                "1-alpha-linolenoyl-2-[(5Z,8Z,11Z)-icosatrienoyl]-sn-glycerol",
+                "1-alpha-linolenoyl-2-oleoyl-sn-glycerol",
+                "(R)-2-hydroxy-alpha-linolenic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    }
+]

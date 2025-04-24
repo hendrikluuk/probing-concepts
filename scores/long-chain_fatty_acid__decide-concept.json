@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Medium-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Medium-chain fatty acids and long-chain fatty acids differ in the number of carbon atoms; medium-chain fatty acids typically have 6-12 carbon atoms, while long-chain fatty acids have more than 12.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "branched-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A branched-chain fatty acid is a type of fatty acid with a branching structure, whereas a long-chain fatty acid refers to the length of the carbon chain. Not all branched-chain fatty acids are long-chain, and not all long-chain fatty acids are branched.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Long-chain fatty acid' and 'long-chain fatty acid' are equivalent as they are the same phrase with only a difference in capitalization, which does not change the meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Very-long-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Very-long-chain fatty acids are a subset of long-chain fatty acids, but not all long-chain fatty acids are very-long-chain fatty acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'long-chain fatty acid' and 'long-chain fatty acid' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid characterized by a long hydrocarbon chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Long-chain fatty acid' and 'long-chain fatty acid' differ only in capitalization and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A long-chain fatty acid is a type of fatty acid, but not all fatty acids are long-chain fatty acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain fatty acid and long-chain fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain fatty acid and long-chain fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain fatty acid is exactly equivalent to long-chain fatty acid as they are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain fatty acid and long-chain fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain fatty acid and long-chain fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Medium-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Medium-chain fatty acids (MCFAs) and long-chain fatty acids (LCFAs) differ in the number of carbon atoms; MCFAs typically have 6 to 12 carbon atoms, while LCFAs have more than 12. Therefore, they are not equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain fatty acid and long-chain fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "medium-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "medium-chain fatty acids and long-chain fatty acids differ in the number of carbon atoms in their chains; medium-chain fatty acids typically have 6-12 carbon atoms, while long-chain fatty acids have more than 12 carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

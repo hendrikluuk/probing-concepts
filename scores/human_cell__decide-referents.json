@@ -1,0 +1,2130 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Mesenchymal Stem Cells",
+            "Synoviocytes",
+            "Histiocytes",
+            "White Adipocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Synoviocytes",
+                "White Adipocytes"
+            ],
+            "mismatches": [
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Monocyte-Macrophage Precursor Cells",
+            "Cytotoxic T-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Monocyte-Macrophage Precursor Cells",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Mesenchymal Stem Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Osteoclasts"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Synoviocytes",
+                "Odontoblasts",
+                "Osteoclasts"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Histiocytes"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Basophils",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Foreign-Body Giant Cells",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Basophils",
+            "Abnormal Erythrocytes",
+            "Th17 Cells",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Abnormal Erythrocytes",
+                "Th17 Cells",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 8,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Beige Adipocytes",
+            "White Adipocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Synoviocytes",
+                "Odontoblasts",
+                "Beige Adipocytes",
+                "White Adipocytes"
+            ],
+            "mismatches": [
+                "Foreign-Body Giant Cells",
+                "Mononuclear Leukocytes",
+                "Monocyte-Macrophage Precursor Cells",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 7,
+            "FP": 7,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Mononuclear Leukocytes",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Synoviocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Synoviocytes"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Kupffer Cells",
+                "Histiocytes"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Mononuclear Leukocytes",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Epithelioid Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Basophils",
+            "Abnormal Erythrocytes",
+            "Th17 Cells",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Abnormal Erythrocytes",
+                "Th17 Cells",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 8,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Brown Adipocytes",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Beige Adipocytes",
+            "White Adipocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Brown Adipocytes",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Odontoblasts",
+                "Beige Adipocytes",
+                "White Adipocytes"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Histiocytes"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Th17 Cells",
+            "Monocyte-Macrophage Precursor Cells",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Brown Adipocytes",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Histiocytes",
+            "Synoviocytes",
+            "White Adipocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Brown Adipocytes",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Synoviocytes",
+                "White Adipocytes"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Histiocytes"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Foreign-Body Giant Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 7,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Synoviocytes",
+            "Odontoblasts"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Odontoblasts"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Mononuclear Leukocytes",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Th17 Cells",
+            "Monocyte-Macrophage Precursor Cells",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Mesenchymal Stem Cells",
+            "Synoviocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Synoviocytes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Tumor-Associated Macrophages",
+                "Synoviocytes"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Helper-Inducer T-Lymphocytes",
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Brown Adipocytes",
+            "Mesenchymal Stem Cells",
+            "Th17 Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Beige Adipocytes",
+            "Cytotoxic T-Lymphocytes",
+            "White Adipocytes",
+            "Regulatory B-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Brown Adipocytes",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Synoviocytes",
+                "Odontoblasts",
+                "Beige Adipocytes",
+                "White Adipocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 8,
+            "FP": 16,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Brown Adipocytes",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Beige Adipocytes",
+            "White Adipocytes",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Brown Adipocytes",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Synoviocytes",
+                "Odontoblasts",
+                "Beige Adipocytes",
+                "White Adipocytes"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 8,
+            "FP": 6,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Abnormal Erythrocytes"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Th17 Cells",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Tumor-Associated Macrophages",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 8,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Synoviocytes",
+            "White Adipocytes",
+            "Brown Adipocytes",
+            "Beige Adipocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "White Adipocytes",
+                "Brown Adipocytes",
+                "Beige Adipocytes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Th17 Cells",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Foreign-Body Giant Cells",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Synoviocytes",
+                "Odontoblasts"
+            ],
+            "mismatches": [
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 5,
+            "FP": 7,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Th17 Cells",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 7,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Foreign-Body Giant Cells",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Adipocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Odontoblasts"
+            ],
+            "mismatches": [
+                "Foreign-Body Giant Cells",
+                "Histiocytes",
+                "Adipocytes"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Mononuclear Leukocytes",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells",
+            "Osteoclasts"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Tumor-Associated Macrophages",
+                "Osteoclasts"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 7,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Foreign-Body Giant Cells",
+            "Mesenchymal Stem Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages",
+                "Synoviocytes",
+                "Odontoblasts"
+            ],
+            "mismatches": [
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Basophils",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Basophils",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 8,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Abnormal Erythrocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Monocyte-Macrophage Precursor Cells",
+            "Myeloid Progenitor Cells",
+            "Regulatory B-Lymphocytes",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Granulocyte-Macrophage Progenitor Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Abnormal Erythrocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Monocyte-Macrophage Precursor Cells",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 7,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Mesenchymal Stem Cells",
+            "Histiocytes",
+            "Synoviocytes",
+            "Odontoblasts",
+            "Beige Adipocytes",
+            "Kupffer Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mesenchymal Stem Cells",
+                "Synoviocytes",
+                "Odontoblasts",
+                "Beige Adipocytes"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Histiocytes",
+                "Kupffer Cells"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Brown Adipocytes",
+            "Th17 Cells",
+            "Osteoclasts",
+            "Tumor-Associated Macrophages",
+            "Monocyte-Macrophage Precursor Cells",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells",
+            "Basophils"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Basophils"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Brown Adipocytes",
+                "Th17 Cells",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 8,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Epithelioid Cells",
+            "Helper-Inducer T-Lymphocytes",
+            "Foreign-Body Giant Cells",
+            "Mononuclear Leukocytes",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells",
+            "B-Lymphocyte Subsets",
+            "T-Lymphocyte Subsets",
+            "Abnormal Erythrocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "B-Lymphocyte Subsets",
+                "T-Lymphocyte Subsets",
+                "Abnormal Erythrocytes"
+            ],
+            "mismatches": [
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells",
+                "Basophils",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 7,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Connective Tissue Cells",
+        "domain": "medicine",
+        "response": [
+            "Histiocytes",
+            "Synoviocytes",
+            "Mesenchymal Stem Cells",
+            "Odontoblasts",
+            "Kupffer Cells",
+            "Foreign-Body Giant Cells"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Synoviocytes",
+                "Mesenchymal Stem Cells",
+                "Odontoblasts"
+            ],
+            "mismatches": [
+                "Histiocytes",
+                "Kupffer Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "true_referents": [
+                "Beige Adipocytes",
+                "Odontoblasts",
+                "Mesenchymal Stem Cells",
+                "Osteoclasts",
+                "Synoviocytes",
+                "Brown Adipocytes",
+                "Tumor-Associated Macrophages",
+                "White Adipocytes"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Myeloid Cells",
+        "domain": "medicine",
+        "response": [
+            "Mononuclear Leukocytes",
+            "Monocyte-Macrophage Precursor Cells",
+            "Osteoclasts",
+            "Kupffer Cells",
+            "Histiocytes",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells",
+            "Tumor-Associated Macrophages",
+            "Basophils"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Monocyte-Macrophage Precursor Cells",
+                "Kupffer Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Basophils"
+            ],
+            "mismatches": [
+                "Mononuclear Leukocytes",
+                "Osteoclasts",
+                "Tumor-Associated Macrophages"
+            ],
+            "true_referents": [
+                "Basophils",
+                "Granulocyte-Macrophage Progenitor Cells",
+                "Kupffer Cells",
+                "Monocyte-Macrophage Precursor Cells",
+                "Histiocytes",
+                "Myeloid Progenitor Cells",
+                "Epithelioid Cells",
+                "Foreign-Body Giant Cells"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Blood Cells",
+        "domain": "medicine",
+        "response": [
+            "Helper-Inducer T-Lymphocytes",
+            "Mononuclear Leukocytes",
+            "Th17 Cells",
+            "Basophils",
+            "Cytotoxic T-Lymphocytes",
+            "Regulatory B-Lymphocytes",
+            "T-Lymphocyte Subsets",
+            "B-Lymphocyte Subsets",
+            "Monocyte-Macrophage Precursor Cells",
+            "Myeloid Progenitor Cells",
+            "Granulocyte-Macrophage Progenitor Cells",
+            "Abnormal Erythrocytes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Helper-Inducer T-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "Cytotoxic T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "T-Lymphocyte Subsets",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes"
+            ],
+            "mismatches": [
+                "Basophils",
+                "Monocyte-Macrophage Precursor Cells",
+                "Myeloid Progenitor Cells",
+                "Granulocyte-Macrophage Progenitor Cells"
+            ],
+            "true_referents": [
+                "Cytotoxic T-Lymphocytes",
+                "Helper-Inducer T-Lymphocytes",
+                "Regulatory B-Lymphocytes",
+                "Mononuclear Leukocytes",
+                "Th17 Cells",
+                "B-Lymphocyte Subsets",
+                "Abnormal Erythrocytes",
+                "T-Lymphocyte Subsets"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    }
+]

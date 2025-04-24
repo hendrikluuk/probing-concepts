@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "chlorophyll",
+        "judgement": {
+            "equivalent": false,
+            "reason": "chlorophyll is a type of tetrapyrrole, but not all tetrapyrroles are chlorophyll",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent because a porphyrin is a type of tetrapyrrole structure, and the terms are often used interchangeably in the context of organic chemistry.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Porphyrins are a specific type of tetrapyrrole, and the terms are often used interchangeably in the context of biology and chemistry, as porphyrins are the most well-known class of tetrapyrroles.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "Porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Porphyrin is a type of tetrapyrrole, and all porphyrins are tetrapyrroles. The terms are often used interchangeably in the context of porphyrin compounds.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are synonymous; porphyrins are a group of organic compounds, many of which are tetrapyrroles.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "hemoglobin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "hemoglobin is a protein that contains a tetrapyrrole structure in its heme group, but not all tetrapyrroles are part of hemoglobin",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin is a type of tetrapyrrole, and all porphyrins are tetrapyrroles.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "Chlorophyll",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Chlorophyll is a specific type of tetrapyrrole, but not all tetrapyrroles are chlorophyll. Tetrapyrroles are a class of organic compounds that include various other molecules such as heme and cobalamin.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are synonymous as porphyrins are a class of tetrapyrroles.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin and tetrapyrrole are equivalent because a porphyrin is a type of tetrapyrrole, and the structure of a porphyrin consists of a tetrapyrrole ring.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrin is a type of tetrapyrrole, and all tetrapyrroles in this context refer to porphyrins, making them equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "tetrapyrrole",
+        "judgement": {
+            "equivalent": true,
+            "reason": "tetrapyrrole and tetrapyrrole are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "porphyrin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "porphyrins are a type of tetrapyrrole, and all tetrapyrroles with a specific arrangement of pyrrole rings are classified as porphyrins",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "Melanin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Melanin is a pigment found in skin, hair, and eyes, while tetrapyrrole is a class of organic compounds that includes structures like heme and chlorophyll. Melanin is not a tetrapyrrole.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "bilin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bilin is a type of tetrapyrrole, but not all tetrapyrroles are bilins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "tetrapyrrole",
+        "domain": "chemistry",
+        "response": "melanin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Melanin is a pigment found in most organisms, while tetrapyrroles are a class of organic compounds that include heme and chlorophyll. Melanin is not a tetrapyrrole.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

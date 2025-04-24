@@ -1,0 +1,2054 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Lymphogranuloma Venereum",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Lymphogranuloma Venereum",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Lymphogranuloma Venereum",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Lymphogranuloma Venereum",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus",
+            "Boutonneuse Fever"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus",
+                "Boutonneuse Fever"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Lymphogranuloma Venereum",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Lymphogranuloma Venereum",
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Lymphogranuloma Venereum",
+            "Cutaneous Syphilis",
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Pneumonic Pasteurellosis",
+            "Syphilis",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus",
+            "Trachoma",
+            "Cardiovascular Syphilis",
+            "Rhinoscleroma",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Chlamydia Infections",
+            "Erythema Chronicum Migrans",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Lymphogranuloma Venereum",
+                "Cutaneous Syphilis",
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Pneumonic Pasteurellosis",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus",
+                "Trachoma",
+                "Rhinoscleroma",
+                "Tabes Dorsalis",
+                "Chlamydia Infections"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 12,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Spotted Fever Group Rickettsiosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Spotted Fever Group Rickettsiosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Lyme Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Scrub Typhus",
+            "Boutonneuse Fever",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Escherichia coli Meningitis",
+            "Latent Syphilis",
+            "Lymphogranuloma Venereum",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Chlamydial Pneumonia",
+            "Boutonneuse Fever",
+            "Cardiovascular Syphilis",
+            "Rhinoscleroma",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Syphilis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease"
+            ],
+            "mismatches": [
+                "Escherichia coli Meningitis",
+                "Latent Syphilis",
+                "Lymphogranuloma Venereum",
+                "Cutaneous Syphilis",
+                "Chlamydial Pneumonia",
+                "Boutonneuse Fever",
+                "Rhinoscleroma",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 3,
+            "FP": 8,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Escherichia coli Meningitis",
+            "Scrub Typhus",
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus",
+            "Lyme Disease",
+            "Chlamydia Infections",
+            "Proteus Infections",
+            "Actinobacillus Infections",
+            "Boutonneuse Fever",
+            "Pneumonic Pasteurellosis",
+            "Cutaneous Syphilis",
+            "Latent Syphilis",
+            "Lymphogranuloma Venereum",
+            "Chlamydial Pneumonia",
+            "Pasteurella Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Scrub Typhus",
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus",
+                "Boutonneuse Fever"
+            ],
+            "mismatches": [
+                "Escherichia coli Meningitis",
+                "Lyme Disease",
+                "Chlamydia Infections",
+                "Proteus Infections",
+                "Actinobacillus Infections",
+                "Pneumonic Pasteurellosis",
+                "Cutaneous Syphilis",
+                "Latent Syphilis",
+                "Lymphogranuloma Venereum",
+                "Chlamydial Pneumonia",
+                "Pasteurella Infections"
+            ],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 11,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Hemorrhagic Septicemia"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Treponemal Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "mismatches": [
+                "Cardiovascular Syphilis"
+            ],
+            "true_referents": [
+                "Tabes Dorsalis",
+                "Syphilis",
+                "Latent Syphilis",
+                "Cutaneous Syphilis"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Spirochaetales Infections",
+        "domain": "medicine",
+        "response": [
+            "Latent Syphilis",
+            "Cutaneous Syphilis",
+            "Syphilis",
+            "Cardiovascular Syphilis",
+            "Tabes Dorsalis",
+            "Lyme Disease",
+            "Erythema Chronicum Migrans"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Syphilis",
+                "Cardiovascular Syphilis",
+                "Lyme Disease",
+                "Erythema Chronicum Migrans"
+            ],
+            "mismatches": [
+                "Latent Syphilis",
+                "Cutaneous Syphilis",
+                "Tabes Dorsalis"
+            ],
+            "true_referents": [
+                "Cardiovascular Syphilis",
+                "Erythema Chronicum Migrans",
+                "Lyme Disease",
+                "Syphilis"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Rickettsiaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Spotted Fever Group Rickettsiosis",
+            "Epidemic Louse-Borne Typhus",
+            "Boutonneuse Fever",
+            "Scrub Typhus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Spotted Fever Group Rickettsiosis",
+                "Epidemic Louse-Borne Typhus",
+                "Boutonneuse Fever",
+                "Scrub Typhus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Boutonneuse Fever",
+                "Spotted Fever Group Rickettsiosis",
+                "Scrub Typhus",
+                "Epidemic Louse-Borne Typhus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Pasteurellaceae Infections",
+        "domain": "medicine",
+        "response": [
+            "Pasteurella Infections",
+            "Pneumonic Pasteurellosis",
+            "Actinobacillus Infections"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pasteurella Infections",
+                "Pneumonic Pasteurellosis",
+                "Actinobacillus Infections"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Pneumonic Pasteurellosis",
+                "Hemorrhagic Septicemia",
+                "Pasteurella Infections",
+                "Actinobacillus Infections"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    }
+]

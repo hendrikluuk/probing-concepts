@@ -1,0 +1,904 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "Thymol",
+                "Eucalyptol",
+                "Menthol",
+                "Acyclic Monoterpenes",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "Lycopene",
+                "Norisoprenoids",
+                "Phytol",
+                "Vitamin K 1"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Taxoids"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "phi-v4",
+            "response": []
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Camphanes",
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin",
+                "Fenretinide",
+                "Ryanodine",
+                "Taxoids"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Menthol",
+                "Acyclic Monoterpenes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Abscisic Acid",
+                "Taxoids"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "Lycopene",
+                "Etretinate",
+                "Fenretinide",
+                "Isotretinoin",
+                "Alitretinoin",
+                "Norisoprenoids",
+                "Phytol",
+                "Retinoids"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Etretinate",
+                "Abscisic Acid",
+                "Colforsin",
+                "Fenretinide",
+                "Isotretinoin",
+                "Alitretinoin",
+                "Taxoids",
+                "Aconitine"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Camphanes",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Lycopene",
+                "Norisoprenoids"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Camphanes",
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Etretinate",
+                "Abscisic Acid",
+                "Colforsin",
+                "Phytol",
+                "Taxoids",
+                "Aconitine"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Acyclic Monoterpenes",
+                "Eucalyptol",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Abscisic Acid",
+                "Taxoids"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Camphanes",
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "Camphanes",
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Pyrethrins",
+                "Isotretinoin",
+                "Alitretinoin",
+                "Norisoprenoids",
+                "Phytol",
+                "Retinoids",
+                "Taxoids",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Thymol",
+                "Eucalyptol",
+                "Menthol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin",
+                "Phytol",
+                "Taxoids"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Abscisic Acid",
+                "Colforsin",
+                "Phytol",
+                "Taxoids"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Norisoprenoids",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Abscisic Acid",
+                "Colforsin",
+                "Phytol",
+                "Vitamin K 1",
+                "Taxoids",
+                "Aconitine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Acyclic Monoterpenes",
+                "Eucalyptol",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Lycopene",
+                "Abscisic Acid",
+                "Phytol",
+                "Norisoprenoids",
+                "Retinoids"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Phytol",
+                "Ryanodine",
+                "Phorbol 12,13-Dibutyrate",
+                "Abscisic Acid",
+                "Taxoids"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "Camphanes",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "Lycopene",
+                "Retinoids",
+                "Norisoprenoids",
+                "Phytol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "Camphanes",
+                "Phorbol 12,13-Dibutyrate",
+                "Abscisic Acid",
+                "Phytol",
+                "Taxoids"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Phytol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "Lycopene"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "Camphanes",
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin",
+                "Fenretinide",
+                "Phytol"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Monoterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Carotenoids",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Lycopene",
+                "Fenretinide",
+                "Isotretinoin",
+                "Alitretinoin",
+                "Retinoids"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Camphanes\", \"Iridoids\", \"Thymol\", \"Phorbol 12,13-Dibutyrate\", \"Lycopene\", \"Ryanodine\", \"Eucalyptol\", \"Etretinate\", \"Abscisic Acid\", \"Colforsin\", \"Fenretinide\", \"Acyclic Monoterpenes\", \"Menthol\", \"Pyrethrins\", \"Isotretinoin\", \"Alitretinoin\", \"Vitamin K\", \"Norisoprenoids\", \"Phytol\", \"Retinoids\", \"Vitamin K 1\", \"Taxoids\", \"Aconitine\", \"Cyclopentane Monoterpenes\"]",
+                "siblings": "{\"Monoterpenes\": [\"Iridoids\", \"Thymol\", \"Eucalyptol\", \"Acyclic Monoterpenes\", \"Menthol\", \"Camphanes\", \"Pyrethrins\", \"Cyclopentane Monoterpenes\"], \"Carotenoids\": [\"Abscisic Acid\", \"Alitretinoin\", \"Etretinate\", \"Isotretinoin\", \"Lycopene\", \"Retinoids\", \"Fenretinide\", \"Norisoprenoids\"], \"Diterpenes\": [\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "Diterpenes",
+                "parent_concept": "terpene",
+                "true_referents": "[\"Vitamin K 1\", \"Ryanodine\", \"Phytol\", \"Taxoids\", \"Colforsin\", \"Aconitine\", \"Phorbol 12,13-Dibutyrate\", \"Vitamin K\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Taxoids",
+                "Aconitine"
+            ]
+        }
+    ]
+}

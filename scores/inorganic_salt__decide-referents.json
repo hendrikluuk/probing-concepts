@@ -1,0 +1,1930 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "vaterite"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [
+                "vaterite"
+            ],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "barium chloride",
+            "calcium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "barium chloride",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "iron trichloride hexahydrate",
+            "potassium chloride"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "iron trichloride hexahydrate",
+                "potassium chloride"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "vaterite",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "vaterite",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "vaterite",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "vaterite",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "iron trichloride hexahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [
+                "iron trichloride hexahydrate"
+            ],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "vaterite",
+            "calcium phosphate",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "fluorite",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "vaterite",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "fluorite",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "vaterite",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "vaterite",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "tricalcium bis(phosphate)",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "iron trichloride hexahydrate",
+            "potassium chloride",
+            "cryolite"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "iron trichloride hexahydrate",
+                "potassium chloride"
+            ],
+            "mismatches": [
+                "cryolite"
+            ],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "barium chloride",
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "barium chloride",
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium bis(dihydrogenphosphate)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)",
+                "calcium bis(dihydrogenphosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "iron trichloride hexahydrate",
+            "potassium chloride"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "iron trichloride hexahydrate",
+                "potassium chloride"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "barium chloride",
+            "calcium bis(dihydrogenphosphate)",
+            "calcium phosphate",
+            "calcium phosphate",
+            "calcium silicate",
+            "tricalcium bis(phosphate)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "barium chloride",
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "cadmium nitrate tetrahydrate",
+            "calcium phosphate",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [
+                "cadmium nitrate tetrahydrate"
+            ],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate",
+            "copper(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "barium chloride",
+            "antimony trichloride",
+            "iron trichloride hexahydrate",
+            "potassium chloride"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "barium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "potassium chloride"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "cadmium nitrate tetrahydrate",
+            "barium chloride",
+            "calcium phosphate",
+            "tricalcium bis(phosphate)",
+            "vaterite",
+            "calcium silicate",
+            "calcium bis(dihydrogenphosphate)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "vaterite",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "cadmium nitrate tetrahydrate",
+                "barium chloride",
+                "tricalcium bis(phosphate)",
+                "calcium bis(dihydrogenphosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "inorganic phosphate salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "sodium phosphate",
+            "tricalcium bis(phosphate)",
+            "calcium phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate",
+                "tricalcium bis(phosphate)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricalcium bis(phosphate)",
+                "calcium phosphate",
+                "calcium bis(dihydrogenphosphate)",
+                "sodium phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "inorganic sulfate salt",
+        "domain": "chemistry",
+        "response": [
+            "beryllium sulfate",
+            "aluminium sulfate octadecahydrate",
+            "copper(II) sulfate hexahydrate",
+            "manganese(II) sulfate hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beryllium sulfate",
+                "aluminium sulfate octadecahydrate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aluminium sulfate octadecahydrate",
+                "beryllium sulfate",
+                "copper(II) sulfate hexahydrate",
+                "manganese(II) sulfate hexahydrate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "inorganic chloride",
+        "domain": "chemistry",
+        "response": [
+            "antimony trichloride",
+            "barium chloride",
+            "potassium chloride",
+            "iron trichloride hexahydrate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "antimony trichloride",
+                "barium chloride",
+                "potassium chloride",
+                "iron trichloride hexahydrate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "potassium chloride",
+                "antimony trichloride",
+                "iron trichloride hexahydrate",
+                "barium chloride"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "inorganic calcium salt",
+        "domain": "chemistry",
+        "response": [
+            "calcium phosphate",
+            "calcium bis(dihydrogenphosphate)",
+            "tricalcium bis(phosphate)",
+            "calcium silicate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "calcium phosphate",
+                "calcium silicate"
+            ],
+            "mismatches": [
+                "calcium bis(dihydrogenphosphate)",
+                "tricalcium bis(phosphate)"
+            ],
+            "true_referents": [
+                "fluorite",
+                "vaterite",
+                "calcium silicate",
+                "calcium phosphate"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    }
+]

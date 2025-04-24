@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While many antihistamines are histamine H1 receptor antagonists, not all antihistamines function through H1 receptor antagonism. Some may act on other histamine receptors or have additional mechanisms of action.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "H1 receptor antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "H1 receptor antagonist and histamine H1 receptor antagonist refer to the same class of drugs that block the H1 receptor for histamine.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "H1 antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "H1 antihistamine and histamine H1 receptor antagonist refer to the same class of drugs that block the H1 histamine receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "H1-antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "H1-antihistamine and histamine H1 receptor antagonist are synonymous terms used to describe the same class of drugs that block the H1 histamine receptor.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antihistamine and histamine H1 receptor antagonist are used interchangeably as they both refer to drugs that block H1 receptors to alleviate allergy symptoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antihistamines are commonly referred to as histamine H1 receptor antagonists as they block the H1 receptor to counteract the effects of histamine",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "H1 antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "H1 antagonist and histamine H1 receptor antagonist are synonymous terms used to describe the same class of drugs that block the H1 receptor.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "Antihistamine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all histamine H1 receptor antagonists are antihistamines, not all antihistamines are histamine H1 receptor antagonists as there are other types of antihistamines like H2 receptor antagonists.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "H1 antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "H1 antihistamine and histamine H1 receptor antagonist are two terms for the same class of drugs that block the H1 histamine receptor.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antihistamines are specifically histamine H1 receptor antagonists, as they block the H1 receptors to counteract allergy symptoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Antihistamines are commonly understood to be histamine H1 receptor antagonists, as they block the action of histamine at the H1 receptor sites.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antihistamine and histamine H1 receptor antagonist are used interchangeably as antihistamines primarily refer to drugs that act as H1 receptor antagonists.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antihistamine and histamine H1 receptor antagonist are used interchangeably to describe drugs that block the H1 histamine receptors to alleviate allergy symptoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antihistamine is commonly used to refer to histamine H1 receptor antagonists, which block the H1 receptor to alleviate allergy symptoms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "Antihistamine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Antihistamines are commonly understood to be histamine H1 receptor antagonists, as they block the action of histamine at the H1 receptor, providing relief from allergic symptoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "histamine H1 receptor antagonist",
+        "domain": "medicine",
+        "response": "H1 receptor antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "H1 receptor antagonist and histamine H1 receptor antagonist refer to the same class of drugs that block the H1 histamine receptor.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

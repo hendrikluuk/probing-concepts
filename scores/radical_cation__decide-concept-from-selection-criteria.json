@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A radical is a molecule with an unpaired electron, while a radical cation is a positively charged radical. Not all radicals are cations.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "Free radical cation",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical cation is a specific type of radical cation where the molecule has both a positive charge and an unpaired electron, but not all radical cations are free radical cations.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical species, which is a positively charged ion with an unpaired electron.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "Radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Radical cation' and 'radical cation' are identical except for capitalization, indicating they refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "radical cation and radical cation are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is an atom or molecule with an unpaired electron, while a radical cation is a positively charged ion with an unpaired electron. Not all free radicals are radical cations, and not all radical cations are simply free radicals without a charge.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "Free radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Free radical cation and radical cation are terms that refer to the same concept, as a radical cation inherently involves an unpaired electron and a positive charge.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "Free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is an atom, molecule, or ion with unpaired valence electrons, while a radical cation is a positively charged ion with unpaired electrons. Not all free radicals are radical cations, and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "radical cation and radical cation are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "radical cation and radical cation are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "radical cation and radical cation are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "radical cation",
+        "judgement": {
+            "equivalent": true,
+            "reason": "radical cation and radical cation are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is an atom or molecule with an unpaired electron, while a radical cation is a positively charged species with an unpaired electron. Not all free radicals are radical cations, as free radicals can be neutral or negatively charged as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is any atom or molecule with an unpaired electron, while a radical cation is a positively charged ion with an unpaired electron. Not all free radicals are radical cations, and not all radical cations are free radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is an atom, molecule, or ion with unpaired valence electrons, while a radical cation is a positively charged ion with unpaired electrons. Not all free radicals are radical cations, and not all radical cations are free radicals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "radical cation",
+        "domain": "chemistry",
+        "response": "Concept: \"radical\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A radical is a molecule or atom with an unpaired electron, while a radical cation is a radical that also carries a positive charge. Not all radicals are cations.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,2042 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Intracranial Embolism"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Lemierre Syndrome",
+            "Intracranial Embolism",
+            "Chronic Limb-Threatening Ischemia",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis",
+                "Lemierre Syndrome",
+                "Chronic Limb-Threatening Ischemia",
+                "Postphlebitic Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Livedo Reticularis",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Livedo Reticularis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Intracranial Embolism",
+            "Thrombophlebitis",
+            "Phlebitis",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis",
+                "Phlebitis",
+                "Postphlebitic Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Livedo Reticularis",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Livedo Reticularis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Intracranial Embolism"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Livedo Reticularis",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Livedo Reticularis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Intracranial Embolism",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis",
+                "Postphlebitic Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Blue Toe Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Intracranial Embolism"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Livedo Reticularis",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Carotid Artery Thrombosis",
+                "Livedo Reticularis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Intracranial Embolism"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Retinal Arterial Macroaneurysm",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Peripheral Arterial Disease",
+            "Lemierre Syndrome",
+            "Intracranial Embolism",
+            "Chronic Limb-Threatening Ischemia",
+            "Hypertension, Pregnancy-Induced",
+            "Livedo Reticularis",
+            "Hypertension, Malignant",
+            "Blue Toe Syndrome",
+            "Hypertensive Retinopathy",
+            "Postphlebitic Syndrome",
+            "CREST Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome",
+                "CREST Syndrome"
+            ],
+            "mismatches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism",
+                "Hypertension, Pregnancy-Induced",
+                "Livedo Reticularis",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 8,
+            "FP": 14,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Lemierre Syndrome",
+            "Intracranial Embolism",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Lemierre Syndrome",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease",
+            "Livedo Reticularis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Raynaud Disease",
+                "Livedo Reticularis"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Lemierre Syndrome",
+            "Intracranial Embolism",
+            "Chronic Limb-Threatening Ischemia",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Lemierre Syndrome",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Retinal Arterial Macroaneurysm",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Livedo Reticularis",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Retinal Arterial Macroaneurysm",
+                "Retinal Vein Occlusion",
+                "Livedo Reticularis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Lemierre Syndrome",
+            "Intracranial Embolism",
+            "Blue Toe Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Lemierre Syndrome",
+                "Blue Toe Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Lemierre Syndrome",
+            "Intracranial Embolism",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Lemierre Syndrome",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Postphlebitic Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Intracranial Embolism",
+            "Lemierre Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis",
+                "Lemierre Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Livedo Reticularis",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome",
+            "CREST Syndrome",
+            "Raynaud Disease"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome",
+                "CREST Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Livedo Reticularis",
+                "Raynaud Disease"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Retinal Vein Occlusion",
+            "Peripheral Arterial Disease",
+            "Lemierre Syndrome",
+            "Intracranial Embolism",
+            "Chronic Limb-Threatening Ischemia",
+            "Blue Toe Syndrome",
+            "Postphlebitic Syndrome"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Retinal Vein Occlusion",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "Chronic Limb-Threatening Ischemia",
+                "Blue Toe Syndrome",
+                "Postphlebitic Syndrome"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy",
+            "Hypertension, Hypertension"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [
+                "Hypertension, Hypertension"
+            ],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia",
+            "Postphlebitic Syndrome",
+            "Raynaud Disease",
+            "Blue Toe Syndrome",
+            "Retinal Arterial Macroaneurysm",
+            "Retinal Vein Occlusion",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia",
+                "Postphlebitic Syndrome",
+                "Blue Toe Syndrome"
+            ],
+            "mismatches": [
+                "Raynaud Disease",
+                "Retinal Arterial Macroaneurysm",
+                "Retinal Vein Occlusion",
+                "Hypertensive Retinopathy"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Intracranial Thrombosis",
+            "Intracranial Embolism",
+            "Carotid Artery Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertensive Retinopathy",
+            "Postphlebitic Syndrome",
+            "Livedo Reticularis",
+            "Blue Toe Syndrome",
+            "Raynaud Disease",
+            "Lemierre Syndrome",
+            "CREST Syndrome",
+            "Retinal Arterial Macroaneurysm",
+            "Retinal Vein Occlusion",
+            "Peripheral Arterial Disease",
+            "Chronic Limb-Threatening Ischemia"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Venous Thrombosis",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Carotid Artery Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Livedo Reticularis",
+                "Raynaud Disease",
+                "Retinal Vein Occlusion"
+            ],
+            "mismatches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertensive Retinopathy",
+                "Postphlebitic Syndrome",
+                "Blue Toe Syndrome",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Retinal Arterial Macroaneurysm",
+                "Peripheral Arterial Disease",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 8,
+            "FP": 15,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Hypertension",
+        "domain": "medicine",
+        "response": [
+            "Masked Hypertension",
+            "White Coat Hypertension",
+            "Hypertension, Renovascular",
+            "Hypertension, Pulmonary",
+            "Hypertension, Pregnancy-Induced",
+            "Hypertension, Malignant",
+            "Hypertensive Retinopathy"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Masked Hypertension",
+                "White Coat Hypertension",
+                "Hypertension, Renovascular",
+                "Hypertension, Pulmonary",
+                "Hypertension, Pregnancy-Induced",
+                "Hypertension, Malignant",
+                "Hypertensive Retinopathy"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypertension, Malignant",
+                "White Coat Hypertension",
+                "Hypertension, Pulmonary",
+                "Retinal Arterial Macroaneurysm",
+                "Hypertensive Retinopathy",
+                "Hypertension, Renovascular",
+                "Hypertension, Pregnancy-Induced",
+                "Masked Hypertension"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Peripheral Vascular Diseases",
+        "domain": "medicine",
+        "response": [
+            "Phlebitis",
+            "Venous Thrombosis",
+            "Thrombophlebitis",
+            "Peripheral Arterial Disease",
+            "Retinal Vein Occlusion",
+            "Postphlebitic Syndrome",
+            "Blue Toe Syndrome",
+            "Chronic Limb-Threatening Ischemia",
+            "Lemierre Syndrome",
+            "Carotid Artery Thrombosis",
+            "Intracranial Thrombosis",
+            "Intracranial Embolism"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phlebitis",
+                "Thrombophlebitis",
+                "Peripheral Arterial Disease",
+                "Postphlebitic Syndrome",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia",
+                "Lemierre Syndrome"
+            ],
+            "mismatches": [
+                "Venous Thrombosis",
+                "Retinal Vein Occlusion",
+                "Carotid Artery Thrombosis",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism"
+            ],
+            "true_referents": [
+                "Peripheral Arterial Disease",
+                "Lemierre Syndrome",
+                "CREST Syndrome",
+                "Phlebitis",
+                "Postphlebitic Syndrome",
+                "Thrombophlebitis",
+                "Blue Toe Syndrome",
+                "Chronic Limb-Threatening Ischemia"
+            ],
+            "TP": 7,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Embolism and Thrombosis",
+        "domain": "medicine",
+        "response": [
+            "Intracranial Thrombosis",
+            "Venous Thrombosis",
+            "Embolism, Amniotic Fluid",
+            "Carotid Artery Thrombosis",
+            "Thrombophlebitis",
+            "Intracranial Embolism",
+            "Postphlebitic Syndrome",
+            "Phlebitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Intracranial Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid",
+                "Carotid Artery Thrombosis",
+                "Intracranial Embolism"
+            ],
+            "mismatches": [
+                "Thrombophlebitis",
+                "Postphlebitic Syndrome",
+                "Phlebitis"
+            ],
+            "true_referents": [
+                "Raynaud Disease",
+                "Retinal Vein Occlusion",
+                "Intracranial Thrombosis",
+                "Intracranial Embolism",
+                "Livedo Reticularis",
+                "Carotid Artery Thrombosis",
+                "Venous Thrombosis",
+                "Embolism, Amniotic Fluid"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    }
+]

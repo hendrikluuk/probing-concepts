@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "enzyme-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An enzyme-coding gene refers to any gene that codes for an enzyme, whereas a pentose phosphate pathway enzyme gene specifically codes for enzymes involved in the pentose phosphate pathway. Not all enzyme-coding genes are involved in the pentose phosphate pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway enzyme gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical, referring to the same concept without any distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway enzyme gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical, referring to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "Metabolic enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A metabolic enzyme is a broad category that includes various enzymes involved in metabolism, while a pentose phosphate pathway enzyme gene specifically refers to genes encoding enzymes involved in the pentose phosphate pathway, which is just one part of metabolic processes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway enzyme gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical and refer to the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway enzyme gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical and refer to the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "Pentose phosphate pathway gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A pentose phosphate pathway gene could refer to any gene involved in the pathway, not necessarily one that codes for an enzyme. A pentose phosphate pathway enzyme gene specifically codes for an enzyme in the pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "Enzyme-encoding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An enzyme-encoding gene refers to any gene that encodes an enzyme, while a pentose phosphate pathway enzyme gene specifically encodes an enzyme involved in the pentose phosphate pathway. Not all enzyme-encoding genes are related to the pentose phosphate pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A pentose phosphate pathway gene refers to any gene involved in the pathway, whereas a pentose phosphate pathway enzyme gene specifically refers to genes encoding enzymes in the pathway. Not all genes in the pathway necessarily encode enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all pentose phosphate pathway enzyme genes are pentose phosphate pathway genes, not all pentose phosphate pathway genes necessarily code for enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A pentose phosphate pathway gene could refer to any gene involved in the pathway, while a pentose phosphate pathway enzyme gene specifically refers to genes that encode enzymes in the pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An enzyme is a protein that catalyzes biochemical reactions, while a gene is a segment of DNA that encodes the information to produce the enzyme. Not all enzymes are directly linked to a single gene, and not all genes are expressed as enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "enzyme of the pentose phosphate pathway",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An enzyme of the pentose phosphate pathway refers to the protein that catalyzes reactions in the pathway, whereas a pentose phosphate pathway enzyme gene refers to the genetic sequence that codes for such an enzyme. Not all genes are enzymes, and not all enzymes are genes, so they are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An enzyme is a protein that catalyzes biochemical reactions, while a gene is a sequence of DNA that encodes the information to produce that enzyme. Not all genes are expressed as enzymes, and not all enzymes are encoded by a single gene.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "pentose phosphate pathway enzyme gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "pentose phosphate pathway enzyme gene",
+        "domain": "biology",
+        "response": "Pentose phosphate pathway",
+        "judgement": {
+            "equivalent": false,
+            "reason": "The pentose phosphate pathway is a metabolic pathway, whereas a pentose phosphate pathway enzyme gene refers to the genetic information encoding enzymes involved in this pathway. Not all genes are pathways and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

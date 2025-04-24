@@ -1,0 +1,2440 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic UMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic UMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2-(6-aminohexylamino)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP",
+                "2-(6-aminohexylamino)-cAMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic purine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "2',3'-cyclic CMP",
+            "8-aza-cAMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic AMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-PIP-cAMP",
+                "2',3'-cyclic CMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic UMP",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "2',3'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic UMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "8-aza-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "2',3'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic UMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2'-3'-cGAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic CMP",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "2',3'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "c-di-GMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "8-aza-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic AMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "c-di-GMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic CMP",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic CMP",
+                "3',5'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "8-aza-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-aza-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP",
+            "Adenosine 2',3'-cyclic phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "c-di-GMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "8-aza-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic AMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "c-di-GMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic CMP",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP",
+                "3',5'-cyclic CMP"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic UMP",
+            "c-di-GMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "c-di-GMP",
+                "2',3'-cyclic CMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "c-di-GMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "8-aza-cAMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2-(6-aminohexylamino)-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2'-3'-cGAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "c-di-GMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic CMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 6,
+            "FP": 10,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic UMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "c-di-GMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "8-aza-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2'-3'-cGAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "c-di-GMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic CMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP",
+                "3',5'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic UMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "c-di-GMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "8-aza-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2'-3'-cGAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "c-di-GMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic CMP",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP",
+                "3',5'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP",
+            "8-aza-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "2',3'-cyclic UMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic purine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "8-aza-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-3'-cGAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 5,
+            "FP": 7,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic UMP",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "2',3'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "8-aza-cAMP",
+            "3',5'-cyclic CMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic purine nucleotide",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic CMP",
+            "8-aza-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic CMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2',3'-cyclic AMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2'-3'-cGAMP"
+            ],
+            "mismatches": [
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic CMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP",
+            "3',5'-cyclic dTMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic UMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic AMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2',3'-cyclic CMP",
+                "2-(6-aminohexylamino)-cAMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic AMP",
+            "Adenosine 2',3'-cyclic phosphate",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "8-aza-cAMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "Adenosine 2',3'-cyclic phosphate",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide"
+            ],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic pyrimidine nucleotide",
+            "3',5'-cyclic UMP",
+            "3',5'-cyclic CMP",
+            "3',5'-cyclic dTMP"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [
+                "3',5'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic dTMP"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "2',3'-cyclic nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic AMP",
+            "2',3'-cyclic UMP",
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic pyrimidine nucleotide",
+            "2'-3'-cGAMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate",
+            "2',3'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic purine nucleotide",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "mismatches": [
+                "2'-3'-cGAMP",
+                "2',3'-cyclic CMP"
+            ],
+            "true_referents": [
+                "2',3'-cyclic UMP",
+                "2',3'-cyclic AMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic purine nucleotide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cyclic purine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic purine nucleotide",
+            "2',3'-cyclic AMP",
+            "8-(6-aminohexylthio)-cGMP",
+            "8-PIP-cAMP",
+            "2-(6-aminohexylamino)-cAMP",
+            "2',3'-cyclic AMP",
+            "8-aza-cAMP",
+            "N(2),N(2)-dimethyl-cGMP",
+            "N(6)-butyryl-cAMP",
+            "8-(4-chlorophenylthio)-cAMP",
+            "Adenosine 2',3'-cyclic phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic AMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "N(6)-butyryl-cAMP"
+            ],
+            "mismatches": [
+                "2',3'-cyclic purine nucleotide",
+                "8-(6-aminohexylthio)-cGMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "true_referents": [
+                "2'-3'-cGAMP",
+                "N(6)-butyryl-cAMP",
+                "2-(6-aminohexylamino)-cAMP",
+                "2',3'-cyclic AMP",
+                "N(2),N(2)-dimethyl-cGMP",
+                "c-di-GMP"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cyclic pyrimidine nucleotide",
+        "domain": "chemistry",
+        "response": [
+            "2',3'-cyclic UMP",
+            "3',5'-cyclic UMP",
+            "2',3'-cyclic CMP",
+            "3',5'-cyclic CMP",
+            "2',3'-cyclic pyrimidine nucleotide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP",
+                "3',5'-cyclic CMP",
+                "2',3'-cyclic pyrimidine nucleotide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3',5'-cyclic dTMP",
+                "2',3'-cyclic pyrimidine nucleotide",
+                "2',3'-cyclic UMP",
+                "3',5'-cyclic CMP",
+                "3',5'-cyclic UMP",
+                "2',3'-cyclic CMP"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "nucleoside 3',5'-cyclic phosphate",
+        "domain": "chemistry",
+        "response": [
+            "3',5'-cyclic CMP",
+            "3',5'-cyclic dTMP",
+            "3',5'-cyclic UMP",
+            "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+            "Adenosine 2',3'-cyclic phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3',5'-cyclic CMP"
+            ],
+            "mismatches": [
+                "3',5'-cyclic dTMP",
+                "3',5'-cyclic UMP",
+                "adenosine-5'-phosphate-2',3'-cyclic phosphate",
+                "Adenosine 2',3'-cyclic phosphate"
+            ],
+            "true_referents": [
+                "3',5'-cyclic pyrimidine nucleotide",
+                "2-(6-aminohexylamino)-cAMP",
+                "8-PIP-cAMP",
+                "8-aza-cAMP",
+                "8-(4-chlorophenylthio)-cAMP",
+                "8-(6-aminohexylthio)-cGMP"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 5
+        }
+    }
+]

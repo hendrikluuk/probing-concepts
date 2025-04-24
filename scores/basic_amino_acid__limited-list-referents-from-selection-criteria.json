@@ -1,0 +1,928 @@
+[
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "arginine (Arg)",
+            "lysine (Lys)",
+            "histidine (His)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "arginine (Arg)",
+                "lysine (Lys)",
+                "histidine (His)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "arginine (Arg)",
+                "histidine (His)",
+                "lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "L-Arginine (Arg)",
+            "L-Lysine (Lys)",
+            "L-Histidine (His)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-Arginine (Arg)",
+                "L-Lysine (Lys)",
+                "L-Histidine (His)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-Arginine (Arg)",
+                "L-Histidine (His)",
+                "L-Lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Histidine (His)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Lysine (Lys)",
+                "Histidine (His)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Lysine (Lys)",
+            "Arginine (Arg)",
+            "Histidine (His)",
+            "Ornithine (Orn)",
+            "Citrulline (Cit)",
+            "Diaminobutyric acid (DAB)",
+            "Homolysine (Hyl)",
+            "N-Methyl-L-arginine (NMArg)",
+            "N-Methyl-L-lysine (NMLys)",
+            "Agmatine",
+            "Creatine",
+            "Guanidinoacetic acid",
+            "N\u03b5-Acetyl-L-lysine (AcLys)",
+            "N\u03b5-Formyl-L-lysine (fLys)",
+            "N\u03b5-Methyl-L-lysine (MeLys)",
+            "N\u03c9-Acetyl-L-arginine (AcArg)",
+            "N\u03c9-Hydroxy-L-arginine (hArg)",
+            "S-Adenosylmethionine decarboxylase product (SAMdc)",
+            "N-carbamoylputrescine",
+            "N-acetylputrescine",
+            "Cadaverine",
+            "Putrescine",
+            "Spermidine",
+            "Spermine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lysine (Lys)",
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Ornithine (Orn)",
+                "Citrulline (Cit)",
+                "Diaminobutyric acid (DAB)",
+                "Homolysine (Hyl)",
+                "N-Methyl-L-arginine (NMArg)",
+                "N-Methyl-L-lysine (NMLys)",
+                "Agmatine",
+                "Creatine",
+                "Guanidinoacetic acid",
+                "N\u03b5-Acetyl-L-lysine (AcLys)",
+                "N\u03b5-Formyl-L-lysine (fLys)",
+                "N\u03b5-Methyl-L-lysine (MeLys)",
+                "N\u03c9-Acetyl-L-arginine (AcArg)",
+                "N\u03c9-Hydroxy-L-arginine (hArg)",
+                "S-Adenosylmethionine decarboxylase product (SAMdc)",
+                "N-carbamoylputrescine",
+                "N-acetylputrescine",
+                "Cadaverine",
+                "Putrescine",
+                "Spermidine",
+                "Spermine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Agmatine",
+                "Arginine (Arg)",
+                "Cadaverine",
+                "Citrulline (Cit)",
+                "Creatine",
+                "Diaminobutyric acid (DAB)",
+                "Guanidinoacetic acid",
+                "Histidine (His)",
+                "Homolysine (Hyl)",
+                "Lysine (Lys)",
+                "N-Methyl-L-arginine (NMArg)",
+                "N-Methyl-L-lysine (NMLys)",
+                "N-acetylputrescine",
+                "N-carbamoylputrescine",
+                "N\u03b5-Acetyl-L-lysine (AcLys)",
+                "N\u03b5-Formyl-L-lysine (fLys)",
+                "N\u03b5-Methyl-L-lysine (MeLys)",
+                "N\u03c9-Acetyl-L-arginine (AcArg)",
+                "N\u03c9-Hydroxy-L-arginine (hArg)",
+                "Ornithine (Orn)",
+                "Putrescine",
+                "S-Adenosylmethionine decarboxylase product (SAMdc)",
+                "Spermidine",
+                "Spermine"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Lysine (Lys)",
+            "Arginine (Arg)",
+            "Histidine (His)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lysine (Lys)",
+                "Arginine (Arg)",
+                "Histidine (His)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Lysine (Lys)",
+            "Arginine (Arg)",
+            "Histidine (His)",
+            "Ornithine (Orn)",
+            "Citrulline (Cit)",
+            "Selenocysteine (Sec)",
+            "Lysine methyl ester (Lys-Me)",
+            "Arginine methyl ester (Arg-Me)",
+            "N-Acetyl-L-arginine (N-Ac-Arg)",
+            "N-Acetyl-L-lysine (N-Ac-Lys)",
+            "Lysine hydrochloride (Lys-HCl)",
+            "Arginine hydrochloride (Arg-HCl)",
+            "Lysine sulfate (Lys-SO4)",
+            "Arginine sulfate (Arg-SO4)",
+            "Lysine ethyl ester (Lys-Et)",
+            "Arginine ethyl ester (Arg-Et)",
+            "N-Boc-L-lysine (Boc-Lys)",
+            "N-Boc-L-arginine (Boc-Arg)",
+            "Lysine acetate (Lys-Ac)",
+            "Arginine acetate (Arg-Ac)",
+            "N-Phthaloyl-L-lysine (Phth-Lys)",
+            "N-Phthaloyl-L-arginine (Phth-Arg)",
+            "Lysine phenylacetate (Lys-PhAc)",
+            "Arginine phenylacetate (Arg-PhAc)",
+            "N-Formyl-L-lysine (Form-Lys)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lysine (Lys)",
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Ornithine (Orn)",
+                "Citrulline (Cit)",
+                "Selenocysteine (Sec)",
+                "Lysine methyl ester (Lys-Me)",
+                "Arginine methyl ester (Arg-Me)",
+                "N-Acetyl-L-arginine (N-Ac-Arg)",
+                "N-Acetyl-L-lysine (N-Ac-Lys)",
+                "Lysine hydrochloride (Lys-HCl)",
+                "Arginine hydrochloride (Arg-HCl)",
+                "Lysine sulfate (Lys-SO4)",
+                "Arginine sulfate (Arg-SO4)",
+                "Lysine ethyl ester (Lys-Et)",
+                "Arginine ethyl ester (Arg-Et)",
+                "N-Boc-L-lysine (Boc-Lys)",
+                "N-Boc-L-arginine (Boc-Arg)",
+                "Lysine acetate (Lys-Ac)",
+                "Arginine acetate (Arg-Ac)",
+                "N-Phthaloyl-L-lysine (Phth-Lys)",
+                "N-Phthaloyl-L-arginine (Phth-Arg)",
+                "Lysine phenylacetate (Lys-PhAc)",
+                "Arginine phenylacetate (Arg-PhAc)"
+            ],
+            "mismatches": [
+                "N-Formyl-L-lysine (Form-Lys)"
+            ],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Arginine acetate (Arg-Ac)",
+                "Arginine ethyl ester (Arg-Et)",
+                "Arginine hydrochloride (Arg-HCl)",
+                "Arginine methyl ester (Arg-Me)",
+                "Arginine phenylacetate (Arg-PhAc)",
+                "Arginine sulfate (Arg-SO4)",
+                "Citrulline (Cit)",
+                "Histidine (His)",
+                "Lysine (Lys)",
+                "Lysine acetate (Lys-Ac)",
+                "Lysine ethyl ester (Lys-Et)",
+                "Lysine hydrochloride (Lys-HCl)",
+                "Lysine methyl ester (Lys-Me)",
+                "Lysine phenylacetate (Lys-PhAc)",
+                "Lysine sulfate (Lys-SO4)",
+                "N-Acetyl-L-arginine (N-Ac-Arg)",
+                "N-Acetyl-L-lysine (N-Ac-Lys)",
+                "N-Boc-L-arginine (Boc-Arg)",
+                "N-Boc-L-lysine (Boc-Lys)",
+                "N-Phthaloyl-L-arginine (Phth-Arg)",
+                "N-Phthaloyl-L-lysine (Phth-Lys)",
+                "Ornithine (Orn)",
+                "Selenocysteine (Sec)"
+            ],
+            "TP": 24,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg, R)",
+            "Lysine (Lys, K)",
+            "Histidine (His, H)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg, R)",
+                "Lysine (Lys, K)",
+                "Histidine (His, H)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg, R)",
+                "Histidine (His, H)",
+                "Lysine (Lys, K)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Histidine (His)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Lysine (Lys)",
+                "Histidine (His)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Histidine (His)",
+            "Ornithine (Orn)",
+            "Citrulline (Cit)",
+            "Nornithine (Norn)",
+            "Homolysine (Hlys)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Lysine (Lys)",
+                "Histidine (His)",
+                "Ornithine (Orn)",
+                "Citrulline (Cit)",
+                "Nornithine (Norn)",
+                "Homolysine (Hlys)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Citrulline (Cit)",
+                "Histidine (His)",
+                "Homolysine (Hlys)",
+                "Lysine (Lys)",
+                "Nornithine (Norn)",
+                "Ornithine (Orn)"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Histidine (His)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Histidine (His)",
+            "Ornithine (Orn)",
+            "Homoarginine (hArg)",
+            "Citrulline (Cit)",
+            "Homocitrulline (hCit)",
+            "\u03b1-Amino-\u03b2-guanidino-propionic acid (AGP)",
+            "2,4-Diaminobutyric acid (Dab)",
+            "2,3-Diaminopropionic acid (Dap)",
+            "\u03b1,\u03b3-Diaminobutyric acid (Agb)",
+            "1-Methylhistidine (1MHis)",
+            "3-Methylhistidine (3MHis)",
+            "5-Hydroxylysine (Hyl)",
+            "Trimethyllysine (Tml)",
+            "Hypusine (Hpu)",
+            "Deoxyhypusine (Dhp)",
+            "Canavanine (Cav)",
+            "Thialysine (Thl)",
+            "Aminoethylcysteine (Aec)",
+            "Lanthionine (Lan)",
+            "Desmosine (Des)",
+            "Isodesmosine (Ide)",
+            "Lysinoalanine (Lal)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Lysine (Lys)",
+                "Histidine (His)",
+                "Ornithine (Orn)",
+                "Homoarginine (hArg)",
+                "Citrulline (Cit)",
+                "Homocitrulline (hCit)",
+                "\u03b1-Amino-\u03b2-guanidino-propionic acid (AGP)",
+                "2,4-Diaminobutyric acid (Dab)",
+                "2,3-Diaminopropionic acid (Dap)",
+                "\u03b1,\u03b3-Diaminobutyric acid (Agb)",
+                "1-Methylhistidine (1MHis)",
+                "3-Methylhistidine (3MHis)",
+                "5-Hydroxylysine (Hyl)",
+                "Trimethyllysine (Tml)",
+                "Hypusine (Hpu)",
+                "Deoxyhypusine (Dhp)",
+                "Canavanine (Cav)",
+                "Thialysine (Thl)",
+                "Aminoethylcysteine (Aec)",
+                "Lanthionine (Lan)",
+                "Desmosine (Des)",
+                "Isodesmosine (Ide)",
+                "Lysinoalanine (Lal)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-Methylhistidine (1MHis)",
+                "2,3-Diaminopropionic acid (Dap)",
+                "2,4-Diaminobutyric acid (Dab)",
+                "3-Methylhistidine (3MHis)",
+                "5-Hydroxylysine (Hyl)",
+                "Aminoethylcysteine (Aec)",
+                "Arginine (Arg)",
+                "Canavanine (Cav)",
+                "Citrulline (Cit)",
+                "Deoxyhypusine (Dhp)",
+                "Desmosine (Des)",
+                "Histidine (His)",
+                "Homoarginine (hArg)",
+                "Homocitrulline (hCit)",
+                "Hypusine (Hpu)",
+                "Isodesmosine (Ide)",
+                "Lanthionine (Lan)",
+                "Lysine (Lys)",
+                "Lysinoalanine (Lal)",
+                "Ornithine (Orn)",
+                "Thialysine (Thl)",
+                "Trimethyllysine (Tml)",
+                "\u03b1,\u03b3-Diaminobutyric acid (Agb)",
+                "\u03b1-Amino-\u03b2-guanidino-propionic acid (AGP)"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Histidine (His)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Histidine (His)",
+            "Lysine (Lys)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (Arg)",
+                "Histidine (His)",
+                "Lysine (Lys)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Histidine (His)",
+            "Ornithine",
+            "Citrulline",
+            "Agmatine",
+            "L-Arginine",
+            "L-Lysine",
+            "L-Histidine",
+            "Basic amino acid",
+            "Amino acid with basic side chain",
+            "Positively charged amino acid",
+            "pH-sensitive amino acid",
+            "Basic amino acid in proteins",
+            "Amino acid with positive charge",
+            "Arginine residue",
+            "Lysine residue",
+            "Histidine residue",
+            "Basic amino acid in peptides",
+            "Amino acid with basic side chain in proteins",
+            "Basic amino acid in biomolecules",
+            "Amino acid with positive charge in biomolecules",
+            "Basic amino acid in biological systems",
+            "Amino acid with basic side chain in biological systems",
+            "Basic amino acid in biochemistry",
+            "Amino acid with positive charge in biochemistry"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (Arg)",
+                "Lysine (Lys)",
+                "Histidine (His)",
+                "Ornithine",
+                "Citrulline",
+                "Agmatine",
+                "L-Arginine",
+                "L-Lysine",
+                "L-Histidine",
+                "Basic amino acid",
+                "Amino acid with basic side chain",
+                "Positively charged amino acid",
+                "pH-sensitive amino acid",
+                "Basic amino acid in proteins",
+                "Amino acid with positive charge",
+                "Arginine residue",
+                "Lysine residue",
+                "Histidine residue",
+                "Basic amino acid in peptides",
+                "Amino acid with basic side chain in proteins",
+                "Basic amino acid in biomolecules",
+                "Amino acid with positive charge in biomolecules",
+                "Basic amino acid in biological systems",
+                "Amino acid with basic side chain in biological systems"
+            ],
+            "mismatches": [
+                "Basic amino acid in biochemistry",
+                "Amino acid with positive charge in biochemistry"
+            ],
+            "true_referents": [
+                "Agmatine",
+                "Amino acid with basic side chain",
+                "Amino acid with basic side chain in biological systems",
+                "Amino acid with basic side chain in proteins",
+                "Amino acid with positive charge",
+                "Amino acid with positive charge in biomolecules",
+                "Arginine (Arg)",
+                "Arginine residue",
+                "Basic amino acid",
+                "Basic amino acid in biological systems",
+                "Basic amino acid in biomolecules",
+                "Basic amino acid in peptides",
+                "Basic amino acid in proteins",
+                "Citrulline",
+                "Histidine (His)",
+                "Histidine residue",
+                "L-Arginine",
+                "L-Histidine",
+                "L-Lysine",
+                "Lysine (Lys)",
+                "Lysine residue",
+                "Ornithine",
+                "Positively charged amino acid",
+                "pH-sensitive amino acid"
+            ],
+            "TP": 24,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            "Arginine (R)",
+            "Lysine (K)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Arginine (R)",
+                "Lysine (K)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arginine (R)",
+                "Lysine (K)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "basic amino acid",
+        "domain": "chemistry",
+        "response": [
+            {
+                "Referent": "lysine",
+                "Canonical Name": "Lys",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "arginine",
+                "Canonical Name": "Arg",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "histidine",
+                "Canonical Name": "His",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "cysteine",
+                "Canonical Name": "Cys",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "aspartic acid",
+                "Canonical Name": "Asp",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "glutamic acid",
+                "Canonical Name": "Glu",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "asparagine",
+                "Canonical Name": "Asn",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "glutamine",
+                "Canonical Name": "Gln",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "tyrosine",
+                "Canonical Name": "Tyr",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "serine",
+                "Canonical Name": "Ser",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "threonine",
+                "Canonical Name": "Thr",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "alanine",
+                "Canonical Name": "Ala",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "proline",
+                "Canonical Name": "Pro",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "methionine",
+                "Canonical Name": "Met",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "phenylalanine",
+                "Canonical Name": "Phe",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "isoleucine",
+                "Canonical Name": "Ile",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "leucine",
+                "Canonical Name": "Leu",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "valine",
+                "Canonical Name": "Val",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "ornithine",
+                "Canonical Name": "Orn",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "citrulline",
+                "Canonical Name": "Cit",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "tryptophan",
+                "Canonical Name": "Trp",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            },
+            {
+                "Referent": "tyrosine",
+                "Canonical Name": "Tyr",
+                "Sufficient Criteria": [
+                    "it is an amino acid",
+                    "it has side chains that are positively charged at physiological pH"
+                ]
+            }
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "lysine",
+                "arginine",
+                "histidine",
+                "cysteine",
+                "aspartic acid",
+                "glutamic acid",
+                "asparagine",
+                "glutamine",
+                "tyrosine",
+                "serine",
+                "threonine",
+                "alanine",
+                "proline",
+                "methionine",
+                "phenylalanine",
+                "isoleucine",
+                "leucine",
+                "valine",
+                "ornithine",
+                "citrulline",
+                "tryptophan"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "{\"Referent\": \"alanine\", \"Canonical Name\": \"Ala\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"arginine\", \"Canonical Name\": \"Arg\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"asparagine\", \"Canonical Name\": \"Asn\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"aspartic acid\", \"Canonical Name\": \"Asp\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"citrulline\", \"Canonical Name\": \"Cit\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"cysteine\", \"Canonical Name\": \"Cys\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"glutamic acid\", \"Canonical Name\": \"Glu\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"glutamine\", \"Canonical Name\": \"Gln\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"histidine\", \"Canonical Name\": \"His\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"isoleucine\", \"Canonical Name\": \"Ile\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"leucine\", \"Canonical Name\": \"Leu\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"lysine\", \"Canonical Name\": \"Lys\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"methionine\", \"Canonical Name\": \"Met\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"ornithine\", \"Canonical Name\": \"Orn\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"phenylalanine\", \"Canonical Name\": \"Phe\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"proline\", \"Canonical Name\": \"Pro\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"serine\", \"Canonical Name\": \"Ser\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"threonine\", \"Canonical Name\": \"Thr\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"tryptophan\", \"Canonical Name\": \"Trp\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"tyrosine\", \"Canonical Name\": \"Tyr\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}",
+                "{\"Referent\": \"valine\", \"Canonical Name\": \"Val\", \"Sufficient Criteria\": [\"it is an amino acid\", \"it has side chains that are positively charged at physiological pH\"]}"
+            ],
+            "TP": 21,
+            "FP": 0,
+            "FN": 0
+        }
+    }
+]

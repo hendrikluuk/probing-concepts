@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "halide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A halide is a type of monovalent inorganic anion specifically derived from halogens, but not all monovalent inorganic anions are halides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "halide ion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A halide ion is a type of monovalent inorganic anion, but not all monovalent inorganic anions are halide ions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monatomic anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monatomic anion is a single atom with a negative charge, while a monovalent inorganic anion refers to any inorganic anion with a single negative charge, which can be polyatomic. Therefore, not all monovalent inorganic anions are monatomic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion can be either organic or inorganic, whereas a monovalent inorganic anion specifically refers to those that are inorganic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Inorganic monovalent anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'inorganic monovalent anion' and 'monovalent inorganic anion' are synonyms and describe the same concept of an anion that is both inorganic and has a single negative charge.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Monovalent inorganic anion' and 'monovalent inorganic anion' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are exactly the same and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion can be either organic or inorganic, but a monovalent inorganic anion specifically refers to inorganic species only.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "halide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A halide is a type of monovalent inorganic anion, specifically one formed from halogens, but not all monovalent inorganic anions are halides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Hydride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hydride is a specific type of monovalent inorganic anion consisting of hydrogen, but not all monovalent inorganic anions are hydrides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "halogen anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A halogen anion is a type of monovalent inorganic anion, but not all monovalent inorganic anions are halogen anions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "HYDROXIDE",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hydroxide is a specific type of monovalent inorganic anion, but not all monovalent inorganic anions are hydroxide.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

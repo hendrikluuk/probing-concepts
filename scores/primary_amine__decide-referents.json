@@ -1,0 +1,1814 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "Putrescine_d4",
+            "N-lauryldiethanolamine",
+            "isopentylamine",
+            "1-Hexadecylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "N-lauryldiethanolamine",
+                "isopentylamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "Allylamine",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [
+                "Allylamine"
+            ],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide",
+            "N-acetylcysteamine",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "Putrescine_d4",
+            "N-lauryldiethanolamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide",
+                "2,4,4-trimethyl-2-pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-acetylcysteamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 7,
+            "FP": 7,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [
+                "Allylamine",
+                "2-isopropylaminoethylamine"
+            ],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-pentanamine",
+                "Allylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "N-acetylcysteamine",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "Putrescine_d4",
+            "N-lauryldiethanolamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-acetylcysteamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "2-(1H-benzimidazol-2-yl)aniline",
+            "4-(4-nitrophenylazo)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dimethylpentan-3-amine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "Putrescine_d4",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine",
+            "L-arginine 2-naphthylamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine",
+                "L-arginine 2-naphthylamide"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "Allylamine",
+            "isopentylamine",
+            "1-Hexadecylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "isopentylamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "Allylamine",
+            "isopentylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "Allylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "N-lauryldiethanolamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 6,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "Putrescine_d4",
+            "N-lauryldiethanolamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "rimantadine",
+            "Allylamine",
+            "Putrescine_d4",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1-(1-adamantyl)ethanamine",
+                "rimantadine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "2,4,4-trimethyl-2-Pentanamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "Allylamine",
+                "1-Hexadecylamine",
+                "2,4,4-trimethyl-2-Pentanamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "Allylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine",
+            "Putrescine_d4"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "Allylamine",
+                "1-Hexadecylamine",
+                "Putrescine_d4"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "N-(3-aminopropyl)-4-aminobutanal",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "Putrescine_d4",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "Putrescine_d4",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-isopropylaminoethylamine",
+                "isopentylamine"
+            ],
+            "mismatches": [
+                "1,2-diamino-2-methylpropane",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alkylamine",
+        "domain": "chemistry",
+        "response": [
+            "1,2-diamino-2-methylpropane",
+            "2,4-dimethylpentan-3-amine",
+            "1-(1-adamantyl)ethanamine",
+            "2,4,4-trimethyl-2-Pentanamine",
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine",
+            "N-lauryldiethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "mismatches": [
+                "2,4-dimethylpentan-3-amine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine",
+                "N-lauryldiethanolamine"
+            ],
+            "true_referents": [
+                "1-(1-adamantyl)ethanamine",
+                "1-Hexadecylamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "rimantadine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "1,2-diamino-2-methylpropane",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "primary arylamine",
+        "domain": "chemistry",
+        "response": [
+            "4-(4-nitrophenylazo)aniline",
+            "2-(1H-benzimidazol-2-yl)aniline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "alachlor",
+                "L-arginine 2-naphthylamide",
+                "(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]",
+                "N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide",
+                "1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide",
+                "N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide",
+                "4-(4-nitrophenylazo)aniline"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "primary aliphatic amine",
+        "domain": "chemistry",
+        "response": [
+            "Allylamine",
+            "2-isopropylaminoethylamine",
+            "isopentylamine",
+            "1-Hexadecylamine",
+            "cysteamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ],
+            "mismatches": [
+                "Allylamine",
+                "1-Hexadecylamine"
+            ],
+            "true_referents": [
+                "Spenolimycin",
+                "cysteamine",
+                "isopentylamine",
+                "2-isopropylaminoethylamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "N-lauryldiethanolamine",
+                "N-acetylcysteamine",
+                "2,4-dimethylpentan-3-amine"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    }
+]

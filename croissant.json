@@ -1,0 +1,131 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/",
+        "sc": "https://schema.org/",
+        "ml": "http://mlcommons.org/schema/",
+        "croissant": "https://w3id.org/croissant/context.jsonld"
+    },
+    "@type": "sc:Dataset",
+    "name": "probing-concepts",
+    "description": "Dataset containing annotated concepts from biology, chemistry and medicine as individual JSON files.",
+    "version": "1.0.0",
+    "license": "https://opensource.org/licenses/MIT",
+    "creator": [
+        {
+            "@type": "sc:Person",
+            "name": "Hendrik Luuk"
+        }
+    ],
+    "datePublished": "2025-05-01",
+    "url": "https://github.com/hendrikluuk/probing-concepts",
+    "distribution": [
+        {
+            "@type": "sc:FileSet",
+            "name": "concept-files",
+            "description": "Individual JSON files for each concept.",
+            "encodingFormat": "application/json",
+            "ml:includes": "concepts/*.json"
+        }
+    ],
+    "recordSet": [
+        {
+            "@type": "ml:RecordSet",
+            "name": "concepts",
+            "description": "Concept annotations provided in JSON files.",
+            "field": [
+                {
+                    "@type": "ml:Field",
+                    "name": "domain",
+                    "description": "The subject domain of the concept.",
+                    "dataType": "sc:Text",
+                    "source": {
+                        "fileSet": "concept-files",
+                        "extract": {
+                            "jsonPath": "$.domain"
+                        },
+                        "fileProperty": "content"
+                    }
+                },
+                {
+                    "@type": "ml:Field",
+                    "name": "concept",
+                    "description": "The label (name) of the concept.",
+                    "dataType": "sc:Text",
+                    "source": {
+                        "fileSet": "concept-files",
+                        "extract": {
+                            "jsonPath": "$.concept"
+                        },
+                        "fileProperty": "content"
+                    }
+                },
+                {
+                    "@type": "ml:Field",
+                    "name": "definition",
+                    "description": "The definition of the concept.",
+                    "dataType": "sc:Text",
+                    "source": {
+                        "fileSet": "concept-files",
+                        "extract": {
+                            "jsonPath": "$.definition"
+                        },
+                        "fileProperty": "content"
+                    }
+                },
+                {
+                    "@type": "ml:Field",
+                    "name": "selection_criteria",
+                    "description": "A list of selection criteria as strings corresponding to the definition of the concept.",
+                    "dataType": "sc:Text",
+                    "repeated": true,
+                    "source": {
+                        "fileSet": "concept-files",
+                        "extract": {
+                            "jsonPath": "$.selection_criteria[*]"
+                        },
+                        "fileProperty": "content"
+                    }
+                },
+                {
+                    "@type": "ml:Field",
+                    "name": "ontology",
+                    "description": "The ontology the concept belongs to.",
+                    "dataType": "sc:Text",
+                    "source": {
+                        "fileSet": "concept-files",
+                        "extract": {
+                            "jsonPath": "$.ontology"
+                        },
+                        "fileProperty": "content"
+                    }
+                },
+                {
+                    "@type": "ml:Field",
+                    "name": "ontology_id",
+                    "description": "The ID of the concept within the ontology.",
+                    "dataType": "sc:Text",
+                    "source": {
+                        "fileSet": "concept-files",
+                        "extract": {
+                            "jsonPath": "$.ontology_id"
+                        },
+                        "fileProperty": "content"
+                    }
+                },
+                {
+                    "@type": "ml:Field",
+                    "name": "referents",
+                    "description": "Nested or flat set referents of the concept (JSON list or object).",
+                    "dataType": "sc:Text",
+                    "source": {
+                        "fileSet": "concept-files",
+                        "extract": {
+                            "jsonPath": "$.referents"
+                        },
+                        "fileProperty": "content"
+                    }
+                }
+            ]
+        }
+    ]
+}

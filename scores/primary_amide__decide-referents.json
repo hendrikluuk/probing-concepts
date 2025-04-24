@@ -1,0 +1,1693 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "adenosylcob(III)yrinic acid a,c-diamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "sotalol",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "ethoxy(isopropylamino)phosphinate",
+            "Aldoifosfamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+            "N-acetylsulfamethoxazole",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "adenosylcob(III)yrinic acid a,c-diamide",
+            "N-acetylsulfamethoxazole",
+            "4-Hydroxyifosfamide",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "adenosylcob(III)yrinic acid a,c-diamide",
+            "N-acetylsulfamethoxazole",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-acetylsulfamethoxazole",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "Aldoifosfamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "4-Hydroxyifosfamide",
+            "tenofovir alafenamide",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide"
+            ],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "Aldoifosfamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "adenosylcob(III)yrinic acid a,c-diamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "4-Hydroxyifosfamide",
+            "tenofovir alafenamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ],
+            "mismatches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 1,
+            "FP": 9,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "ethoxy(isopropylamino)phosphinate",
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide",
+            "tenofovir alafenamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "adenosylcob(III)yrinic acid a,c-diamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "N-acetylsulfamethoxazole",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-acetylsulfamethoxazole",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "tenofovir alafenamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "Bupicomide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "Bupicomide",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "ethoxy(isopropylamino)phosphinate",
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide"
+            ],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "adenosylcob(III)yrinic acid a,c-diamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "sotalol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "Aldoifosfamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "adenosylcob(III)yrinic acid a,c-diamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "4-Hydroxyifosfamide",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "sotalol",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ],
+            "mismatches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 1,
+            "FP": 10,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "adenosylcob(III)yrinic acid a,c-diamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+            "N-acetylsulfamethoxazole",
+            "tenofovir alafenamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine"
+            ],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "sotalol",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol"
+            ],
+            "mismatches": [
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide",
+            "tenofovir alafenamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "ethoxy(isopropylamino)phosphinate",
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "4-Hydroxyifosfamide",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "sotalol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol"
+            ],
+            "mismatches": [
+                "4-Hydroxyifosfamide"
+            ],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "Aldoifosfamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "4-Hydroxyifosfamide",
+            "tenofovir alafenamide",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "ethoxy(isopropylamino)phosphinate",
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaphenazole",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-acetylsulfamethoxazole",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "sulfaphenazole",
+                "Nicosulfuron-tp ausn",
+                "sotalol",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "carboxamide",
+        "domain": "chemistry",
+        "response": [
+            "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+            "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+            "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+            "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+            "tenofovir alafenamide",
+            "Bupicomide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ],
+            "true_referents": [
+                "3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA",
+                "Phe-Cys-Pro",
+                "Lys-Lys-Cys",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "GlyTouCan G39397SW",
+                "Staphylopeptide A",
+                "Arg-Phe-Asn"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "phosphoramide",
+        "domain": "chemistry",
+        "response": [
+            "ethoxy(isopropylamino)phosphinate",
+            "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+            "Aldoifosfamide",
+            "4-Hydroxyifosfamide",
+            "tenofovir alafenamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Karnamicin A3",
+                "ethoxy(isopropylamino)phosphinate",
+                "Karnamicin C4",
+                "Bupicomide",
+                "Aldoifosfamide",
+                "tenofovir alafenamide",
+                "4-Hydroxyifosfamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    }
+]

@@ -1,0 +1,2277 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose"
+            ],
+            "mismatches": [
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "3-dehydro-D-glucose",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "2,2'-difucosyllactose",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "3-dehydro-D-glucose",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "2,2'-difucosyllactose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "D-glucosone",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "D-glucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "keto-L-tagatose 6-phosphate",
+                "sorbose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 14,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucosone",
+            "L-xylo-hexos-2-ulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "D-glucosone",
+                "L-xylo-hexos-2-ulose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "alpha-D-sorbofuranose",
+            "2,3-didehydro-D-glucose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-dehydro-D-glucose",
+                "alpha-D-sorbofuranose",
+                "2,3-didehydro-D-glucose",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "sorbose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "sorbose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "sorbose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "sorbose",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "alpha-D-sorbofuranose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate"
+            ],
+            "mismatches": [
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "alpha-D-sorbofuranose",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucosone",
+            "sorbose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "D-glucosone",
+                "sorbose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "alpha-D-sorbofuranose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "keto-L-tagatose 6-phosphate",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "alpha-D-sorbofuranose",
+                "sorbose",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "2,3-didehydro-D-glucose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "2,3-didehydro-D-glucose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 10,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "D-glucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "keto-L-tagatose 6-phosphate",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "alpha-D-sorbofuranose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "alpha-D-sorbofuranose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "D-glucosone"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 2,
+            "FP": 10,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "sorbose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sorbose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "2,3-didehydro-D-glucose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose"
+            ],
+            "mismatches": [
+                "keto-L-tagatose 6-phosphate",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "sorbose",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-D-sorbofuranose",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-D-sorbofuranose",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 19,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "D-glucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose"
+            ],
+            "mismatches": [
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-D-sorbofuranose",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-D-sorbofuranose",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 18,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "3-dehydro-D-glucose",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "L-xylo-hexos-2-ulose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN"
+            ],
+            "mismatches": [
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "3-dehydro-D-glucose",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 3,
+            "FP": 11,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-keto-beta-D-galactose",
+            "D-glucosone",
+            "L-xylo-hexos-2-ulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucosone",
+                "L-xylo-hexos-2-ulose"
+            ],
+            "mismatches": [
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-D-sorbofuranose",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-D-sorbofuranose",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 19,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "staphyloxanthin",
+            "keto-L-tagatose 6-phosphate",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "alpha-D-sorbofuranose",
+            "2,3-didehydro-D-glucose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "staphyloxanthin",
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose"
+            ],
+            "mismatches": [
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "alpha-D-sorbofuranose",
+                "2,3-didehydro-D-glucose",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 8,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "sorbose",
+            "D-glucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sorbose",
+                "D-glucosone"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "3-dehydro-D-glucose",
+            "alpha-D-sorbofuranose",
+            "2,3-didehydro-D-glucose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "keto-L-tagatose 6-phosphate",
+                "alpha-D-sorbofuranose",
+                "sorbose",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "staphyloxanthin",
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-D-sorbofuranose",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "staphyloxanthin",
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-D-sorbofuranose",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 4,
+            "FP": 20,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "alpha-D-sorbofuranose",
+            "2,3-didehydro-D-glucose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-dehydro-D-glucose",
+                "alpha-D-sorbofuranose",
+                "2,3-didehydro-D-glucose",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-D-sorbofuranose",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-D-sorbofuranose",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 2,
+            "FP": 20,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "3-dehydro-D-glucose",
+            "alpha-D-sorbofuranose",
+            "2,3-didehydro-D-glucose",
+            "D-glucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "3-dehydro-D-glucose",
+                "alpha-D-sorbofuranose",
+                "2,3-didehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "D-glucosone",
+            "L-xylo-hexos-2-ulose",
+            "sorbose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "D-glucosone",
+                "L-xylo-hexos-2-ulose"
+            ],
+            "mismatches": [
+                "sorbose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "alpha-D-sorbofuranose",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "alpha-D-sorbofuranose",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 19,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,2'-difucosyllactose",
+            "4-aminobutyl alpha-L-fucopyranoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,2'-difucosyllactose",
+                "4-aminobutyl alpha-L-fucopyranoside"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "D-glucosone",
+            "alpha-D-sorbofuranose",
+            "sorbose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-dehydro-D-glucose",
+                "D-glucosone",
+                "alpha-D-sorbofuranose",
+                "sorbose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "keto-L-tagatose 6-phosphate",
+            "3-dehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "L-xylo-hexos-2-ulose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone"
+            ],
+            "mismatches": [
+                "keto-L-tagatose 6-phosphate",
+                "2,2'-difucosyllactose",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "alpha-D-sorbofuranose",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "alpha-D-sorbofuranose",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "L-xylo-hexos-2-ulose",
+                "D-glucosone"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 13,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "alpha-L-Fucp-(1->3)-beta-D-Galp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "alpha-L-Fucp"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "4-aminobutyl alpha-L-fucopyranoside"
+            ],
+            "mismatches": [
+                "alpha-L-Fucp-(1->3)-beta-D-Galp",
+                "alpha-L-Fucp"
+            ],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucosone",
+            "2,3-didehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "alpha-D-sorbofuranose",
+            "sorbose",
+            "L-xylo-hexos-2-ulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "D-glucosone",
+                "2,3-didehydro-D-glucose",
+                "2,2'-difucosyllactose",
+                "alpha-D-sorbofuranose",
+                "sorbose",
+                "L-xylo-hexos-2-ulose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketoaldohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose",
+            "D-glucosone",
+            "3-keto-beta-D-galactose",
+            "L-xylo-hexos-2-ulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose",
+                "D-glucosone",
+                "L-xylo-hexos-2-ulose"
+            ],
+            "mismatches": [
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "2,3-didehydro-D-glucose",
+                "L-xylo-hexos-2-ulose",
+                "3-dehydro-D-glucose",
+                "D-glucosone"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "hexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+            "keto-L-tagatose 6-phosphate",
+            "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "3-dehydro-D-glucose",
+            "D-fructofuranose 1,6-bisphosphate(4-)",
+            "beta-D-GlcN-(1->6)-D-GlcN",
+            "5-(beta-D-glucosylmethyl)cytosine",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "alpha-L-Arap-(1->3)-beta-D-Galp",
+            "alpha-D-sorbofuranose",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "2,3-didehydro-D-glucose",
+            "2,2'-difucosyllactose",
+            "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+            "sorbose",
+            "L-xylo-hexos-2-ulose",
+            "6-O-phosphono-beta-D-galactofuranose",
+            "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+            "D-glucosone",
+            "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+            "3-keto-beta-D-galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-L-tagatose 6-phosphate",
+                "6-O-phosphono-beta-D-galactofuranose",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside"
+            ],
+            "mismatches": [
+                "(S)-2-trans-abscisic acid beta-D-glucopyranosyl ester",
+                "D-Galp-(1->3)-beta-D-Galp-(1->4)-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "3-dehydro-D-glucose",
+                "D-fructofuranose 1,6-bisphosphate(4-)",
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "alpha-L-Arap-(1->3)-beta-D-Galp",
+                "alpha-D-sorbofuranose",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "2,3-didehydro-D-glucose",
+                "2,2'-difucosyllactose",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "sorbose",
+                "L-xylo-hexos-2-ulose",
+                "beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe",
+                "D-glucosone",
+                "3-keto-beta-D-galactose"
+            ],
+            "true_referents": [
+                "6-O-phosphono-beta-D-galactofuranose",
+                "keto-L-tagatose 6-phosphate",
+                "6-(alpha-D-glucose-1-phospho)-alpha-D-mannoside",
+                "staphyloxanthin"
+            ],
+            "TP": 3,
+            "FP": 19,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+            "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+            "4-aminobutyl alpha-L-fucopyranoside",
+            "2,2'-difucosyllactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-L-Fucp-(1->3)-alpha-D-Glcp",
+                "alpha-L-Fucp-(1->2)-alpha-D-Galp",
+                "4-aminobutyl alpha-L-fucopyranoside",
+                "2,2'-difucosyllactose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aldohexose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucosone",
+            "3-dehydro-D-glucose",
+            "2,3-didehydro-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "D-glucosone",
+                "3-dehydro-D-glucose",
+                "2,3-didehydro-D-glucose"
+            ],
+            "true_referents": [
+                "beta-D-GlcN-(1->6)-D-GlcN",
+                "5-(beta-D-glucosylmethyl)cytosine",
+                "beta-D-GlcpN-(1->6)-alpha-D-GlcpN",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 4
+        }
+    }
+]

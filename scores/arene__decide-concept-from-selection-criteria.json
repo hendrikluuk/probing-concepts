@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "benzene derivative",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A benzene derivative is a compound derived from benzene, which includes arenes as well as other compounds with additional functional groups, while arenes are specifically hydrocarbons containing one or more benzene rings.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "Aromatic hydrocarbon",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aromatic hydrocarbon and arene are synonyms, as arenes are a class of aromatic hydrocarbons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "arene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Arene and arene refer to the same concept, being synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "Aromatic hydrocarbon",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aromatic hydrocarbon and arene are synonyms; both refer to hydrocarbons containing conjugated planar ring systems with delocalized pi electron clouds, such as benzene.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "aromatic hydrocarbon",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aromatic hydrocarbon and arene are synonyms, both referring to hydrocarbons that contain a conjugated planar ring system with delocalized pi electrons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "aromatic compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aromatic compound and arene are synonyms as both refer to compounds that contain conjugated planar ring systems with delocalized pi electrons",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "benzene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "benzene is a specific type of arene, but not all arenes are benzene",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "Polycyclic aromatic hydrocarbon",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A polycyclic aromatic hydrocarbon is a type of arene, but not all arenes are polycyclic aromatic hydrocarbons.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "Aromatic hydrocarbon",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aromatic hydrocarbon and arene are synonyms, both referring to hydrocarbons containing a conjugated planar ring system with delocalized pi electrons, like benzene.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "arene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "arene and arene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "arene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Arene and arene refer to the same concept, which is a class of aromatic hydrocarbons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "arene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "arene and arene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "aromatic compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aromatic compound and arene are synonyms, both referring to compounds that contain a conjugated planar ring system with delocalized pi electrons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "arene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "arene and arene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "arene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "arene and arene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "arene",
+        "domain": "chemistry",
+        "response": "BENZENE",
+        "judgement": {
+            "equivalent": false,
+            "reason": "benzene is an arene but not all arenes are benzene",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

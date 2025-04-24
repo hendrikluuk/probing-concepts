@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive is any agent that lowers blood pressure, but not all antihypertensives are approved drugs for hypertension. Some may be experimental or not yet approved for clinical use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is intended to treat hypertension, but not all antihypertensive drugs may be approved for use, and some approved drugs for hypertension may have other primary indications.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "Antihypertensive",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive is a drug used to treat high blood pressure, but not all antihypertensives are approved drugs for hypertension as some may be experimental or not yet approved for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "Antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is a type of medication used to treat high blood pressure, but not all antihypertensive drugs are necessarily approved for hypertension. Approval can vary by region and regulatory authority.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is specifically used to treat high blood pressure, but not all antihypertensive drugs may be approved for hypertension, and there may be drugs approved for hypertension that are not strictly classified as antihypertensive.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Antihypertensive medication refers to any drug used to treat high blood pressure, whereas an approved drug for hypertension specifically refers to drugs that have received regulatory approval for this use. Not all antihypertensive medications may be approved drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "Antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is specifically used to treat high blood pressure, but not all antihypertensive drugs may be approved for use in every case of hypertension. Approval can vary based on regulatory bodies and specific drug formulations.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "Antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is any medication used to treat high blood pressure, but not all antihypertensive drugs may be approved for hypertension in every region or under every regulatory body.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is specifically designed to treat high blood pressure, but not all approved drugs for hypertension fall under the category of antihypertensive drugs. Some drugs may be approved for hypertension as a secondary effect or off-label use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive is a drug used to treat high blood pressure, but not all antihypertensives are approved drugs for hypertension, as some may be experimental or not approved by regulatory bodies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive medication is a type of drug used to treat high blood pressure, but not all antihypertensive medications may be approved drugs for hypertension, as some may be experimental or used off-label.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is designed to treat hypertension, but not all antihypertensive drugs are necessarily approved for use in all regulatory jurisdictions, whereas an approved drug for hypertension has been specifically approved by a regulatory body for that purpose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive drug is specifically designed to lower high blood pressure, but not all antihypertensive drugs may be approved for hypertension, and some may be used off-label or in research settings.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "Antihypertensive medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Antihypertensive medication refers to any medication used to treat high blood pressure, but not all antihypertensive medications are necessarily approved drugs for hypertension, as some may be experimental or used off-label.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "antihypertensive",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive is a drug used to treat high blood pressure, but not all antihypertensives are approved drugs, as some might be experimental or not yet approved for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for hypertension",
+        "domain": "medicine",
+        "response": "Antihypertensive",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antihypertensive is a drug used to treat high blood pressure, but not all antihypertensives are approved drugs, as some may be experimental or not yet approved for clinical use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

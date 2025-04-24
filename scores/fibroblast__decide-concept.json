@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "mesenchyme cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fibroblast is a type of mesenchyme cell, but not all mesenchyme cells are fibroblasts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "Mesenchymal cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fibroblast is a type of mesenchymal cell, but not all mesenchymal cells are fibroblasts. Mesenchymal cells can differentiate into various cell types including fibroblasts, osteoblasts, and adipocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "mesenchymal stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mesenchymal stem cells are multipotent stromal cells that can differentiate into a variety of cell types, including fibroblasts, but fibroblasts are a specific type of cell and not all mesenchymal stem cells are fibroblasts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "Fibroblast",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Fibroblast and fibroblast are the same term, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": true,
+            "reason": "fibroblast and fibroblast are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "mesenchymal cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblasts are a type of mesenchymal cell, but not all mesenchymal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "Fibroblast",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Fibroblast' and 'fibroblast' refer to the same cell type, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "Mesenchymal stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mesenchymal stem cells are multipotent stromal cells that can differentiate into a variety of cell types, including fibroblasts. However, fibroblasts are a specific type of cell and not all mesenchymal stem cells are fibroblasts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "mesenchymal stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "mesenchymal stem cells can differentiate into multiple cell types including fibroblasts, but fibroblasts are a specific type of cell and not equivalent to all mesenchymal stem cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": true,
+            "reason": "fibroblast and fibroblast are identical terms, referring to the same cell type.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": true,
+            "reason": "fibroblast and fibroblast are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "mesenchymal cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblasts are a type of mesenchymal cell, but not all mesenchymal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "mesenchymal cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblasts are a type of mesenchymal cell, but not all mesenchymal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "Mesenchymal stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mesenchymal stem cells are multipotent stromal cells that can differentiate into a variety of cell types, including fibroblasts. However, fibroblasts are a specific type of cell and do not encompass the full potential of mesenchymal stem cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stem cell is a type of cell that can differentiate into various cell types, while a fibroblast is a specific type of cell involved in connective tissue formation. Not all stem cells are fibroblasts, and fibroblasts are not stem cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "fibroblast",
+        "domain": "biology",
+        "response": "Concept: \"connective tissue cell\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblast is a type of connective tissue cell, but not all connective tissue cells are fibroblasts. Other types include chondrocytes, osteocytes, and adipocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

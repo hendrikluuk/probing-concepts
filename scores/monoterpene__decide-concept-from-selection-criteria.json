@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monoterpene is a type of terpene, but not all terpenes are monoterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "Isoprene unit",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An isoprene unit is a building block consisting of five carbon atoms, whereas a monoterpene is composed of two isoprene units, totaling ten carbon atoms. Therefore, a monoterpene is made up of isoprene units, but not all isoprene units form monoterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "isoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "isoprene is a basic building block of terpenes, whereas monoterpenes are composed of two isoprene units. Therefore, isoprene is not equivalent to monoterpene.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid building block",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Isoprenoid building block refers to basic units like isoprene that can form various larger molecules including monoterpenes, but monoterpenes are a specific class of terpenes consisting of two isoprene units.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "terpenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monoterpene is a type of terpenoid, but not all terpenoids are monoterpenes. Terpenoids include a broader class of compounds, including monoterpenes, diterpenes, sesquiterpenes, etc.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "terpene precursor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A terpene precursor is a compound that can lead to the formation of terpenes, including monoterpenes, but not all terpene precursors result in monoterpenes specifically.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "Monoterpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Monoterpene and monoterpene refer to the same class of chemical compounds, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monoterpenes are a type of isoprenoid, but not all isoprenoids are monoterpenes",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "isoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "isoprene is a building block for terpenes, but a monoterpene is composed of two isoprene units. Not all isoprenes form monoterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "isoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "isoprene is a building block for terpenes but is not a monoterpene itself; monoterpenes are composed of two isoprene units.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "hemiterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "hemiterpenes are a class of terpenes consisting of a single isoprene unit, while monoterpenes consist of two isoprene units. Therefore, not all hemiterpenes are monoterpenes and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "isoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "isoprene is a building block of terpenes, but a monoterpene consists of two isoprene units, so not all isoprenes are monoterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monoterpene is a type of terpene, but not all terpenes are monoterpenes",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "Isoprene unit",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An isoprene unit is a basic building block of terpenes, consisting of five carbon atoms. A monoterpene is made up of two isoprene units, so not all isoprene units form monoterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "isoprene unit",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An isoprene unit is a basic building block of terpenes, consisting of 5 carbon atoms. A monoterpene is composed of two isoprene units, making it a specific type of terpene. Therefore, not all isoprene units form monoterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "monoterpene",
+        "domain": "chemistry",
+        "response": "Isoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Isoprene is a building block for monoterpenes, but it is not a monoterpene itself. Monoterpenes are composed of two isoprene units.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

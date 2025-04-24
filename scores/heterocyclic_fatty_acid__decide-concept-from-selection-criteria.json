@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "Oxygenated fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Oxygenated fatty acids contain oxygen atoms within their structure, whereas heterocyclic fatty acids contain a ring structure with at least one atom other than carbon. Not all oxygenated fatty acids are heterocyclic, and not all heterocyclic fatty acids are oxygenated.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "Monocyclic Fatty Acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Monocyclic fatty acids contain a single ring structure, while heterocyclic fatty acids contain a ring with at least one atom that is not carbon. Therefore, they are not equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "cyclic fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cyclic fatty acids contain rings in their structure, but heterocyclic fatty acids specifically have rings that include atoms other than carbon, such as nitrogen or oxygen. Therefore, not all cyclic fatty acids are heterocyclic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "Heterocyclic fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Heterocyclic fatty acid' and 'heterocyclic fatty acid' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "lipoamino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Lipoamino acids are compounds consisting of a lipid and an amino acid, whereas heterocyclic fatty acids contain a ring structure with at least one atom other than carbon. Not all lipoamino acids are heterocyclic fatty acids and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "cyclic fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A cyclic fatty acid has a ring structure, but a heterocyclic fatty acid specifically contains a ring with at least one atom other than carbon. Not all cyclic fatty acids are heterocyclic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "cyclic fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A cyclic fatty acid is a fatty acid with a ring structure, but a heterocyclic fatty acid specifically contains a ring with at least one atom that is not carbon. Not all cyclic fatty acids are heterocyclic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "Phospholipid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Phospholipids are a class of lipids that contain a phosphate group and are a major component of cell membranes, whereas heterocyclic fatty acids refer to fatty acids that contain a heterocyclic ring, which is not a defining feature of phospholipids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "heterocyclic fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same concept and are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "cyclic fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A cyclic fatty acid contains one or more rings in its structure, which can be composed entirely of carbon atoms. A heterocyclic fatty acid also contains rings, but these rings include at least one atom that is not carbon (a heteroatom). Therefore, not all cyclic fatty acids are heterocyclic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "heterocyclic fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "heterocyclic fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "heterocyclic fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same concept, as they are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "steroids are a type of organic compound with a specific four-ring structure, while heterocyclic fatty acids are different compounds containing a heterocyclic ring and are not structurally or functionally equivalent to steroids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "prostanoic acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "prostanoic acid is a specific type of fatty acid with a cyclopentane ring, while heterocyclic fatty acids generally contain heteroatoms in the ring, which prostanoic acid does not have.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "heterocyclic fatty acid",
+        "domain": "chemistry",
+        "response": "cyclic fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A cyclic fatty acid contains a ring structure, but it does not necessarily include heteroatoms. A heterocyclic fatty acid contains a ring with at least one atom other than carbon. Therefore, not all cyclic fatty acids are heterocyclic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

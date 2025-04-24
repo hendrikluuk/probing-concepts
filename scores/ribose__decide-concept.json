@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "aldopentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ribose is an aldopentose, but not all aldopentoses are ribose. Aldopentose refers to any monosaccharide with five carbon atoms and an aldehyde group, while ribose is a specific type of aldopentose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ribose and ribose are the same term, referring to the same sugar molecule in biological contexts",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "D-aldopentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose is a type of D-aldopentose, but not all D-aldopentoses are ribose. D-aldopentose is a broader category that includes other sugars as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "Aldose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose is an aldose, but not all aldoses are ribose. Aldose is a broader category of sugars that includes multiple types of sugars, including ribose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ribose and ribose are identical terms, referring to the same pentose sugar molecule.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "aldopentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ribose is an aldopentose, but not all aldopentoses are ribose. Aldopentose refers to any monosaccharide with five carbon atoms and an aldehyde group, whereas ribose is a specific type of aldopentose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "Ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ribose and ribose refer to the same sugar molecule, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "Epimer",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An epimer is a type of stereoisomer that differs in configuration at one specific carbon atom, while ribose is a specific sugar molecule. Not all epimers are ribose, and ribose can have epimers.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "erythro aldopentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose is an example of an erythro aldopentose, but not all erythro aldopentoses are ribose. Erythro aldopentose is a broader category that includes ribose among other possible structures.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ribose and ribose refer to the same molecule, thus they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "aldose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ribose is an aldose, but not all aldoses are ribose. Aldose is a broader category of sugars that includes ribose among other sugars.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ribose and ribose are identical terms referring to the same sugar molecule",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "monosaccharide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ribose is a type of monosaccharide, but not all monosaccharides are ribose",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "ribofuranose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ribofuranose is a specific form of ribose with a furanose ring structure, but ribose can also exist in a pyranose form.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ribose and ribose are the same chemical compound, hence they are equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ribose",
+        "domain": "chemistry",
+        "response": "D-glucose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "D-glucose and ribose are both sugars but they are different types of monosaccharides; D-glucose is an aldohexose whereas ribose is an aldopentose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

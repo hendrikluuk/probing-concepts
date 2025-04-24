@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept without distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "endocrine cells is a plural form referring to multiple endocrine cell types, while endocrine cell refers to a single cell type. They are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "Endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endocrine cells refer to multiple cells that secrete hormones, while an endocrine cell refers to a single cell. The terms are not strictly equivalent as one is plural and the other is singular.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "Endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endocrine cells refer to multiple cells, while endocrine cell refers to a single cell. They are related but not strictly equivalent in number.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endocrine cells refer to a group or type of cells, while endocrine cell refers to a single cell. The plural form does not strictly imply the singular form and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "endocrine cells refers to multiple cells, while endocrine cell refers to a single cell",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "Endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endocrine cells refer to multiple cells, whereas endocrine cell refers to a single cell. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "Endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endocrine cells is a plural term referring to multiple units, while endocrine cell is a singular term referring to one unit. They are related but not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "endocrine cells is the plural form of endocrine cell, referring to the same concept in singular and plural forms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "endocrine cells is plural while endocrine cell is singular, indicating quantity difference but referring to the same type of biological cell",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endocrine cells refer to multiple cells, whereas endocrine cell refers to a single cell. The plural form implies the presence of more than one cell, which is not strictly equivalent to the singular form.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "endocrine cells refer to the plural form, indicating multiple cells, while endocrine cell refers to the singular form, indicating one cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "endocrine cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'endocrine cell' and 'endocrine cell' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "Endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endocrine cells refer to multiple cells while endocrine cell refers to a single cell. They are not strictly equivalent in number.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "Endocrine cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "endocrine cells is the plural form of endocrine cell, so while they refer to the same type of cell, the terms are not strictly equivalent as one refers to multiple cells and the other to a single cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "endocrine cell",
+        "domain": "biology",
+        "response": "Endocrine cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Endocrine cell' and 'endocrine cell' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

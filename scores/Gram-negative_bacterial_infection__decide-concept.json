@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infection",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of bacterial infection characterized by the Gram-negative cell wall structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacteria",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-negative bacteria refer to a classification of bacteria based on their cell wall structure, while Gram-negative bacterial infection refers to an infection caused by such bacteria. Not all Gram-negative bacteria result in infections.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacteria",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-negative bacteria refers to a group of bacteria characterized by their cell wall structure, while Gram-negative bacterial infection refers to the condition caused by these bacteria. Not all references to Gram-negative bacteria imply an infection, and not all infections are caused by Gram-negative bacteria.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacteria",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-negative bacteria refer to a classification of bacteria based on their cell wall structure, while Gram-negative bacterial infection refers to an infection caused by these bacteria. Not all Gram-negative bacteria cause infections.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infections",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Gram-negative bacterial infections' and 'Gram-negative bacterial infection' refer to the same type of infection, with the former being the plural form and the latter being the singular form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infections",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Gram-negative bacterial infections' and 'Gram-negative bacterial infection' refer to the same concept, with the only difference being singular versus plural form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infections",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to infections caused by Gram-negative bacteria and are used interchangeably in the singular and plural form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infections",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Gram-negative bacterial infections' and 'Gram-negative bacterial infection' refer to the same concept, differing only in grammatical number. Both imply the presence of infections caused by Gram-negative bacteria.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacteria",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-negative bacteria refer to a classification of bacteria based on their cell wall structure, while Gram-negative bacterial infection refers to an infection caused by these bacteria. Not all instances of Gram-negative bacteria result in an infection.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infections",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-negative bacterial infections refers to multiple instances or types of infections, whereas Gram-negative bacterial infection refers to a single instance or type. The plural form implies multiple occurrences, which is not strictly equivalent to the singular form.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-negative bacterial infection",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of bacterial infection and the difference in capitalization does not change the meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infections",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Gram-negative bacterial infections' and 'Gram-negative bacterial infection' refer to the same concept, with the former being the plural form and the latter being the singular form. They are equivalent in meaning, as both refer to infections caused by Gram-negative bacteria.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-negative bacteria",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-negative bacteria refer to a type of bacteria characterized by their cell wall structure, while Gram-negative bacterial infection refers to the condition caused by these bacteria. Not all Gram-negative bacteria necessarily cause infections.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacteria",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-negative bacteria refer to a classification of bacteria based on cell wall structure, while Gram-negative bacterial infection refers to an infection caused by these bacteria. Not all instances of Gram-negative bacteria result in infections.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infections",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The singular and plural forms refer to the same concept of infections caused by Gram-negative bacteria.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "GRAM-NEGATIVE BACTERIA INFECTIONS",
+        "judgement": {
+            "equivalent": true,
+            "reason": "GRAM-NEGATIVE BACTERIA INFECTIONS and Gram-negative bacterial infection are synonymous, referring to infections caused by Gram-negative bacteria.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

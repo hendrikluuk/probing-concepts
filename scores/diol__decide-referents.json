@@ -1,0 +1,1945 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "butane-1,2-diol",
+            "butane-1,3-diol",
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "butane-1,2-diol",
+                "butane-1,3-diol",
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "macrocin",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "macrocin",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "butane-1,3-diol",
+                "butane-1,2-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-mycaminosyltylonolide",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "20-oxo-5-O-beta-mycaminosyltylactone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxo-5-O-beta-mycaminosyltylactone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "20-oxo-5-O-beta-mycaminosyltylactone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxo-5-O-beta-mycaminosyltylactone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "demethyllactenocin",
+            "demethylmacrocin",
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "macrocin",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "macrocin",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,3-diol",
+                "butane-1,2-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "butane-1,2-diol",
+            "butane-1,3-diol",
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "butane-1,2-diol",
+                "butane-1,3-diol",
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "5-O-mycaminosyltylonolide",
+            "20-oxo-5-O-beta-mycaminosyltylactone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-O-mycaminosyltylonolide",
+                "20-oxo-5-O-beta-mycaminosyltylactone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-mycaminosyltylonolide",
+            "macrocin",
+            "demethyllactenocin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "macrocin",
+                "demethyllactenocin"
+            ],
+            "mismatches": [
+                "5-O-beta-mycaminosyltylonolide"
+            ],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "butanediols",
+        "domain": "chemistry",
+        "response": [
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-secoisolariciresinol",
+                "(R,R)-butane-2,3-diol",
+                "butane-1,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aminodiol",
+        "domain": "chemistry",
+        "response": [
+            "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+            "(R,R)-butane-2,3-diol",
+            "(R)-butane-1,3-diol",
+            "butane-1,2-diol",
+            "butane-1,3-diol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2S)-2-amino-4-(methylsulfanyl)-1-(1,3-thiazol-2-yl)butane-1,1-diol",
+                "(R,R)-butane-2,3-diol",
+                "(R)-butane-1,3-diol",
+                "butane-1,2-diol",
+                "butane-1,3-diol"
+            ],
+            "true_referents": [
+                "1-O-arachidonoyl-N-acetylsphingosine",
+                "N-(2-hydroxyoctacosanoyl)phytosphingosine",
+                "hexosyl-(1<->1')-N-acylsphingosine",
+                "1-(3-O-sulfo-beta-D-galactosyl)-N-palmitoylsphingosine",
+                "1-O-(alpha-D-galactopyranosyl)-N-(7-phenylheptanoyl)phytosphingosine",
+                "N-(2-hydroxyhenicosatetraenoyl)-1-O-beta-D-glucosyl-15-methylhexadecasphing-4-enine"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "dodecanediol",
+        "domain": "chemistry",
+        "response": [
+            "1,7-dodecanediol",
+            "1,12-dodecanediol",
+            "1,9-dodecanediol",
+            "1,4-dodecanediol",
+            "1,8-dodecanediol",
+            "1,11-dodecanediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,7-dodecanediol",
+                "1,12-dodecanediol",
+                "1,9-dodecanediol",
+                "1,4-dodecanediol",
+                "1,8-dodecanediol",
+                "1,11-dodecanediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,9-dodecanediol",
+                "1,11-dodecanediol",
+                "1,12-dodecanediol",
+                "1,8-dodecanediol",
+                "1,4-dodecanediol",
+                "1,7-dodecanediol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tylactone",
+        "domain": "chemistry",
+        "response": [
+            "20-oxo-5-O-beta-mycaminosyltylactone",
+            "5-O-beta-D-mycaminosyl-20-oxotylonolide",
+            "5-O-mycaminosyltylonolide",
+            "demethylmacrocin",
+            "macrocin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide",
+                "5-O-mycaminosyltylonolide",
+                "demethylmacrocin",
+                "macrocin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20-oxo-5-O-beta-mycaminosyltylactone",
+                "demethyllactenocin",
+                "demethylmacrocin",
+                "macrocin",
+                "5-O-mycaminosyltylonolide",
+                "5-O-beta-D-mycaminosyl-20-oxotylonolide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    }
+]

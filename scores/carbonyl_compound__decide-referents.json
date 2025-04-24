@@ -1,0 +1,1714 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "laccaridione A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "laccaridione A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-acetyl-S-hydroxy-L-cysteine",
+            "(R)-sulfamazone",
+            "4-aminoantipyrine",
+            "3-hydroxymethylantipyrine",
+            "4-(5-carboxypentanamido)antipyrine",
+            "methyl prednisolone-16alpha-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-acetyl-S-hydroxy-L-cysteine"
+            ],
+            "mismatches": [
+                "(R)-sulfamazone",
+                "4-aminoantipyrine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "methyl prednisolone-16alpha-carboxylate"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "6-oxo-nonan-1-ol",
+            "topramezone",
+            "laccaridione A",
+            "fenpyrazamine",
+            "(S)-sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "laccaridione A"
+            ],
+            "mismatches": [
+                "(S)-atrolactic acid",
+                "topramezone",
+                "fenpyrazamine",
+                "(S)-sulfamazone"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "topramezone",
+            "Fuscinarin",
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "Methylspinazarin",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "topramezone",
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [
+                "Fuscinarin",
+                "Methylspinazarin"
+            ],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "topramezone",
+            "Fuscinarin",
+            "laccaridione A",
+            "Methylspinazarin",
+            "fenpyrazamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "laccaridione A",
+                "Methylspinazarin"
+            ],
+            "mismatches": [
+                "topramezone",
+                "Fuscinarin",
+                "fenpyrazamine"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "budesonide",
+            "4-aminoantipyrine",
+            "3-hydroxymethylantipyrine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "budesonide"
+            ],
+            "mismatches": [
+                "4-aminoantipyrine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "Ps(15:0/20:3(8z,11z,14z))",
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "4-(5-carboxypentanamido)antipyrine",
+            "methyl prednisolone-16alpha-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "4-(5-carboxypentanamido)antipyrine",
+                "methyl prednisolone-16alpha-carboxylate"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "topramezone",
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "topramezone",
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "topramezone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol"
+            ],
+            "mismatches": [
+                "topramezone"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "metamizole",
+            "4-aminoantipyrine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metamizole",
+                "4-aminoantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "Ps(15:0/20:3(8z,11z,14z))",
+            "6-oxo-nonan-1-ol",
+            "topramezone",
+            "Cyclo(L-6-Hyp-L-Phe)",
+            "(R)-sulfamazone",
+            "(-)-trans-permethrin",
+            "budesonide",
+            "4-aminoantipyrine",
+            "laccaridione A",
+            "methyl prednisolone-16alpha-carboxylate",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "Methylspinazarin",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine",
+            "Calphostin C",
+            "(S)-sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "budesonide",
+                "laccaridione A",
+                "methyl prednisolone-16alpha-carboxylate",
+                "Methylspinazarin",
+                "Calphostin C"
+            ],
+            "mismatches": [
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "topramezone",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "(R)-sulfamazone",
+                "(-)-trans-permethrin",
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 6,
+            "FP": 11,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "topramezone",
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "topramezone",
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "budesonide",
+            "4-aminoantipyrine",
+            "methyl prednisolone-16alpha-carboxylate",
+            "3-hydroxymethylantipyrine",
+            "4-(5-carboxypentanamido)antipyrine",
+            "Calphostin C"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "Calphostin C"
+            ],
+            "mismatches": [
+                "4-aminoantipyrine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-acetyl-S-hydroxy-L-cysteine",
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "4-aminoantipyrine",
+            "laccaridione A",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "laccaridione A"
+            ],
+            "mismatches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "Ps(15:0/20:3(8z,11z,14z))",
+            "6-oxo-nonan-1-ol",
+            "topramezone",
+            "Fuscinarin",
+            "Cyclo(L-6-Hyp-L-Phe)",
+            "budesonide",
+            "4-aminoantipyrine",
+            "laccaridione A",
+            "(2R,3R)-dihydroflavonol",
+            "methyl prednisolone-16alpha-carboxylate",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "Methylspinazarin",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine",
+            "Calphostin C"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "budesonide",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "methyl prednisolone-16alpha-carboxylate",
+                "Methylspinazarin",
+                "Calphostin C"
+            ],
+            "mismatches": [
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "topramezone",
+                "Fuscinarin",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 7,
+            "FP": 9,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-acetyl-S-hydroxy-L-cysteine",
+            "(S)-atrolactic acid",
+            "topramezone",
+            "5-aminolevulinic acid",
+            "(R)-sulfamazone",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine",
+            "(S)-sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "topramezone",
+                "(R)-sulfamazone",
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "6-oxo-nonan-1-ol",
+            "Fuscinarin",
+            "laccaridione A",
+            "(2R,3R)-dihydroflavonol",
+            "Calphostin C",
+            "palmityl palmitate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Calphostin C"
+            ],
+            "mismatches": [
+                "(S)-atrolactic acid",
+                "Fuscinarin",
+                "palmityl palmitate"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine",
+            "(S)-sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "Ps(15:0/20:3(8z,11z,14z))",
+            "(S)-atrolactic acid",
+            "6-oxo-nonan-1-ol",
+            "Fuscinarin",
+            "5-aminolevulinic acid",
+            "(R)-sulfamazone",
+            "budesonide",
+            "4-aminoantipyrine",
+            "laccaridione A",
+            "(2R,3R)-dihydroflavonol",
+            "methyl prednisolone-16alpha-carboxylate",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "Methylspinazarin",
+            "fenpyrazamine",
+            "4-(5-carboxypentanamido)antipyrine",
+            "Calphostin C",
+            "(S)-sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol",
+                "budesonide",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "methyl prednisolone-16alpha-carboxylate",
+                "Methylspinazarin",
+                "Calphostin C"
+            ],
+            "mismatches": [
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "(S)-atrolactic acid",
+                "Fuscinarin",
+                "5-aminolevulinic acid",
+                "(R)-sulfamazone",
+                "4-aminoantipyrine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "fenpyrazamine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 7,
+            "FP": 11,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-acetyl-S-hydroxy-L-cysteine",
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "(R)-sulfamazone",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine",
+            "(S)-sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "(R)-sulfamazone",
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "fenpyrazamine",
+            "metamizole",
+            "3-hydroxymethylantipyrine",
+            "4-aminoantipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fenpyrazamine",
+                "metamizole",
+                "3-hydroxymethylantipyrine",
+                "4-aminoantipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "(S)-atrolactic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol"
+            ],
+            "mismatches": [
+                "(S)-atrolactic acid"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "(R)-sulfamazone",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "(R)-sulfamazone",
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "pyrazolone",
+        "domain": "chemistry",
+        "response": [
+            "4-aminoantipyrine",
+            "3-hydroxymethylantipyrine",
+            "metamizole",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-aminoantipyrine",
+                "3-hydroxymethylantipyrine",
+                "metamizole",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-aminoantipyrine",
+                "metamizole",
+                "(R)-sulfamazone",
+                "topramezone",
+                "fenpyrazamine",
+                "3-hydroxymethylantipyrine",
+                "4-(5-carboxypentanamido)antipyrine",
+                "(S)-sulfamazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": [
+            "6-oxo-nonan-1-ol",
+            "(S)-atrolactic acid",
+            "3-hydroxymethylantipyrine",
+            "4-aminoantipyrine",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-oxo-nonan-1-ol"
+            ],
+            "mismatches": [
+                "(S)-atrolactic acid",
+                "3-hydroxymethylantipyrine",
+                "4-aminoantipyrine",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "6-oxo-nonan-1-ol",
+                "Calphostin C",
+                "vitamin K",
+                "budesonide",
+                "methyl prednisolone-16alpha-carboxylate",
+                "laccaridione A",
+                "(2R,3R)-dihydroflavonol",
+                "Methylspinazarin"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "carboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "(S)-atrolactic acid",
+            "5-aminolevulinic acid",
+            "methyl prednisolone-16alpha-carboxylate",
+            "4-(5-carboxypentanamido)antipyrine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-atrolactic acid",
+                "5-aminolevulinic acid"
+            ],
+            "mismatches": [
+                "methyl prednisolone-16alpha-carboxylate",
+                "4-(5-carboxypentanamido)antipyrine"
+            ],
+            "true_referents": [
+                "Fuscinarin",
+                "N-acetyl-S-hydroxy-L-cysteine",
+                "palmityl palmitate",
+                "Ps(15:0/20:3(8z,11z,14z))",
+                "Cyclo(L-6-Hyp-L-Phe)",
+                "5-aminolevulinic acid",
+                "(S)-atrolactic acid",
+                "(-)-trans-permethrin"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    }
+]

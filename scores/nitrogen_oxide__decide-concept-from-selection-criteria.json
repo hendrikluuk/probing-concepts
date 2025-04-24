@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nitride is a compound containing nitrogen with a more electropositive element or group, while nitrogen oxide is a compound of nitrogen and oxygen. Not all nitrides are nitrogen oxides and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "Nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Nitrogen oxide and nitrogen oxide refer to the same chemical compound and are simply different capitalizations of the same term.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound, implying they are identical in meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "Nitride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nitride is a compound of nitrogen with a less electronegative element, while nitrogen oxide is a compound of nitrogen and oxygen. They are different types of compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms 'nitrogen oxide' refer to the same chemical compound or group of compounds containing nitrogen and oxygen.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound, so they are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound and are synonyms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "Nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both 'Nitrogen oxide' and 'nitrogen oxide' refer to the same chemical compound, with the difference only being in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nitrogen oxide and nitrogen oxide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound, and there is no distinction between them.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nitride is a compound containing nitrogen with a more electropositive element, while nitrogen oxide is a compound of nitrogen and oxygen. They are different types of compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A nitride is a compound containing nitrogen with a more electropositive element, whereas a nitrogen oxide is a compound containing nitrogen and oxygen. They are different types of compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nitrate is a polyatomic ion with the formula NO3-, while nitrogen oxide refers to a group of compounds consisting of nitrogen and oxygen, such as NO and NO2. They are chemically distinct entities.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Nitride refers to a compound containing nitrogen with a more electropositive element, typically forming an anion, while nitrogen oxide refers to compounds consisting of nitrogen and oxygen. They are different classes of compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'nitrogen oxide' and 'nitrogen oxide' are identical and refer to the same chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "nitrogen oxide",
+        "domain": "chemistry",
+        "response": "Nitrogen oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Nitrogen oxide and nitrogen oxide are identical terms differing only in capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

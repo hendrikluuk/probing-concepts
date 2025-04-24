@@ -1,0 +1,940 @@
+[
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "ribose (R)",
+            "2-deoxyribose (dR)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "ribose (R)",
+                "2-deoxyribose (dR)"
+            ],
+            "true_referents": [
+                "D-ribulose",
+                "D-ribulose 1-phosphate",
+                "deoxyribulose phosphate"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-Ribulose",
+            "D-Xylulose",
+            "L-Ribulose",
+            "L-Xylulose",
+            "2-Deoxy-D-ribose",
+            "2-Deoxy-D-xylulose",
+            "2-Deoxy-L-ribose",
+            "2-Deoxy-L-xylulose",
+            "Arabinulose",
+            "Lyxulose",
+            "Rhamulose",
+            "Ribulose-5-phosphate",
+            "Xylulose-5-phosphate",
+            "Ribulose-1-phosphate",
+            "Xylulose-1-phosphate",
+            "Ribulose-1,5-bisphosphate",
+            "Xylulose-1,5-bisphosphate",
+            "2-Keto-D-ribonolactone",
+            "2-Keto-D-xylonolactone",
+            "2-Keto-L-ribonolactone",
+            "2-Keto-L-xylonolactone",
+            "D-Ribulose-1,4-bisphosphate",
+            "D-Xylulose-1,4-bisphosphate",
+            "L-Ribulose-1,4-bisphosphate",
+            "L-Xylulose-1,4-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-Ribulose",
+                "D-Xylulose",
+                "L-Ribulose",
+                "L-Xylulose",
+                "Ribulose-5-phosphate",
+                "Xylulose-5-phosphate",
+                "Ribulose-1-phosphate",
+                "Xylulose-1-phosphate",
+                "Ribulose-1,5-bisphosphate",
+                "Xylulose-1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "2-Deoxy-D-ribose",
+                "2-Deoxy-D-xylulose",
+                "2-Deoxy-L-ribose",
+                "2-Deoxy-L-xylulose",
+                "Arabinulose",
+                "Lyxulose",
+                "Rhamulose",
+                "2-Keto-D-ribonolactone",
+                "2-Keto-D-xylonolactone",
+                "2-Keto-L-ribonolactone",
+                "2-Keto-L-xylonolactone",
+                "D-Ribulose-1,4-bisphosphate",
+                "D-Xylulose-1,4-bisphosphate",
+                "L-Ribulose-1,4-bisphosphate",
+                "L-Xylulose-1,4-bisphosphate"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "D-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "D-xylulose",
+                "D-xylulose 1,5-bisphosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "L-xylulose",
+                "L-xylulose 1-phosphate",
+                "ribulose",
+                "ribulose 1-phosphate",
+                "ribulose 5-phosphate",
+                "ribulose derivative",
+                "xylulose",
+                "xylulose 5-phosphate"
+            ],
+            "TP": 10,
+            "FP": 15,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "Ribulose (Ru)",
+            "Xylulose",
+            "Ribulose 5-phosphate",
+            "D-Xylulose 5-phosphate",
+            "Sedoheptulose 7-phosphate",
+            "D-Ribulose 5-phosphate",
+            "L-Xylulose",
+            "D-Xylulose",
+            "Ribulose 1,5-bisphosphate",
+            "D-Ribulose",
+            "L-Ribulose",
+            "D-Xylulose 5-phosphate",
+            "L-Xylulose 5-phosphate",
+            "D-Ribulose 5-phosphate",
+            "L-Ribulose 5-phosphate",
+            "D-Xylulose 1-phosphate",
+            "L-Xylulose 1-phosphate",
+            "D-Ribulose 1-phosphate",
+            "L-Ribulose 1-phosphate",
+            "D-Xylulose 1,5-bisphosphate",
+            "L-Xylulose 1,5-bisphosphate",
+            "D-Ribulose 1,5-bisphosphate",
+            "L-Ribulose 1,5-bisphosphate",
+            "D-Xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ribulose 5-phosphate",
+                "D-Xylulose 5-phosphate",
+                "D-Ribulose 5-phosphate",
+                "L-Xylulose",
+                "D-Xylulose",
+                "D-Ribulose",
+                "L-Ribulose",
+                "L-Xylulose 5-phosphate",
+                "L-Ribulose 5-phosphate",
+                "D-Ribulose 1-phosphate",
+                "L-Ribulose 1-phosphate",
+                "D-Ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "Ribulose (Ru)",
+                "Sedoheptulose 7-phosphate",
+                "Ribulose 1,5-bisphosphate",
+                "D-Xylulose 1-phosphate",
+                "L-Xylulose 1-phosphate",
+                "D-Xylulose 1,5-bisphosphate",
+                "L-Xylulose 1,5-bisphosphate",
+                "L-Ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "D-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "D-xylulose",
+                "D-xylulose 1,5-bisphosphate",
+                "D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "L-xylulose",
+                "L-xylulose 1-phosphate",
+                "L-xylulose 5-phosphate",
+                "ribulose",
+                "ribulose 1-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose",
+                "xylulose 5-phosphate",
+                "xylulose phosphate"
+            ],
+            "TP": 12,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-Ribulose (D-Rib)",
+            "L-Ribulose (L-Rib)",
+            "D-Xylulose (D-Xyl)",
+            "L-Xylulose (L-Xyl)",
+            "D-Psicose (D-Psi)",
+            "L-Psicose (L-Psi)",
+            "D-Fructose (D-Fru) - keto form",
+            "L-Fructose (L-Fru) - keto form",
+            "D-Sorbose (D-Sor)",
+            "L-Sorbose (L-Sor)",
+            "D-Tagatose (D-Tag)",
+            "L-Tagatose (L-Tag)",
+            "2-Deoxy-D-ribulose (2-dRib)",
+            "2-Deoxy-L-ribulose (2-dRib)",
+            "2-Amino-D-ribulose (2-ARib)",
+            "2-Amino-L-ribulose (2-ARib)",
+            "5-Deoxy-D-xylulose (5-dXyl)",
+            "5-Deoxy-L-xylulose (5-dXyl)",
+            "3-Deoxy-D-mannoxulose (3-DMan)",
+            "3-Deoxy-L-mannoxulose (3-DMan)",
+            "D-Fuculose (D-Fuc)",
+            "L-Fuculose (L-Fuc)",
+            "D-Rhamulose (D-Rha)",
+            "L-Rhamulose (L-Rha)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-Ribulose (D-Rib)",
+                "L-Ribulose (L-Rib)",
+                "D-Xylulose (D-Xyl)",
+                "L-Xylulose (L-Xyl)"
+            ],
+            "mismatches": [
+                "D-Psicose (D-Psi)",
+                "L-Psicose (L-Psi)",
+                "D-Fructose (D-Fru) - keto form",
+                "L-Fructose (L-Fru) - keto form",
+                "D-Sorbose (D-Sor)",
+                "L-Sorbose (L-Sor)",
+                "D-Tagatose (D-Tag)",
+                "L-Tagatose (L-Tag)",
+                "2-Deoxy-D-ribulose (2-dRib)",
+                "2-Deoxy-L-ribulose (2-dRib)",
+                "2-Amino-D-ribulose (2-ARib)",
+                "2-Amino-L-ribulose (2-ARib)",
+                "5-Deoxy-D-xylulose (5-dXyl)",
+                "5-Deoxy-L-xylulose (5-dXyl)",
+                "3-Deoxy-D-mannoxulose (3-DMan)",
+                "3-Deoxy-L-mannoxulose (3-DMan)",
+                "D-Fuculose (D-Fuc)",
+                "L-Fuculose (L-Fuc)",
+                "D-Rhamulose (D-Rha)",
+                "L-Rhamulose (L-Rha)"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "D-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-xylulose",
+                "L-xylulose 1-phosphate",
+                "alpha-D-ribulose",
+                "ketopentose derivative",
+                "ribulose",
+                "ribulose derivative"
+            ],
+            "TP": 4,
+            "FP": 20,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-Ribulose (C5H10O5)",
+            "L-Ribulose (C5H10O5)",
+            "D-Xylulose (C5H10O5)",
+            "L-Xylulose (C5H10O5)",
+            "D-Psicose (C5H10O5)",
+            "L-Psicose (C5H10O5)",
+            "D-Tagatose (C5H10O5)",
+            "L-Tagatose (C5H10O5)",
+            "D-Sorbose (C5H10O5)",
+            "L-Sorbose (C5H10O5)",
+            "D-Fructose (C5H10O5)",
+            "L-Fructose (C5H10O5)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-Ribulose (C5H10O5)",
+                "L-Ribulose (C5H10O5)",
+                "D-Xylulose (C5H10O5)",
+                "L-Xylulose (C5H10O5)"
+            ],
+            "mismatches": [
+                "D-Psicose (C5H10O5)",
+                "L-Psicose (C5H10O5)",
+                "D-Tagatose (C5H10O5)",
+                "L-Tagatose (C5H10O5)",
+                "D-Sorbose (C5H10O5)",
+                "L-Sorbose (C5H10O5)",
+                "D-Fructose (C5H10O5)",
+                "L-Fructose (C5H10O5)"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "D-ribulose",
+                "D-ribulose 5-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "L-xylulose",
+                "L-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose (D-Rib)",
+            "L-ribulose (L-Rib)",
+            "D-xylulose (D-Xyl)",
+            "L-xylulose (L-Xyl)",
+            "D-arabinulose (D-Ara)",
+            "L-arabinulose (L-Ara)",
+            "D-ribulose-5-phosphate (R5P)",
+            "L-ribulose-5-phosphate (LR5P)",
+            "D-xylulose-5-phosphate (X5P)",
+            "L-xylulose-5-phosphate (LX5P)",
+            "D-arabinose-5-phosphate (A5P)",
+            "L-arabinose-5-phosphate (LA5P)",
+            "D-ribulose bisphosphate (RuBP)",
+            "D-xylulose bisphosphate (XBP)",
+            "D-ribulose-1,5-bisphosphate (RuBP)",
+            "D-xylulose-1,5-bisphosphate (X1BP)",
+            "D-lyxulose (D-Lyx)",
+            "L-lyxulose (L-Lyx)",
+            "D-psicose (D-Psi)",
+            "D-sorbose (D-Sor)",
+            "D-fructose (D-Fru)",
+            "D-erythulose (D-Ery)",
+            "D-ribulose-3-phosphate (R3P)",
+            "D-xylulose-3-phosphate (X3P)",
+            "D-arabinulose-3-phosphate (A3P)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose",
+                "L-ribulose",
+                "D-xylulose",
+                "L-xylulose",
+                "D-ribulose-5-phosphate",
+                "L-ribulose-5-phosphate",
+                "D-xylulose-5-phosphate",
+                "L-xylulose-5-phosphate",
+                "D-ribulose-1,5-bisphosphate",
+                "D-xylulose-1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "D-arabinulose (D-Ara)",
+                "L-arabinulose (L-Ara)",
+                "D-arabinose-5-phosphate (A5P)",
+                "L-arabinose-5-phosphate (LA5P)",
+                "D-ribulose bisphosphate (RuBP)",
+                "D-xylulose bisphosphate (XBP)",
+                "D-lyxulose (D-Lyx)",
+                "L-lyxulose (L-Lyx)",
+                "D-psicose (D-Psi)",
+                "D-sorbose (D-Sor)",
+                "D-fructose (D-Fru)",
+                "D-erythulose (D-Ery)",
+                "D-ribulose-3-phosphate (R3P)",
+                "D-xylulose-3-phosphate (X3P)",
+                "D-arabinulose-3-phosphate (A3P)"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "D-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "D-xylulose",
+                "D-xylulose 1,5-bisphosphate",
+                "D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "L-xylulose",
+                "L-xylulose 5-phosphate",
+                "alpha-D-ribulose",
+                "ribulose",
+                "xylulose phosphate"
+            ],
+            "TP": 10,
+            "FP": 15,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-Ribulose",
+            "D-Xylulose",
+            "L-Ribulose",
+            "L-Xylulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-Ribulose",
+                "D-Xylulose",
+                "L-Ribulose",
+                "L-Xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "D-ribulose",
+                "D-ribulose 1-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "L-xylulose",
+                "ribulose",
+                "xylulose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "Ribulose (R)",
+            "Xylulose (X)",
+            "Lyxose (L)",
+            "Arabinose (A)",
+            "Ribose (Rb)",
+            "Xylose (Xy)",
+            "Lylose (Ly)",
+            "Arabinose (Ab)",
+            "Deoxyribose (dR)",
+            "Deoxyxylulose (dX)",
+            "Deoxylyxose (dL)",
+            "Deoxyarabinose (dA)",
+            "Ribulose-5-phosphate (R5P)",
+            "Xylulose-5-phosphate (X5P)",
+            "Lyxose-5-phosphate (L5P)",
+            "Arabinose-5-phosphate (A5P)",
+            "Ribose-5-phosphate (Rb5P)",
+            "Xylose-5-phosphate (Xy5P)",
+            "Lylose-5-phosphate (Ly5P)",
+            "Arabinose-5-phosphate (Ab5P)",
+            "Deoxyribose-5-phosphate (dR5P)",
+            "Deoxyxylulose-5-phosphate (dX5P)",
+            "Deoxylyxose-5-phosphate (dL5P)",
+            "Deoxyarabinose-5-phosphate (dA5P)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ribulose (R)",
+                "Xylulose (X)",
+                "Ribulose-5-phosphate (R5P)",
+                "Xylulose-5-phosphate (X5P)"
+            ],
+            "mismatches": [
+                "Lyxose (L)",
+                "Arabinose (A)",
+                "Ribose (Rb)",
+                "Xylose (Xy)",
+                "Lylose (Ly)",
+                "Arabinose (Ab)",
+                "Deoxyribose (dR)",
+                "Deoxyxylulose (dX)",
+                "Deoxylyxose (dL)",
+                "Deoxyarabinose (dA)",
+                "Lyxose-5-phosphate (L5P)",
+                "Arabinose-5-phosphate (A5P)",
+                "Ribose-5-phosphate (Rb5P)",
+                "Xylose-5-phosphate (Xy5P)",
+                "Lylose-5-phosphate (Ly5P)",
+                "Arabinose-5-phosphate (Ab5P)",
+                "Deoxyribose-5-phosphate (dR5P)",
+                "Deoxyxylulose-5-phosphate (dX5P)",
+                "Deoxylyxose-5-phosphate (dL5P)",
+                "Deoxyarabinose-5-phosphate (dA5P)"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "D-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "D-xylulose",
+                "D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "L-xylulose",
+                "L-xylulose 1-phosphate",
+                "L-xylulose 5-phosphate",
+                "alpha-D-ribulose",
+                "deoxyribulose phosphate",
+                "ribulose",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "xylulose",
+                "xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 20,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-Ribulose (D-Ribu)",
+            "L-Ribulose (L-Ribu)",
+            "D-Xylulose (D-Xylu)",
+            "L-Xylulose (L-Xylu)",
+            "D-Allulose (D-Allu)",
+            "L-Allulose (L-Allu)",
+            "D-Psicose (D-Psic)",
+            "L-Psicose (L-Psic)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-Ribulose (D-Ribu)",
+                "L-Ribulose (L-Ribu)",
+                "D-Xylulose (D-Xylu)",
+                "L-Xylulose (L-Xylu)"
+            ],
+            "mismatches": [
+                "D-Allulose (D-Allu)",
+                "L-Allulose (L-Allu)",
+                "D-Psicose (D-Psic)",
+                "L-Psicose (L-Psic)"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "D-ribulose",
+                "D-ribulose 1-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "L-xylulose",
+                "L-xylulose 1-phosphate",
+                "alpha-D-ribulose",
+                "ribulose"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose (D-Ru)",
+            "L-ribulose (L-Ru)",
+            "D-xylulose (D-Xul)",
+            "L-xylulose (L-Xul)",
+            "D-psicose (D-Psi)",
+            "L-psicose (L-Psi)",
+            "D-sorbose (D-Sor)",
+            "L-sorbose (L-Sor)",
+            "D-tagatose (D-Tag)",
+            "L-tagatose (L-Tag)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose",
+                "L-ribulose",
+                "D-xylulose",
+                "L-xylulose"
+            ],
+            "mismatches": [
+                "D-psicose",
+                "L-psicose",
+                "D-sorbose",
+                "L-sorbose",
+                "D-tagatose",
+                "L-tagatose"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "D-ribulose",
+                "D-ribulose 1-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-xylulose",
+                "L-xylulose 1-phosphate",
+                "alpha-D-ribulose",
+                "ribulose"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-Ribulose (D-Rul)",
+            "L-Ribulose (L-Rul)",
+            "D-Xylulose (D-Xul)",
+            "L-Xylulose (L-Xul)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-Ribulose (D-Rul)",
+                "L-Ribulose (L-Rul)",
+                "D-Xylulose (D-Xul)",
+                "L-Xylulose (L-Xul)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "D-ribulose",
+                "D-ribulose 1-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-xylulose",
+                "alpha-D-ribulose",
+                "ribulose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "Ribulose (Rbu)",
+            "Xylulose (Xlu)",
+            "Arabinose (Ara)",
+            "Lyxose (Lyx)",
+            "Ribose (Rib)",
+            "Xylose (Xyl)",
+            "Deoxyribose (dRib)",
+            "Deoxyxylulose (dXyl)",
+            "Deoxyarabinose (dAra)",
+            "Deoxylyxose (dLyx)",
+            "2-Deoxyribose (2dRib)",
+            "2-Deoxyxylulose (2dXyl)",
+            "2-Deoxyarabinose (2dAra)",
+            "2-Deoxylyxose (2dLyx)",
+            "3-Deoxyribose (3dRib)",
+            "3-Deoxyxylulose (3dXyl)",
+            "3-Deoxyarabinose (3dAra)",
+            "3-Deoxylyxose (3dLyx)",
+            "4-Deoxyribose (4dRib)",
+            "4-Deoxyxylulose (4dXyl)",
+            "4-Deoxyarabinose (4dAra)",
+            "4-Deoxylyxose (4dLyx)",
+            "5-Deoxyribose (5dRib)",
+            "5-Deoxyxylulose (5dXyl)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ribulose (Rbu)",
+                "Xylulose (Xlu)"
+            ],
+            "mismatches": [
+                "Arabinose (Ara)",
+                "Lyxose (Lyx)",
+                "Ribose (Rib)",
+                "Xylose (Xyl)",
+                "Deoxyribose (dRib)",
+                "Deoxyxylulose (dXyl)",
+                "Deoxyarabinose (dAra)",
+                "Deoxylyxose (dLyx)",
+                "2-Deoxyribose (2dRib)",
+                "2-Deoxyxylulose (2dXyl)",
+                "2-Deoxyarabinose (2dAra)",
+                "2-Deoxylyxose (2dLyx)",
+                "3-Deoxyribose (3dRib)",
+                "3-Deoxyxylulose (3dXyl)",
+                "3-Deoxyarabinose (3dAra)",
+                "3-Deoxylyxose (3dLyx)",
+                "4-Deoxyribose (4dRib)",
+                "4-Deoxyxylulose (4dXyl)",
+                "4-Deoxyarabinose (4dAra)",
+                "4-Deoxylyxose (4dLyx)",
+                "5-Deoxyribose (5dRib)",
+                "5-Deoxyxylulose (5dXyl)"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "D-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-xylulose",
+                "alpha-D-ribulose",
+                "deoxyribulose phosphate",
+                "ribulosamine 3-phosphate",
+                "ribulose",
+                "ribulose phosphate",
+                "xylulose"
+            ],
+            "TP": 2,
+            "FP": 22,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "Ribose (Rib)",
+            "Ribulose (Rbu)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose"
+            ],
+            "mismatches": [
+                "Ribose (Rib)"
+            ],
+            "true_referents": [
+                "L-ribulose",
+                "ribulose",
+                "ribulose phosphate"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "Ribose (Rib)",
+            "Ribulose",
+            "Xylulose",
+            "Xylitol",
+            "Ribulose-5-phosphate",
+            "Ribose-5-phosphate",
+            "Ribulose-1,5-bisphosphate",
+            "Ribose-1,5-bisphosphate",
+            "Ribose-5-carboxylate",
+            "Ribulose-5-carboxylate",
+            "Ribose-1-phosphate",
+            "Ribulose-1-phosphate",
+            "Ribose-5-phospho-1-dehydrogenase",
+            "Ribulose-5-phospho-1-dehydrogenase",
+            "Ribose-5-phospho-1-isomerase",
+            "Ribulose-5-phospho-1-isomerase",
+            "Ribose-5-phospho-1-kinase",
+            "Ribulose-5-phospho-1-kinase",
+            "Ribose-5-phospho-1-mutase",
+            "Ribulose-5-phospho-1-mutase",
+            "Ribose-5-phospho-1-synthase",
+            "Ribulose-5-phospho-1-synthase"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ribulose",
+                "Xylulose",
+                "Ribulose-5-phosphate",
+                "Ribulose-1-phosphate",
+                "Ribulose-1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "Ribose (Rib)",
+                "Xylitol",
+                "Ribose-5-phosphate",
+                "Ribose-1,5-bisphosphate",
+                "Ribose-5-carboxylate",
+                "Ribulose-5-carboxylate",
+                "Ribose-1-phosphate",
+                "Ribose-5-phospho-1-dehydrogenase",
+                "Ribulose-5-phospho-1-dehydrogenase",
+                "Ribose-5-phospho-1-isomerase",
+                "Ribulose-5-phospho-1-isomerase",
+                "Ribose-5-phospho-1-kinase",
+                "Ribulose-5-phospho-1-kinase",
+                "Ribose-5-phospho-1-mutase",
+                "Ribulose-5-phospho-1-mutase",
+                "Ribose-5-phospho-1-synthase",
+                "Ribulose-5-phospho-1-synthase"
+            ],
+            "true_referents": [
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "D-xylulose",
+                "L-ribulose",
+                "L-xylulose",
+                "ribulose",
+                "ribulose 1-phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "xylulose"
+            ],
+            "TP": 5,
+            "FP": 17,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-Ribulose (Rib)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose"
+            ],
+            "mismatches": [
+                "D-Ribulose (Rib)"
+            ],
+            "true_referents": [
+                "D-ribulose",
+                "D-ribulose 1-phosphate"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            {
+                "Referent": "D-ribose",
+                "Canonical name": "D-ribose"
+            },
+            {
+                "Referent": "L-ribose",
+                "Canonical name": "L-ribose"
+            },
+            {
+                "Referent": "Ribulose",
+                "Canonical name": "Ribulose"
+            },
+            {
+                "Referent": "Arabinose",
+                "Canonical name": "Arabinose"
+            },
+            {
+                "Referent": "Lyxose",
+                "Canonical name": "Lyxose"
+            },
+            {
+                "Referent": "Xylulose",
+                "Canonical name": "Xylulose"
+            }
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ribulose",
+                "Xylulose"
+            ],
+            "mismatches": [
+                "D-ribose",
+                "L-ribose",
+                "Arabinose",
+                "Lyxose"
+            ],
+            "true_referents": [
+                "1-deoxy-D-xylulose",
+                "D-ribulose 1,5-bisphosphate",
+                "L-ribulose",
+                "L-xylulose",
+                "deoxyribulose phosphate",
+                "ribulose",
+                "ribulose 1-phosphate",
+                "xylulose"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 0
+        }
+    }
+]

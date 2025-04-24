@@ -1,0 +1,2101 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Dieldrin",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Mechlorethamine",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dieldrin",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Mechlorethamine"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodoacetamide",
+            "Iodoacetates",
+            "Iophendylate",
+            "Iodobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodoacetamide",
+                "Iodoacetates",
+                "Iophendylate",
+                "Iodobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Cyclophosphamide",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Cyclophosphamide",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Fluoroacetates",
+            "Bromochlorofluorocarbons",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fluoroacetates",
+                "Bromochlorofluorocarbons",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Trichloroepoxypropane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodoacetamide",
+            "Iodoacetates",
+            "Iodobenzenes",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodoacetamide",
+                "Iodoacetates",
+                "Iodobenzenes",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Cyclophosphamide",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Cyclophosphamide",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodoacetamide",
+            "Iodobenzenes",
+            "Iophendylate",
+            "Iodoacetates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Dieldrin",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dieldrin",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Bromochlorofluorocarbons"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodobenzenes",
+            "Iodoacetamide",
+            "Iodoacetates",
+            "Iophendylate",
+            "Ipodate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodobenzenes",
+                "Iodoacetamide",
+                "Iodoacetates",
+                "Iophendylate",
+                "Ipodate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine",
+            "Trichloroepoxypropane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [
+                "Trichloroepoxypropane"
+            ],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Dieldrin",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dieldrin",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Bromochlorofluorocarbons"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodoacetamide",
+            "Ipodate",
+            "Iodobenzenes",
+            "Iodoacetates",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodoacetamide",
+                "Ipodate",
+                "Iodobenzenes",
+                "Iodoacetates",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Dieldrin",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dieldrin",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Bromochlorofluorocarbons"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Chlordan",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Chlordan",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Ipodate",
+            "Iodobenzenes",
+            "Iodoacetates",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ipodate",
+                "Iodobenzenes",
+                "Iodoacetates",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Cyclophosphamide",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Cyclophosphamide",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Sevoflurane",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Sevoflurane",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Dieldrin",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dieldrin",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": "",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Cyclophosphamide",
+            "Hexachlorobenzene",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Mechlorethamine",
+            "Estramustine",
+            "Trichloroepoxypropane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Cyclophosphamide",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [
+                "Hexachlorobenzene",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Trichloroepoxypropane"
+            ],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes",
+            "Hexachlorobenzene",
+            "Iodoacetates",
+            "Iodobenzenes",
+            "Sevoflurane",
+            "Trifluoroacetic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers"
+            ],
+            "mismatches": [
+                "Hexachlorobenzene",
+                "Iodoacetates",
+                "Iodobenzenes"
+            ],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Dieldrin",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Mechlorethamine",
+            "Chlordan",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dieldrin",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Bromochlorofluorocarbons",
+                "Mechlorethamine"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine",
+            "Chlorambucil",
+            "Cyclophosphamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine",
+                "Chlorambucil",
+                "Cyclophosphamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Fluoroacetates",
+            "Bromochlorofluorocarbons",
+            "Sevoflurane",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fluoroacetates",
+                "Bromochlorofluorocarbons",
+                "Sevoflurane",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Dieldrin",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dieldrin",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Ipodate",
+            "Iodobenzenes",
+            "Iodoacetates",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ipodate",
+                "Iodobenzenes",
+                "Iodoacetates",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Cyclophosphamide",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Cyclophosphamide",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Bromochlorofluorocarbons"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Ipodate",
+            "Iodobenzenes",
+            "Tyropanoate",
+            "Iodoacetamide",
+            "Iodoacetates",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ipodate",
+                "Iodobenzenes",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodoacetates",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Cyclophosphamide",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Cyclophosphamide",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Fluoroacetates",
+            "Bromochlorofluorocarbons",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fluoroacetates",
+                "Bromochlorofluorocarbons",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Chlorambucil",
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Fluorocarbon Polymers",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Chlorambucil",
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Ipodate",
+            "Iodobenzenes",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ipodate",
+                "Iodobenzenes",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes",
+            "Sevoflurane",
+            "Trifluoroacetic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes",
+                "Sevoflurane",
+                "Trifluoroacetic Acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodoacetamide",
+            "Iodoacetates",
+            "Iodobenzenes",
+            "Iophendylate",
+            "Tyropanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodoacetamide",
+                "Iodoacetates",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Tyropanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes",
+            "Sevoflurane",
+            "Trifluoroacetic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes",
+                "Sevoflurane",
+                "Trifluoroacetic Acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Chlordan",
+            "Dichlorodiphenyl Dichloroethylene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Chlordan",
+                "Dichlorodiphenyl Dichloroethylene"
+            ],
+            "mismatches": [
+                "Bromochlorofluorocarbons"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Iodoacetamide",
+            "Iodoacetates",
+            "Iodobenzenes",
+            "Ipodate",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iodoacetamide",
+                "Iodoacetates",
+                "Iodobenzenes",
+                "Ipodate",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Fluorobenzenes",
+            "Trifluoroacetic Acid",
+            "Sevoflurane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers",
+                "Fluorobenzenes",
+                "Trifluoroacetic Acid",
+                "Sevoflurane"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Hydrocarbons, Chlorinated",
+        "domain": "chemistry",
+        "response": [
+            "Hexachlorobenzene",
+            "Bromochlorofluorocarbons",
+            "Dichlorodiphenyl Dichloroethylene",
+            "Chlordan",
+            "Trichloroepoxypropane",
+            "Ethylene Dichlorides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hexachlorobenzene",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Chlordan",
+                "Trichloroepoxypropane",
+                "Ethylene Dichlorides"
+            ],
+            "mismatches": [
+                "Bromochlorofluorocarbons"
+            ],
+            "true_referents": [
+                "Trichloroepoxypropane",
+                "Chlordan",
+                "Hexachlorobenzene",
+                "Ethylene Dichlorides",
+                "Dichlorodiphenyl Dichloroethylene",
+                "Dieldrin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Hydrocarbons, Iodinated",
+        "domain": "chemistry",
+        "response": [
+            "Ipodate",
+            "Iodobenzenes",
+            "Iodoacetamide",
+            "Iodoacetates",
+            "Iophendylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ipodate",
+                "Iodobenzenes",
+                "Iodoacetamide",
+                "Iodoacetates",
+                "Iophendylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ipodate",
+                "Tyropanoate",
+                "Iodoacetamide",
+                "Iodobenzenes",
+                "Iophendylate",
+                "Iodoacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Mustard Compounds",
+        "domain": "chemistry",
+        "response": [
+            "Propylbenzilylcholine Mustard",
+            "Quinacrine Mustard",
+            "Cyclophosphamide",
+            "Mechlorethamine",
+            "Estramustine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Propylbenzilylcholine Mustard",
+                "Quinacrine Mustard",
+                "Cyclophosphamide",
+                "Mechlorethamine",
+                "Estramustine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mechlorethamine",
+                "Quinacrine Mustard",
+                "Estramustine",
+                "Chlorambucil",
+                "Propylbenzilylcholine Mustard",
+                "Cyclophosphamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Hydrocarbons, Fluorinated",
+        "domain": "chemistry",
+        "response": [
+            "Bromochlorofluorocarbons",
+            "Fluorocarbon Polymers",
+            "Sevoflurane",
+            "Trifluoroacetic Acid",
+            "Fluorobenzenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bromochlorofluorocarbons",
+                "Fluorocarbon Polymers",
+                "Sevoflurane",
+                "Trifluoroacetic Acid",
+                "Fluorobenzenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bromochlorofluorocarbons",
+                "Trifluoroacetic Acid",
+                "Sevoflurane",
+                "Fluorobenzenes",
+                "Fluorocarbon Polymers",
+                "Fluoroacetates"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    }
+]

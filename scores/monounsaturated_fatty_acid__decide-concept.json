@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid characterized by having one double bond in the fatty acid chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'monounsaturated fatty acid' and 'monounsaturated fatty acid' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "monounsaturated fatty acid is identical in both A and B",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "Unsaturated fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monounsaturated fatty acid is a type of unsaturated fatty acid, but not all unsaturated fatty acids are monounsaturated. Some are polyunsaturated.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid with one double bond in the fatty acid chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "monounsaturated fatty acid and monounsaturated fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "Monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Monounsaturated fatty acid' and 'monounsaturated fatty acid' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "Unsaturated fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monounsaturated fatty acid is a type of unsaturated fatty acid, but not all unsaturated fatty acids are monounsaturated; they can also be polyunsaturated.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "unsaturated fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monounsaturated fatty acid is a type of unsaturated fatty acid, but not all unsaturated fatty acids are monounsaturated; some are polyunsaturated.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical, referring to the same type of fatty acid with one double bond in its structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "monounsaturated fatty acid and monounsaturated fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "monounsaturated fatty acid and monounsaturated fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "unsaturated fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monounsaturated fatty acids are a type of unsaturated fatty acids, but not all unsaturated fatty acids are monounsaturated; they can also be polyunsaturated.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "mono-unsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mono-unsaturated fatty acid and monounsaturated fatty acid refer to the same type of fatty acid, with the hyphen being a stylistic variation.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "monounsaturated fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid characterized by the presence of one double bond in the fatty acid chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "monounsaturated fatty acid",
+        "domain": "chemistry",
+        "response": "Concept: \"monounsaturated fatty acid\"",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'Concept: monounsaturated fatty acid' refers directly to 'monounsaturated fatty acid', so they are equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

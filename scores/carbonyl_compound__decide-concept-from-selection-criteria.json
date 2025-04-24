@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "ketone_or_aldehyde",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All ketones and aldehydes are carbonyl compounds, but not all carbonyl compounds are ketones or aldehydes. Carbonyl compounds also include carboxylic acids, esters, and amides, among others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "Ketone or Aldehyde",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While ketones and aldehydes are carbonyl compounds, not all carbonyl compounds are ketones or aldehydes. Carbonyl compounds also include carboxylic acids, esters, amides, and more.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "Carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Carbonyl compound' and 'carbonyl compound' are equivalent; the only difference is the capitalization, which does not affect their meaning in chemistry.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "Carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Carbonyl compound' and 'carbonyl compound' are identical except for capitalization, and thus refer to the same chemical concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "carbonyl compound and carbonyl compound are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "carbonyl compound and carbonyl compound are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "carbonyl compound and carbonyl compound are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "Carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Carbonyl compound' and 'carbonyl compound' are equivalent as they refer to the same chemical group characterized by a carbon-oxygen double bond, with the difference only being in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "carbonyl compound and carbonyl compound are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical group containing a carbon-oxygen double bond.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "ketone or aldehyde",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone or aldehyde is a type of carbonyl compound, but not all carbonyl compounds are ketones or aldehydes (e.g., carboxylic acids, esters).",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "carbonyl compound",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound containing a carbonyl group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone is a type of carbonyl compound, but not all carbonyl compounds are ketones. Carbonyl compounds include aldehydes, ketones, carboxylic acids, esters, and more.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "aldehyde",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An aldehyde is a type of carbonyl compound, but not all carbonyl compounds are aldehydes. Carbonyl compounds also include ketones, esters, amides, and others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone is a type of carbonyl compound, but not all carbonyl compounds are ketones. Carbonyl compounds also include aldehydes, esters, amides, and others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "carbonyl compound",
+        "domain": "chemistry",
+        "response": "Ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone is a type of carbonyl compound, but not all carbonyl compounds are ketones. Carbonyl compounds also include aldehydes, esters, and other functional groups.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

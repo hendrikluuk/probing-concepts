@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Keratinocytes are a type of epidermal cell, but not all epidermal cells are keratinocytes. The epidermis also contains other cell types like melanocytes and Langerhans cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "keratinocyte is a type of epidermal cell, but not all epidermal cells are keratinocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "Keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Keratinocyte is a type of epidermal cell, but not all epidermal cells are keratinocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "Keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Keratinocytes are a type of epidermal cell, but not all epidermal cells are keratinocytes. There are other types of epidermal cells such as melanocytes and Langerhans cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "keratinocyte is a type of epidermal cell, but not all epidermal cells are keratinocytes",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "epidermal cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epidermal cell and epidermal cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "Epidermal cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Epidermal cell and epidermal cell are the same term with different capitalization, referring to the same type of cell.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "Skin cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An epidermal cell is a type of skin cell, but not all skin cells are epidermal cells. Skin cells can also include dermal cells and other types.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "corneocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A corneocyte is a type of epidermal cell, but not all epidermal cells are corneocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "epidermal cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epidermal cell and epidermal cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A keratinocyte is a type of epidermal cell, but not all epidermal cells are keratinocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "keratinocyte is a type of epidermal cell, but not all epidermal cells are keratinocytes",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Keratinocytes are a type of epidermal cell, but not all epidermal cells are keratinocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "Epidermal cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Epidermal cell and epidermal cell are identical terms differing only in capitalization",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "keratinocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "keratinocyte is a type of epidermal cell, but not all epidermal cells are keratinocytes",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "epidermal cell",
+        "domain": "biology",
+        "response": "epidermal cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epidermal cell and epidermal cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

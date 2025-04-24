@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "sterol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound class, and there is no distinction between the two.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "Cholesterol and its derivatives",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cholesterol and its derivatives include sterols, but also include other compounds such as steroid hormones and bile acids. Not all cholesterol derivatives are sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "sterols are a subgroup of steroids, but not all steroids are sterols",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "bile acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bile acids are a subset of steroids derived from cholesterol, but not all sterols are bile acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "cholesterol derivative",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Sterols are a subgroup of steroids and are a type of cholesterol derivative, but not all cholesterol derivatives are sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "cholesterol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cholesterol is a type of sterol, but not all sterols are cholesterol.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "bile acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bile acids are a subset of steroids derived from cholesterol, which is a type of sterol. However, not all sterols are bile acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "Cholesterol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cholesterol is a type of sterol, but not all sterols are cholesterol.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "sterol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "cholesterol derivative",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All sterols are cholesterol derivatives, but not all cholesterol derivatives are sterols. Cholesterol derivatives can include a wider range of compounds beyond sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "sterol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'sterol' is identical in both cases, indicating they are the same concept without any exceptions.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A steroid is a broad class of organic compounds with a characteristic molecular structure containing four rings, while a sterol is a specific subgroup of steroids that have a hydroxyl group at a specific position in the structure. Therefore, all sterols are steroids, but not all steroids are sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Steroids are a broad class of organic compounds that include sterols as a subgroup, but not all steroids are sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "pregnane",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Pregnane is a type of steroid with a specific carbon structure, while sterol refers to a different class of steroids that have a hydroxyl group at a specific position on the steroid skeleton. Not all pregnanes are sterols, and not all sterols are pregnanes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "bile acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bile acids are a subset of steroids derived from cholesterol, but not all sterols are bile acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "cholesterol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cholesterol is a type of sterol, but not all sterols are cholesterol.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

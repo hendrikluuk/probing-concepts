@@ -1,0 +1,1779 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "cyclohex-2,5-dienecarboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene",
+            "somaliensene A",
+            "erinacine Q"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A",
+                "erinacine Q"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene",
+            "somaliensene A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "quiannulatene",
+            "somaliensene A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "adamantane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "Trichoether D",
+            "(1-Ethylpropyl)benzene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene",
+            "somaliensene A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "Trichoether D",
+                "(1-Ethylpropyl)benzene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "adamantane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "adamantane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "(1-Ethylpropyl)benzene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene",
+            "somaliensene A",
+            "erinacine Q"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "(1-Ethylpropyl)benzene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A",
+                "erinacine Q"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "quiannulatene",
+            "somaliensene A",
+            "erinacine Q"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A",
+                "erinacine Q"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "adamantane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "adamantane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene",
+            "somaliensene A",
+            "erinacine Q"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A",
+                "erinacine Q"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "adamantane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene",
+            "cyclohex-2,5-dienecarboxylate",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "2,6-dimethylheptadecane",
+            "adamantane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "triphenylene",
+            "adamantane",
+            "quiannulatene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "quiannulatene"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "adamantane",
+            "2,6-dimethylheptadecane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+            "adamantane",
+            "quiannulatene",
+            "somaliensene A",
+            "cyclohex-2,5-dienecarboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "somaliensene A",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "3,4-epoxy-1-cyclohexene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "3,5-dimethyl-Heptane",
+            "nonane",
+            "2,6,11-trimethyldodecane",
+            "5-phenyldodecane",
+            "2,6-dimethylheptadecane",
+            "adamantane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-dimethyl-Heptane",
+                "nonane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "5-phenyldodecane",
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cyclic hydrocarbon",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "triphenylene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "adamantane",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triphenylene",
+                "3,4-epoxy-1-cyclohexene",
+                "adamantane"
+            ],
+            "mismatches": [
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "true_referents": [
+                "adamantane",
+                "(1-Ethylpropyl)benzene",
+                "(+/-)-CP 47,497-C7-Hydroxy metabolite",
+                "triphenylene",
+                "5-phenyldodecane",
+                "Trichoether D",
+                "Anisole, 2-isopropyl-4-methyl-",
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "olefin",
+        "domain": "chemistry",
+        "response": [
+            "monocyclic olefin",
+            "(2E)-2-tridecene",
+            "cyclohex-2,5-dienecarboxylate",
+            "3,4-epoxy-1-cyclohexene",
+            "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "monocyclic olefin",
+                "(2E)-2-tridecene",
+                "cyclohex-2,5-dienecarboxylate",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol"
+            ],
+            "mismatches": [
+                "3,4-epoxy-1-cyclohexene"
+            ],
+            "true_referents": [
+                "somaliensene A",
+                "(-)-bisdechlorogeodin",
+                "(2E)-2-tridecene",
+                "erinacine Q",
+                "2,4,5-trichlorocyclohexa-2,5-dien-1-ol",
+                "quiannulatene",
+                "monocyclic olefin",
+                "cyclohex-2,5-dienecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alkane",
+        "domain": "chemistry",
+        "response": [
+            "nonane",
+            "3,5-dimethyl-Heptane",
+            "2,6,11-trimethyldodecane",
+            "2,6-dimethylheptadecane",
+            "adamantane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "nonane",
+                "3,5-dimethyl-Heptane",
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane"
+            ],
+            "mismatches": [
+                "adamantane"
+            ],
+            "true_referents": [
+                "2,6,11-trimethyldodecane",
+                "2,6-dimethylheptadecane",
+                "3,5-dimethyl-Heptane",
+                "Ins-1-P-6-Man-beta1-6-Ins-1-P-Cer(d20:0/26:0)",
+                "nonane",
+                "N-(2-hydroxyeicosanoyl)-4-hydroxyeicosasphinganine",
+                "N-(2-hydroxyhexacosanoyl)eicosasphinganine",
+                "N-(2-hydroxytetradecanoyl)icosaphytosphingosine"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    }
+]

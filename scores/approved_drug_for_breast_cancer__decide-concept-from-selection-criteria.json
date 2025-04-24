@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "anticancer drug for breast cancer",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anticancer drug for breast cancer may not necessarily be approved, as it could still be in experimental or trial phases. Conversely, an approved drug for breast cancer is specifically one that has passed regulatory approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Breast cancer prevention or treatment drugs",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Not all breast cancer prevention or treatment drugs are approved; some may be experimental or in clinical trials. Conversely, not all approved drugs for breast cancer are used for prevention.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Breast cancer therapeutic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for breast cancer is a specific type of breast cancer therapeutic, but not all breast cancer therapeutics are approved drugs. Therapeutics can also include experimental treatments, lifestyle modifications, and other interventions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a drug used to treat cancer in general, while an approved drug for breast cancer is specific to treating breast cancer. Not all antineoplastic agents are approved specifically for breast cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "breast cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A breast cancer drug may not be approved, whereas an approved drug for breast cancer is specifically approved for that use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "breast cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Breast cancer medication includes any medication used to treat breast cancer, whereas an approved drug for breast cancer specifically refers to drugs that have been approved by regulatory authorities for this purpose. Not all breast cancer medications may be approved drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Breast cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A breast cancer drug is any drug used to treat breast cancer, but not all breast cancer drugs are approved drugs. An approved drug for breast cancer specifically refers to a drug that has received regulatory approval for such use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Breast cancer treatment drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A breast cancer treatment drug may not necessarily be approved, whereas an approved drug for breast cancer is specifically one that has passed regulatory approval for breast cancer treatment.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Breast cancer prevention and treatment drugs",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Approved drugs for breast cancer may include both prevention and treatment drugs, but not all breast cancer prevention and treatment drugs are approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "selective estrogen receptor modulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A selective estrogen receptor modulator (SERM) is a class of drugs that can be used for various conditions, not exclusively as an approved drug for breast cancer. While some SERMs are approved for breast cancer treatment, not all are, and SERMs can also be used for other purposes such as osteoporosis treatment.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "breast cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Breast cancer medication refers to any medication used to treat breast cancer, which may include experimental or off-label drugs, while an approved drug for breast cancer specifically refers to medications that have been officially approved for this purpose by regulatory bodies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "breast cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A breast cancer drug may not necessarily be approved, while an approved drug for breast cancer is specifically one that has been approved for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "breast cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A breast cancer drug refers to any drug used in the treatment of breast cancer, whereas an approved drug for breast cancer specifically refers to drugs that have received official approval for use in treating breast cancer. Not all breast cancer drugs may be approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Selective estrogen receptor modulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective estrogen receptor modulators (SERMs) are a class of drugs that can be used for various conditions, including breast cancer, but not all SERMs are approved drugs for breast cancer, and not all approved drugs for breast cancer are SERMs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "Breast cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A breast cancer drug may refer to any drug used in the treatment of breast cancer, including experimental or off-label drugs, whereas an approved drug for breast cancer specifically refers to drugs that have been officially approved for breast cancer treatment by regulatory authorities.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for breast cancer",
+        "domain": "medicine",
+        "response": "drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for breast cancer is a type of drug, but not all drugs are approved for breast cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

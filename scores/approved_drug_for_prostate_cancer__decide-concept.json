@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "prostate cancer treatment",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Prostate cancer treatment can include various methods such as surgery, radiation, and hormone therapy, in addition to approved drugs. Therefore, an approved drug for prostate cancer is a type of prostate cancer treatment, but not all treatments are drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "Prostate cancer therapy",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Prostate cancer therapy includes various treatments such as surgery, radiation, and drugs, while an approved drug for prostate cancer is just one type of therapy.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "Prostate cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A prostate cancer drug may not necessarily be approved, as it could be in experimental or investigational stages. An approved drug for prostate cancer specifically refers to those that have received regulatory approval for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "Prostate cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Prostate cancer medication refers to any medication used to treat prostate cancer, which may include experimental or off-label drugs, while approved drug for prostate cancer specifically refers to medications that have received regulatory approval for this condition.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "antiandrogen",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antiandrogens are a class of drugs that can be used to treat prostate cancer, but not all antiandrogens are approved drugs specifically for prostate cancer and not all approved drugs for prostate cancer are antiandrogens.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "prostate cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Prostate cancer medication refers to any medication used to treat prostate cancer, which may include drugs that are not officially approved. An approved drug for prostate cancer specifically refers to medications that have received official approval for this use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "Prostate cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Prostate cancer medication refers to any medication used for treating prostate cancer, which may include experimental or off-label drugs, whereas an approved drug for prostate cancer specifically refers to medications that have been officially approved for this use by regulatory agencies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "Prostate cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A prostate cancer drug may not necessarily be approved, as it could be experimental or in clinical trials, whereas an approved drug for prostate cancer has been officially authorized for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "prostate cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A prostate cancer drug may not necessarily be approved, while an approved drug for prostate cancer is specifically one that has been authorized for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "prostate cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Prostate cancer medication includes any treatment used for prostate cancer, which may include experimental or off-label drugs, while approved drug for prostate cancer specifically refers to medications that have received regulatory approval for treating prostate cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "antiandrogen",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antiandrogens are a class of drugs that can be used for prostate cancer, but not all antiandrogens are approved drugs for prostate cancer, and not all approved drugs for prostate cancer are antiandrogens.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "prostate cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A prostate cancer drug may not necessarily be an approved drug for prostate cancer, as it could be in experimental stages or used off-label.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "prostate cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for prostate cancer is a prostate cancer drug, but not all prostate cancer drugs are approved drugs for prostate cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "Anti-androgen",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Anti-androgens are a class of drugs that can be used to treat prostate cancer, but not all anti-androgens are approved drugs specifically for prostate cancer, and not all approved drugs for prostate cancer are anti-androgens.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "antiandrogen",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antiandrogens are a class of drugs that can be used to treat prostate cancer, but not all antiandrogens are approved drugs specifically for prostate cancer, and not all approved drugs for prostate cancer are antiandrogens.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for prostate cancer",
+        "domain": "medicine",
+        "response": "Prostate cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A prostate cancer drug refers to any drug used to treat prostate cancer, whereas an approved drug for prostate cancer specifically refers to drugs that have received regulatory approval for this use. Not all prostate cancer drugs are approved drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

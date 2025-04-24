@@ -1,0 +1,953 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "(11Z)-icos-11-enoic acid",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "O-undecenoylcarnitine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "methyl undecenate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "2-hydroxyerucic acid",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "2-hydroxyerucic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "O-undecenoylcarnitine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "erucoyl-CoA",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "erucoyl-CoA",
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "(11Z)-icos-11-enoic acid",
+                "ethyl (13Z)-docosenoate",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "(11Z)-icos-11-enoic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "gadelaidic acid",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "cis-undec-2-enoic acid",
+                "cis-9-undecenoic acid"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "cis-9-undecenoic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "phosphatidylserine(18:1/22:1)",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "erucoyl-CoA",
+                "(11Z)-icos-11-enoic acid",
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "ethyl (13Z)-docosenoate"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "erucoyl-CoA",
+                "gadelaidic acid"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "gadelaidic acid"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "(11Z)-icos-11-enoic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "sphingomyelin d18:1/20:1",
+                "2-hydroxyerucic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "N-(11Z)-icosenoylsphinganine",
+                "sphingomyelin d18:1/20:1"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "methyl undecenate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "2-hydroxyerucic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "erucoyl-CoA",
+                "(11Z)-icos-11-enoic acid",
+                "2-hydroxyerucic acid",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "methyl undecenate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "gadelaidic acid",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "gadelaidic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "undecenoic acid",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "methyl undecenate",
+                "O-undecenoylcarnitine",
+                "trans-2-undecenoyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 22:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "N-(11Z)-icosenoylsphinganine",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ascr#17\", \"cholesteryl (11Z)-icosenoate\", \"erucoyl-CoA\", \"icas#17\", \"N-(11Z)-icosenoylphytosphingosine\", \"gadelaidic acid\", \"(11Z)-icos-11-enoic acid\", \"cis-9-undecenoic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"sphingomyelin d18:1/20:1\", \"2-hydroxyerucic acid\", \"methyl undecenate\", \"oscr#35-CoA\", \"cis-undec-2-enoic acid\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"trans-2-undecenoyl-CoA\", \"O-undecenoylcarnitine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"N-(11Z)-icosenoylsphinganine\"]",
+                "siblings": "{\"undecenoic acid\": [\"methyl undecenate\", \"ascr#17\", \"icas#17\", \"trans-2-undecenoyl-CoA\", \"cis-9-undecenoic acid\", \"O-undecenoylcarnitine\", \"(2E)-11-hydroxyundec-2-enoic acid\", \"cis-undec-2-enoic acid\"], \"fatty acid 22:1\": [\"erucoyl-CoA\", \"alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))\", \"1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine\", \"2-hydroxyerucic acid\", \"N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine\", \"ethyl (13Z)-docosenoate\", \"phosphatidylserine(18:1/22:1)\"], \"fatty acid 20:1\": [\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "fatty acid 20:1",
+                "parent_concept": "monounsaturated fatty acid",
+                "true_referents": "[\"N-(11Z)-icosenoylphytosphingosine\", \"1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine\", \"sphingomyelin d18:1/20:1\", \"oscr#35-CoA\", \"N-(11Z)-icosenoylsphinganine\", \"(11Z)-icos-11-enoic acid\", \"cholesteryl (11Z)-icosenoate\", \"gadelaidic acid\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "cholesteryl (11Z)-icosenoate",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid",
+                "N-(11Z)-icosenoylsphinganine",
+                "sphingomyelin d18:1/20:1"
+            ]
+        }
+    ]
+}

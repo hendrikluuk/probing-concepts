@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thiol and thiol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thiol and thiol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "Thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Thiol and thiol refer to the same chemical functional group, the term is simply capitalized in one instance and not in the other.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "Thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Thiol and thiol refer to the same chemical group containing a sulfur-hydrogen bond, and the difference in capitalization does not change their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "both terms refer to the same chemical group containing a sulfur-hydrogen bond, also known as a sulfhydryl group",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thioether",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A thioether is an organic compound containing a sulfur atom bonded to two carbon atoms, whereas a thiol contains a sulfur atom bonded to a hydrogen atom and a carbon atom. Therefore, thioethers and thiols are distinct and not equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "Thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Thiol and thiol refer to the same chemical group containing a sulfur atom bonded to a hydrogen atom, and are synonyms differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "Thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Thiol and thiol refer to the same chemical group, specifically a sulfur-containing functional group, and are simply different capitalizations of the same term.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both refer to the same chemical group containing a sulfur-hydrogen bond.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thiol and thiol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thiol and thiol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thiol and thiol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thiol and thiol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "Thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Thiol and thiol are the same term with different capitalization, referring to the same functional group in organic chemistry.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "thiol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "thiol and thiol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "thiol",
+        "domain": "chemistry",
+        "response": "The closest conceptual category that includes all entities that comply with the definition is \"thiol\".",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The statement describes thiol as the closest conceptual category, implying that all entities complying with the definition are indeed thiols, and vice versa.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

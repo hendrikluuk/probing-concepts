@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "an ester is a type of organic compound with a specific functional group (RCOOR'), while a ketone is a different type of organic compound with a carbonyl group (RCOR') and they have different chemical structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same chemical compound characterized by a carbonyl group bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "Ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Ketone' and 'ketone' are identical except for capitalization, referring to the same chemical compound group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "Ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both 'Ketone' and 'ketone' refer to the same class of organic compounds characterized by a carbonyl group bonded to two hydrocarbon groups. The difference is only in capitalization, which does not affect their equivalence in meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "Acyl halide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acyl halide contains a carbonyl group bonded to a halogen, while a ketone has a carbonyl group bonded to two carbon atoms. They are different functional groups.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are the same term and refer to the same chemical compound structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical compound group characterized by a carbonyl group bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound characterized by a carbonyl group (C=O) bonded to two hydrocarbon groups.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ester and ketone are different types of organic compounds; esters contain an oxygen atom double-bonded to a carbon atom and a single-bonded oxygen atom to another carbon, while ketones have a carbonyl group (C=O) bonded to two carbon atoms. They have different structures and chemical properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "Acetals",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Acetals are organic compounds formed from an aldehyde or ketone and an alcohol, but acetals specifically refer to compounds derived from aldehydes. Ketones are a different class of organic compounds with a carbonyl group bonded to two carbon atoms. Therefore, acetals are not equivalent to ketones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "esters and ketones are different classes of organic compounds; esters contain a carbonyl group bonded to an alkoxy group, while ketones have a carbonyl group bonded to two carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "The largest conceptual category that includes only entities that comply with the definition given below is \"carbon compounds\".",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ketones are a type of carbon compound, but not all carbon compounds are ketones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "ketohexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketohexose and ketohexose are identical terms and refer to the same chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "\"dihydroxyacetone\" \n\n(Note: The correct concept for a six-carbon sugar with a ketone group is fructose, a ketohexose. However, the question seems to imply a six-carbon sugar with a single ketone group, which aligns with fructose. \"Dihydroxyacetone\" is a three-carbon ketone sugar, but it is included here due to the specific wording of the definition. The most accurate concept for the definition provided is \"fructose.\")",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Dihydroxyacetone is a three-carbon ketone sugar (a ketotriose), whereas a ketohexose is a six-carbon sugar with a ketone group, such as fructose. Therefore, dihydroxyacetone and ketohexose are not equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "ketose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketohexose is a type of ketose, specifically a six-carbon ketose, but not all ketoses are ketohexoses as ketoses can have varying numbers of carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "Ketose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketose is a type of sugar with a ketone group, while a ketohexose is a specific type of ketose with six carbon atoms. Not all ketoses are ketohexoses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "ketose hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketose hexose and ketohexose are synonyms, both referring to monosaccharides with six carbon atoms and a ketone group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "fructose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "fructose is a specific type of ketohexose, and all fructose molecules are ketohexoses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "Fructose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Fructose is a specific type of ketohexose, but not all ketohexoses are fructose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "Ketohexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ketohexose and ketohexose are the same term with different capitalization, referring to the same class of sugars.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "hexulose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hexulose is a monosaccharide with six carbon atoms and a ketone group, but not all hexuloses are ketohexoses. A ketohexose specifically refers to hexoses with a ketone functional group, but hexulose can also refer to sugars with different structural variations.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "ketohexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketohexose and ketohexose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "ketohexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketohexose and ketohexose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "ketohexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of sugar, a six-carbon ketose.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "monosaccharide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketohexose is a type of monosaccharide, but not all monosaccharides are ketohexoses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "Hexose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hexose is a six-carbon sugar, which can be either an aldose or a ketose. A ketohexose is specifically a six-carbon sugar with a ketone group. Therefore, not all hexoses are ketohexoses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "ketohexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketohexose and ketohexose are identical terms, referring to the same type of sugar molecule with a ketone group and six carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ketohexose",
+        "domain": "chemistry",
+        "response": "Ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone is a functional group characterized by a carbonyl group bonded to two carbon atoms, whereas a ketohexose is a specific type of sugar molecule that contains a ketone group and six carbon atoms. Not all ketones are ketohexoses, and not all ketohexoses are just simple ketones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

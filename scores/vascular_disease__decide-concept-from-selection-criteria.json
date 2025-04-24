@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same medical condition affecting the blood vessels.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "Circulatory Vascular Disease",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Circulatory Vascular Disease is a specific type of vascular disease, but not all vascular diseases are circulatory.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "Vascular Disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Vascular Disease' and 'vascular disease' are equivalent as they refer to the same medical condition with only a difference in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "Vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Vascular disease' and 'vascular disease' are identical in meaning; the difference is only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'vascular disease' and 'vascular disease' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same medical condition affecting the blood vessels.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "Vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Vascular disease' and 'vascular disease' are the same, differing only in capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "Vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Vascular disease' and 'vascular disease' are identical except for capitalization, indicating they refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "Vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms 'Vascular disease' and 'vascular disease' refer to the same medical condition affecting the blood vessels, with the only difference being in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "vascular disease and vascular disease are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "angiopathy",
+        "judgement": {
+            "equivalent": false,
+            "reason": "angiopathy refers to any disease of the blood vessels, while vascular disease is a broader term that includes any condition affecting the circulatory system, including arteries, veins, and lymph vessels.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same condition affecting the blood vessels.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "cardiovascular disease",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cardiovascular disease refers to diseases of the heart and blood vessels, whereas vascular disease specifically refers to diseases of the blood vessels. Not all cardiovascular diseases are vascular diseases, as some may primarily affect the heart.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "vascular disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same condition affecting blood vessels.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "vasculopathy",
+        "judgement": {
+            "equivalent": true,
+            "reason": "vasculopathy and vascular disease are synonyms, both referring to any disorder affecting blood vessels.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "vascular disease",
+        "domain": "medicine",
+        "response": "cardiovascular disease",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cardiovascular disease refers to diseases of the heart and blood vessels, while vascular disease specifically refers to diseases of the blood vessels. Not all cardiovascular diseases are vascular diseases, as cardiovascular diseases include heart diseases as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

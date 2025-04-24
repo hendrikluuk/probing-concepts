@@ -1,0 +1,1962 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": "[\"D-glucopyranosyl-(1->4)-aldehydo-D-mannose\", \"glycosylrhamnose derivative\", \"beta-D-galactosyl-(1->4)-L-rhamnose\", \"alpha-D-Glcp-(1->3)-L-Rhap\", \"beta-D-GlcpNAc-(1->2)-alpha-L-Rhap\", \"alpha-D-glucopyranosyl alpha-D-galactopyranoside\", \"alpha-D-Manp\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta-mannob\", \"alpha-D-glucosid\", \"beta_mannob\", \"alpha-D-glucosid\", \"beta_mannob\", \"alpha-D-glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha-mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha-mannob\", \"alpha-D_glucosid\", \"alpha-D_glucosid\", \"beta_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha-mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"alpha_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha-D_glucosid\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mannob\", \"beta_mannob\", \"alpha_mann",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": "[\"beta-D-galactosyl-(1->4)-L-rhamnose\", \"alpha-D-Glcp-(1->3)-L-Rhap\", \"alpha-L-Rhap-(1->2)-L-Rhap\", \"beta-D-GlcpNAc-(1->2)-alpha-L-Rhap\", \"2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose\", \"alpha-D-Rhap-(1->2)-D-Manp\", \"alpha-D-glucopyranosyl-(1->3)-alpha-D-galactopyranoside\", \"alpha-D-Manp-(1->4-methyl)-2,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp"
+            ],
+            "mismatches": [
+                "alpha-D-Manp-(1->2)-alpha-D-Manose"
+            ],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "glycosylrhamnose derivative",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopy-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Rhap-(1->3)",
+            "alpha-D-Rhap-(1->3)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "glycosylrhamnose derivative",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose"
+            ],
+            "mismatches": [
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopy-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Rhap-(1->3)"
+            ],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "alpha-D-Manp-(1->3)-alpha-D-Rhap",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "alpha-D-Manp-(1->3)-alpha-D-Rhap",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 1,
+            "FP": 13,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+            ],
+            "mismatches": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me"
+            ],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Glcp-(1->3)-alpha-L-rhamnose",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Glcp-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 1,
+            "FP": 10,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "glycosylrhamnose derivative",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "glycosylrhamnose derivative",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose"
+            ],
+            "mismatches": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "glycosylrhamnose derivative",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "glycosylrhamnose derivative",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "6-kestotriose",
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+            "mannobiose",
+            "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-kestotriose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 8,
+            "FP": 15,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "glycosylrhamnose derivative",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "glycosylrhamnose derivative",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "glycosylrhamnose derivative",
+            "mannobiose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [
+                "glycosylrhamnose derivative",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose"
+            ],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 8,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "6-kestotriose",
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+            "glycosylrhamnose derivative",
+            "mannobiose",
+            "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-kestotriose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "glycosylrhamnose derivative",
+                "mannobiose",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 8,
+            "FP": 16,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+            ],
+            "mismatches": [
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 5,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "glycosylfucose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-L-Fucp-(1->2)-[alpha-D-Galp-(1->3)]-alpha-D-Galp",
+            "alpha-D-Galp-(1->4)-alpha-L-Fucp",
+            "alpha-D-Glcp-(1->2)-L-Fucp",
+            "beta-D-Glcp-(1->3)-alpha-L-Fucp",
+            "beta-D-Galp-(1->4)-alpha-L-Fucp",
+            "beta-D-Glcp-(1->3)-beta-L-Fucp",
+            "beta-D-Glcp-(1->4)-alpha-L-Fucp",
+            "alpha-D-Glcp-(1->4)-alpha-L-Fucp"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-Galp-(1->4)-alpha-L-Fucp",
+                "alpha-D-Glcp-(1->2)-L-Fucp",
+                "beta-D-Glcp-(1->3)-alpha-L-Fucp",
+                "beta-D-Galp-(1->4)-alpha-L-Fucp",
+                "beta-D-Glcp-(1->3)-beta-L-Fucp",
+                "beta-D-Glcp-(1->4)-alpha-L-Fucp",
+                "alpha-D-Glcp-(1->4)-alpha-L-Fucp"
+            ],
+            "mismatches": [
+                "alpha-L-Fucp-(1->2)-[alpha-D-Galp-(1->3)]-alpha-D-Galp"
+            ],
+            "true_referents": [
+                "beta-D-Galp-(1->4)-alpha-L-Fucp",
+                "beta-D-Glcp-(1->3)-beta-L-Fucp",
+                "glycosylfucose derivative",
+                "beta-D-Glcp-(1->3)-alpha-L-Fucp",
+                "alpha-D-Galp-(1->4)-alpha-L-Fucp",
+                "beta-D-Glcp-(1->4)-alpha-L-Fucp",
+                "alpha-D-Glcp-(1->4)-alpha-L-Fucp",
+                "alpha-D-Glcp-(1->2)-L-Fucp"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "disaccharide derivative",
+        "domain": "chemistry",
+        "response": [
+            "glycosylfucose derivative",
+            "alpha-D-Galf-(1->2)-beta-D-Galp",
+            "alpha-(1->3)-galactobiose",
+            "alpha-D-Galp-(1->4)-alpha-L-Fucp",
+            "beta-D-Galf-(1->3)-beta-D-Galp",
+            "alpha-D-Glcp-(1->2)-L-Fucp",
+            "1-O-acetyl-beta-maltose",
+            "alpha-D-Rhap2Me4NFo-(1->3)-alpha-D-Rhap4NFoO[CH2]5CO2Me",
+            "beta-D-Glcp-(1->3)-alpha-L-Fucp",
+            "beta-D-Galp-(1->4)-alpha-L-Fucp",
+            "beta-D-Galf-(1->4)-alpha-D-Galp",
+            "beta-D-Glcp-(1->3)-beta-L-Fucp",
+            "beta-D-Glcp-(1->4)-alpha-L-Fucp",
+            "alpha-D-Glcp-(1->4)-alpha-L-Fucp"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-O-acetyl-beta-maltose",
+                "alpha-D-Rhap2Me4NFo-(1->3)-alpha-D-Rhap4NFoO[CH2]5CO2Me"
+            ],
+            "mismatches": [
+                "glycosylfucose derivative",
+                "alpha-D-Galf-(1->2)-beta-D-Galp",
+                "alpha-(1->3)-galactobiose",
+                "alpha-D-Galp-(1->4)-alpha-L-Fucp",
+                "beta-D-Galf-(1->3)-beta-D-Galp",
+                "alpha-D-Glcp-(1->2)-L-Fucp",
+                "beta-D-Glcp-(1->3)-alpha-L-Fucp",
+                "beta-D-Galp-(1->4)-alpha-L-Fucp",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "beta-D-Glcp-(1->3)-beta-L-Fucp",
+                "beta-D-Glcp-(1->4)-alpha-L-Fucp",
+                "alpha-D-Glcp-(1->4)-alpha-L-Fucp"
+            ],
+            "true_referents": [
+                "mycothiols",
+                "7-O-methylvitexin 2''-O-alpha-L-rhamnoside",
+                "alpha-D-Rhap2Me4NFo-(1->3)-alpha-D-Rhap4NFoO[CH2]5CO2Me",
+                "HP_dp02_0006",
+                "anthemis glycoside A",
+                "beta-D-Galp-(1->3)-alpha-D-GalpNAc-(1->3)-D-GlcpNAc",
+                "1-O-acetyl-beta-maltose",
+                "alpha-L-Rhap-(1->4)-D-ribitol-(5-P-2)-alpha-D-Galp-(1->3)-alpha-D-Glcp"
+            ],
+            "TP": 2,
+            "FP": 12,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "galactobiose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-Galf-(1->2)-beta-D-Galp",
+            "alpha-(1->3)-galactobiose",
+            "beta-D-Galf-(1->3)-beta-D-Galp",
+            "beta-D-Galf-(1->4)-alpha-D-Galp"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-Galf-(1->2)-beta-D-Galp",
+                "alpha-(1->3)-galactobiose",
+                "beta-D-Galf-(1->3)-beta-D-Galp",
+                "beta-D-Galf-(1->4)-alpha-D-Galp"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-Galf-(1->3)-beta-D-Galp",
+                "alpha-(1->3)-galactobiose",
+                "beta-D-Galf-(1->4)-alpha-D-Galp",
+                "beta-D-Galp-(1->4)-alpha-D-Galp-(1->3)-beta-D-Galp",
+                "alpha-D-Galp-(1->6)-alpha-D-Galp-(1->3)-beta-D-Galp",
+                "alpha-D-Galf-(1->2)-beta-D-Galp",
+                "beta-D-Galp-(1->4)-alpha-D-Galp-(1->3)-beta-D-Galp",
+                "alpha-L-Fucp-(1->2)-[alpha-D-Galp-(1->3)]-alpha-D-Galp"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "mannobiose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "6-kestotriose",
+            "mannobiose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-kestotriose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "mannobiose",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 2,
+            "FP": 14,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "6-kestotriose",
+            "mannobiose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-kestotriose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "mannobiose",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 2,
+            "FP": 14,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "glycosylrhamnose derivative",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "glycosylrhamnose derivative",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "mannobiose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "6-kestotriose",
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "mannobiose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-kestotriose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 2,
+            "FP": 14,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "beta-D-galactosyl-(1->4)-L-rhamnose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "mannobiose",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "mannobiose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 0,
+            "FP": 8,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "mannobiose",
+            "beta-mannobiose",
+            "alpha-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-mannobiose",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "mismatches": [
+                "alpha-D-Manp-(1->2)-beta-D-Manp"
+            ],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "6-kestotriose",
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-kestotriose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Manp-(1->4)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-Galactosyl-(1->4)-L-Rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "beta-D-Manp-(1->4)-L-Rhap",
+            "beta-D-Manp-(1->4)-L-Rhap",
+            "2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "glycosylrhamnose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-Galactosyl-(1->4)-L-Rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "glycosylrhamnose derivative"
+            ],
+            "mismatches": [
+                "alpha-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Manp-(1->4)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Rhap-(1->2)-L-Rhap",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "beta-D-Manp-(1->4)-L-Rhap",
+                "2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose"
+            ],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 6,
+            "FP": 8,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "glycosylmannose",
+        "domain": "chemistry",
+        "response": [
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "beta-mannobiose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "beta-mannobiose",
+                "mannobiose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "glycosyl glycoside",
+        "domain": "chemistry",
+        "response": [
+            "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+            "mannobiose",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "beta-D-Manp-(1->2)-beta-D-Manp",
+            "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "alpha-D-Manp-(1->6)-alpha-D-Manp",
+            "alpha-D-Manp-(1->4)-D-Manp",
+            "alpha-D-Manp-(1->2)-alpha-D-Manp",
+            "alpha-D-glucopyranosyl alpha-D-galactopyranoside",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "beta-mannobiose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "mismatches": [
+                "D-glucopyranosyl-(1->4)-aldehydo-D-mannose",
+                "mannobiose",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "beta-D-Manp-(1->2)-beta-D-Manp",
+                "alpha-D-Man3Me-(1->4)-alpha-D-Man3Me",
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "alpha-D-Manp-(1->6)-alpha-D-Manp",
+                "alpha-D-Manp-(1->4)-D-Manp",
+                "alpha-D-Manp-(1->2)-alpha-D-Manp",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-mannobiose"
+            ],
+            "true_referents": [
+                "3-O-hydroxyphthioceranoyl-2-O-stearoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-3-O-[(2E,4S,6S)-2,4,6-trimethyltetracos-2-enoyl]-2'-O-sulfo-alpha,alpha-trehalose",
+                "2-O-palmitoyl-2'-O-sulfo-3-O-[(2S,4S,6S,8S)-2,4,6,8-tetramethyltetracosanoyl]-alpha,alpha-trehalose",
+                "3-O-[(2E,4R)-2,4-dimethyldocos-2-enoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "6-kestotriose",
+                "3-O-[(2S,4S)-2,4-dimethyldocosanoyl]-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "3-O-hydroxyphthioceranoyl-2-O-palmitoyl-2'-O-sulfo-alpha,alpha-trehalose",
+                "alpha-D-glucopyranosyl alpha-D-galactopyranoside"
+            ],
+            "TP": 1,
+            "FP": 12,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "glycosylrhamnose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-Glcp-(1->3)-L-Rhap",
+            "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+            "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+            "alpha-L-Rhap-(1->2)-L-Rhap",
+            "beta-D-galactosyl-(1->4)-L-rhamnose",
+            "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+            "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-Glcp-(1->3)-L-Rhap",
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "beta-D-GlcpNAc-(1->2)-alpha-L-Rhap",
+                "alpha-D-Rhap-(1->3)-alpha-D-Rhap",
+                "beta-D-galactosyl-(1->4)-L-rhamnose",
+                "alpha-L-Rhap-(1->2)-L-Rhap",
+                "glycosylrhamnose derivative",
+                "4-O-acetyl-2,3-di-O-methyl-alpha-L-fucopyranosyl-(1->3)-alpha-L-rhamnopyranose",
+                "2,3,4-tri-O-methyl-alpha-L-fucosyl-(1->3)-alpha-L-rhamnose",
+                "alpha-D-Glcp-(1->3)-L-Rhap"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    }
+]

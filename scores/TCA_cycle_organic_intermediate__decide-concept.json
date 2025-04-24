@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "tricarboxylic acid cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Tricarboxylic acid cycle intermediate and TCA cycle organic intermediate refer to the same set of compounds involved in the TCA cycle.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "citric acid cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The citric acid cycle and TCA cycle refer to the same metabolic pathway, and both terms refer to intermediates involved in this cycle.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "TCA cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All TCA cycle intermediates are organic compounds, so the terms are synonymous in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "TCA cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All TCA cycle intermediates are organic, so the terms are synonymous in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "citric acid cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The citric acid cycle and the TCA cycle are different names for the same metabolic pathway, and the intermediates are the same.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A metabolite is any substance involved in metabolism, while a TCA cycle organic intermediate specifically refers to compounds involved in the TCA cycle, which is just one part of metabolism.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "Metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A metabolite is any substance produced during metabolism, while a TCA cycle organic intermediate is specifically a metabolite involved in the TCA cycle. Not all metabolites are TCA cycle intermediates.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "Ketoglutarate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ketoglutarate is one specific type of TCA cycle organic intermediate, but there are other intermediates in the TCA cycle as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "TCA cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All TCA cycle intermediates are organic, and the term 'organic' is implicit in the context of biological cycles.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "TCA cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All TCA cycle intermediates are organic compounds, so the terms are synonymous in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "TCA cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "TCA cycle intermediates are inherently organic compounds, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "tricarboxylic acid cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "tricarboxylic acid cycle intermediate and TCA cycle organic intermediate refer to the same intermediates in the TCA cycle, as the TCA cycle is also known as the tricarboxylic acid cycle and its intermediates are organic compounds.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "tricarboxylic acid cycle intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "tricarboxylic acid cycle intermediate and TCA cycle organic intermediate refer to the same intermediates in the TCA cycle, also known as the citric acid cycle or Krebs cycle.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "Alpha-ketoglutarate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Alpha-ketoglutarate is an intermediate in the TCA cycle, but the TCA cycle includes other intermediates as well, so not all TCA cycle intermediates are alpha-ketoglutarate.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "Ketogluconic acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ketogluconic acid is not an intermediate in the TCA cycle. The TCA cycle involves intermediates such as citrate, isocitrate, alpha-ketoglutarate, succinyl-CoA, succinate, fumarate, malate, and oxaloacetate.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "TCA cycle organic intermediate",
+        "domain": "chemistry",
+        "response": "Citric acid cycle",
+        "judgement": {
+            "equivalent": false,
+            "reason": "The Citric acid cycle is a metabolic pathway, while a TCA cycle organic intermediate refers to any of the specific compounds involved in the cycle. Not all TCA cycle organic intermediates are the entire Citric acid cycle.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

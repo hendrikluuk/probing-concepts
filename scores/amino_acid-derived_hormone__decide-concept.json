@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "peptide hormones are a type of hormone made up of amino acids, but not all amino acid-derived hormones are peptide hormones; some are derived from single amino acids rather than peptide chains.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "Amino acid-derived hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Amino acid-derived hormone' and 'amino acid-derived hormone' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amino acid-derived hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "Amino acid-derived hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Amino acid-derived hormone' and 'amino acid-derived hormone' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amine hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amine hormones are a category of hormones derived from amino acids, making the terms synonymous in this context",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amine hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amine hormones are also known as amino acid-derived hormones, as they are derived from amino acids.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amine hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amine hormones are a type of hormone derived from amino acids, making the terms synonymous in this context",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "Peptide hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Peptide hormones are a type of hormone made up of amino acids, but not all amino acid-derived hormones are peptide hormones. Some amino acid-derived hormones, like thyroid hormones, are not peptides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amine hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amine hormones are also known as amino acid-derived hormones, as they are derived from amino acids.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amine hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amine hormones are a subset of amino acid-derived hormones, and the terms are often used interchangeably in the context of hormones derived from amino acids.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amino acid-derived hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'amino acid-derived hormone' and 'amino acid-derived hormone' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "peptide hormones are composed of peptides, which are chains of amino acids, but not all amino acid-derived hormones are peptide hormones. Some amino acid-derived hormones, like thyroid hormones, are not peptides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amino acid derivative",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An amino acid-derived hormone is a specific type of amino acid derivative, but not all amino acid derivatives are hormones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Peptide hormones are composed of amino acid chains, while amino acid-derived hormones are typically derived from single amino acids. Not all amino acid-derived hormones are peptide hormones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "amino acid hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amino acid hormone and amino acid-derived hormone refer to hormones that are derived from amino acids, making them synonyms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "amino acid-derived hormone",
+        "domain": "biology",
+        "response": "Protein hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Protein hormones are a type of hormone composed of polypeptides, while amino acid-derived hormones are derived from single amino acids. Not all protein hormones are amino acid-derived hormones and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

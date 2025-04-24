@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells. Cells can also belong to other organisms such as plants, bacteria, and animals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells. Cells can belong to various organisms, including plants, animals, and bacteria.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells. Cells can belong to various organisms such as plants, animals, bacteria, etc.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "Cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells. Cells can belong to other organisms such as plants, animals, and bacteria.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "human cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same biological unit, a cell that is part of the human body.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells. Cells can be from other organisms or even be single-celled organisms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "human cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "human cell and human cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "Cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "human cell is a type of cell, but not all cells are human cells",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "human cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "A human cell and a human cell are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "a human cell is a type of cell, but not all cells are human cells",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "eukaryotic cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "human cells are eukaryotic cells, but not all eukaryotic cells are human cells",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "human cell is a type of cell, but not all cells are human cells",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells. Cells can be from various organisms, including plants, animals, and bacteria.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "human cell",
+        "domain": "medicine",
+        "response": "Cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human cell is a type of cell, but not all cells are human cells. Cells can belong to various organisms, including plants, animals, bacteria, and more.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

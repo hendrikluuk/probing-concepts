@@ -1,0 +1,2149 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis",
+            "Middle Ear Cholesteatoma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Middle Ear Cholesteatoma"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Yaws",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Yaws",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [
+                "Erysipelas"
+            ],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis",
+            "Middle Ear Cholesteatoma",
+            "Epidermodysplasia Verruciformis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Middle Ear Cholesteatoma"
+            ],
+            "mismatches": [
+                "Epidermodysplasia Verruciformis"
+            ],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Erythema Infectiosum",
+            "Erythema Chronicum Migrans",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis",
+            "Tinea Favosa",
+            "Lamellar Ichthyosis",
+            "Ichthyosis Bullosa of Siemens",
+            "Epidermodysplasia Verruciformis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Lamellar Ichthyosis",
+                "Ichthyosis Bullosa of Siemens"
+            ],
+            "mismatches": [
+                "Tinea Favosa",
+                "Epidermodysplasia Verruciformis"
+            ],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis",
+            "Photoallergic Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis",
+                "Photoallergic Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis",
+            "Lamellar Ichthyosis",
+            "Ichthyosis Bullosa of Siemens"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Lamellar Ichthyosis",
+                "Ichthyosis Bullosa of Siemens"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne",
+            "Congenital Ichthyosiform Erythroderma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [
+                "Congenital Ichthyosiform Erythroderma"
+            ],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erythema Chronicum Migrans",
+            "Epidermodysplasia Verruciformis",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Epidermodysplasia Verruciformis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis",
+            "Photoallergic Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis",
+                "Photoallergic Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Erysipelas"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erythema Chronicum Migrans",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Erythema Multiforme",
+            "Congenital Ichthyosiform Erythroderma",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [
+                "Exanthema Subitum",
+                "Congenital Ichthyosiform Erythroderma"
+            ],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Phototoxic Dermatitis",
+            "Irritant Dermatitis",
+            "Photoallergic Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis",
+                "Irritant Dermatitis",
+                "Photoallergic Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Erythema Multiforme",
+            "Seborrheic Dermatitis",
+            "Chronic Mucocutaneous Candidiasis",
+            "Netherton Syndrome",
+            "Dyshidrotic Eczema",
+            "Sweet Syndrome",
+            "Congenital Ichthyosiform Erythroderma",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Irritant Dermatitis",
+            "Ichthyosis Bullosa of Siemens",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne",
+            "Photoallergic Dermatitis",
+            "Epidermodysplasia Verruciformis",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Chronic Mucocutaneous Candidiasis",
+                "Epidermodysplasia Verruciformis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Multiforme",
+                "Seborrheic Dermatitis",
+                "Netherton Syndrome",
+                "Dyshidrotic Eczema",
+                "Sweet Syndrome",
+                "Congenital Ichthyosiform Erythroderma",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Irritant Dermatitis",
+                "Ichthyosis Bullosa of Siemens",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne",
+                "Photoallergic Dermatitis"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 5,
+            "FP": 13,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erythema Chronicum Migrans",
+            "Epidermodysplasia Verruciformis",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Epidermodysplasia Verruciformis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis",
+            "Phototoxic Dermatitis",
+            "Photoallergic Dermatitis",
+            "Netherton Syndrome",
+            "Ichthyosis Bullosa of Siemens"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis",
+                "Phototoxic Dermatitis",
+                "Photoallergic Dermatitis"
+            ],
+            "mismatches": [
+                "Netherton Syndrome",
+                "Ichthyosis Bullosa of Siemens"
+            ],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erythema Chronicum Migrans",
+            "Epidermodysplasia Verruciformis",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Epidermodysplasia Verruciformis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Sweet Syndrome",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Sweet Syndrome",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Phototoxic Dermatitis",
+            "Irritant Dermatitis",
+            "Photoallergic Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis",
+                "Irritant Dermatitis",
+                "Photoallergic Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erythema Chronicum Migrans",
+            "Epidermodysplasia Verruciformis",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Epidermodysplasia Verruciformis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Phototoxic Dermatitis",
+            "Irritant Dermatitis",
+            "Photoallergic Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis",
+                "Irritant Dermatitis",
+                "Photoallergic Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Seborrheic Dermatitis",
+            "Porokeratosis",
+            "Congenital Ichthyosiform Erythroderma",
+            "Ichthyosis Bullosa of Siemens",
+            "Epidermodysplasia Verruciformis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Ichthyosis Bullosa of Siemens"
+            ],
+            "mismatches": [
+                "Seborrheic Dermatitis",
+                "Epidermodysplasia Verruciformis"
+            ],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Tinea Favosa",
+            "Yaws",
+            "Erythema Infectiosum",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tinea Favosa",
+                "Yaws",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis",
+            "Lamellar Ichthyosis",
+            "Congenital Ichthyosiform Erythroderma",
+            "Ichthyosis Bullosa of Siemens"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Lamellar Ichthyosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Ichthyosis Bullosa of Siemens"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erythema Infectiosum",
+            "Erythema Chronicum Migrans",
+            "Epidermodysplasia Verruciformis",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Epidermodysplasia Verruciformis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum",
+                "Erythema Chronicum Migrans"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne",
+            "Erysipelas"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [
+                "Erysipelas"
+            ],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Seborrheic Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Seborrheic Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis",
+            "Tinea Favosa",
+            "Lamellar Ichthyosis",
+            "Ichthyosis Bullosa of Siemens",
+            "Epidermodysplasia Verruciformis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Lamellar Ichthyosis",
+                "Ichthyosis Bullosa of Siemens"
+            ],
+            "mismatches": [
+                "Tinea Favosa",
+                "Epidermodysplasia Verruciformis"
+            ],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Tinea Favosa",
+            "Erythema Infectiosum",
+            "Erysipelas",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Tinea Favosa",
+                "Erysipelas",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne",
+            "Congenital Ichthyosiform Erythroderma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [
+                "Exanthema Subitum",
+                "Congenital Ichthyosiform Erythroderma"
+            ],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Dyshidrotic Eczema",
+            "Exanthema Subitum",
+            "Erythema Ab Igne",
+            "Erythema Chronicum Migrans",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Multiforme",
+            "Irritant Dermatitis",
+            "Photoallergic Dermatitis",
+            "Phototoxic Dermatitis",
+            "Seborrheic Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis",
+                "Photoallergic Dermatitis",
+                "Phototoxic Dermatitis",
+                "Seborrheic Dermatitis"
+            ],
+            "mismatches": [
+                "Exanthema Subitum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Multiforme"
+            ],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 6,
+            "FP": 6,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Keratosis",
+        "domain": "medicine",
+        "response": [
+            "Porokeratosis",
+            "Ichthyosis Bullosa of Siemens",
+            "Congenital Ichthyosiform Erythroderma",
+            "Lamellar Ichthyosis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Porokeratosis",
+                "Ichthyosis Bullosa of Siemens",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Ichthyosis Bullosa of Siemens",
+                "Middle Ear Cholesteatoma",
+                "Porokeratosis",
+                "Congenital Ichthyosiform Erythroderma",
+                "Lamellar Ichthyosis",
+                "Netherton Syndrome"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Infectious Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Exanthema Subitum",
+            "Yaws",
+            "Chronic Mucocutaneous Candidiasis",
+            "Erysipelas",
+            "Erythema Infectiosum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Exanthema Subitum",
+                "Yaws",
+                "Chronic Mucocutaneous Candidiasis",
+                "Erysipelas"
+            ],
+            "mismatches": [
+                "Erythema Infectiosum"
+            ],
+            "true_referents": [
+                "Yaws",
+                "Erysipelas",
+                "Chronic Mucocutaneous Candidiasis",
+                "Exanthema Subitum",
+                "Epidermodysplasia Verruciformis",
+                "Tinea Favosa"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Erythema",
+        "domain": "medicine",
+        "response": [
+            "Erythema Multiforme",
+            "Erythema Infectiosum",
+            "Erythema Nodosum",
+            "Erythema Chronicum Migrans",
+            "Erythema Ab Igne"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Erythema Multiforme",
+                "Erythema Infectiosum",
+                "Erythema Nodosum",
+                "Erythema Chronicum Migrans",
+                "Erythema Ab Igne"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Erythema Infectiosum",
+                "Erythema Ab Igne",
+                "Erythema Chronicum Migrans",
+                "Erythema Multiforme",
+                "Erythema Nodosum",
+                "Sweet Syndrome"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Eczematous Skin Diseases",
+        "domain": "medicine",
+        "response": [
+            "Contact Dermatitis",
+            "Dyshidrotic Eczema",
+            "Irritant Dermatitis",
+            "Seborrheic Dermatitis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Contact Dermatitis",
+                "Dyshidrotic Eczema",
+                "Irritant Dermatitis",
+                "Seborrheic Dermatitis"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Photoallergic Dermatitis",
+                "Seborrheic Dermatitis",
+                "Contact Dermatitis",
+                "Irritant Dermatitis",
+                "Dyshidrotic Eczema",
+                "Phototoxic Dermatitis"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    }
+]

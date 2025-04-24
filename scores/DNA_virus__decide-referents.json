@@ -1,0 +1,2006 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Densovirus",
+            "Densovirinae"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Densovirus",
+                "Densovirinae"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Amdovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Polyomaviridae",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Mastadenovirus"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Porcine Adenoviruses",
+            "Amdovirus",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [
+                "Amdovirus"
+            ],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Mastadenovirus",
+            "Densovirus",
+            "Siadenovirus",
+            "Fowl adenovirus A",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Amdovirus"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Densovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Polyomaviridae",
+            "Bovine Herpesvirus 4",
+            "Amdovirus",
+            "Simplexvirus",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Fowl adenovirus A",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Bocavirus",
+                "Mastadenovirus",
+                "Densovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Bovine Herpesvirus 4",
+                "Amdovirus",
+                "Simplexvirus",
+                "Human Herpesvirus 8",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 4,
+            "FP": 10,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Porcine Adenoviruses",
+            "Siadenovirus",
+            "Fowl adenovirus A",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Porcine Adenoviruses",
+                "Siadenovirus",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [
+                "Amdovirus"
+            ],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Densovirus",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [
+                "Densovirus"
+            ],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae",
+                "Amdovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Polyomaviridae",
+            "Bovine Herpesvirus 4",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Bovine Herpesvirus 4",
+                "Human Herpesvirus 8"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Porcine Adenoviruses",
+            "Polyomaviridae",
+            "Bovine Herpesvirus 4",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Fowl adenovirus A",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Porcine Adenoviruses",
+                "Bovine Herpesvirus 4",
+                "Human Herpesvirus 8",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Polyomaviridae",
+            "Bovine Herpesvirus 4",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Bovine Herpesvirus 4",
+                "Human Herpesvirus 8"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Densovirus",
+            "Molluscipoxvirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Densovirinae",
+            "Yatapoxvirus",
+            "Polyomaviridae",
+            "Amdovirus",
+            "Simplexvirus",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae",
+                "Amdovirus"
+            ],
+            "mismatches": [
+                "Cottontail rabbit papillomavirus",
+                "Mastadenovirus",
+                "Molluscipoxvirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Yatapoxvirus",
+                "Polyomaviridae",
+                "Simplexvirus",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 4,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Molluscipoxvirus",
+            "Porcine Adenoviruses",
+            "Densovirinae",
+            "Polyomaviridae",
+            "Pseudocowpox Virus",
+            "Bovine Herpesvirus 4",
+            "Amdovirus",
+            "Simplexvirus",
+            "Betaherpesvirinae",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Molluscipoxvirus",
+                "Porcine Adenoviruses",
+                "Densovirinae",
+                "Pseudocowpox Virus",
+                "Bovine Herpesvirus 4",
+                "Amdovirus",
+                "Simplexvirus",
+                "Betaherpesvirinae",
+                "Human Herpesvirus 8"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 4,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Mastadenovirus",
+            "Densovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Amdovirus",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [
+                "Bocavirus",
+                "Densovirus",
+                "Amdovirus"
+            ],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Mastadenovirus",
+            "Densovirus",
+            "Molluscipoxvirus",
+            "Siadenovirus",
+            "Densovirinae",
+            "Polyomaviridae",
+            "Bacteriophage mu",
+            "Pseudocowpox Virus",
+            "Bovine Herpesvirus 4",
+            "Bacteriophage T7",
+            "Amdovirus",
+            "Simplexvirus",
+            "Betaherpesvirinae",
+            "Bacteriophage HK022",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Densovirus",
+                "Molluscipoxvirus",
+                "Siadenovirus",
+                "Densovirinae",
+                "Polyomaviridae",
+                "Pseudocowpox Virus",
+                "Bovine Herpesvirus 4",
+                "Amdovirus",
+                "Simplexvirus",
+                "Betaherpesvirinae",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 12,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Polyomaviridae",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Human Herpesvirus 8"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae",
+                "Amdovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Porcine Adenoviruses",
+            "Polyomaviridae",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Porcine Adenoviruses",
+                "Human Herpesvirus 8",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae",
+                "Amdovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Molluscipoxvirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Yatapoxvirus",
+            "Polyomaviridae",
+            "Pseudocowpox Virus",
+            "Bovine Herpesvirus 4",
+            "Simplexvirus",
+            "Betaherpesvirinae",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Fowl adenovirus A",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Molluscipoxvirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Yatapoxvirus",
+                "Pseudocowpox Virus",
+                "Bovine Herpesvirus 4",
+                "Simplexvirus",
+                "Betaherpesvirinae",
+                "Human Herpesvirus 8",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 4,
+            "FP": 11,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Amdovirus",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [
+                "Amdovirus"
+            ],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae",
+                "Amdovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Polyomaviridae",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Amdovirus",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [
+                "Amdovirus"
+            ],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Densovirinae",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Densovirinae",
+                "Amdovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Polyomaviridae",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Polyomaviridae",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Bocavirus",
+            "Densovirus",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bocavirus",
+                "Densovirus",
+                "Amdovirus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Yaba monkey tumor virus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage T7",
+            "Bacteriophage HK022"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage T7",
+                "Bacteriophage HK022"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Parvoviridae",
+        "domain": "medicine",
+        "response": [
+            "Densovirus",
+            "Amdovirus",
+            "Densovirinae"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Densovirus",
+                "Amdovirus",
+                "Densovirinae"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Densovirus",
+                "Densovirinae",
+                "Bocavirus",
+                "Amdovirus"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "DNA Tumor Viruses",
+        "domain": "medicine",
+        "response": [
+            "Cottontail rabbit papillomavirus",
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Yatapoxvirus",
+            "Human Herpesvirus 4",
+            "Human Herpesvirus 8",
+            "Yaba monkey tumor virus",
+            "Fowl adenovirus A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Cottontail rabbit papillomavirus",
+                "Human Herpesvirus 4",
+                "Yaba monkey tumor virus"
+            ],
+            "mismatches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Yatapoxvirus",
+                "Human Herpesvirus 8",
+                "Fowl adenovirus A"
+            ],
+            "true_referents": [
+                "Yaba monkey tumor virus",
+                "Human Herpesvirus 4",
+                "Polyomaviridae",
+                "Cottontail rabbit papillomavirus"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Adenoviridae",
+        "domain": "medicine",
+        "response": [
+            "Mastadenovirus",
+            "Siadenovirus",
+            "Porcine Adenoviruses",
+            "Fowl adenovirus A",
+            "Amdovirus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mastadenovirus",
+                "Siadenovirus",
+                "Porcine Adenoviruses",
+                "Fowl adenovirus A"
+            ],
+            "mismatches": [
+                "Amdovirus"
+            ],
+            "true_referents": [
+                "Porcine Adenoviruses",
+                "Mastadenovirus",
+                "Fowl adenovirus A",
+                "Siadenovirus"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Caudovirales",
+        "domain": "medicine",
+        "response": [
+            "Bacteriophage lambda",
+            "Bacteriophage mu",
+            "Bacteriophage HK022",
+            "Bacteriophage T7"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Bacteriophage lambda",
+                "Bacteriophage mu",
+                "Bacteriophage HK022",
+                "Bacteriophage T7"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bacteriophage T7",
+                "Bacteriophage HK022",
+                "Bacteriophage lambda",
+                "Bacteriophage mu"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    }
+]

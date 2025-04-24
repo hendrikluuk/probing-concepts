@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "Laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept of a substance that helps stimulate bowel movements.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept, so they are identical and interchangeable.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "Laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Laxative' and 'laxative' refer to the same concept, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "Laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Laxative' and 'laxative' are identical except for capitalization, and thus refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "Stool softener",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A stool softener is a type of laxative that specifically works by softening the stool, but not all laxatives are stool softeners as some work by stimulating bowel movements or increasing stool bulk.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "Stool softener",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A stool softener is a type of laxative, but not all laxatives are stool softeners. Laxatives include various types such as bulk-forming agents, stimulants, and osmotics, whereas stool softeners specifically work by moistening the stool to ease passage.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "stool softener",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stool softeners are a type of laxative, but not all laxatives are stool softeners. Laxatives include a broader category of substances that promote bowel movements, whereas stool softeners specifically work by moistening the stool.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept with no distinction between them.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same substance or medication used to stimulate bowel movements.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept and are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "Laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'Laxative' is the same as 'laxative'; the difference is only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "Laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Laxative' and 'laxative' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "laxative",
+        "domain": "medicine",
+        "response": "laxative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept, as they are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

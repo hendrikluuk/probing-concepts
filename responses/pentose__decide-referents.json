@@ -1,0 +1,951 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "1-deoxy-D-xylulose"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "1-deoxy-D-xylulose"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "1-deoxy-D-xylulose"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "1-deoxy-D-xylulose"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "o1-mini",
+            "response": []
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "1-deoxy-D-xylulose"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "xylulose 5-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "1-deoxy-D-xylulose",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "ribulosamine 3-phosphate"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "pentose derivative",
+                "parent_concept": "pentose",
+                "true_referents": "[\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "L-ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ketopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"L-ribulose 5-phosphate\", \"(2R)-pristanoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"1-deoxy-D-xylulose\", \"3-methylpalmitoyl-CoA\", \"xylulose 5-phosphate\", \"3-sulfinopropionyl-CoA\", \"D-xylulose 5-phosphate\", \"L-xylulose 5-phosphate\", \"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"(9Z)-heptadecenoyl-CoA\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"allocholoyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\", \"ribulosamine 3-phosphate\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"(2E,5Z)-octadienoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\"]",
+                "siblings": "{\"pentose derivative\": [\"(2E,5Z)-octadienoyl-CoA\", \"(9Z)-heptadecenoyl-CoA\", \"3-hydroxy-3-(4-methylpent-3-en-1-yl)glutaryl-CoA\", \"(23Z,26Z,29Z,32Z)-3-oxooctatriacontatetraenoyl-CoA\", \"3-sulfinopropionyl-CoA\", \"allocholoyl-CoA\", \"6-hydroxycyclohex-1-ene-1-carbonyl-CoA\", \"(18Z,21Z,24Z,27Z,30Z,33Z)-3-oxohexatriacontahexaenoyl-CoA\"], \"ketopentose\": [\"1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate\", \"N(6)-(D-ribulosyl)-L-lysinium zwitterion\", \"1-deoxy-D-xylulose\", \"L-ribulose 5-phosphate\", \"D-xylulose 5-phosphate\", \"ribulosamine 3-phosphate\", \"xylulose 5-phosphate\", \"L-xylulose 5-phosphate\"], \"aldopentose\": [\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aldopentose",
+                "parent_concept": "pentose",
+                "true_referents": "[\"3-methylpalmitoyl-CoA\", \"(S)-3-hydroxylauroyl-CoA\", \"(2R)-pristanoyl-CoA\", \"(2E,7Z,10Z,13Z,16Z)-docosapentaenoyl-CoA\", \"D-alanyl-AMP\", \"(6Z,9Z,12Z,15Z,18Z,21Z)-3-hydroxytetracosahexaenoyl-CoA\", \"(2E,6Z,9Z,12Z,15Z,18Z,21Z)-tetracosaheptaenoyl-CoA\", \"(3R)-3-isopropenyl-6-oxoheptanoyl-CoA\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "N(6)-(D-ribulosyl)-L-lysinium zwitterion"
+            ]
+        }
+    ]
+}

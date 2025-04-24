@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immunoprotein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "immunoglobulin is a type of immunoprotein, but not all immunoproteins are immunoglobulins",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulin and immunoglobulin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immunoglobulins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulins refer to a group of antibodies, whereas immunoglobulin typically refers to a single antibody. Therefore, immunoglobulins include multiple immunoglobulin molecules.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Antibodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Antibodies and immunoglobulins are synonymous terms used to describe the same proteins produced by the immune system to identify and neutralize pathogens like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "antibody",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antibody and immunoglobulin are synonyms; immunoglobulins are a class of proteins that function as antibodies.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "antibody",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antibody and immunoglobulin are synonyms; both refer to the same type of protein used by the immune system to identify and neutralize foreign objects like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immunoglobulins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulins is the plural form referring to all classes of antibodies, whereas immunoglobulin is the singular form referring to one antibody or a specific class.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Immunoglobulin and immunoglobulin are the same term, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "antibody",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antibody and immunoglobulin are synonyms; both refer to the same type of protein produced by the immune system to identify and neutralize foreign objects like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immunoglobulins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "immunoglobulins refer to a group of antibodies, whereas immunoglobulin refers to a single antibody. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulin and immunoglobulin are the same term and refer to the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "antibodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antibodies and immunoglobulins are synonymous terms, both referring to the same class of proteins used by the immune system to neutralize pathogens.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "antibody",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antibody and immunoglobulin are synonyms; both refer to the same type of protein used by the immune system to identify and neutralize foreign objects like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immune complexes",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immune complexes are formed by the binding of antigens to antibodies, which are a type of immunoglobulin. Not all immunoglobulins form immune complexes, and immune complexes consist of more than just immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immune complexes",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immune complexes are formed when antigens bind to antibodies, which may include immunoglobulins, but immunoglobulins are a type of antibody and not all immune complexes necessarily involve them.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Concept: \"immunoglobulin\"",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'immunoglobulin' refers to the same concept in both cases, and there is no difference in meaning or implication.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

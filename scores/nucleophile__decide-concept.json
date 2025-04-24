@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "donor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A donor is a general term for an atom or molecule that donates electrons, while a nucleophile specifically donates a pair of electrons to form a chemical bond. Not all donors are nucleophiles.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a chemical reaction, often involved in redox reactions, while a nucleophile donates an electron pair to form a chemical bond, often involved in substitution or addition reactions. Not all reducing agents are nucleophiles and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "Lewis base",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A Lewis base is a substance that can donate an electron pair, while a nucleophile is a species that donates an electron pair to form a chemical bond. All nucleophiles are Lewis bases, but not all Lewis bases are nucleophiles, as nucleophiles participate in reactions with electrophiles, whereas Lewis bases may not necessarily do so.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "Lewis base",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A Lewis base is defined as an electron pair donor, while a nucleophile is a species that donates an electron pair to form a chemical bond in reaction mechanisms. All nucleophiles are Lewis bases, but not all Lewis bases are nucleophiles because nucleophiles specifically participate in chemical reactions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "nucleophile",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept, a nucleophile, which is a chemical species that donates an electron pair to form a chemical bond in reaction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a redox reaction, while a nucleophile donates an electron pair to form a chemical bond. Not all reducing agents are nucleophiles and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "Reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent is a substance that donates electrons in a redox reaction, while a nucleophile is a substance that donates an electron pair to form a chemical bond. Not all reducing agents are nucleophiles and not all nucleophiles act as reducing agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "Reductant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reductant is a substance that donates electrons in a redox reaction, while a nucleophile is a species that donates an electron pair to an electrophile to form a chemical bond. Not all reductants are nucleophiles, and not all nucleophiles are reductants.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a redox reaction, while a nucleophile donates an electron pair to form a chemical bond. Not all reducing agents are nucleophiles and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a redox reaction, while a nucleophile donates a pair of electrons to form a chemical bond. Not all reducing agents are nucleophiles, and not all nucleophiles are reducing agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a chemical reaction, often causing reduction, while a nucleophile donates an electron pair to form a chemical bond. Not all reducing agents are nucleophiles and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a redox reaction, while a nucleophile donates an electron pair to form a chemical bond. Not all reducing agents are nucleophiles and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a redox reaction, whereas a nucleophile donates an electron pair to form a chemical bond. While some reducing agents can act as nucleophiles, not all reducing agents are nucleophiles and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "Reductant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reductant is a substance that donates electrons in a redox reaction, while a nucleophile is a species that donates an electron pair to form a chemical bond in a reaction. These are distinct concepts in chemistry and are not equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent donates electrons in a redox reaction, while a nucleophile donates an electron pair to form a chemical bond. Not all reducing agents are nucleophiles, and not all nucleophiles are reducing agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "nucleophile",
+        "domain": "chemistry",
+        "response": "Concept: \"electron donor\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An electron donor is a substance that donates electrons to another compound, which can include nucleophiles, but not all electron donors are nucleophiles. Nucleophiles are specifically electron-rich species that seek positively charged or electron-deficient sites, often forming a bond with electrophiles.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

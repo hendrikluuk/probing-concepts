@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acetal is a molecule with two -OR groups attached to the same carbon, whereas a hemiacetal has one -OH and one -OR group attached to the same carbon. Not all acetals are hemiacetals, and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemi-acetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemi-acetal and hemiacetal are different spellings of the same chemical term",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acetal is a compound formed from a hemiacetal and an alcohol, but not all hemiacetals form acetals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetals",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hemiacetals are intermediates that can form acetals, but not all acetals are hemiacetals. Hemiacetals contain an alcohol and an ether group on the same carbon, while acetals have two ether groups.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms, thus they are strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "acetals",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hemiacetals are intermediates in the formation of acetals, but not all acetals are hemiacetals. Acetals are formed from hemiacetals through the reaction with an additional alcohol molecule.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acetal is a functional group formed from a hemiacetal and an alcohol, whereas a hemiacetal is an intermediate in the formation of an acetal. Not all hemiacetals form acetals, and not all acetals are derived from hemiacetals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acetal is a compound formed from the reaction of an aldehyde or ketone with two alcohol molecules, whereas a hemiacetal is an intermediate formed from the reaction of an aldehyde or ketone with one alcohol molecule. Not all acetals are hemiacetals, and not all hemiacetals become acetals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acetal is a functional group characterized by two ether groups attached to the same carbon, while a hemiacetal has one ether and one hydroxyl group attached to the same carbon. Not all acetals are hemiacetals and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acetal is a compound formed from a hemiacetal and an alcohol, whereas a hemiacetal is an intermediate structure formed from an aldehyde or ketone and an alcohol. Not all hemiacetals become acetals, and not all acetals are hemiacetals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Acetal and hemiacetal are related but distinct chemical structures. An acetal is formed from a hemiacetal and an alcohol, so not all hemiacetals are acetals and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Carboxylic acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Carboxylic acids and hemiacetals are distinct chemical compounds. Carboxylic acids contain a carboxyl group (-COOH), while hemiacetals are formed from the reaction of an alcohol with an aldehyde or ketone and do not contain a carboxyl group.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

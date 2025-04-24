@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A pro-inflammatory cytokine is a type of cytokine, but not all cytokines are pro-inflammatory.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "pro-inflammatory cytokines are a subset of cytokines, but not all cytokines are pro-inflammatory",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "interleukin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Interleukin is a type of cytokine, but not all interleukins are pro-inflammatory, and not all pro-inflammatory cytokines are interleukins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunomodulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immunomodulator is a substance that can modify or regulate one or more immune functions, which can include both enhancing and suppressing immune responses. A pro-inflammatory cytokine is a specific type of immunomodulator that promotes inflammation. Therefore, while pro-inflammatory cytokines are a subset of immunomodulators, not all immunomodulators are pro-inflammatory cytokines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "interleukin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Interleukin is a type of cytokine, but not all interleukins are pro-inflammatory cytokines and not all pro-inflammatory cytokines are interleukins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immuneactivating cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While pro-inflammatory cytokines are a subset of immune-activating cytokines, not all immune-activating cytokines are pro-inflammatory. Immune-activating cytokines can also include those involved in anti-inflammatory and regulatory functions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Interleukin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Interleukin is a type of cytokine, but not all interleukins are pro-inflammatory cytokines and not all pro-inflammatory cytokines are interleukins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Immunostimulant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunostimulants are agents that stimulate the immune system, which can include a variety of substances, while pro-inflammatory cytokines are specific molecules that promote inflammation. Not all immunostimulants are pro-inflammatory cytokines and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "pro-inflammatory cytokine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'pro-inflammatory cytokine' is exactly the same in both A and B, indicating they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunostimulatory cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immunostimulatory cytokine enhances the immune response and can include various types of cytokines, while a pro-inflammatory cytokine specifically promotes inflammation. Not all immunostimulatory cytokines are pro-inflammatory.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunostimulatory cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Pro-inflammatory cytokines are a subset of immunostimulatory cytokines, but not all immunostimulatory cytokines are pro-inflammatory.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "pro-inflammatory cytokines are a subset of cytokines, but not all cytokines are pro-inflammatory",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A pro-inflammatory cytokine is a specific type of cytokine, but not all cytokines are pro-inflammatory.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Interleukin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Interleukins are a group of cytokines, some of which are pro-inflammatory, but not all interleukins are pro-inflammatory cytokines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "interferon",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Interferons are a type of cytokine, but not all interferons are pro-inflammatory. Some interferons have antiviral and immunomodulatory effects, so they do not strictly imply being pro-inflammatory cytokines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "pro-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A pro-inflammatory cytokine is a type of cytokine, but not all cytokines are pro-inflammatory cytokines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

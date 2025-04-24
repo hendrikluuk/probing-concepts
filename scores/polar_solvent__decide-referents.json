@@ -1,0 +1,1798 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "dibromoacetic acid",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "acetone",
+                "bromoacetone"
+            ],
+            "mismatches": [
+                "dibromoacetic acid"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [
+            "ethyl 2-hexenoate",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethyl 2-hexenoate",
+                "ethyl formate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "diethyl maleate",
+                "(E)-ethyl 3-(2-furyl)acrylate",
+                "(S)-chlozolinate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "ethyl formate",
+            "acetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "ethyl formate",
+                "acetone"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "iminodiacetonitrile",
+            "acetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "iminodiacetonitrile",
+                "acetone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "iminodiacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "iminodiacetonitrile"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "dibromoacetic acid",
+            "ethyl formate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "dibromoacetic acid"
+            ],
+            "mismatches": [
+                "ethyl formate",
+                "bromoacetone"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "diethyl maleate",
+            "ethyl formate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone"
+            ],
+            "mismatches": [
+                "diethyl maleate",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "dichloromethane",
+            "ethyl formate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "acetone",
+                "dichloromethane",
+                "ethyl formate",
+                "bromoacetone"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "acetone",
+                "ethyl formate",
+                "bromoacetone"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "iminodiacetonitrile",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "iminodiacetonitrile"
+            ],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate",
+            "ethyl 2-hexenoate",
+            "ethyl cyclohexanecarboxylate",
+            "(E)-ethyl 3-(2-furyl)acrylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "ethyl cyclohexanecarboxylate",
+                "(E)-ethyl 3-(2-furyl)acrylate"
+            ],
+            "mismatches": [
+                "acetone"
+            ],
+            "true_referents": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "diethyl maleate",
+                "(E)-ethyl 3-(2-furyl)acrylate",
+                "(S)-chlozolinate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "iminodiacetonitrile",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "acetone",
+                "iminodiacetonitrile",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "dibromoacetic acid",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "dibromoacetic acid"
+            ],
+            "mismatches": [
+                "acetone",
+                "bromoacetone"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "acetone",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "dichloromethane",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "acetone",
+                "dichloromethane"
+            ],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "dichloromethane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "acetone",
+                "dichloromethane"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "chloroacetone",
+            "2-butoxyethanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "chloroacetone"
+            ],
+            "mismatches": [
+                "2-butoxyethanol"
+            ],
+            "true_referents": [
+                "Cys(IAN)-Gly",
+                "4-chlorophenylacetonitrile",
+                "[5-hydroxy-2-(4-hydroxyphenyl)-1-benzofuran-7-yl]acetonitrile",
+                "chloroacetone",
+                "10-hydroxy-pre-flavunoidine",
+                "2-amino-2-phenylacetonitrile"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "2-butoxyethanol",
+            "chloroacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2-butoxyethanol",
+                "chloroacetone"
+            ],
+            "true_referents": [
+                "7-deoxyloganin",
+                "N(epsilon)-GMP-N(alpha)-acetyl-L-lysine methyl ester",
+                "(R)-amlodipine",
+                "Adifoline",
+                "ditritium oxide",
+                "regelin"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "ditritium oxide",
+            "2-butoxyethanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-butoxyethanol"
+            ],
+            "mismatches": [
+                "ditritium oxide"
+            ],
+            "true_referents": [
+                "tetracenomycin B2",
+                "2-butoxyethanol",
+                "Isopropyl butyrate",
+                "ohchinin acetate",
+                "methyl 10,13-dihydroxy-9-oxo-11-octadecenoate",
+                "methyl 18-bromooctadeca-5,7,16-triynoate"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "dichloromethane",
+            "acetone",
+            "iminodiacetonitrile",
+            "diethyl maleate",
+            "dibromoacetic acid",
+            "ethyl formate",
+            "ethyl cyclohexanecarboxylate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "dibromoacetic acid"
+            ],
+            "mismatches": [
+                "dichloromethane",
+                "acetone",
+                "iminodiacetonitrile",
+                "diethyl maleate",
+                "ethyl formate",
+                "ethyl cyclohexanecarboxylate",
+                "bromoacetone"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "iminodiacetonitrile",
+            "diethyl maleate",
+            "acetone",
+            "dibromoacetic acid",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "iminodiacetonitrile",
+                "acetone"
+            ],
+            "mismatches": [
+                "diethyl maleate",
+                "dibromoacetic acid",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethyl formate"
+            ],
+            "mismatches": [
+                "acetone"
+            ],
+            "true_referents": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "diethyl maleate",
+                "(E)-ethyl 3-(2-furyl)acrylate",
+                "(S)-chlozolinate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "iminodiacetonitrile",
+            "diethyl maleate",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "iminodiacetonitrile",
+                "diethyl maleate",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "dibromoacetic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "dibromoacetic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "iminodiacetonitrile",
+            "ethyl formate",
+            "ethyl cyclohexanecarboxylate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "iminodiacetonitrile",
+                "bromoacetone"
+            ],
+            "mismatches": [
+                "ethyl formate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "dibromoacetic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "dibromoacetic acid"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "dibromoacetic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "dibromoacetic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone"
+            ],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "acetone",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "acetone"
+            ],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "acetic acid",
+            "ethanol",
+            "methanol",
+            "water"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "acetic acid",
+                "ethanol",
+                "methanol",
+                "water"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "iminodiacetonitrile",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "iminodiacetonitrile"
+            ],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate",
+            "ethyl 2-hexenoate",
+            "ethyl cyclohexanecarboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "mismatches": [
+                "acetone"
+            ],
+            "true_referents": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "diethyl maleate",
+                "(E)-ethyl 3-(2-furyl)acrylate",
+                "(S)-chlozolinate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "iminodiacetonitrile",
+            "diethyl maleate",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "iminodiacetonitrile",
+                "diethyl maleate",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "ethyl formate",
+            "ethyl 2-hexenoate",
+            "dibromoacetic acid",
+            "ethyl cyclohexanecarboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "dibromoacetic acid"
+            ],
+            "mismatches": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "ethyl formate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone"
+            ],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [
+            "ethyl formate",
+            "ethyl cyclohexanecarboxylate",
+            "ethyl 2-hexenoate",
+            "(E)-ethyl 3-(2-furyl)acrylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethyl formate",
+                "ethyl cyclohexanecarboxylate",
+                "ethyl 2-hexenoate",
+                "(E)-ethyl 3-(2-furyl)acrylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "diethyl maleate",
+                "(E)-ethyl 3-(2-furyl)acrylate",
+                "(S)-chlozolinate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate",
+            "iminodiacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "acetone",
+                "ethyl formate",
+                "iminodiacetonitrile"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "iminodiacetonitrile",
+            "ethyl formate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "acetone",
+                "iminodiacetonitrile"
+            ],
+            "mismatches": [
+                "ethyl formate"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [
+            "ethyl 2-hexenoate",
+            "ethyl formate",
+            "ethyl cyclohexanecarboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethyl 2-hexenoate",
+                "ethyl formate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "diethyl maleate",
+                "(E)-ethyl 3-(2-furyl)acrylate",
+                "(S)-chlozolinate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "acetone",
+            "dichloromethane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "acetone",
+                "dichloromethane"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "protic solvent",
+        "domain": "chemistry",
+        "response": [
+            "acetone",
+            "ethyl formate",
+            "ethyl cyclohexanecarboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "acetone",
+                "ethyl formate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "true_referents": [
+                "cilnidipine",
+                "N-acetyl-L-aspartic acid",
+                "12(R)-HPETE methyl ester",
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid",
+                "4-hydroxyphenylacetyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "polar aprotic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "iminodiacetonitrile",
+            "ethyl formate",
+            "dibromoacetic acid",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "iminodiacetonitrile",
+                "bromoacetone"
+            ],
+            "mismatches": [
+                "ethyl formate",
+                "dibromoacetic acid"
+            ],
+            "true_referents": [
+                "sulfolane",
+                "gammaGluCys(IAN)Glu",
+                "dichloromethane",
+                "acetone",
+                "bromoacetone",
+                "iminodiacetonitrile"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ethanol",
+        "domain": "chemistry",
+        "response": [
+            "ethyl formate",
+            "ethyl 2-hexenoate",
+            "ethyl cyclohexanecarboxylate",
+            "Methyl Hexacosanoate",
+            "dibromoacetic acid",
+            "diethyl maleate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "ethyl cyclohexanecarboxylate",
+                "diethyl maleate"
+            ],
+            "mismatches": [
+                "Methyl Hexacosanoate",
+                "dibromoacetic acid"
+            ],
+            "true_referents": [
+                "ethyl formate",
+                "ethyl 2-hexenoate",
+                "diethyl maleate",
+                "(E)-ethyl 3-(2-furyl)acrylate",
+                "(S)-chlozolinate",
+                "ethyl cyclohexanecarboxylate"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "protophilic solvent",
+        "domain": "chemistry",
+        "response": [
+            "sulfolane",
+            "dichloromethane",
+            "acetone",
+            "dibromoacetic acid",
+            "ethyl formate",
+            "bromoacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulfolane",
+                "dichloromethane",
+                "acetone",
+                "dibromoacetic acid",
+                "ethyl formate",
+                "bromoacetone"
+            ],
+            "true_referents": [
+                "F390C",
+                "(R)-nisoldipine",
+                "Akuammine",
+                "isobrucein A",
+                "arecoline",
+                "30-acetyltrichagmalin F"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neuropeptide and neuropeptide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neuropeptides is the plural form, referring to multiple neuropeptides, while neuropeptide refers to a single molecule. They are related but not strictly equivalent as one implies multiple instances and the other implies a singular instance.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "neuropeptides is the plural form referring to multiple neuropeptides, while neuropeptide refers to a single molecule. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "Neuropeptides",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Neuropeptides is the plural form of neuropeptide, referring to the same type of molecules collectively or individually.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "neuropeptides refers to multiple neuropeptide molecules, while neuropeptide refers to a single molecule. The terms are not strictly equivalent as one is plural and the other is singular.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neuropeptide and neuropeptide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "Neuropeptides",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neuropeptides is the plural form of neuropeptide, referring to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "Neurotransmitter",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neuropeptides are a type of neurotransmitter, but not all neurotransmitters are neuropeptides. Neurotransmitters include other types such as amino acids and monoamines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neuropeptide and neuropeptide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "neuropeptides refers to multiple neuropeptide molecules, while neuropeptide refers to a single molecule.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neuropeptide and neuropeptide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "neuropeptides is the plural form referring to multiple neuropeptide molecules, while neuropeptide refers to a single molecule.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neurotransmitter",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A neurotransmitter is a chemical messenger that transmits signals across a chemical synapse, while a neuropeptide is a type of neurotransmitter that consists of short chains of amino acids. Not all neurotransmitters are neuropeptides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "Neurotransmitters",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neuropeptides are a type of neurotransmitter, but not all neurotransmitters are neuropeptides. Neurotransmitters also include other types such as amino acids and monoamines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "neuropeptides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "neuropeptides refers to multiple neuropeptide molecules, whereas neuropeptide refers to a single molecule. The singular and plural forms are not strictly equivalent as one implies multiple instances and the other implies a singular instance.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "neuropeptide",
+        "domain": "biology",
+        "response": "Neurotransmitters",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neuropeptides are a type of neurotransmitter, but not all neurotransmitters are neuropeptides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

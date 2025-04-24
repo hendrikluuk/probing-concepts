@@ -1,0 +1,1805 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "flufenoxuron",
+            "fluazuron",
+            "hexythiazox",
+            "flucycloxuron",
+            "(Z)-flucycloxuron",
+            "(E)-flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "flufenoxuron",
+                "fluazuron",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "formamidine acaricide",
+            "pyrimidinamine acaricide",
+            "chlordimeform",
+            "thioquinox",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "chlordimeform",
+                "thioquinox",
+                "quinomethionate"
+            ],
+            "mismatches": [
+                "clofentezine"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "(S,S)-hexythiazox",
+            "hexythiazox",
+            "fluazuron",
+            "flufenoxuron",
+            "flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "hexythiazox",
+                "fluazuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "chlordimeform"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "chlordimeform"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "(-)-neoisodihydrocarveol",
+            "(+)-neoisodihydrocarveol",
+            "(-)-neodihydrocarveol",
+            "(+)-isodihydrocarveol",
+            "(+)-dihydrocarveol",
+            "(-)-dihydrocarveol",
+            "(+)-neodihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(-)-dihydrocarveol",
+                "(+)-neodihydrocarveol"
+            ],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "quinoxaline acaricide",
+            "formamidine acaricide",
+            "pyrimidinamine acaricide",
+            "chlordimeform",
+            "thioquinox",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "quinoxaline acaricide",
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "chlordimeform",
+                "thioquinox",
+                "quinomethionate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "(S,S)-hexythiazox",
+            "(Z)-flucycloxuron",
+            "fluazuron",
+            "hexythiazox",
+            "(E)-flucycloxuron",
+            "flufenoxuron",
+            "flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "(Z)-flucycloxuron",
+                "fluazuron",
+                "hexythiazox",
+                "(E)-flucycloxuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "hexythiazox",
+            "chlordimeform",
+            "pyrimidinamine acaricide",
+            "flufenoxuron",
+            "flucycloxuron",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "formamidine acaricide",
+                "chlordimeform",
+                "pyrimidinamine acaricide",
+                "quinomethionate"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "(S,S)-hexythiazox",
+            "fluazuron",
+            "hexythiazox",
+            "flufenoxuron",
+            "flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "fluazuron",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "hexythiazox",
+            "chlordimeform",
+            "pyrimidinamine acaricide",
+            "thioquinox",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "formamidine acaricide",
+                "chlordimeform",
+                "pyrimidinamine acaricide",
+                "thioquinox",
+                "quinomethionate"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "hexythiazox"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "(S,S)-hexythiazox",
+            "(Z)-flucycloxuron",
+            "fluazuron",
+            "hexythiazox",
+            "flufenoxuron",
+            "flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "(Z)-flucycloxuron",
+                "fluazuron",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "formamidine acaricide",
+            "chlordimeform"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "formamidine acaricide",
+                "chlordimeform"
+            ],
+            "mismatches": [
+                "clofentezine"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(+)-isodihydrocarveol",
+            "(+)-neodihydrocarveol",
+            "(-)-neodihydrocarveol",
+            "(-)-neoisodihydrocarveol",
+            "(+)-neoisodihydrocarveol",
+            "(-)-dihydrocarveol",
+            "(-)-isodihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-isodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(-)-neoisodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(-)-dihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(+)-neodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol",
+                "(-)-neoisodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "organofluorine acaricide",
+        "domain": "medicine",
+        "response": [
+            "fluazuron",
+            "etoxazole",
+            "tau-fluvalinate",
+            "flumethrin",
+            "fluacrypyrim",
+            "fluvalinate",
+            "pyrimidifen",
+            "flucythrinate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fluazuron",
+                "etoxazole",
+                "tau-fluvalinate",
+                "flumethrin",
+                "fluacrypyrim",
+                "fluvalinate",
+                "flucythrinate"
+            ],
+            "mismatches": [
+                "pyrimidifen"
+            ],
+            "true_referents": [
+                "fluacrypyrim",
+                "etoxazole",
+                "fluazuron",
+                "fluvalinate",
+                "flumethrin",
+                "tau-fluvalinate",
+                "flucythrinate",
+                "tralopyril"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "fluazuron",
+            "pyrimidinamine acaricide",
+            "formamidine acaricide",
+            "quinoxaline acaricide",
+            "fluacrypyrim",
+            "pyrimidifen"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pyrimidinamine acaricide",
+                "formamidine acaricide",
+                "quinoxaline acaricide",
+                "pyrimidifen"
+            ],
+            "mismatches": [
+                "fluazuron",
+                "fluacrypyrim"
+            ],
+            "true_referents": [
+                "formamidine acaricide",
+                "dinitrophenol acaricide",
+                "pyrimidinamine acaricide",
+                "quinomethionate",
+                "thioquinox",
+                "pyrimidifen",
+                "quinoxaline acaricide",
+                "4,6-dinitro-o-cresol"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-neoisodihydrocarveol",
+            "(+)-neoisodihydrocarveol",
+            "(-)-neodihydrocarveol",
+            "(+)-isodihydrocarveol",
+            "(-)-isodihydrocarveol",
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol",
+            "(+)-neodihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-neodihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "(S,S)-hexythiazox",
+            "fluazuron",
+            "hexythiazox",
+            "chlordimeform",
+            "flufenoxuron",
+            "flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "fluazuron",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [
+                "chlordimeform"
+            ],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "(S,S)-hexythiazox",
+            "pyrimidinamine acaricide",
+            "fluazuron",
+            "hexythiazox",
+            "chlordimeform",
+            "dinitrophenol acaricide",
+            "thioquinox",
+            "flufenoxuron",
+            "flucycloxuron",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pyrimidinamine acaricide",
+                "chlordimeform",
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "quinomethionate"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "fluazuron",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 5,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "quinoxaline acaricide",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "hexythiazox",
+            "pyrimidinamine acaricide",
+            "(Z)-flucycloxuron",
+            "fluazuron",
+            "(E)-flucycloxuron",
+            "flufenoxuron",
+            "flucycloxuron",
+            "dinitrophenol acaricide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "hexythiazox",
+                "(Z)-flucycloxuron",
+                "fluazuron",
+                "(E)-flucycloxuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [
+                "quinoxaline acaricide",
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "dinitrophenol acaricide"
+            ],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "quinoxaline acaricide",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "hexythiazox",
+            "pyrimidinamine acaricide",
+            "dinitrophenol acaricide",
+            "fluazuron",
+            "flufenoxuron",
+            "flucycloxuron",
+            "thioquinox",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "quinoxaline acaricide",
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "quinomethionate"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "hexythiazox",
+                "fluazuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 6,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "hexythiazox",
+            "fluazuron",
+            "flufenoxuron",
+            "flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "hexythiazox",
+                "fluazuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "quinoxaline acaricide",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "pyrimidinamine acaricide",
+            "(Z)-flucycloxuron",
+            "fluazuron",
+            "hexythiazox",
+            "chlordimeform",
+            "flufenoxuron",
+            "flucycloxuron",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "quinoxaline acaricide",
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "chlordimeform",
+                "quinomethionate"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "(Z)-flucycloxuron",
+                "fluazuron",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 5,
+            "FP": 7,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "quinoxaline acaricide",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "pyrimidinamine acaricide",
+            "(Z)-flucycloxuron",
+            "fluazuron",
+            "hexythiazox",
+            "chlordimeform",
+            "dinitrophenol acaricide",
+            "(E)-flucycloxuron",
+            "thioquinox",
+            "4,6-dinitro-o-cresol",
+            "flufenoxuron",
+            "flucycloxuron",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "(Z)-flucycloxuron",
+                "fluazuron",
+                "hexythiazox",
+                "(E)-flucycloxuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [
+                "quinoxaline acaricide",
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "chlordimeform",
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate"
+            ],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 8,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "quinoxaline acaricide",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "pyrimidinamine acaricide",
+            "(Z)-flucycloxuron",
+            "fluazuron",
+            "hexythiazox",
+            "chlordimeform",
+            "dinitrophenol acaricide",
+            "(E)-flucycloxuron",
+            "thioquinox",
+            "4,6-dinitro-o-cresol",
+            "flufenoxuron",
+            "flucycloxuron",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "quinoxaline acaricide",
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "chlordimeform",
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "(Z)-flucycloxuron",
+                "fluazuron",
+                "hexythiazox",
+                "(E)-flucycloxuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 8,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "hexythiazox",
+            "fluazuron",
+            "flufenoxuron",
+            "flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "hexythiazox",
+                "fluazuron",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "chlordimeform",
+            "hexythiazox",
+            "pyrimidinamine acaricide",
+            "quinoxaline acaricide",
+            "formamidine acaricide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "chlordimeform",
+                "pyrimidinamine acaricide",
+                "quinoxaline acaricide",
+                "formamidine acaricide"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "hexythiazox"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "(S,S)-hexythiazox",
+            "hexythiazox",
+            "flufenoxuron",
+            "flucycloxuron",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [
+                "quinomethionate"
+            ],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "hexythiazox",
+            "(S,S)-hexythiazox",
+            "flufenoxuron",
+            "flucycloxuron",
+            "(Z)-flucycloxuron",
+            "(E)-flucycloxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "clofentezine",
+                "hexythiazox",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol",
+            "(+)-neodihydrocarveol",
+            "(+)-isodihydrocarveol",
+            "(-)-neodihydrocarveol",
+            "(-)-isodihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(-)-isodihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "quinoxaline acaricide",
+            "formamidine acaricide",
+            "(S,S)-hexythiazox",
+            "pyrimidinamine acaricide",
+            "fluazuron",
+            "hexythiazox",
+            "chlordimeform",
+            "dinitrophenol acaricide",
+            "thioquinox",
+            "flufenoxuron",
+            "flucycloxuron",
+            "quinomethionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "(S,S)-hexythiazox",
+                "fluazuron",
+                "hexythiazox",
+                "flufenoxuron",
+                "flucycloxuron"
+            ],
+            "mismatches": [
+                "quinoxaline acaricide",
+                "formamidine acaricide",
+                "pyrimidinamine acaricide",
+                "chlordimeform",
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "quinomethionate"
+            ],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "pyrimidinamine acaricide",
+            "formamidine acaricide",
+            "hexythiazox",
+            "chlordimeform",
+            "thioquinox"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pyrimidinamine acaricide",
+                "formamidine acaricide",
+                "chlordimeform",
+                "thioquinox"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "hexythiazox"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "dihydrocarveol",
+        "domain": "medicine",
+        "response": [
+            "(-)-neoisodihydrocarveol",
+            "(+)-neoisodihydrocarveol",
+            "(-)-neodihydrocarveol",
+            "(+)-isodihydrocarveol",
+            "(-)-isodihydrocarveol",
+            "(-)-dihydrocarveol",
+            "(+)-dihydrocarveol",
+            "(+)-neodihydrocarveol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-neodihydrocarveol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-neoisodihydrocarveol",
+                "(+)-dihydrocarveol",
+                "(+)-isodihydrocarveol",
+                "(-)-neodihydrocarveol",
+                "(+)-neoisodihydrocarveol",
+                "(+)-neodihydrocarveol",
+                "(-)-isodihydrocarveol",
+                "(-)-dihydrocarveol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "mite growth regulator",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "fluazuron",
+            "hexythiazox",
+            "flucycloxuron",
+            "flufenoxuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clofentezine",
+                "fluazuron",
+                "hexythiazox",
+                "flucycloxuron",
+                "flufenoxuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluazuron",
+                "(S,S)-hexythiazox",
+                "flufenoxuron",
+                "clofentezine",
+                "hexythiazox",
+                "flucycloxuron",
+                "(Z)-flucycloxuron",
+                "(E)-flucycloxuron"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "organonitrogen acaricide",
+        "domain": "medicine",
+        "response": [
+            "clofentezine",
+            "chlordimeform",
+            "fluazuron",
+            "flufenoxuron",
+            "flucycloxuron",
+            "hexythiazox"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "chlordimeform"
+            ],
+            "mismatches": [
+                "clofentezine",
+                "fluazuron",
+                "flufenoxuron",
+                "flucycloxuron",
+                "hexythiazox"
+            ],
+            "true_referents": [
+                "dinitrophenol acaricide",
+                "thioquinox",
+                "formamidine acaricide",
+                "4,6-dinitro-o-cresol",
+                "quinomethionate",
+                "chlordimeform",
+                "quinoxaline acaricide",
+                "pyrimidinamine acaricide"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    }
+]

@@ -1,0 +1,2193 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Hygromycin B",
+            "Kanamycin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Hygromycin B",
+                "Kanamycin"
+            ],
+            "mismatches": [
+                "Proscillaridin"
+            ],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Esculin",
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "Uridine Diphosphate Glucose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides"
+            ],
+            "mismatches": [
+                "Uridine Diphosphate Glucose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Esculin",
+            "Acetyldigitoxins",
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides"
+            ],
+            "mismatches": [
+                "Acetyldigoxins",
+                "Acetyldigitoxins",
+                "Proscillaridin"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "3-O-Methylglucose",
+            "Uridine Diphosphate Glucose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iridoid Glucosides",
+                "Thioglucosides",
+                "3-O-Methylglucose"
+            ],
+            "mismatches": [
+                "Uridine Diphosphate Glucose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Kanamycin",
+            "Hygromycin B",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Kanamycin",
+                "Hygromycin B",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Esculin",
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "3-O-Methylglucose",
+            "Proscillaridin",
+            "Uridine Diphosphate Glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides",
+                "3-O-Methylglucose"
+            ],
+            "mismatches": [
+                "Proscillaridin",
+                "Uridine Diphosphate Glucose"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Esculin",
+            "Acetyldigitoxins",
+            "Canagliflozin",
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "Uridine Diphosphate Glucose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Canagliflozin",
+                "Iridoid Glucosides",
+                "Thioglucosides"
+            ],
+            "mismatches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Uridine Diphosphate Glucose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Esculin",
+            "Iridoid Glucosides",
+            "Uridine Diphosphate Glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides"
+            ],
+            "mismatches": [
+                "Uridine Diphosphate Glucose"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Esculin",
+            "Acetyldigitoxins",
+            "Iridoid Glucosides",
+            "Thioglucosides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides"
+            ],
+            "mismatches": [
+                "Acetyldigoxins",
+                "Acetyldigitoxins"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Kanamycin",
+            "Hygromycin B"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cymarine",
+            "Esculin",
+            "Cytidine Diphosphate Diglycerides",
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "3-O-Methylglucose",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides",
+                "3-O-Methylglucose"
+            ],
+            "mismatches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cymarine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Uridine Diphosphate Galactose"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Cymarine",
+            "Esculin",
+            "Iridoid Glucosides",
+            "Thioglucosides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides"
+            ],
+            "mismatches": [
+                "Cymarine"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Esculin",
+            "Iridoid Glucosides",
+            "Digitoxin",
+            "Thioglucosides",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides"
+            ],
+            "mismatches": [
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Esculin",
+            "Acetyldigitoxins",
+            "Canagliflozin",
+            "Medigoxin",
+            "Iridoid Glucosides",
+            "Digitoxin",
+            "Thioglucosides",
+            "Proscillaridin",
+            "Chloralose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Canagliflozin",
+                "Iridoid Glucosides",
+                "Thioglucosides",
+                "Chloralose"
+            ],
+            "mismatches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 5,
+            "FP": 6,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Medigoxin",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Esculin",
+            "Iridoid Glucosides",
+            "Digitoxin",
+            "Thioglucosides",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Iridoid Glucosides",
+                "Thioglucosides"
+            ],
+            "mismatches": [
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Acetyldigitoxins",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Cymarine",
+            "Esculin",
+            "Acetyldigitoxins",
+            "Canagliflozin",
+            "Medigoxin",
+            "Iridoid Glucosides",
+            "Digitoxin",
+            "Thioglucosides",
+            "3-O-Methylglucose",
+            "Proscillaridin",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Chloralose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Esculin",
+                "Canagliflozin",
+                "Iridoid Glucosides",
+                "Thioglucosides",
+                "3-O-Methylglucose",
+                "Chloralose"
+            ],
+            "mismatches": [
+                "Acetyldigoxins",
+                "Cymarine",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Digitoxin",
+                "Proscillaridin",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 6,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Acetyldigitoxins",
+            "Cymarine",
+            "Digitoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Acetyldigitoxins",
+                "Cymarine",
+                "Digitoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Kanamycin",
+            "Puromycin",
+            "Hygromycin B"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Puromycin",
+                "Hygromycin B"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "3-O-Methylglucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iridoid Glucosides",
+                "Thioglucosides",
+                "3-O-Methylglucose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Nucleotides",
+        "domain": "chemistry",
+        "response": [
+            "Uridine Diphosphate N-Acetylgalactosamine",
+            "Cytidine Diphosphate Diglycerides",
+            "Uridine Diphosphate Glucose",
+            "Guanosine Diphosphate Sugars",
+            "Cyclic ADP-Ribose",
+            "Uridine Diphosphate Galactose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Cytidine Diphosphate Diglycerides",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate Galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Uridine Diphosphate Galactose",
+                "Cytidine Diphosphate Diglycerides",
+                "Cyclic ADP-Ribose",
+                "Uridine Diphosphate N-Acetylgalactosamine",
+                "Uridine Diphosphate Glucose",
+                "Guanosine Diphosphate Sugars"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Cardiac Glycosides",
+        "domain": "chemistry",
+        "response": [
+            "Acetyldigoxins",
+            "Acetyldigitoxins",
+            "Cymarine",
+            "Digitoxin",
+            "Medigoxin",
+            "Proscillaridin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acetyldigoxins",
+                "Acetyldigitoxins",
+                "Cymarine",
+                "Digitoxin",
+                "Medigoxin",
+                "Proscillaridin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Acetyldigoxins",
+                "Digitoxin",
+                "Acetyldigitoxins",
+                "Medigoxin",
+                "Cymarine",
+                "Proscillaridin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Aminoglycosides",
+        "domain": "chemistry",
+        "response": [
+            "Neomycin",
+            "Butirosin Sulfate",
+            "Hygromycin B",
+            "Kanamycin",
+            "Puromycin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neomycin",
+                "Butirosin Sulfate",
+                "Hygromycin B",
+                "Kanamycin",
+                "Puromycin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Neomycin",
+                "Puromycin",
+                "Anthracyclines",
+                "Butirosin Sulfate",
+                "Kanamycin",
+                "Hygromycin B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Glucosides",
+        "domain": "chemistry",
+        "response": [
+            "Iridoid Glucosides",
+            "Thioglucosides",
+            "3-O-Methylglucose",
+            "Uridine Diphosphate Glucose",
+            "Esculin",
+            "Cymarine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Iridoid Glucosides",
+                "Thioglucosides",
+                "3-O-Methylglucose",
+                "Esculin"
+            ],
+            "mismatches": [
+                "Uridine Diphosphate Glucose",
+                "Cymarine"
+            ],
+            "true_referents": [
+                "3-O-Methylglucose",
+                "Iridoid Glucosides",
+                "Canagliflozin",
+                "Thioglucosides",
+                "Chloralose",
+                "Esculin"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    }
+]

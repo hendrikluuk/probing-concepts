@@ -1,0 +1,1432 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "20alpha-dihydroprednisolone",
+            "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+            "cortisol 21-acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17alpha-hydroxyprogesterone",
+                "20alpha-dihydroprednisolone",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "(R)-linalyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool",
+                "(R)-linalyl acetate"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "20alpha-dihydroprednisolone",
+            "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+            "cortisol 21-acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17alpha-hydroxyprogesterone",
+                "20alpha-dihydroprednisolone",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "(S)-linalyl acetate",
+            "(R)-linalyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool",
+                "(S)-linalyl acetate",
+                "(R)-linalyl acetate"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+            "20alpha-dihydroprednisolone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17alpha-hydroxyprogesterone",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "20alpha-dihydroprednisolone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "(R)-linalyl acetate",
+            "linalool 6-hydroperoxide",
+            "linaloyl diphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "(R)-linalyl acetate",
+                "linalool 6-hydroperoxide",
+                "linaloyl diphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "3,7-dimethylocta-1,6-dien-3-yl acetate",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "linalool 7-hydroperoxide",
+            "20alpha-dihydroprednisolone",
+            "12-O-Decanoylphorbol-13-acetate",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "17alpha-hydroxyprogesterone",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "linalool 7-hydroperoxide",
+                "20alpha-dihydroprednisolone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "linalool 6-hydroperoxide"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 8,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "3,7-dimethylocta-1,6-dien-3-yl acetate",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "diflorasone diacetate",
+            "alclometasone",
+            "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+            "cortisol 21-acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17alpha-hydroxyprogesterone",
+                "diflorasone diacetate",
+                "alclometasone",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "20alpha-dihydroprednisolone",
+            "cortisol 21-acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17alpha-hydroxyprogesterone",
+                "20alpha-dihydroprednisolone",
+                "cortisol 21-acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "3,7-dimethylocta-1,6-dien-3-yl acetate",
+            "(S)-linalyl acetate",
+            "(R)-linalyl acetate",
+            "koidzumiol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "koidzumiol"
+            ],
+            "mismatches": [
+                "(S)-linalool",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "(S)-linalyl acetate",
+                "(R)-linalyl acetate"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "3,7-dimethylocta-1,6-dien-3-yl acetate",
+            "(S)-linalyl acetate",
+            "(R)-linalyl acetate",
+            "koidzumiol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "(S)-linalyl acetate",
+                "(R)-linalyl acetate",
+                "koidzumiol"
+            ],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "3,7-dimethylocta-1,6-dien-3-yl acetate",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "(R)-linalyl acetate",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "(R)-linalyl acetate",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide",
+            "(R)-linalyl acetate",
+            "(S)-linalyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalyl acetate"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "3,7-dimethylocta-1,6-dien-3-yl acetate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide",
+            "(R)-linalyl acetate",
+            "(S)-linalyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalyl acetate"
+            ],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide",
+            "(R)-linalyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide",
+            "(R)-linalyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "(S)-linalyl acetate",
+            "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+            "(R)-linalyl acetate",
+            "(S)-linalool 7-hydroperoxide",
+            "(S)-linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester"
+            ],
+            "mismatches": [
+                "(S)-linalool",
+                "(S)-linalyl acetate",
+                "(R)-linalyl acetate",
+                "(S)-linalool 7-hydroperoxide",
+                "(S)-linalool 6-hydroperoxide"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17alpha-hydroxyprogesterone"
+            ],
+            "mismatches": [
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "(S)-linalyl acetate",
+            "(R)-linalyl acetate",
+            "linalool hydroperoxide",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "(S)-linalyl acetate",
+                "(R)-linalyl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tertiary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide",
+            "(R)-linalyl acetate",
+            "(S)-linalyl acetate",
+            "koidzumiol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "koidzumiol"
+            ],
+            "mismatches": [
+                "(S)-linalool",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalyl acetate"
+            ],
+            "true_referents": [
+                "1'-deoxyabscisic acid",
+                "rebaudioside M",
+                "rebaudioside M",
+                "koidzumiol",
+                "(S)-2-trans-abscisic acid D-glucopyranosyl ester",
+                "rebaudioside M",
+                "stevioside",
+                "steviol glycoside"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tertiary alpha-hydroxy ketone",
+        "domain": "chemistry",
+        "response": [
+            "17alpha-hydroxyprogesterone",
+            "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+            "20alpha-dihydroprednisolone",
+            "cortisol 21-acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17alpha-hydroxyprogesterone",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "20alpha-dihydroprednisolone",
+                "cortisol 21-acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "20alpha-dihydroprednisolone",
+                "(13R)-13-dihydrocarminomycin",
+                "6alpha-fluoro-17-hydroxycorticosterone 21-acetate",
+                "cortisol 21-acetate",
+                "17alpha-hydroxyprogesterone",
+                "12-O-Decanoylphorbol-13-acetate",
+                "diflorasone diacetate",
+                "alclometasone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "linalool",
+        "domain": "chemistry",
+        "response": [
+            "(S)-linalool",
+            "linalool hydroperoxide",
+            "linaloyl diphosphate",
+            "(S)-linalyl acetate",
+            "linalool 7-hydroperoxide",
+            "linalool 6-hydroperoxide",
+            "(R)-linalyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-linalool",
+                "linalool hydroperoxide",
+                "linaloyl diphosphate",
+                "(S)-linalyl acetate",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "linaloyl diphosphate",
+                "3,7-dimethylocta-1,6-dien-3-yl acetate",
+                "linalool hydroperoxide",
+                "linalool 7-hydroperoxide",
+                "linalool 6-hydroperoxide",
+                "(R)-linalyl acetate",
+                "(S)-linalool",
+                "(S)-linalyl acetate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates of the pentose phosphate pathway are organic, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "PPP intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "PPP intermediate and pentose phosphate pathway organic intermediate refer to the same intermediates in the pentose phosphate pathway.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A metabolite is any substance involved in metabolism, whereas a pentose phosphate pathway organic intermediate is a specific type of metabolite involved in the pentose phosphate pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "In the context of the pentose phosphate pathway, all intermediates are organic compounds, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All pentose phosphate pathway intermediates are organic, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic, making the terms interchangeable in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic compounds, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "pentose phosphate is a specific molecule, whereas pentose phosphate pathway organic intermediate refers to any intermediate in the entire pathway, which includes multiple different molecules.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "sugar phosphate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "sugar phosphate is a general term for compounds that include a sugar and a phosphate group, whereas pentose phosphate pathway organic intermediates are specific sugar phosphates involved in that metabolic pathway. Not all sugar phosphates are intermediates of the pentose phosphate pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A metabolite is any substance involved in metabolism, whereas a pentose phosphate pathway organic intermediate specifically refers to metabolites involved in the pentose phosphate pathway. Not all metabolites are intermediates of this pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Ribulose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribulose is a type of sugar that can be an intermediate in various metabolic pathways, including the pentose phosphate pathway, but not all pentose phosphate pathway intermediates are ribulose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "pentose phosphate is a specific molecule, whereas pentose phosphate pathway organic intermediate refers to any intermediate in the pentose phosphate pathway, which includes multiple molecules.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'intermediate' in the context of the pentose phosphate pathway inherently refers to organic molecules, so both terms describe the same set of compounds.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

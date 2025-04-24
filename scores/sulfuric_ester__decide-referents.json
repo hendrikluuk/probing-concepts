@@ -1,0 +1,1762 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+            "quercetin sulfate",
+            "hydroxyflavone sulfate",
+            "glycosmisic acid sulfate",
+            "pregnenolone sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "quercetin sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "glycosmisic acid sulfate",
+                "pregnenolone sulfate"
+            ],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "genistein 4',7-disulfate",
+            "hydroxyflavone sulfate",
+            "quercetin sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "genistein 4',7-disulfate",
+                "hydroxyflavone sulfate",
+                "quercetin sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "genistein 4',7-disulfate",
+            "quercetin sulfate",
+            "hydroxyflavone sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "genistein 4',7-disulfate",
+                "quercetin sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "pregnenolone sulfate",
+            "Epitestosterone sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "pregnenolone sulfate",
+                "Epitestosterone sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "genistein 4',7-disulfate",
+            "quercetin sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate",
+            "hydroxyflavone sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "genistein 4',7-disulfate",
+                "quercetin sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate",
+                "hydroxyflavone sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Steryl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "5beta-scymnol sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "genistein 4',7-disulfate",
+            "quercetin sulfate",
+            "hydroxyflavone sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "genistein 4',7-disulfate",
+                "quercetin sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Steryl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "5beta-scymnol sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Steryl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "genistein 4',7-disulfate",
+            "lamellarin alpha 20-hydrogen sulfate",
+            "quercetin sulfate",
+            "hydroxyflavone sulfate",
+            "glycosmisic acid sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "genistein 4',7-disulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [
+                "glycosmisic acid sulfate"
+            ],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Steryl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "5beta-scymnol sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "genistein 4',7-disulfate",
+            "lamellarin alpha 20-hydrogen sulfate",
+            "quercetin sulfate",
+            "Ptilosteroid B",
+            "Renilla luciferyl sulfate",
+            "hydroxyflavone sulfate",
+            "glycosmisic acid sulfate",
+            "pregnenolone sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "5beta-scymnol sulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "genistein 4',7-disulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate",
+                "Renilla luciferyl sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [
+                "Ptilosteroid B",
+                "glycosmisic acid sulfate",
+                "pregnenolone sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "genistein 4',7-disulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate"
+            ],
+            "mismatches": [
+                "genistein 4',7-disulfate"
+            ],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "genistein 4',7-disulfate",
+            "lamellarin alpha 20-hydrogen sulfate",
+            "quercetin sulfate",
+            "hydroxyflavone sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "genistein 4',7-disulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Steryl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "genistein 4',7-disulfate",
+            "lamellarin alpha 20-hydrogen sulfate",
+            "Epitestosterone sulfate",
+            "quercetin sulfate",
+            "Ptilosteroid B",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Renilla luciferyl sulfate",
+            "Steryl sulfate",
+            "hydroxyflavone sulfate",
+            "glycosmisic acid sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "5beta-scymnol sulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "genistein 4',7-disulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate",
+                "Renilla luciferyl sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "Ptilosteroid B",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "glycosmisic acid sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 8,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Steryl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "5beta-scymnol sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "quercetin sulfate",
+            "hydroxyflavone sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "quercetin sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Steryl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "5beta-scymnol sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "quercetin sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate",
+            "genistein 4',7-disulfate",
+            "lamellarin alpha 20-hydrogen sulfate",
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "quercetin sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate",
+                "genistein 4',7-disulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "Steryl sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "genistein 4',7-disulfate",
+            "lamellarin alpha 20-hydrogen sulfate",
+            "Epitestosterone sulfate",
+            "quercetin sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "Renilla luciferyl sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "5beta-scymnol sulfate",
+            "quercetin trissulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "genistein 4',7-disulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate",
+                "Renilla luciferyl sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate"
+            ],
+            "mismatches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 6,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "5beta-scymnol sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-butyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "lamellarin alpha 20-hydrogen sulfate",
+            "Epitestosterone sulfate",
+            "quercetin sulfate",
+            "quercetin trissulfate",
+            "Renilla luciferyl sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate"
+            ],
+            "mismatches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "Epitestosterone sulfate"
+            ],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "Ptilosteroid B",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "Ptilosteroid B",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alkyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "decyl hydrogen sulfate",
+            "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+            "7-methyloctyl hydrogen sulfate",
+            "2-ethylhexyl sulfate",
+            "2-butyloctyl hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "decyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "7-methyloctyl hydrogen sulfate",
+                "2-ethylhexyl sulfate",
+                "2-butyloctyl hydrogen sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "decyl hydrogen sulfate",
+                "glycosmisic acid sulfate",
+                "3-Sulfooxybutanoic acid",
+                "5-(3-methoxyphenyl)-4-(sulfooxy)pentanoic acid",
+                "7-methyloctyl hydrogen sulfate",
+                "2-butyloctyl hydrogen sulfate",
+                "(2R)-2,6-dimethylheptyl hydrogen sulfate",
+                "2-ethylhexyl sulfate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "heterocyclyl sulfate",
+        "domain": "chemistry",
+        "response": [
+            "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+            "quercetin sulfate",
+            "hydroxyflavone sulfate",
+            "quercetin 3,3',7-trissulfate",
+            "quercetin trissulfate",
+            "glycosmisic acid sulfate",
+            "lamellarin alpha 20-hydrogen sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "quercetin sulfate",
+                "hydroxyflavone sulfate",
+                "quercetin 3,3',7-trissulfate",
+                "quercetin trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate"
+            ],
+            "mismatches": [
+                "glycosmisic acid sulfate"
+            ],
+            "true_referents": [
+                "5,4'-dihydroxyflavone-4'-sulfate(2-)",
+                "hydroxyflavone sulfate",
+                "quercetin trissulfate",
+                "Renilla luciferyl sulfate",
+                "genistein 4',7-disulfate",
+                "quercetin 3,3',7-trissulfate",
+                "lamellarin alpha 20-hydrogen sulfate",
+                "quercetin sulfate"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "steroid sulfate",
+        "domain": "chemistry",
+        "response": [
+            "4-androsten-3beta,17beta-diol 17-sulfate",
+            "Epitestosterone sulfate",
+            "17-beta-Estradiol-3,17-beta-sulfate",
+            "pregnenolone sulfate",
+            "4-androsten-3alpha,17alpha-diol 17-sulfate",
+            "5beta-scymnol sulfate",
+            "Steryl sulfate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "Epitestosterone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "pregnenolone sulfate",
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Steryl sulfate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-androsten-3alpha,17alpha-diol 17-sulfate",
+                "Steryl sulfate",
+                "pregnenolone sulfate",
+                "17-beta-Estradiol-3,17-beta-sulfate",
+                "4-androsten-3beta,17beta-diol 17-sulfate",
+                "5beta-scymnol sulfate",
+                "Ptilosteroid B",
+                "Epitestosterone sulfate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    }
+]

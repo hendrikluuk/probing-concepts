@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A sulfuric ester is a specific type of ester, but not all esters are sulfuric esters.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "Sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms, both referring to esters of sulfuric acid",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "Sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms referring to esters of sulfuric acid",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms and refer to the same chemical compounds formed by the esterification of sulfuric acid.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "organosulfate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "organosulfate and sulfuric ester are synonyms; both refer to esters of sulfuric acid.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "alkyl sulfate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An alkyl sulfate is a specific type of sulfuric ester, but not all sulfuric esters are alkyl sulfates.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms referring to the same chemical compounds where sulfuric acid forms an ester.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "Sulfate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Sulfate is a salt or ester of sulfuric acid containing the SO4^2- ion, whereas a sulfuric ester is a specific type of organic compound formed from sulfuric acid and an alcohol. Not all sulfates are sulfuric esters.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms and refer to the same chemical group, where sulfuric acid forms an ester with an alcohol.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms referring to the same type of chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms, both referring to esters derived from sulfuric acid.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms referring to esters derived from sulfuric acid.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "sulfate ester",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfate ester and sulfuric ester are synonyms in organic chemistry, both referring to esters derived from sulfuric acid.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A sulfuric ester is a specific type of ester that contains a sulfur atom, but not all esters are sulfuric esters.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "alkyl sulfate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An alkyl sulfate is a specific type of sulfuric ester, but not all sulfuric esters are alkyl sulfates. Sulfuric esters can have different alcohol groups, not limited to alkyl groups.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "sulfuric ester",
+        "domain": "chemistry",
+        "response": "Ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A sulfuric ester is a specific type of ester, but not all esters are sulfuric esters.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

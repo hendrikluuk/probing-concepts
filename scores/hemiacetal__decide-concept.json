@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "a ketone is a type of organic compound with a carbonyl group bonded to two hydrocarbon groups, whereas a hemiacetal is a compound formed from the reaction of an aldehyde or ketone with an alcohol. Not all ketones are hemiacetals, and not all hemiacetals are ketones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "an ester is a type of organic compound formed from an alcohol and an acid, while a hemiacetal is formed from an aldehyde and an alcohol; they are distinct functional groups in organic chemistry",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An acetal is a compound derived from an aldehyde or ketone by replacing the carbonyl group with two alkoxy groups, while a hemiacetal contains one alkoxy group and one hydroxyl group. Not all acetals are hemiacetals and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Ether",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ether is a compound with an oxygen atom connected to two alkyl or aryl groups, whereas a hemiacetal is a compound formed when an aldehyde or ketone reacts with an alcohol, containing both an ether linkage and a hydroxyl group. Not all ethers are hemiacetals, and not all hemiacetals are ethers.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "acetals",
+        "judgement": {
+            "equivalent": false,
+            "reason": "hemiacetals are a type of acetal, but not all acetals are hemiacetals. Acetals are formed from the reaction of an aldehyde or ketone with an alcohol, whereas hemiacetals are intermediates in this reaction.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a chemical compound derived from an acid where at least one -OH group is replaced by an -O-alkyl group, whereas a hemiacetal is a compound formed from the addition of an alcohol to an aldehyde or ketone. They are distinct functional groups in organic chemistry.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a compound derived from an acid in which at least one -OH group is replaced by an -O-alkyl group, while a hemiacetal is a compound formed from an aldehyde or ketone with an alcohol. They are different functional groups with distinct chemical structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms and thus strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "hemiacetal",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hemiacetal and hemiacetal are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a type of organic compound formed from an alcohol and an acid, whereas a hemiacetal is a different type of compound formed from the reaction of an aldehyde or ketone with an alcohol. They have different structures and chemical properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "an ester is a different type of organic compound than a hemiacetal; esters are derived from carboxylic acids and alcohols, while hemiacetals are formed from aldehydes or ketones and alcohols",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "an ester is a type of organic compound formed from an alcohol and an acid, while a hemiacetal is an intermediate compound formed during the reaction of an aldehyde with an alcohol; they are distinct chemical entities with different structures and functions",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "Acetals",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hemiacetals are a specific type of acetal where only one of the two OR groups is present, typically formed as an intermediate in the formation of acetals. Not all acetals are hemiacetals.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "hemiacetal",
+        "domain": "chemistry",
+        "response": "The closest conceptual category that includes all entities that comply with the definition is \"carboxylic acid\".",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A carboxylic acid is a different functional group than a hemiacetal. Carboxylic acids contain a carboxyl group (-COOH), while hemiacetals are formed from the addition of an alcohol to an aldehyde or ketone. These are distinct chemical entities with different structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

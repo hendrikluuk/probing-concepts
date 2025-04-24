@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "oxyacid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxyacid is an acid that contains oxygen, hydrogen, and another element, while a gaseous oxide is a compound consisting of oxygen and another element in gaseous form. Not all gaseous oxides are oxyacids and not all oxyacids are gaseous oxides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "oxyacid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxyacid is an acid that contains oxygen, hydrogen, and another element, typically a non-metal. A gaseous oxide is a compound consisting of oxygen and another element in gaseous form. Not all oxyacids are gaseous oxides, and not all gaseous oxides are oxyacids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "oxide gas",
+        "judgement": {
+            "equivalent": true,
+            "reason": "oxide gas and gaseous oxide are synonymous terms referring to an oxide in the gaseous state",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "Atmospheric gas",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Atmospheric gas refers to any gas present in the atmosphere, which includes a variety of gases such as nitrogen, oxygen, carbon dioxide, etc., whereas gaseous oxide specifically refers to oxides in gaseous form, such as carbon dioxide or nitrogen oxides. Not all atmospheric gases are gaseous oxides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "gaseous oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "gas-phase oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "gas-phase oxide and gaseous oxide refer to the same state of oxides being in the gas phase",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "Oxygen gas compound",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Oxygen gas compound refers specifically to O2, which is a diatomic molecule of oxygen, while gaseous oxide refers to any compound containing oxygen and another element in a gaseous state, such as CO2 or NO2. Therefore, not all gaseous oxides are oxygen gas compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "Oxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "gaseous oxide is a type of oxide, but not all oxides are gaseous",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "gaseous oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both refer to the same concept and are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "gaseous oxide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "oxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "gaseous oxide is a type of oxide, but not all oxides are gaseous",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "oxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "gaseous oxide is a type of oxide, but not all oxides are gaseous.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "gas",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A gaseous oxide is a specific type of gas, but not all gases are gaseous oxides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "oxoacid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxoacid is an acid that contains oxygen, while a gaseous oxide is a compound of oxygen with another element that is in gaseous form. Not all oxoacids are gaseous oxides and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "oxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "gaseous oxide is a type of oxide, but not all oxides are gaseous.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "gaseous oxide",
+        "domain": "chemistry",
+        "response": "The closest conceptual category that includes all entities that comply with the definition is \"chemical compound\".",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A gaseous oxide is a type of chemical compound, but not all chemical compounds are gaseous oxides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

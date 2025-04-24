@@ -1,0 +1,2145 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Acetoxyroridin E",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "aflatoxin B1 8,9-dihydrodiol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Acetoxyroridin E"
+            ],
+            "mismatches": [
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "7beta,8beta-epoxyisororidin E",
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Isobutanoylneosolaniol",
+            "8-Acetoxyroridin E"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "8-Acetoxyroridin E"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "14\u2032-dehydrovertisporin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "14\u2032-dehydrovertisporin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Acetoxyroridin E",
+            "8-Isobutanoylneosolaniol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Acetoxyroridin E",
+                "8-Isobutanoylneosolaniol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "7beta,8beta-epoxyisororidin E",
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Acetoxyroridin E",
+            "8-Isobutanoylneosolaniol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Acetoxyroridin E",
+                "8-Isobutanoylneosolaniol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Acetoxyroridin E",
+            "8-Isobutanoylneosolaniol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Acetoxyroridin E",
+                "8-Isobutanoylneosolaniol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Isobutanoylneosolaniol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Isobutanoylneosolaniol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2",
+            "aflatoxin B1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2"
+            ],
+            "mismatches": [
+                "aflatoxin B1"
+            ],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1",
+            "8-Acetoxyroridin E",
+            "Oxisterigmatocystin B",
+            "Fumonisin A1",
+            "8-Isobutanoylneosolaniol",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B2",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [
+                "8-Acetoxyroridin E",
+                "Oxisterigmatocystin B",
+                "8-Isobutanoylneosolaniol",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B2",
+                "6-demethylsterigmatocystin"
+            ],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "8-acetylneosolaniol",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "8-Acetoxyroridin E",
+            "8-Isobutanoylneosolaniol",
+            "Fumonisin A1",
+            "14\u2032-dehydrovertisporin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "8-acetylneosolaniol",
+                "8-Acetoxyroridin E",
+                "8-Isobutanoylneosolaniol",
+                "14\u2032-dehydrovertisporin"
+            ],
+            "mismatches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sterigmatocystins",
+        "domain": "medicine",
+        "response": [
+            "5-methoxysterigmatocystin",
+            "Hydroxydihydrosterigmatocystin",
+            "Oxisterigmatocystin B",
+            "Oxisterigmatocystin A",
+            "11-hydroxy-O-methyldihydrosterigmatocystin",
+            "6-demethylsterigmatocystin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin",
+                "Oxisterigmatocystin B",
+                "Oxisterigmatocystin A",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "6-demethylsterigmatocystin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Oxisterigmatocystin A",
+                "Oxisterigmatocystin B",
+                "6-demethylsterigmatocystin",
+                "11-hydroxy-O-methyldihydrosterigmatocystin",
+                "5-methoxysterigmatocystin",
+                "Hydroxydihydrosterigmatocystin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aflatoxin",
+        "domain": "medicine",
+        "response": [
+            "aflatoxin M1",
+            "aflatoxin Q1",
+            "aflatoxin B1",
+            "aflatoxin B1 8,9-dihydrodiol",
+            "aflatoxin B1 exo-8,9-epoxide",
+            "aflatoxin B2",
+            "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aflatoxin M1",
+                "aflatoxin Q1",
+                "aflatoxin B1 8,9-dihydrodiol",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B2",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1"
+            ],
+            "mismatches": [
+                "aflatoxin B1"
+            ],
+            "true_referents": [
+                "aflatoxin M1",
+                "aflatoxin B2",
+                "aflatoxin Q1",
+                "8,9-dihydro-8-(S-glutathionyl)-9-hydroxyaflatoxin B1",
+                "aflatoxin B1 exo-8,9-epoxide",
+                "aflatoxin B1 8,9-dihydrodiol"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fumonisin",
+        "domain": "medicine",
+        "response": [
+            "Fumonisin B3",
+            "fumonisin B6",
+            "Epi-Fumonisin B4",
+            "Fumonisin A2",
+            "fumonisin B4",
+            "Fumonisin A1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Fumonisin B3",
+                "fumonisin B6",
+                "Epi-Fumonisin B4",
+                "Fumonisin A2",
+                "fumonisin B4",
+                "Fumonisin A1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fumonisin B6",
+                "Fumonisin A1",
+                "Epi-Fumonisin B4",
+                "Fumonisin B3",
+                "Fumonisin A2",
+                "fumonisin B4"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "trichothecene",
+        "domain": "medicine",
+        "response": [
+            "7beta,8beta-epoxyisororidin E",
+            "T2 Triol",
+            "8-acetylneosolaniol",
+            "8-Acetoxyroridin E",
+            "8-Isobutanoylneosolaniol",
+            "14\u2032-dehydrovertisporin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-acetylneosolaniol",
+                "8-Acetoxyroridin E",
+                "8-Isobutanoylneosolaniol",
+                "14\u2032-dehydrovertisporin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "14\u2032-dehydrovertisporin",
+                "8-acetylneosolaniol",
+                "8-Isobutanoylneosolaniol",
+                "7beta,8beta-epoxyisororidin E",
+                "T2 Triol",
+                "8-Acetoxyroridin E"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    }
+]

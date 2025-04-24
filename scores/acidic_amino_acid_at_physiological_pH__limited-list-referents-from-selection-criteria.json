@@ -1,0 +1,738 @@
+[
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "aspartic acid (Asp)",
+            "glutamic acid (Glu)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aspartic acid (Asp)",
+                "glutamic acid (Glu)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aspartic acid (Asp)",
+                "glutamic acid (Glu)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp, D)",
+            "Glutamic acid (Glu, E)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp, D)",
+                "Glutamic acid (Glu, E)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic acid (Asp, D)",
+                "Glutamic acid (Glu, E)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp, D)",
+            "Glutamic acid (Glu, E)",
+            "Asparagine (Asn, N)",
+            "Glutamine (Gln, Q)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp, D)",
+                "Glutamic acid (Glu, E)",
+                "Asparagine (Asn, N)",
+                "Glutamine (Gln, Q)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Asparagine (Asn, N)",
+                "Aspartic acid (Asp, D)",
+                "Glutamic acid (Glu, E)",
+                "Glutamine (Gln, Q)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Glutamic acid (Glu)",
+            "Phosphoserine (pSer)",
+            "Phosphothreonine (pThr)",
+            "Phosphotyrosine (pTyr)",
+            "N-acetylaspartic acid (NAA)",
+            "\u03b2-Alanine",
+            "Homoglutamic acid",
+            "Pyroglutamic acid",
+            "Orotic acid",
+            "Citric acid",
+            "Isocitric acid",
+            "Fumaric acid",
+            "Malic acid",
+            "Succinic acid",
+            "Tartaric acid",
+            "Aspartate semialdehyde",
+            "Glutamate semialdehyde",
+            "N-formylaspartic acid",
+            "N-formylglutamic acid",
+            "5-Aminolevulinic acid",
+            "Dihydroorotic acid",
+            "Glutamate-5-phosphate",
+            "Aspartate-1-semialdehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)",
+                "Phosphoserine (pSer)",
+                "Phosphothreonine (pThr)",
+                "Phosphotyrosine (pTyr)",
+                "N-acetylaspartic acid (NAA)",
+                "\u03b2-Alanine",
+                "Homoglutamic acid",
+                "Pyroglutamic acid",
+                "Orotic acid",
+                "Citric acid",
+                "Isocitric acid",
+                "Fumaric acid",
+                "Malic acid",
+                "Succinic acid",
+                "Tartaric acid",
+                "Aspartate semialdehyde",
+                "Glutamate semialdehyde",
+                "N-formylaspartic acid",
+                "N-formylglutamic acid",
+                "5-Aminolevulinic acid",
+                "Dihydroorotic acid",
+                "Glutamate-5-phosphate",
+                "Aspartate-1-semialdehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-Aminolevulinic acid",
+                "Aspartate semialdehyde",
+                "Aspartate-1-semialdehyde",
+                "Aspartic acid (Asp)",
+                "Citric acid",
+                "Dihydroorotic acid",
+                "Fumaric acid",
+                "Glutamate semialdehyde",
+                "Glutamate-5-phosphate",
+                "Glutamic acid (Glu)",
+                "Homoglutamic acid",
+                "Isocitric acid",
+                "Malic acid",
+                "N-acetylaspartic acid (NAA)",
+                "N-formylaspartic acid",
+                "N-formylglutamic acid",
+                "Orotic acid",
+                "Phosphoserine (pSer)",
+                "Phosphothreonine (pThr)",
+                "Phosphotyrosine (pTyr)",
+                "Pyroglutamic acid",
+                "Succinic acid",
+                "Tartaric acid",
+                "\u03b2-Alanine"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic Acid (Asp)",
+            "Glutamic Acid (Glu)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic Acid (Asp)",
+                "Glutamic Acid (Glu)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic Acid (Asp)",
+                "Glutamic Acid (Glu)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Glutamic acid (Glu)",
+            "Asparagine (Asn)",
+            "Glutamine (Gln)",
+            "Cysteic acid (Cys)",
+            "Phosphoserine (pSer)",
+            "Phosphothreonine (pThr)",
+            "Citrulline (Cit)",
+            "Arginine (Arg)",
+            "Lysine (Lys)",
+            "Tyrosine (Tyr)",
+            "Serine (Ser)",
+            "Threonine (Thr)",
+            "Histidine (His)",
+            "Methionine (Met)",
+            "Proline (Pro)",
+            "Glycine (Gly)",
+            "Tryptophan (Trp)",
+            "Valine (Val)",
+            "Leucine (Leu)",
+            "Isoleucine (Ile)",
+            "Phenylalanine (Phe)",
+            "Alanine (Ala)",
+            "Selenocysteine (Sec)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)",
+                "Asparagine (Asn)",
+                "Glutamine (Gln)",
+                "Cysteic acid (Cys)",
+                "Phosphoserine (pSer)",
+                "Phosphothreonine (pThr)",
+                "Citrulline (Cit)",
+                "Arginine (Arg)",
+                "Lysine (Lys)",
+                "Tyrosine (Tyr)",
+                "Serine (Ser)",
+                "Threonine (Thr)",
+                "Histidine (His)",
+                "Methionine (Met)",
+                "Proline (Pro)",
+                "Glycine (Gly)",
+                "Tryptophan (Trp)",
+                "Valine (Val)",
+                "Leucine (Leu)",
+                "Isoleucine (Ile)",
+                "Phenylalanine (Phe)",
+                "Alanine (Ala)",
+                "Selenocysteine (Sec)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Alanine (Ala)",
+                "Arginine (Arg)",
+                "Asparagine (Asn)",
+                "Aspartic acid (Asp)",
+                "Citrulline (Cit)",
+                "Cysteic acid (Cys)",
+                "Glutamic acid (Glu)",
+                "Glutamine (Gln)",
+                "Glycine (Gly)",
+                "Histidine (His)",
+                "Isoleucine (Ile)",
+                "Leucine (Leu)",
+                "Lysine (Lys)",
+                "Methionine (Met)",
+                "Phenylalanine (Phe)",
+                "Phosphoserine (pSer)",
+                "Phosphothreonine (pThr)",
+                "Proline (Pro)",
+                "Selenocysteine (Sec)",
+                "Serine (Ser)",
+                "Threonine (Thr)",
+                "Tryptophan (Trp)",
+                "Tyrosine (Tyr)",
+                "Valine (Val)"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Glutamic Acid (Glu, E)",
+            "Aspartic Acid (Asp, D)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glutamic Acid (Glu, E)",
+                "Aspartic Acid (Asp, D)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic Acid (Asp, D)",
+                "Glutamic Acid (Glu, E)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Glutamic acid (Glu)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp, D)",
+            "Glutamic acid (Glu, E)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp, D)",
+                "Glutamic acid (Glu, E)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic acid (Asp, D)",
+                "Glutamic acid (Glu, E)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Glutamic acid (Glu)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Aspartate (Asp)",
+            "Glutamic acid (Glu)",
+            "Glutamate (Glu)",
+            "Cysteic acid (Cya)",
+            "Homocysteic acid (Hcy)",
+            "\u03b2-Methylaspartic acid (bMeAsp)",
+            "\u03b3-Carboxyglutamic acid (Gla)",
+            "Aminoadipic acid (Aad)",
+            "2-Aminoheptanedioic acid (Ahd)",
+            "Cysteine sulfinic acid (Csa)",
+            "Phosphoserine (Sep)",
+            "Phosphoaspartic acid (Pya)",
+            "Phosphohomoserine (Phs)",
+            "Phosphohydroxylysinonorleucine (Phl)",
+            "Phosphothreonine (Tpo)",
+            "Phosphotyrosine (Ptr)",
+            "Pyrroloquinoline quinone (PQQ)",
+            "Hypusine (Hpu)",
+            "Desmosine (Des)",
+            "Isodesmosine (Ide)",
+            "Erythronic acid (Ery)",
+            "Threo-\u03b2-hydroxyaspartic acid (Hya)",
+            "Aminomalonic acid (Ama)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Aspartate (Asp)",
+                "Glutamic acid (Glu)",
+                "Glutamate (Glu)",
+                "Cysteic acid (Cya)",
+                "Homocysteic acid (Hcy)",
+                "\u03b2-Methylaspartic acid (bMeAsp)",
+                "\u03b3-Carboxyglutamic acid (Gla)",
+                "Aminoadipic acid (Aad)",
+                "2-Aminoheptanedioic acid (Ahd)",
+                "Cysteine sulfinic acid (Csa)",
+                "Phosphoserine (Sep)",
+                "Phosphoaspartic acid (Pya)",
+                "Phosphohomoserine (Phs)",
+                "Phosphohydroxylysinonorleucine (Phl)",
+                "Phosphothreonine (Tpo)",
+                "Phosphotyrosine (Ptr)",
+                "Pyrroloquinoline quinone (PQQ)",
+                "Hypusine (Hpu)",
+                "Desmosine (Des)",
+                "Isodesmosine (Ide)",
+                "Erythronic acid (Ery)",
+                "Threo-\u03b2-hydroxyaspartic acid (Hya)",
+                "Aminomalonic acid (Ama)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-Aminoheptanedioic acid (Ahd)",
+                "Aminoadipic acid (Aad)",
+                "Aminomalonic acid (Ama)",
+                "Aspartate (Asp)",
+                "Aspartic acid (Asp)",
+                "Cysteic acid (Cya)",
+                "Cysteine sulfinic acid (Csa)",
+                "Desmosine (Des)",
+                "Erythronic acid (Ery)",
+                "Glutamate (Glu)",
+                "Glutamic acid (Glu)",
+                "Homocysteic acid (Hcy)",
+                "Hypusine (Hpu)",
+                "Isodesmosine (Ide)",
+                "Phosphoaspartic acid (Pya)",
+                "Phosphohomoserine (Phs)",
+                "Phosphohydroxylysinonorleucine (Phl)",
+                "Phosphoserine (Sep)",
+                "Phosphothreonine (Tpo)",
+                "Phosphotyrosine (Ptr)",
+                "Pyrroloquinoline quinone (PQQ)",
+                "Threo-\u03b2-hydroxyaspartic acid (Hya)",
+                "\u03b2-Methylaspartic acid (bMeAsp)",
+                "\u03b3-Carboxyglutamic acid (Gla)"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Glutamic acid (Glu)",
+            "Homoserine",
+            "Homocysteine",
+            "Cysteine sulfinic acid",
+            "Cysteic acid",
+            "Penicillamine",
+            "Saccharopine",
+            "Phosphoserine",
+            "Phosphocreatine",
+            "Phosphohistidine",
+            "Phosphothreonine",
+            "Phosphotyrosine",
+            "Succinyldiaminopimelate",
+            "Methylglutamic acid",
+            "\u03b3-Carboxyglutamic acid",
+            "Pyroglutamic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)",
+                "Homoserine",
+                "Homocysteine",
+                "Cysteine sulfinic acid",
+                "Cysteic acid",
+                "Penicillamine",
+                "Saccharopine",
+                "Phosphoserine",
+                "Phosphocreatine",
+                "Phosphohistidine",
+                "Phosphothreonine",
+                "Phosphotyrosine",
+                "Succinyldiaminopimelate",
+                "Methylglutamic acid",
+                "\u03b3-Carboxyglutamic acid",
+                "Pyroglutamic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic acid (Asp)",
+                "Cysteic acid",
+                "Cysteine sulfinic acid",
+                "Glutamic acid (Glu)",
+                "Homocysteine",
+                "Homoserine",
+                "Methylglutamic acid",
+                "Penicillamine",
+                "Phosphocreatine",
+                "Phosphohistidine",
+                "Phosphoserine",
+                "Phosphothreonine",
+                "Phosphotyrosine",
+                "Pyroglutamic acid",
+                "Saccharopine",
+                "Succinyldiaminopimelate",
+                "\u03b3-Carboxyglutamic acid"
+            ],
+            "TP": 17,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Glutamic acid (Glu)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (Asp)",
+            "Glutamic acid (Glu)",
+            "Asparagine (Asn)",
+            "Glutamine (Gln)",
+            "Gluconic acid",
+            "Aspartic acid anhydride",
+            "Glutamic acid anhydride",
+            "Asparagine anhydride",
+            "Glutamine anhydride",
+            "Aspartate",
+            "Glutamate",
+            "Asparagine",
+            "Glutamine",
+            "Aspartic acid ester",
+            "Glutamic acid ester",
+            "Asparagine ester",
+            "Glutamine ester",
+            "Aspartic acid amide",
+            "Glutamic acid amide",
+            "Asparagine amide",
+            "Glutamine amide",
+            "Aspartic acid hydrochloride",
+            "Glutamic acid hydrochloride",
+            "Asparagine hydrochloride",
+            "Glutamine hydrochloride"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (Asp)",
+                "Glutamic acid (Glu)",
+                "Asparagine (Asn)",
+                "Glutamine (Gln)",
+                "Gluconic acid",
+                "Aspartic acid anhydride",
+                "Glutamic acid anhydride",
+                "Asparagine anhydride",
+                "Glutamine anhydride",
+                "Aspartate",
+                "Glutamate",
+                "Asparagine",
+                "Glutamine",
+                "Aspartic acid ester",
+                "Glutamic acid ester",
+                "Asparagine ester",
+                "Glutamine ester",
+                "Aspartic acid amide",
+                "Glutamic acid amide",
+                "Asparagine amide",
+                "Glutamine amide",
+                "Aspartic acid hydrochloride",
+                "Glutamic acid hydrochloride",
+                "Asparagine hydrochloride"
+            ],
+            "mismatches": [
+                "Glutamine hydrochloride"
+            ],
+            "true_referents": [
+                "Asparagine",
+                "Asparagine (Asn)",
+                "Asparagine amide",
+                "Asparagine anhydride",
+                "Asparagine ester",
+                "Asparagine hydrochloride",
+                "Aspartate",
+                "Aspartic acid (Asp)",
+                "Aspartic acid amide",
+                "Aspartic acid anhydride",
+                "Aspartic acid ester",
+                "Aspartic acid hydrochloride",
+                "Gluconic acid",
+                "Glutamate",
+                "Glutamic acid (Glu)",
+                "Glutamic acid amide",
+                "Glutamic acid anhydride",
+                "Glutamic acid ester",
+                "Glutamic acid hydrochloride",
+                "Glutamine",
+                "Glutamine (Gln)",
+                "Glutamine amide",
+                "Glutamine anhydride",
+                "Glutamine ester"
+            ],
+            "TP": 24,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            "Aspartic acid (D)",
+            "Glutamic acid (E)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Aspartic acid (D)",
+                "Glutamic acid (E)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Aspartic acid (D)",
+                "Glutamic acid (E)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "acidic amino acid at physiological pH",
+        "domain": "chemistry",
+        "response": [
+            {
+                "Referent": "aspartic acid",
+                "Canonical name": "Asp (D)"
+            },
+            {
+                "Referent": "glutamic acid",
+                "Canonical name": "Glu (E)"
+            },
+            {
+                "Referent": "asparagine",
+                "Canonical name": "Asn (N)"
+            },
+            {
+                "Referent": "glutamine",
+                "Canonical name": "Gln (Q)"
+            }
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aspartic acid",
+                "glutamic acid",
+                "asparagine",
+                "glutamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "{\"Referent\": \"asparagine\", \"Canonical name\": \"Asn (N)\"}",
+                "{\"Referent\": \"aspartic acid\", \"Canonical name\": \"Asp (D)\"}",
+                "{\"Referent\": \"glutamic acid\", \"Canonical name\": \"Glu (E)\"}",
+                "{\"Referent\": \"glutamine\", \"Canonical name\": \"Gln (Q)\"}"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    }
+]

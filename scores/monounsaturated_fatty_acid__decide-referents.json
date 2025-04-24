@@ -1,0 +1,1734 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "(11Z)-icos-11-enoic acid",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ],
+            "mismatches": [
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "(11Z)-icos-11-enoic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid",
+            "O-undecenoylcarnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "O-undecenoylcarnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ],
+            "mismatches": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z)-eicosenoyl-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "erucoyl-CoA"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine",
+            "methyl undecenate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "methyl undecenate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid",
+            "2-hydroxyerucic acid",
+            "ethyl (13Z)-docosenoate",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+            "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-hydroxyerucic acid",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid",
+            "2-hydroxyerucic acid",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylphytosphingosine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "erucoyl-CoA",
+                "2-hydroxyerucic acid",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "methyl undecenate",
+            "cis-undec-2-enoic acid",
+            "O-undecenoylcarnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "O-undecenoylcarnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ],
+            "mismatches": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "erucoyl-CoA",
+            "(11Z)-icos-11-enoic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "erucoyl-CoA",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "methyl undecenate",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "erucoyl-CoA",
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid",
+            "ethyl (13Z)-docosenoate",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+            "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "erucoyl-CoA",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "N-(11Z)-icosenoylphytosphingosine",
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "erucoyl-CoA"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "(11Z)-icos-11-enoic acid",
+            "ethyl (13Z)-docosenoate",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "erucoyl-CoA",
+                "ethyl (13Z)-docosenoate",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ],
+            "mismatches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "(11Z)-icos-11-enoic acid",
+            "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "ethyl (13Z)-docosenoate",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "erucoyl-CoA",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "methyl undecenate",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "gadelaidic acid",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ],
+            "mismatches": [
+                "gadelaidic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "(11Z)-icos-11-enoic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-undec-2-enoic acid",
+            "cis-9-undecenoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-undec-2-enoic acid",
+                "cis-9-undecenoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "phosphatidylserine(18:1/22:1)",
+            "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phosphatidylserine(18:1/22:1)",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "cis-9-undecenoic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "erucoyl-CoA",
+            "(11Z)-icos-11-enoic acid",
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine",
+            "ethyl (13Z)-docosenoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "mismatches": [
+                "erucoyl-CoA",
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "ethyl (13Z)-docosenoate"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "erucoyl-CoA",
+            "gadelaidic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "erucoyl-CoA"
+            ],
+            "mismatches": [
+                "gadelaidic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "N-(11Z)-icosenoylphytosphingosine",
+            "(11Z)-icos-11-enoic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z)-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "methyl undecenate",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "gadelaidic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "gadelaidic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "gadelaidic acid",
+            "(11Z)-icos-11-enoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "gadelaidic acid",
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "methyl undecenate",
+            "cis-undec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine",
+            "(2E)-11-hydroxyundec-2-enoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "(11Z)-icos-11-enoic acid",
+            "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+            "sphingomyelin d18:1/20:1",
+            "2-hydroxyerucic acid",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "ethyl (13Z)-docosenoate",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+            "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "erucoyl-CoA",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "2-hydroxyerucic acid",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "(11Z)-icos-11-enoic acid",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylphytosphingosine",
+            "N-(11Z)-icosenoylsphinganine",
+            "sphingomyelin d18:1/20:1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "N-(11Z)-icosenoylsphinganine",
+                "sphingomyelin d18:1/20:1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine",
+            "methyl undecenate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "methyl undecenate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "N-(11Z)-icosenoylphytosphingosine",
+            "(11Z)-icos-11-enoic acid",
+            "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+            "2-hydroxyerucic acid",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "ethyl (13Z)-docosenoate",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+            "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "erucoyl-CoA",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "2-hydroxyerucic acid",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "cholesteryl (11Z)-icosenoate",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 8,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "N-(11Z)-icosenoylphytosphingosine",
+            "(11Z)-icos-11-enoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid"
+            ],
+            "mismatches": [
+                "erucoyl-CoA"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "methyl undecenate",
+            "cis-undec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "methyl undecenate",
+                "cis-undec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "erucoyl-CoA",
+            "(11Z)-icos-11-enoic acid",
+            "2-hydroxyerucic acid",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "ethyl (13Z)-docosenoate",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+            "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "erucoyl-CoA",
+                "2-hydroxyerucic acid",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "mismatches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "(11Z)-icos-11-enoic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "sphingomyelin d18:1/20:1",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "trans-2-undecenoyl-CoA",
+            "O-undecenoylcarnitine",
+            "methyl undecenate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "trans-2-undecenoyl-CoA",
+                "O-undecenoylcarnitine",
+                "methyl undecenate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "(11Z)-icos-11-enoic acid",
+            "gadelaidic acid",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ],
+            "mismatches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "gadelaidic acid"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "(11Z)-icos-11-enoic acid",
+            "gadelaidic acid",
+            "sphingomyelin d18:1/20:1",
+            "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+            "N-(11Z)-icosenoylsphinganine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "gadelaidic acid",
+                "sphingomyelin d18:1/20:1",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "mismatches": [
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine"
+            ],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "undecenoic acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-9-undecenoic acid",
+            "cis-undec-2-enoic acid",
+            "(2E)-11-hydroxyundec-2-enoic acid",
+            "methyl undecenate",
+            "O-undecenoylcarnitine",
+            "trans-2-undecenoyl-CoA"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-9-undecenoic acid",
+                "cis-undec-2-enoic acid",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "methyl undecenate",
+                "O-undecenoylcarnitine",
+                "trans-2-undecenoyl-CoA"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "methyl undecenate",
+                "ascr#17",
+                "icas#17",
+                "trans-2-undecenoyl-CoA",
+                "cis-9-undecenoic acid",
+                "O-undecenoylcarnitine",
+                "(2E)-11-hydroxyundec-2-enoic acid",
+                "cis-undec-2-enoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fatty acid 22:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "(11Z)-icos-11-enoic acid",
+            "N-(11Z)-icosenoylsphinganine",
+            "phosphatidylserine(18:1/22:1)",
+            "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phosphatidylserine(18:1/22:1)",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))"
+            ],
+            "mismatches": [
+                "cholesteryl (11Z)-icosenoate",
+                "(11Z)-icos-11-enoic acid",
+                "N-(11Z)-icosenoylsphinganine"
+            ],
+            "true_referents": [
+                "erucoyl-CoA",
+                "alpha-Neu5Ac-(2->3)-beta-D-Gal-(1->4)-beta-D-Glc-(1<->1')-Cer(d18:1/22:1(13Z))",
+                "1-octadecyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "1-icosyl-2-[(11Z)-docosenoyl]-sn-glycero-3-phosphocholine",
+                "2-hydroxyerucic acid",
+                "N-[(13Z)-docosenoyl]-tetradecasphing-4-enine-1-phosphoethanolamine",
+                "ethyl (13Z)-docosenoate",
+                "phosphatidylserine(18:1/22:1)"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fatty acid 20:1",
+        "domain": "chemistry",
+        "response": [
+            "cholesteryl (11Z)-icosenoate",
+            "N-(11Z)-icosenoylphytosphingosine",
+            "(11Z)-icos-11-enoic acid",
+            "N-(11Z)-icosenoylsphinganine",
+            "sphingomyelin d18:1/20:1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cholesteryl (11Z)-icosenoate",
+                "N-(11Z)-icosenoylphytosphingosine",
+                "(11Z)-icos-11-enoic acid",
+                "N-(11Z)-icosenoylsphinganine",
+                "sphingomyelin d18:1/20:1"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-(11Z)-icosenoylphytosphingosine",
+                "1-palmitoyl-2-(11Z-eicosenoyl)-sn-glycero-3-phosphocholine",
+                "sphingomyelin d18:1/20:1",
+                "oscr#35-CoA",
+                "N-(11Z)-icosenoylsphinganine",
+                "(11Z)-icos-11-enoic acid",
+                "cholesteryl (11Z)-icosenoate",
+                "gadelaidic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myeloid cell and myeloid cell are the same term, thus they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myeloid cell and myeloid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myeloid cell and myeloid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Myeloid cell' and 'myeloid cell' are equivalent as they refer to the same type of cell, with the difference only being in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of cell in the hematopoietic system.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A myeloid leukocyte is a type of myeloid cell, but not all myeloid cells are leukocytes. Myeloid cells also include other cell types such as erythrocytes and megakaryocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "White blood cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "White blood cells include both myeloid and lymphoid cells, whereas myeloid cells are a subset of white blood cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "White blood cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "White blood cells include several types such as lymphocytes and myeloid cells, but not all white blood cells are myeloid cells. Myeloid cells specifically refer to a subgroup of white blood cells derived from the myeloid lineage.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "myeloid leukocyte is a type of myeloid cell, but not all myeloid cells are leukocytes. Myeloid cells can also include other types of cells such as erythrocytes and megakaryocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of cell, so they are identical in meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myeloid cell and myeloid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "leukocytes are white blood cells, which include both myeloid and lymphoid cells. Myeloid cells are a subset of leukocytes, so not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A leukocyte is a type of white blood cell, which includes both myeloid and lymphoid cells. A myeloid cell is a subtype of leukocyte, but not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Granulocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Granulocytes are a type of myeloid cell, but not all myeloid cells are granulocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A leukocyte is a type of white blood cell, which includes both myeloid and lymphoid cells. Myeloid cells are a subset of leukocytes, but not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Leukocytes are white blood cells, which include both myeloid and lymphoid cells, whereas myeloid cells are a specific lineage of leukocytes. Therefore, not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

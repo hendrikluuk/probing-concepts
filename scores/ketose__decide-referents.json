@@ -1,0 +1,1887 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "octulose 8-phosphate",
+            "octulose 1-phosphate",
+            "L-glycero-L-galacto-octuluronate",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "octulose 8-phosphate",
+                "octulose 1-phosphate",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [
+                "L-glycero-L-galacto-octuluronate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose derivative",
+            "D-ribulose 1-phosphate",
+            "ribulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 1-phosphate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose derivative",
+                "D-ribulose 1-phosphate",
+                "D-sorbose 1-phosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 1-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "D-sorbose 1-phosphate",
+            "sorbose derivative",
+            "L-glycero-L-galacto-octuluronate",
+            "octulose 8-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-sorbose 1-phosphate",
+                "sorbose derivative",
+                "octulose 8-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [
+                "L-glycero-L-galacto-octuluronate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulosamine 3-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "D-ribulose 1-phosphate",
+            "1-ethoxy-3-hydroxyacetone",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "5'-phospho-D-ribulosylmethylideneamine",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "1-ethoxy-3-hydroxyacetone",
+                "L-xylulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "ribulosamine 3-phosphate",
+                "sorbose derivative",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 6,
+            "FP": 11,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "sorbose derivative",
+            "D-sorbose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "sorbose derivative",
+                "D-sorbose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "octulose 1-phosphate",
+            "octulose 8-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "octulose 1-phosphate",
+                "octulose 8-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulose phosphate",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "ribulose 1-phosphate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 3,
+            "FP": 10,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "L-glycero-L-galacto-octuluronate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-glycero-L-galacto-octuluronate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose derivative",
+            "1-ethoxy-3-hydroxyacetone",
+            "1-alkylglycerone 3-phosphate",
+            "1-palmitylglycerone 3-phosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-ethoxy-3-hydroxyacetone",
+                "1-alkylglycerone 3-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose derivative"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 1-phosphate",
+            "D-ribulose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "D-glycero-D-altro-octulose-1,8-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulosamine 3-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-glycero-L-galacto-octuluronate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "ribulosamine 3-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "octulose 8-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-glycero-L-galacto-octuluronate",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 4,
+            "FP": 14,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "D-glycero-D-altro-octulose-1,8-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose derivative",
+            "D-sorbose 1-phosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose derivative",
+                "D-sorbose 1-phosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "D-glycero-D-altro-octulose-1,8-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulosamine 3-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "1-ethoxy-3-hydroxyacetone",
+            "ribulosamine",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "5'-phospho-D-ribulosylmethylideneamine",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose",
+            "L-glycero-L-galacto-octuluronate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "1-ethoxy-3-hydroxyacetone",
+                "L-xylulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "ribulosamine 3-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "octulose 8-phosphate",
+                "D-ribulose 1-phosphate",
+                "ribulosamine",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-glycero-L-galacto-octuluronate",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 6,
+            "FP": 16,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "L-ribulose",
+            "D-ribulose 1-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-ribulose",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulosamine 3-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "1-ethoxy-3-hydroxyacetone",
+            "ribulosamine",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "1-alkylglycerone 3-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "1-palmitylglycerone 3-phosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "5'-phospho-D-ribulosylmethylideneamine",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose",
+            "L-glycero-L-galacto-octuluronate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate",
+                "1-alkylglycerone 3-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "ribulosamine 3-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "octulose 8-phosphate",
+                "ribulosamine",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-glycero-L-galacto-octuluronate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 8,
+            "FP": 14,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulosamine 3-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "1-ethoxy-3-hydroxyacetone",
+            "ribulosamine",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "1-alkylglycerone 3-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "1-palmitylglycerone 3-phosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "5'-phospho-D-ribulosylmethylideneamine",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose",
+            "L-glycero-L-galacto-octuluronate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulosamine 3-phosphate",
+                "D-ribulose 1-phosphate",
+                "ribulosamine",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "ribulose phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "octulose 8-phosphate",
+                "1-ethoxy-3-hydroxyacetone",
+                "L-xylulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "1-alkylglycerone 3-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "L-glycero-L-galacto-octuluronate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 16,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "octulose 8-phosphate",
+            "octulose 1-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "octulose 8-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulosamine 3-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulosamine",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "5'-phospho-D-ribulosylmethylideneamine",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "ribulose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "ribulosamine 3-phosphate",
+                "sorbose derivative",
+                "octulose 8-phosphate",
+                "D-ribulose 1-phosphate",
+                "ribulosamine",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 5,
+            "FP": 13,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose phosphate",
+            "D-ribulose 1-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "ribulose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "octulose 8-phosphate",
+            "octulose 1-phosphate",
+            "L-glycero-L-galacto-octuluronate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "octulose 8-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "1-ethoxy-3-hydroxyacetone",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "sorbose derivative",
+                "octulose 8-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 5,
+            "FP": 12,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose phosphate",
+                "ribulose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "L-glycero-L-galacto-octuluronate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-glycero-L-galacto-octuluronate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulosamine 3-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "1-ethoxy-3-hydroxyacetone",
+            "ribulosamine",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "1-alkylglycerone 3-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "1-palmitylglycerone 3-phosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "5'-phospho-D-ribulosylmethylideneamine",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate",
+                "1-alkylglycerone 3-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "ribulosamine 3-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "octulose 8-phosphate",
+                "ribulosamine",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 8,
+            "FP": 14,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 1-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "octulose 8-phosphate",
+            "octulose 1-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "octulose 8-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "mismatches": [
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "ribulose phosphate",
+            "sorbose derivative",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "octulose 8-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "ribulose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "octulose 8-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 4,
+            "FP": 12,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "L-ribulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "L-ribulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "D-sorbose 1-phosphate",
+            "octulose 1-phosphate",
+            "octulose 8-phosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "D-sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "octulose 8-phosphate"
+            ],
+            "mismatches": [
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose 1-phosphate",
+            "sorbose derivative",
+            "D-ribulose 1-phosphate",
+            "ribulosamine",
+            "ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "octulose 1-phosphate",
+            "D-sorbose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 1-phosphate",
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose 1-phosphate",
+                "sorbose derivative",
+                "D-ribulose 1-phosphate",
+                "ribulosamine",
+                "D-ribulose 1,5-bisphosphate",
+                "octulose 1-phosphate",
+                "D-sorbose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 2,
+            "FP": 10,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": "[\\\"(3S,4R)-Ketose 1-phosphate\\\"]",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose derivative",
+            "D-sorbose 1-phosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose derivative",
+                "D-sorbose 1-phosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "[\\\"(3S,4R)-Ketose 1-phosphate\\\"]",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketooctose",
+        "domain": "chemistry",
+        "response": [
+            "L-glycero-L-galacto-octuluronate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "octulose 1-phosphate",
+            "octulose 8-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-glycero-L-galacto-octuluronate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "octulose 1-phosphate",
+                "octulose 8-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-sorbose 1-phosphate",
+                "octulose 8-phosphate",
+                "sorbose derivative",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "sorbose 1-phosphate",
+                "octulose 1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate",
+                "L-glycero-L-galacto-octuluronate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketose derivative",
+        "domain": "chemistry",
+        "response": [
+            "sorbose derivative",
+            "octulose 8-phosphate",
+            "octulose 1-phosphate",
+            "L-glycero-L-galacto-octuluronate-1-phosphate",
+            "D-glycero-D-altro-octulose-1,8-bisphosphate",
+            "(3S,4R)-Ketose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S,4R)-Ketose 1-phosphate"
+            ],
+            "mismatches": [
+                "sorbose derivative",
+                "octulose 8-phosphate",
+                "octulose 1-phosphate",
+                "L-glycero-L-galacto-octuluronate-1-phosphate",
+                "D-glycero-D-altro-octulose-1,8-bisphosphate"
+            ],
+            "true_referents": [
+                "1-alkylglycerone 3-phosphate",
+                "ribulose phosphate",
+                "L-xylulose 5-phosphate",
+                "(3S,4R)-Ketose 1-phosphate",
+                "1-palmitylglycerone 3-phosphate",
+                "5'-phospho-D-ribulosylmethylideneamine",
+                "1-ethoxy-3-hydroxyacetone",
+                "ribulose 1-phosphate"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 1-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-ribulose",
+            "L-ribulose 5-phosphate",
+            "D-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate"
+            ],
+            "true_referents": [
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulosamine",
+                "ribulosamine 3-phosphate",
+                "L-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    }
+]

@@ -1,0 +1,1794 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Munchausen Syndrome",
+            "Hypochondriasis",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Munchausen Syndrome",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social",
+            "Hoarding Disorder",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social",
+                "Hoarding Disorder"
+            ],
+            "mismatches": [
+                "Conversion Disorder"
+            ],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Depressive Disorder",
+            "Seasonal Affective Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Depressive Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Hypochondriasis",
+            "Globus Sensation",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Hypochondriasis",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Hypochondriasis",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Neurotic Disorders",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Neurotic Disorders",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Depression, Postpartum",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Depression, Postpartum",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Neurocirculatory Asthenia",
+            "Hypochondriasis",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Body Dysmorphic Disorders",
+            "Hypochondriasis",
+            "Globus Sensation",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Neurotic Disorders",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Neurotic Disorders",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Hypochondriasis",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Munchausen Syndrome",
+            "Body Dysmorphic Disorders",
+            "Neurocirculatory Asthenia",
+            "Hypochondriasis",
+            "Munchausen Syndrome by Proxy",
+            "Globus Sensation",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Munchausen Syndrome",
+            "Body Dysmorphic Disorders",
+            "Hypochondriasis",
+            "Trichotillomania",
+            "Munchausen Syndrome by Proxy",
+            "Globus Sensation",
+            "Neurotic Disorders",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ],
+            "mismatches": [
+                "Trichotillomania",
+                "Neurotic Disorders"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 7,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Premenstrual Dysphoric Disorder",
+            "Body Dysmorphic Disorders",
+            "Depressive Disorder, Treatment-Resistant",
+            "Hypochondriasis",
+            "Seasonal Affective Disorder",
+            "Trichotillomania",
+            "Depressive Disorder",
+            "Globus Sensation",
+            "Neurotic Disorders",
+            "Panic Disorder",
+            "Hoarding Disorder",
+            "Phobic Disorders",
+            "Depression, Postpartum",
+            "Phobia, Social",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Trichotillomania",
+                "Neurotic Disorders",
+                "Panic Disorder",
+                "Hoarding Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [
+                "Premenstrual Dysphoric Disorder",
+                "Body Dysmorphic Disorders",
+                "Depressive Disorder, Treatment-Resistant",
+                "Hypochondriasis",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Globus Sensation",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 7,
+            "FP": 9,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Body Dysmorphic Disorders",
+            "Neurocirculatory Asthenia",
+            "Hypochondriasis",
+            "Globus Sensation",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Hypochondriasis",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [
+                "Hypochondriasis"
+            ],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Depression, Postpartum",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Depression, Postpartum",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Body Dysmorphic Disorders",
+            "Neurocirculatory Asthenia",
+            "Hypochondriasis",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Body Dysmorphic Disorders",
+            "Hypochondriasis",
+            "Neurocirculatory Asthenia",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Seasonal Affective Disorder",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Hypochondriasis",
+            "Conversion Disorder",
+            "Body Dysmorphic Disorders",
+            "Globus Sensation",
+            "Neurocirculatory Asthenia",
+            "Munchausen Syndrome",
+            "Munchausen Syndrome by Proxy",
+            "Body Integrity Identity Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Conversion Disorder",
+                "Body Dysmorphic Disorders",
+                "Globus Sensation",
+                "Munchausen Syndrome",
+                "Munchausen Syndrome by Proxy",
+                "Body Integrity Identity Disorder"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 8,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social",
+            "Generalized Anxiety Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [
+                "Generalized Anxiety Disorder"
+            ],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Depressive Disorder, Treatment-Resistant",
+            "Depressive Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders",
+            "Seasonal Affective Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Depressive Disorder, Treatment-Resistant",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders",
+                "Seasonal Affective Disorder"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Munchausen Syndrome",
+            "Body Dysmorphic Disorders",
+            "Hypochondriasis",
+            "Trichotillomania",
+            "Munchausen Syndrome by Proxy",
+            "Globus Sensation",
+            "Conversion Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ],
+            "mismatches": [
+                "Trichotillomania"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Depressive Disorder",
+            "Seasonal Affective Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Depressive Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Munchausen Syndrome",
+            "Hypochondriasis",
+            "Neurocirculatory Asthenia",
+            "Conversion Disorder",
+            "Body Dysmorphic Disorders",
+            "Trichotillomania",
+            "Globus Sensation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Hypochondriasis",
+                "Conversion Disorder",
+                "Body Dysmorphic Disorders",
+                "Globus Sensation"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia",
+                "Trichotillomania"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Anxiety, Separation",
+            "Hypochondriasis",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [
+                "Neurasthenia",
+                "Hypochondriasis"
+            ],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Depressive Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Premenstrual Dysphoric Disorder",
+            "Seasonal Affective Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Depression, Postpartum",
+            "Bipolar and Related Disorders"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Depressive Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Premenstrual Dysphoric Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ],
+            "mismatches": [
+                "Neurasthenia"
+            ],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Somatoform Disorders",
+        "domain": "medicine",
+        "response": [
+            "Neurasthenia",
+            "Hypochondriasis",
+            "Body Dysmorphic Disorders",
+            "Conversion Disorder",
+            "Munchausen Syndrome",
+            "Munchausen Syndrome by Proxy",
+            "Globus Sensation",
+            "Neurocirculatory Asthenia",
+            "Body Integrity Identity Disorder"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Body Dysmorphic Disorders",
+                "Conversion Disorder",
+                "Munchausen Syndrome",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder"
+            ],
+            "mismatches": [
+                "Neurocirculatory Asthenia"
+            ],
+            "true_referents": [
+                "Hypochondriasis",
+                "Munchausen Syndrome",
+                "Globus Sensation",
+                "Body Integrity Identity Disorder",
+                "Body Dysmorphic Disorders",
+                "Munchausen Syndrome by Proxy",
+                "Neurasthenia",
+                "Conversion Disorder"
+            ],
+            "TP": 8,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Anxiety Disorders",
+        "domain": "medicine",
+        "response": [
+            "Anxiety, Separation",
+            "Panic Disorder",
+            "Phobic Disorders",
+            "Phobia, Social",
+            "Hypochondriasis"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ],
+            "mismatches": [
+                "Hypochondriasis"
+            ],
+            "true_referents": [
+                "Phobic Disorders",
+                "Panic Disorder",
+                "Anxiety, Separation",
+                "Phobia, Social",
+                "Trichotillomania",
+                "Hoarding Disorder",
+                "Neurotic Disorders",
+                "Neurocirculatory Asthenia"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Mood Disorders",
+        "domain": "medicine",
+        "response": [
+            "Premenstrual Dysphoric Disorder",
+            "Depressive Disorder, Treatment-Resistant",
+            "Depressive Disorder",
+            "Seasonal Affective Disorder",
+            "Bipolar Disorder",
+            "Cyclothymic Disorder",
+            "Bipolar and Related Disorders",
+            "Depression, Postpartum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Depressive Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Cyclothymic Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Premenstrual Dysphoric Disorder"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    }
+]

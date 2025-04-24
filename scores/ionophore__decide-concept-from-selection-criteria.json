@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ion channel",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ion channel is a protein that allows ions to pass through a cell membrane, while an ionophore is a chemical that facilitates ion transport across the membrane. Not all ion channels are ionophores and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "Transport ion channel",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Transport ion channels and ionophores both facilitate ion movement across membranes, but they are different in structure and mechanism. Transport ion channels are integral membrane proteins that form pores, while ionophores are small molecules or peptides that transport ions by binding and carrying them across the membrane.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ion channel",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ion channel is a protein structure that allows ions to pass through a cell membrane, while an ionophore is a chemical compound that facilitates the transport of ions across the membrane. Not all ion channels are ionophores and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "Ion channel",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ion channel is a protein that forms a pore in a cell membrane to allow ions to pass through, whereas an ionophore is a molecule that facilitates the transport of ions across a cell membrane, often by forming a complex with the ion. They are related but not equivalent, as ionophores are not always channels and can operate differently.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ionophore and ionophore are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ionophore and ionophore are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ionophore and ionophore are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "Ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ionophore and ionophore are the same term, just with different capitalization, and thus are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ionophore and ionophore are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept, as they are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ionophore and ionophore are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ionophore and ionophore are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ion transporter",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ion transporter is a broad term that includes various mechanisms for moving ions across membranes, including channels, carriers, and pumps. An ionophore is a specific type of molecule that facilitates the transport of ions across cell membranes, but not all ion transporters are ionophores.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ionophore",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same concept; they are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "ion channel",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ion channels are proteins that form pores in cell membranes to allow ions to pass through, whereas ionophores are molecules that facilitate ion transport across cell membranes, often by binding to the ions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ionophore",
+        "domain": "chemistry",
+        "response": "Concept: \"compound\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ionophore is a type of compound, but not all compounds are ionophores.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

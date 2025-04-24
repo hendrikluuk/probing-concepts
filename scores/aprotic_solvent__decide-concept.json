@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "non-aqueous solvent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While aprotic solvents are a type of non-aqueous solvent, not all non-aqueous solvents are aprotic. Non-aqueous solvents can be either aprotic or protic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Aprotic solvent' and 'aprotic solvent' are identical except for capitalization, thus they are equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are the same term, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent refer to the same concept, with only a difference in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "non-protic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "non-protic solvent and aprotic solvent are synonymous terms used to describe solvents that do not donate hydrogen atoms in the form of protons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Non-protonic solvent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An aprotic solvent is a type of non-protonic solvent, but not all non-protonic solvents are aprotic. Non-protonic solvents can also include solvents that are neither aprotic nor protic, such as ionic liquids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Non-protonic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Non-protonic solvent and aprotic solvent are synonyms as both refer to solvents that do not donate protons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'aprotic solvent' and 'aprotic solvent' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept of a solvent that does not donate hydrogen atoms or protons.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "amphiprotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "amphiprotic refers to a substance that can both donate and accept a proton, while an aprotic solvent is a solvent that does not donate protons. They are distinct concepts in chemistry.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'aprotic solvent' and 'aprotic solvent' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Neutral solvent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A neutral solvent has a pH of 7 and is neither acidic nor basic, while an aprotic solvent is characterized by the lack of hydrogen atoms that can participate in hydrogen bonding. Not all neutral solvents are aprotic, and not all aprotic solvents are neutral.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

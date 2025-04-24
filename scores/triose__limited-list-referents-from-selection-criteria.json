@@ -1,0 +1,821 @@
+[
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "glyceraldehyde (Glyc)",
+            "dihydroxyacetone (DHA)",
+            "trihydroxyacetone (THA)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "glyceraldehyde (Glyc)",
+                "dihydroxyacetone (DHA)",
+                "trihydroxyacetone (THA)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dihydroxyacetone (DHA)",
+                "glyceraldehyde (Glyc)",
+                "trihydroxyacetone (THA)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "D-glyceraldehyde (Glyceraldehyde)",
+            "L-glyceraldehyde (Glyceraldehyde)",
+            "Dihydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-glyceraldehyde (Glyceraldehyde)",
+                "L-glyceraldehyde (Glyceraldehyde)",
+                "Dihydroxyacetone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-glyceraldehyde (Glyceraldehyde)",
+                "Dihydroxyacetone",
+                "L-glyceraldehyde (Glyceraldehyde)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde (D-Glyceraldehyde)",
+            "Dihydroxyacetone (DHA)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde (D-Glyceraldehyde)",
+                "Dihydroxyacetone (DHA)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Dihydroxyacetone (DHA)",
+                "Glyceraldehyde (D-Glyceraldehyde)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde (GLY)",
+            "Dihydroxyacetone (DHA)",
+            "L-Glyceraldehyde (L-GLY)",
+            "D-Glyceraldehyde (D-GLY)",
+            "2-Hydroxypropanal",
+            "1,2-Dihydroxypropanone",
+            "3-Hydroxypropanal",
+            "Glycerone",
+            "\u03b1-Glyceraldehyde",
+            "\u03b2-Glyceraldehyde",
+            "D-Dihydroxyacetone (D-DHA)",
+            "L-Dihydroxyacetone (L-DHA)",
+            "3-Phosphoglyceraldehyde (PGAL)",
+            "Glyceraldehyde-3-phosphate (G3P)",
+            "D-Glyceraldehyde-3-phosphate (D-G3P)",
+            "L-Glyceraldehyde-3-phosphate (L-G3P)",
+            "2,3-Dihydroxypropanal",
+            "1-Hydroxy-2-propanone",
+            "2-Deoxy-D-glyceraldehyde",
+            "2-Deoxy-L-glyceraldehyde",
+            "3-Deoxy-D-glyceraldehyde",
+            "3-Deoxy-L-glyceraldehyde",
+            "Glyceraldehyde-1-phosphate",
+            "Glyceraldehyde-2-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde (GLY)",
+                "Dihydroxyacetone (DHA)",
+                "L-Glyceraldehyde (L-GLY)",
+                "D-Glyceraldehyde (D-GLY)",
+                "2-Hydroxypropanal",
+                "1,2-Dihydroxypropanone",
+                "3-Hydroxypropanal",
+                "Glycerone",
+                "\u03b1-Glyceraldehyde",
+                "\u03b2-Glyceraldehyde",
+                "D-Dihydroxyacetone (D-DHA)",
+                "L-Dihydroxyacetone (L-DHA)",
+                "3-Phosphoglyceraldehyde (PGAL)",
+                "Glyceraldehyde-3-phosphate (G3P)",
+                "D-Glyceraldehyde-3-phosphate (D-G3P)",
+                "L-Glyceraldehyde-3-phosphate (L-G3P)",
+                "2,3-Dihydroxypropanal",
+                "1-Hydroxy-2-propanone",
+                "2-Deoxy-D-glyceraldehyde",
+                "2-Deoxy-L-glyceraldehyde",
+                "3-Deoxy-D-glyceraldehyde",
+                "3-Deoxy-L-glyceraldehyde",
+                "Glyceraldehyde-1-phosphate",
+                "Glyceraldehyde-2-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,2-Dihydroxypropanone",
+                "1-Hydroxy-2-propanone",
+                "2,3-Dihydroxypropanal",
+                "2-Deoxy-D-glyceraldehyde",
+                "2-Deoxy-L-glyceraldehyde",
+                "2-Hydroxypropanal",
+                "3-Deoxy-D-glyceraldehyde",
+                "3-Deoxy-L-glyceraldehyde",
+                "3-Hydroxypropanal",
+                "3-Phosphoglyceraldehyde (PGAL)",
+                "D-Dihydroxyacetone (D-DHA)",
+                "D-Glyceraldehyde (D-GLY)",
+                "D-Glyceraldehyde-3-phosphate (D-G3P)",
+                "Dihydroxyacetone (DHA)",
+                "Glyceraldehyde (GLY)",
+                "Glyceraldehyde-1-phosphate",
+                "Glyceraldehyde-2-phosphate",
+                "Glyceraldehyde-3-phosphate (G3P)",
+                "Glycerone",
+                "L-Dihydroxyacetone (L-DHA)",
+                "L-Glyceraldehyde (L-GLY)",
+                "L-Glyceraldehyde-3-phosphate (L-G3P)",
+                "\u03b1-Glyceraldehyde",
+                "\u03b2-Glyceraldehyde"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Dihydroxyacetone (DHA)",
+            "Glyceraldehyde (GA)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Dihydroxyacetone (DHA)",
+                "Glyceraldehyde (GA)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Dihydroxyacetone (DHA)",
+                "Glyceraldehyde (GA)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Dihydroxyacetone (DHA)",
+            "D-glyceraldehyde (Gly)",
+            "L-glyceraldehyde (Gly)",
+            "D-erythrose (Ery)",
+            "L-erythrose (Ery)",
+            "D-threose (Thr)",
+            "L-threose (Thr)",
+            "D-ribose (Rib)",
+            "L-ribose (Rib)",
+            "D-arabinose (Ara)",
+            "L-arabinose (Ara)",
+            "D-xylose (Xyl)",
+            "L-xylose (Xyl)",
+            "D-glucose (Glc)",
+            "D-fructose (Fru)",
+            "D-mannose (Man)",
+            "D-galactose (Gal)",
+            "D-allose (All)",
+            "D-talose (Tal)",
+            "D-psicose (Psi)",
+            "D-sorbose (Sor)",
+            "D-tagatose (Tag)",
+            "D-lyxose (Lyx)",
+            "D-idohexose (Ido)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Dihydroxyacetone (DHA)",
+                "D-glyceraldehyde (Gly)",
+                "L-glyceraldehyde (Gly)",
+                "D-erythrose (Ery)",
+                "L-erythrose (Ery)",
+                "D-threose (Thr)",
+                "L-threose (Thr)",
+                "D-ribose (Rib)",
+                "L-ribose (Rib)",
+                "D-arabinose (Ara)",
+                "L-arabinose (Ara)",
+                "D-xylose (Xyl)",
+                "L-xylose (Xyl)",
+                "D-glucose (Glc)",
+                "D-fructose (Fru)",
+                "D-mannose (Man)",
+                "D-galactose (Gal)",
+                "D-allose (All)",
+                "D-talose (Tal)",
+                "D-psicose (Psi)",
+                "D-sorbose (Sor)",
+                "D-tagatose (Tag)",
+                "D-lyxose (Lyx)",
+                "D-idohexose (Ido)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-allose (All)",
+                "D-arabinose (Ara)",
+                "D-erythrose (Ery)",
+                "D-fructose (Fru)",
+                "D-galactose (Gal)",
+                "D-glucose (Glc)",
+                "D-glyceraldehyde (Gly)",
+                "D-idohexose (Ido)",
+                "D-lyxose (Lyx)",
+                "D-mannose (Man)",
+                "D-psicose (Psi)",
+                "D-ribose (Rib)",
+                "D-sorbose (Sor)",
+                "D-tagatose (Tag)",
+                "D-talose (Tal)",
+                "D-threose (Thr)",
+                "D-xylose (Xyl)",
+                "Dihydroxyacetone (DHA)",
+                "L-arabinose (Ara)",
+                "L-erythrose (Ery)",
+                "L-glyceraldehyde (Gly)",
+                "L-ribose (Rib)",
+                "L-threose (Thr)",
+                "L-xylose (Xyl)"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde (GLY)",
+            "Dihydroxyacetone (DHA)",
+            "L-Glyceraldehyde (L-GLY)",
+            "D-Glyceraldehyde (D-GLY)",
+            "DL-Glyceraldehyde (DL-GLY)",
+            "Alpha-D-Glyceraldehyde (\u03b1-D-GLY)",
+            "Beta-D-Glyceraldehyde (\u03b2-D-GLY)",
+            "Alpha-L-Glyceraldehyde (\u03b1-L-GLY)",
+            "Beta-L-Glyceraldehyde (\u03b2-L-GLY)",
+            "Dihydroxyacetone phosphate (DHAP)",
+            "Glyceraldehyde 3-phosphate (G3P)",
+            "1,2-Dihydroxypropane (1,2-DHP)",
+            "1,3-Dihydroxypropane (1,3-DHP)",
+            "2,3-Dihydroxypropane (2,3-DHP)",
+            "1,2,3-Trihydroxypropane (1,2,3-THP)",
+            "1-Deoxy-D-glyceraldehyde (1-D-D-GLY)",
+            "1-Deoxy-L-glyceraldehyde (1-D-L-GLY)",
+            "2-Deoxy-D-glyceraldehyde (2-D-D-GLY)",
+            "2-Deoxy-L-glyceraldehyde (2-D-L-GLY)",
+            "3-Deoxy-D-glyceraldehyde (3-D-D-GLY)",
+            "3-Deoxy-L-glyceraldehyde (3-D-L-GLY)",
+            "1,2-Dideoxy-D-glyceraldehyde (1,2-DD-D-GLY)",
+            "1,3-Dideoxy-D-glyceraldehyde (1,3-DD-D-GLY)",
+            "2,3-Dideoxy-D-glyceraldehyde (2,3-DD-D-GLY)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde (GLY)",
+                "Dihydroxyacetone (DHA)",
+                "L-Glyceraldehyde (L-GLY)",
+                "D-Glyceraldehyde (D-GLY)",
+                "DL-Glyceraldehyde (DL-GLY)",
+                "Alpha-D-Glyceraldehyde (\u03b1-D-GLY)",
+                "Beta-D-Glyceraldehyde (\u03b2-D-GLY)",
+                "Alpha-L-Glyceraldehyde (\u03b1-L-GLY)",
+                "Beta-L-Glyceraldehyde (\u03b2-L-GLY)",
+                "Dihydroxyacetone phosphate (DHAP)",
+                "Glyceraldehyde 3-phosphate (G3P)",
+                "1,2-Dihydroxypropane (1,2-DHP)",
+                "1,3-Dihydroxypropane (1,3-DHP)",
+                "2,3-Dihydroxypropane (2,3-DHP)",
+                "1,2,3-Trihydroxypropane (1,2,3-THP)",
+                "1-Deoxy-D-glyceraldehyde (1-D-D-GLY)",
+                "1-Deoxy-L-glyceraldehyde (1-D-L-GLY)",
+                "2-Deoxy-D-glyceraldehyde (2-D-D-GLY)",
+                "2-Deoxy-L-glyceraldehyde (2-D-L-GLY)",
+                "3-Deoxy-D-glyceraldehyde (3-D-D-GLY)",
+                "3-Deoxy-L-glyceraldehyde (3-D-L-GLY)",
+                "1,2-Dideoxy-D-glyceraldehyde (1,2-DD-D-GLY)",
+                "1,3-Dideoxy-D-glyceraldehyde (1,3-DD-D-GLY)",
+                "2,3-Dideoxy-D-glyceraldehyde (2,3-DD-D-GLY)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,2,3-Trihydroxypropane (1,2,3-THP)",
+                "1,2-Dideoxy-D-glyceraldehyde (1,2-DD-D-GLY)",
+                "1,2-Dihydroxypropane (1,2-DHP)",
+                "1,3-Dideoxy-D-glyceraldehyde (1,3-DD-D-GLY)",
+                "1,3-Dihydroxypropane (1,3-DHP)",
+                "1-Deoxy-D-glyceraldehyde (1-D-D-GLY)",
+                "1-Deoxy-L-glyceraldehyde (1-D-L-GLY)",
+                "2,3-Dideoxy-D-glyceraldehyde (2,3-DD-D-GLY)",
+                "2,3-Dihydroxypropane (2,3-DHP)",
+                "2-Deoxy-D-glyceraldehyde (2-D-D-GLY)",
+                "2-Deoxy-L-glyceraldehyde (2-D-L-GLY)",
+                "3-Deoxy-D-glyceraldehyde (3-D-D-GLY)",
+                "3-Deoxy-L-glyceraldehyde (3-D-L-GLY)",
+                "Alpha-D-Glyceraldehyde (\u03b1-D-GLY)",
+                "Alpha-L-Glyceraldehyde (\u03b1-L-GLY)",
+                "Beta-D-Glyceraldehyde (\u03b2-D-GLY)",
+                "Beta-L-Glyceraldehyde (\u03b2-L-GLY)",
+                "D-Glyceraldehyde (D-GLY)",
+                "DL-Glyceraldehyde (DL-GLY)",
+                "Dihydroxyacetone (DHA)",
+                "Dihydroxyacetone phosphate (DHAP)",
+                "Glyceraldehyde (GLY)",
+                "Glyceraldehyde 3-phosphate (G3P)",
+                "L-Glyceraldehyde (L-GLY)"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde",
+            "Dihydroxyacetone",
+            "D-Ribose",
+            "D-Xylose",
+            "D-Arabinose",
+            "D-Lyxose",
+            "D-Glucose",
+            "D-Mannose",
+            "D-Galactose",
+            "D-Fructose",
+            "L-Ribose",
+            "L-Xylose",
+            "L-Arabinose",
+            "L-Lyxose",
+            "L-Glucose",
+            "L-Mannose",
+            "L-Galactose",
+            "L-Fructose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde",
+                "Dihydroxyacetone",
+                "D-Ribose",
+                "D-Xylose",
+                "D-Arabinose",
+                "D-Lyxose",
+                "D-Glucose",
+                "D-Mannose",
+                "D-Galactose",
+                "D-Fructose",
+                "L-Ribose",
+                "L-Xylose",
+                "L-Arabinose",
+                "L-Lyxose",
+                "L-Glucose",
+                "L-Mannose",
+                "L-Galactose",
+                "L-Fructose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-Arabinose",
+                "D-Fructose",
+                "D-Galactose",
+                "D-Glucose",
+                "D-Lyxose",
+                "D-Mannose",
+                "D-Ribose",
+                "D-Xylose",
+                "Dihydroxyacetone",
+                "Glyceraldehyde",
+                "L-Arabinose",
+                "L-Fructose",
+                "L-Galactose",
+                "L-Glucose",
+                "L-Lyxose",
+                "L-Mannose",
+                "L-Ribose",
+                "L-Xylose"
+            ],
+            "TP": 18,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "D-Glyceraldehyde (G3)",
+            "L-Glyceraldehyde (G3)",
+            "Dihydroxyacetone (DHA)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-Glyceraldehyde (G3)",
+                "L-Glyceraldehyde (G3)",
+                "Dihydroxyacetone (DHA)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-Glyceraldehyde (G3)",
+                "Dihydroxyacetone (DHA)",
+                "L-Glyceraldehyde (G3)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde (GLA)",
+            "Dihydroxyacetone (DHA)",
+            "1,3-Dihydroxyacetone (1,3-DHA)",
+            "3-Hydroxypropionaldehyde",
+            "Glyceraldehyde-3-phosphate (G3P)",
+            "Dihydroxyacetone phosphate (DHAP)",
+            "3-Phosphoglyceraldehyde",
+            "1,3-Dihydroxyacetone phosphate",
+            "Glycerol aldehyde",
+            "Triose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde (GLA)",
+                "Dihydroxyacetone (DHA)",
+                "1,3-Dihydroxyacetone (1,3-DHA)",
+                "3-Hydroxypropionaldehyde",
+                "Glyceraldehyde-3-phosphate (G3P)",
+                "Dihydroxyacetone phosphate (DHAP)",
+                "3-Phosphoglyceraldehyde",
+                "1,3-Dihydroxyacetone phosphate",
+                "Glycerol aldehyde",
+                "Triose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1,3-Dihydroxyacetone (1,3-DHA)",
+                "1,3-Dihydroxyacetone phosphate",
+                "3-Hydroxypropionaldehyde",
+                "3-Phosphoglyceraldehyde",
+                "Dihydroxyacetone (DHA)",
+                "Dihydroxyacetone phosphate (DHAP)",
+                "Glyceraldehyde (GLA)",
+                "Glyceraldehyde-3-phosphate (G3P)",
+                "Glycerol aldehyde",
+                "Triose"
+            ],
+            "TP": 10,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde (GAL)",
+            "Dihydroxyacetone (DHA)",
+            "D-Glyceraldehyde",
+            "L-Glyceraldehyde",
+            "(R)-Glyceraldehyde",
+            "(S)-Glyceraldehyde",
+            "1,3-Dihydroxypropanone",
+            "1,3-Dihydroxy-2-propanone",
+            "Hydroxyacetone",
+            "Pyruvic aldehyde",
+            "2-Oxopropanal",
+            "2-Hydroxypropanal",
+            "3-Hydroxypropanal",
+            "Triose",
+            "Triose sugar",
+            "Ketotriose",
+            "Aldotriose",
+            "3-Carbon monosaccharide",
+            "C3H6O3",
+            "Glycerose",
+            "Propanetriol",
+            "1,2,3-Trihydroxypropane",
+            "1,2,3-Propanetriol",
+            "Glycyl alcohol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde (GAL)",
+                "Dihydroxyacetone (DHA)",
+                "D-Glyceraldehyde",
+                "L-Glyceraldehyde",
+                "(R)-Glyceraldehyde",
+                "(S)-Glyceraldehyde",
+                "1,3-Dihydroxypropanone",
+                "1,3-Dihydroxy-2-propanone",
+                "Hydroxyacetone",
+                "Pyruvic aldehyde",
+                "2-Oxopropanal",
+                "2-Hydroxypropanal",
+                "3-Hydroxypropanal",
+                "Triose",
+                "Triose sugar",
+                "Ketotriose",
+                "Aldotriose",
+                "3-Carbon monosaccharide",
+                "C3H6O3",
+                "Glycerose",
+                "Propanetriol",
+                "1,2,3-Trihydroxypropane",
+                "1,2,3-Propanetriol",
+                "Glycyl alcohol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(R)-Glyceraldehyde",
+                "(S)-Glyceraldehyde",
+                "1,2,3-Propanetriol",
+                "1,2,3-Trihydroxypropane",
+                "1,3-Dihydroxy-2-propanone",
+                "1,3-Dihydroxypropanone",
+                "2-Hydroxypropanal",
+                "2-Oxopropanal",
+                "3-Carbon monosaccharide",
+                "3-Hydroxypropanal",
+                "Aldotriose",
+                "C3H6O3",
+                "D-Glyceraldehyde",
+                "Dihydroxyacetone (DHA)",
+                "Glyceraldehyde (GAL)",
+                "Glycerose",
+                "Glycyl alcohol",
+                "Hydroxyacetone",
+                "Ketotriose",
+                "L-Glyceraldehyde",
+                "Propanetriol",
+                "Pyruvic aldehyde",
+                "Triose",
+                "Triose sugar"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde (C3H6O3)",
+            "Dihydroxyacetone (C3H6O3)",
+            "Glycerol (C3H8O3)",
+            "D-Glyceraldehyde (C3H6O3)",
+            "L-Glyceraldehyde (C3H6O3)",
+            "D-Erythrulose (C4H8O4)",
+            "D-Threose (C4H8O4)",
+            "D-Ribulose (C5H10O5)",
+            "D-Xylulose (C5H10O5)",
+            "D-Arabinose (C5H10O5)",
+            "D-Ribose (C5H10O5)",
+            "D-Xylose (C5H10O5)",
+            "D-Lyxose (C5H10O5)",
+            "D-Allose (C6H12O6)",
+            "D-Altrose (C6H12O6)",
+            "D-Glucose (C6H12O6)",
+            "D-Mannose (C6H12O6)",
+            "D-Gulose (C6H12O6)",
+            "D-Idose (C6H12O6)",
+            "D-Galactose (C6H12O6)",
+            "D-Talose (C6H12O6)",
+            "D-Fructose (C6H12O6)",
+            "D-Psicose (C6H12O6)",
+            "D-Sorbose (C6H12O6)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde (C3H6O3)",
+                "Dihydroxyacetone (C3H6O3)",
+                "Glycerol (C3H8O3)",
+                "D-Glyceraldehyde (C3H6O3)",
+                "L-Glyceraldehyde (C3H6O3)",
+                "D-Erythrulose (C4H8O4)",
+                "D-Threose (C4H8O4)",
+                "D-Ribulose (C5H10O5)",
+                "D-Xylulose (C5H10O5)",
+                "D-Arabinose (C5H10O5)",
+                "D-Ribose (C5H10O5)",
+                "D-Xylose (C5H10O5)",
+                "D-Lyxose (C5H10O5)",
+                "D-Allose (C6H12O6)",
+                "D-Altrose (C6H12O6)",
+                "D-Glucose (C6H12O6)",
+                "D-Mannose (C6H12O6)",
+                "D-Gulose (C6H12O6)",
+                "D-Idose (C6H12O6)",
+                "D-Galactose (C6H12O6)",
+                "D-Talose (C6H12O6)",
+                "D-Fructose (C6H12O6)",
+                "D-Psicose (C6H12O6)",
+                "D-Sorbose (C6H12O6)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-Allose (C6H12O6)",
+                "D-Altrose (C6H12O6)",
+                "D-Arabinose (C5H10O5)",
+                "D-Erythrulose (C4H8O4)",
+                "D-Fructose (C6H12O6)",
+                "D-Galactose (C6H12O6)",
+                "D-Glucose (C6H12O6)",
+                "D-Glyceraldehyde (C3H6O3)",
+                "D-Gulose (C6H12O6)",
+                "D-Idose (C6H12O6)",
+                "D-Lyxose (C5H10O5)",
+                "D-Mannose (C6H12O6)",
+                "D-Psicose (C6H12O6)",
+                "D-Ribose (C5H10O5)",
+                "D-Ribulose (C5H10O5)",
+                "D-Sorbose (C6H12O6)",
+                "D-Talose (C6H12O6)",
+                "D-Threose (C4H8O4)",
+                "D-Xylose (C5H10O5)",
+                "D-Xylulose (C5H10O5)",
+                "Dihydroxyacetone (C3H6O3)",
+                "Glyceraldehyde (C3H6O3)",
+                "Glycerol (C3H8O3)",
+                "L-Glyceraldehyde (C3H6O3)"
+            ],
+            "TP": 24,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "Glyceraldehyde (Gly)",
+            "Dihydroxyacetone (DHA)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Glyceraldehyde (Gly)",
+                "Dihydroxyacetone (DHA)"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Dihydroxyacetone (DHA)",
+                "Glyceraldehyde (Gly)"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": "[\n\"Glyceraldehyde (Gly)\" ,\n\"Dihydroxyacetone\" ,\n\"Glycerol\" ,\n\"Glyceric acid\" ,\n\"Glyceraldehyde 3-phosphate\" ,\n\"3-Phosphoglyceric acid\" ,\n\"2,3-Dihydroxypropanoic acid\" ,\n\"3-Hydroxypropanoic acid\" ,\n\"3-Hydroxy-2-oxopropanoic acid\" ,\n\"Glyoxylic acid\" ,\n\"Oxalacetic acid\" ,\n\"2-Oxopropionic acid\" ,\n\"2-Oxobutanoic acid\" ,\n\"2-Oxovaleric acid\" ,\n\"2-Oxohexanoic acid\" ,\n\"2-Oxooctanoic acid\" ,\n\"2-Oxodecanoic acid\" ,\n\"2-Oxododecanoic acid\" ,\n\"2-Oxo-tetradecanoic acid\" ,\n\"2-Oxo-hexadecanoic acid\" ,\n\"2-Oxo-octadecanoic acid\"",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            "L-Glyceraldehyde (GlcA)",
+            "D-Glyceraldehyde",
+            "L-Glycerose",
+            "D-Glycerose",
+            "Triose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-Glyceraldehyde (GlcA)",
+                "D-Glyceraldehyde",
+                "L-Glycerose",
+                "D-Glycerose",
+                "Triose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "D-Glyceraldehyde",
+                "D-Glycerose",
+                "L-Glyceraldehyde (GlcA)",
+                "L-Glycerose",
+                "Triose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "limited-list-referents-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "triose",
+        "domain": "chemistry",
+        "response": [
+            {
+                "Referent": "glucose",
+                "Canonical name": "Glucose"
+            },
+            {
+                "Referent": "fructose",
+                "Canonical name": "Fructose"
+            },
+            {
+                "Referent": "galactose",
+                "Canonical name": "Galactose"
+            }
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "glucose",
+                "fructose",
+                "galactose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "{\"Referent\": \"fructose\", \"Canonical name\": \"Fructose\"}",
+                "{\"Referent\": \"galactose\", \"Canonical name\": \"Galactose\"}",
+                "{\"Referent\": \"glucose\", \"Canonical name\": \"Glucose\"}"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 0
+        }
+    }
+]

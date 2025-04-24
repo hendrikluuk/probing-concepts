@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "plasma cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Plasma cells are a type of white blood cell that produce antibodies, making them synonymous with antibody-producing cells.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "B cells are a type of lymphocyte that can differentiate into plasma cells to produce antibodies, but not all B cells are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "B cells are a type of lymphocyte that can differentiate into plasma cells to produce antibodies, but not all B cells are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B lymphocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "B lymphocytes are a type of white blood cell that can differentiate into plasma cells to produce antibodies, but not all B lymphocytes are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "plasma cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "plasma cells are a type of antibody-producing cell, and the term 'antibody-producing cell' specifically refers to plasma cells in the context of the immune response.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "plasma cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "plasma cells are a type of white blood cell that produce antibodies, and all antibody-producing cells are plasma cells.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "B cells are a type of white blood cell that can differentiate into plasma cells, which produce antibodies, but not all B cells are actively producing antibodies at any given time.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "Plasma cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Plasma cells are specifically differentiated B cells that produce antibodies, and the term 'antibody-producing cell' refers to plasma cells.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B lymphocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "B lymphocytes are a type of white blood cell that can differentiate into plasma cells, which are the ones that actually produce antibodies. Not all B lymphocytes are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B lymphocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "B lymphocytes are a type of white blood cell that can differentiate into plasma cells to produce antibodies, but not all B lymphocytes are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While B cells can differentiate into plasma cells that produce antibodies, not all B cells are actively producing antibodies at all times. Additionally, other cells such as plasma cells are specialized for antibody production.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B lymphocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "B lymphocytes can differentiate into plasma cells that produce antibodies, but not all B lymphocytes are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While B cells can differentiate into antibody-producing cells known as plasma cells, not all B cells are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "lymphocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Lymphocytes are a type of white blood cell that includes T cells, B cells, and natural killer cells. Only B cells, a subset of lymphocytes, are responsible for producing antibodies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "B cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While B cells can become antibody-producing cells (plasma cells), not all B cells are actively producing antibodies at all times.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "antibody-producing cell",
+        "domain": "biology",
+        "response": "Lymphocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Lymphocytes include various types of white blood cells, such as T cells and B cells, but only B cells are responsible for producing antibodies. Therefore, not all lymphocytes are antibody-producing cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

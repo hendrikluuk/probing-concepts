@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "carboxylic acid derivative",
+        "judgement": {
+            "equivalent": false,
+            "reason": "carboxylic anhydride is a type of carboxylic acid derivative, but not all carboxylic acid derivatives are carboxylic anhydrides. Other derivatives include esters, amides, and acyl chlorides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a compound derived from an acid where at least one -OH group is replaced by an -O-alkyl group, while a carboxylic anhydride is a compound derived from two carboxylic acid molecules with the loss of a water molecule. They are different functional groups with distinct structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "anhydride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A carboxylic anhydride is a specific type of anhydride formed from carboxylic acids, but not all anhydrides are carboxylic anhydrides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An amide is a compound containing a carbonyl group linked to a nitrogen atom, while a carboxylic anhydride is a compound derived from two carboxylic acid molecules with the elimination of water. They are different functional groups in organic chemistry.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "anhydride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Carboxylic anhydride is a specific type of anhydride, but not all anhydrides are carboxylic anhydrides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester and a carboxylic anhydride are different classes of organic compounds. An ester is formed from an alcohol and a carboxylic acid, while a carboxylic anhydride is formed from two carboxylic acids. They have different structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a compound formed from an alcohol and a carboxylic acid by the removal of water, while a carboxylic anhydride is formed from two carboxylic acid molecules by the removal of water. They are different functional groups with distinct structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "Anhydride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "carboxylic anhydride is a specific type of anhydride, but not all anhydrides are carboxylic anhydrides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "carboxylic anhydride",
+        "judgement": {
+            "equivalent": true,
+            "reason": "carboxylic anhydride and carboxylic anhydride are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a compound derived from an acid in which at least one hydroxyl group is replaced by an alkoxy group, while a carboxylic anhydride is derived from two carboxylic acid molecules with the loss of water. They are different types of organic compounds with distinct structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "carboxylic acid anhydride",
+        "judgement": {
+            "equivalent": true,
+            "reason": "carboxylic acid anhydride and carboxylic anhydride are synonyms and refer to the same chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is an organic compound derived from an acid where at least one -OH group is replaced by an -O-alkyl group, whereas a carboxylic anhydride is a compound formed from two carboxylic acid molecules by the removal of a water molecule. They are different functional groups with different structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a compound derived from an acid in which at least one -OH group is replaced by an -O-alkyl group, whereas a carboxylic anhydride is a compound formed from two carboxylic acid molecules by the removal of a water molecule. They are different functional groups with distinct structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "Anhydride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Anhydride is a general term that refers to compounds formed by the removal of water from another compound, while carboxylic anhydride specifically refers to an anhydride derived from carboxylic acids. Not all anhydrides are carboxylic anhydrides, as there are other types, such as acid anhydrides from inorganic acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "anhydride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Anhydride is a broader term that includes various types of anhydrides, while carboxylic anhydride specifically refers to an anhydride derived from carboxylic acids. Not all anhydrides are carboxylic anhydrides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "carboxylic anhydride",
+        "domain": "chemistry",
+        "response": "Concept: \"carboxylic acid\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "carboxylic acid and carboxylic anhydride are different functional groups; carboxylic anhydrides are derived from carboxylic acids but are not the same as carboxylic acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "immunoglobulin is a type of immunoprotein, but not all immunoproteins are immunoglobulins",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulin is a specific type of immunoprotein, but not all immunoproteins are immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "Immunoglobulins",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulins and immunoproteins are synonyms, both referring to proteins that function as antibodies in the immune system",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "Immunoglobulins",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Immunoglobulins and immunoprotein are synonyms as immunoglobulins are a type of immunoprotein.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "immunoglobulin is a type of immunoprotein, but not all immunoproteins are immunoglobulins",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulins are a type of immunoprotein, specifically antibodies, but not all immunoproteins are immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "Immunoglobulins",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Immunoglobulins and immunoproteins are synonymous terms referring to antibodies, which are proteins produced by the immune system to identify and neutralize foreign objects like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "Immunoglobulins",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Immunoglobulins and immunoproteins are synonyms, both referring to proteins that function as antibodies in the immune system.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoproteins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "immunoproteins is the plural form of immunoprotein, indicating multiple entities, while immunoprotein refers to a single entity.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulins",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulins and immunoproteins are synonyms, both referring to proteins functioning as antibodies in the immune system",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulins are a specific type of immunoprotein, but not all immunoproteins are immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulin and immunoprotein are synonyms as both refer to antibodies, which are proteins involved in immune response.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulins are a type of immunoprotein, but not all immunoproteins are immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "Acute-phase proteins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Acute-phase proteins are a specific subset of proteins that increase or decrease in response to inflammation, whereas immunoproteins are a broader category that includes all proteins involved in the immune response. Not all acute-phase proteins are immunoproteins and not all immunoproteins are acute-phase proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "immunoglobulins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "immunoglobulins are a type of immunoprotein, but not all immunoproteins are immunoglobulins",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "immunoprotein",
+        "domain": "biology",
+        "response": "Immunoglobulin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulin is a type of immunoprotein, but not all immunoproteins are immunoglobulins. Immunoproteins also include other types of proteins involved in the immune response.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

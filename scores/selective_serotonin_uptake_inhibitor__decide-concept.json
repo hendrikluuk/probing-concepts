@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "serotonin_reuptake_inhibitor",
+        "judgement": {
+            "equivalent": true,
+            "reason": "serotonin reuptake inhibitor and selective serotonin uptake inhibitor are often used interchangeably to describe the same class of drugs that inhibit the reuptake of serotonin in the brain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Selective Serotonin Reuptake Inhibitor and selective serotonin uptake inhibitor refer to the same class of drugs that inhibit the reuptake of serotonin, increasing its levels in the brain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin uptake inhibitors are a specific type of serotonin reuptake inhibitors, but not all serotonin reuptake inhibitors are selective.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin reuptake inhibitors (SSRIs) are a specific type of serotonin reuptake inhibitor, but not all serotonin reuptake inhibitors are selective. Therefore, the terms are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "SSRI",
+        "judgement": {
+            "equivalent": true,
+            "reason": "SSRI stands for selective serotonin reuptake inhibitor, which is synonymous with selective serotonin uptake inhibitor.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "selective serotonin reuptake inhibitor (SSRI)",
+        "judgement": {
+            "equivalent": true,
+            "reason": "selective serotonin reuptake inhibitor and selective serotonin uptake inhibitor are synonyms and refer to the same class of drugs that inhibit the reuptake of serotonin.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Selective serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin reuptake inhibitors (SSRIs) specifically inhibit the reuptake of serotonin, whereas selective serotonin uptake inhibitors is a broader term that could imply inhibition of serotonin uptake without specifying the mechanism or selectivity.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin uptake inhibitors are a subset of serotonin reuptake inhibitors, but not all serotonin reuptake inhibitors are selective.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Selective serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin reuptake inhibitor (SSRI) specifically refers to a class of drugs that inhibit the reuptake of serotonin, while 'selective serotonin uptake inhibitor' is not a standard term and could be misunderstood or misinterpreted; the reuptake process is specific and the terminology is precise in pharmacology.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "SSRI",
+        "judgement": {
+            "equivalent": true,
+            "reason": "SSRI stands for selective serotonin reuptake inhibitor, which is a specific type of selective serotonin uptake inhibitor.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "SSRI",
+        "judgement": {
+            "equivalent": true,
+            "reason": "SSRI stands for selective serotonin reuptake inhibitor, they are the same.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin reuptake inhibitors (SSRIs) are a specific type of serotonin reuptake inhibitor, but not all serotonin reuptake inhibitors are selective. Therefore, serotonin reuptake inhibitor is a broader category than selective serotonin reuptake inhibitor.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "antidepressant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin uptake inhibitors (SSRIs) are a type of antidepressant, but not all antidepressants are SSRIs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Selective serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Selective serotonin reuptake inhibitor and selective serotonin uptake inhibitor are used interchangeably to refer to the same class of drugs that block the reuptake of serotonin in the brain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "SSRI",
+        "judgement": {
+            "equivalent": true,
+            "reason": "SSRI and selective serotonin uptake inhibitor refer to the same class of drugs that inhibit the reuptake of serotonin in the brain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "selective serotonin uptake inhibitor",
+        "domain": "medicine",
+        "response": "Selective serotonin reuptake inhibitor",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Selective serotonin reuptake inhibitor and selective serotonin uptake inhibitor refer to the same class of drugs that inhibit the reuptake of serotonin into the presynaptic cell, increasing the level of serotonin available to bind to the postsynaptic receptor.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

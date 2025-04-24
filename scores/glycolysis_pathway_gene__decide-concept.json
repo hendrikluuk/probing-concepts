@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolysis gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "A glycolysis gene is inherently part of the glycolysis pathway, so they are synonymous in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme is a protein that catalyzes reactions in the glycolysis pathway, while a glycolysis pathway gene is a segment of DNA that encodes for such enzymes. Not all glycolytic enzymes are directly linked to a single gene, and not all genes related to glycolysis encode for enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene specifically codes for an enzyme involved in glycolysis, whereas a glycolysis pathway gene could include genes coding for enzymes, regulatory proteins, or other components involved in glycolysis.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "Glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene codes for an enzyme involved in glycolysis, but not all genes in the glycolysis pathway are enzyme genes. Some genes may code for regulatory proteins or other components involved in the pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene specifically codes for an enzyme involved in glycolysis, whereas a glycolysis pathway gene could include any gene involved in the regulation, expression, or metabolic control of the glycolysis pathway, not just those coding for enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene is a specific type of gene that encodes enzymes involved in glycolysis, while a glycolysis pathway gene could include other types of genes involved in the regulation or facilitation of the glycolytic pathway beyond just encoding enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene is a specific type of gene involved in glycolysis, while a glycolysis pathway gene could include regulatory genes or other types of genes involved in the glycolysis pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "Enzyme-encoding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An enzyme-encoding gene is a gene that encodes any enzyme, while a glycolysis pathway gene specifically encodes enzymes involved in the glycolysis pathway. Not all enzyme-encoding genes are involved in glycolysis.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene specifically codes for an enzyme involved in glycolysis, while a glycolysis pathway gene could include genes coding for regulatory proteins or other components related to the pathway, not just enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene specifically codes for an enzyme involved in glycolysis, whereas a glycolysis pathway gene could include any gene involved in the regulation, transport, or other aspects of the glycolysis pathway, not just those coding for enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene codes for an enzyme involved in glycolysis, but a glycolysis pathway gene could include regulatory genes or other non-enzyme genes associated with the pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme is a protein that catalyzes a step in glycolysis, while a glycolysis pathway gene is a segment of DNA that encodes for such an enzyme or regulates its expression. Not all glycolysis pathway genes directly encode glycolytic enzymes, and not all glycolytic enzymes are directly associated with a single gene.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme is a protein that catalyzes a reaction in the glycolysis pathway, whereas a glycolysis pathway gene is a segment of DNA that encodes for such an enzyme. Not all glycolytic enzymes are directly encoded by a single gene, and not all genes related to glycolysis encode for enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolysis enzyme-encoding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolysis enzyme-encoding gene specifically encodes for enzymes involved in glycolysis, whereas a glycolysis pathway gene could include genes encoding for regulatory proteins or transporters, not just enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "glycolytic enzyme gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A glycolytic enzyme gene specifically codes for enzymes involved in glycolysis, while a glycolysis pathway gene could refer to any gene involved in the regulation, production, or function of glycolysis, not just the enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "glycolysis pathway gene",
+        "domain": "biology",
+        "response": "gene encoding an enzyme that catalyzes a reaction in the glycolysis pathway",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A gene encoding an enzyme that catalyzes a reaction in the glycolysis pathway is a specific type of glycolysis pathway gene, but not all glycolysis pathway genes encode enzymes. Some may encode regulatory proteins or other components involved in the pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cells refer to multiple erythroid cell units, whereas erythroid cell refers to a single unit.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cells refers to multiple cells, while erythroid cell refers to a single cell",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "erythroid cells is the plural form of erythroid cell, referring to the same type of cell in singular and plural forms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Hematopoietic cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cells are a type of hematopoietic cell, but not all hematopoietic cells are erythroid cells. Hematopoietic cells include various other cell types such as myeloid and lymphoid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cell refers to a single cell, while erythroid cells refer to multiple cells. The singular and plural forms are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cells refer to multiple erythroid cell types or instances, whereas erythroid cell refers to a single cell. The terms are not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Erythrocytes",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Erythrocytes are a type of erythroid cell, but not all erythroid cells are erythrocytes. Erythroid cells include all stages of red blood cell development.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Red blood cell progenitors",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Red blood cell progenitors are cells that give rise to erythroid cells, but not all erythroid cells are progenitors as they include mature red blood cells as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "erythroid cells and erythroid cell refer to the same type of cell, with 'cells' being the plural form and 'cell' being the singular form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cells refer to multiple erythroid cell types or instances, while erythroid cell refers to a single instance. The terms are related but not strictly equivalent as one is plural and the other is singular.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cell refers to a single cell, while erythroid cells refer to multiple cells. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cells refer to multiple cells, while erythroid cell refers to a single cell. They are not strictly equivalent in number.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythrocyte precursor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Erythrocyte precursor is a specific type of erythroid cell, but not all erythroid cells are erythrocyte precursors. Erythroid cells include all stages of red blood cell development.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Red blood cell precursors",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Red blood cell precursors are a stage in the development of erythroid cells, but not all erythroid cells are precursors; mature erythrocytes are also erythroid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cell refers to a single cell, whereas erythroid cells refer to multiple cells. They are related but not strictly equivalent in number.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Concept: \"erythropoiesis\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythropoiesis is the process of producing erythroid cells, but not all erythroid cells are directly involved in the process of erythropoiesis at a given time.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

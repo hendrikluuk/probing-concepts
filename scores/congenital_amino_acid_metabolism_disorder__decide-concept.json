@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "aminoacidopathy",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aminoacidopathy and congenital amino acid metabolism disorder refer to the same group of metabolic disorders affecting amino acid metabolism.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Inborn errors of amino acid metabolism",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Inborn errors of amino acid metabolism and congenital amino acid metabolism disorder refer to the same group of genetic disorders affecting amino acid metabolism from birth.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Aminoacidopathies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aminoacidopathies and congenital amino acid metabolism disorder refer to the same group of metabolic disorders affecting amino acid metabolism.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Inborn errors of metabolism",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Inborn errors of metabolism encompass a wide range of metabolic disorders, including but not limited to congenital amino acid metabolism disorders.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "amino acid metabolism disorders",
+        "judgement": {
+            "equivalent": false,
+            "reason": "congenital amino acid metabolism disorders are a subset of amino acid metabolism disorders, not all of which are congenital",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "amino acid metabolism disorders",
+        "judgement": {
+            "equivalent": false,
+            "reason": "congenital amino acid metabolism disorder is a subset of amino acid metabolism disorders, which can also include non-congenital forms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "inborn errors of amino acid metabolism",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Inborn errors of amino acid metabolism and congenital amino acid metabolism disorder both refer to genetic conditions present from birth that affect the metabolism of amino acids.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Metabolic disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "congenital amino acid metabolism disorder is a type of metabolic disorder, but not all metabolic disorders are congenital amino acid metabolism disorders",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Amino acid metabolism disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A congenital amino acid metabolism disorder is a specific type of amino acid metabolism disorder that is present from birth, but not all amino acid metabolism disorders are congenital.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "inborn errors of amino acid metabolism",
+        "judgement": {
+            "equivalent": true,
+            "reason": "inborn errors of amino acid metabolism and congenital amino acid metabolism disorder refer to the same group of genetic disorders affecting amino acid metabolism from birth",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "aminoacidopathy",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aminoacidopathy and congenital amino acid metabolism disorder refer to the same group of disorders involving abnormalities in amino acid metabolism that are present from birth.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "aminoacidopathies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aminoacidopathies and congenital amino acid metabolism disorder refer to the same group of inherited disorders affecting amino acid metabolism.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "inborn error of amino acid metabolism",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to genetic conditions present from birth that affect the metabolism of amino acids.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Inborn error of amino acid metabolism",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Inborn error of amino acid metabolism and congenital amino acid metabolism disorder refer to the same concept, as both describe genetic disorders affecting amino acid metabolism present from birth.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Aminoacidopathies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aminoacidopathies and congenital amino acid metabolism disorders refer to the same group of metabolic disorders affecting amino acid processing.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "congenital amino acid metabolism disorder",
+        "domain": "medicine",
+        "response": "Concept: \"amino acid metabolism defect\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Amino acid metabolism defects can occur due to various reasons, not all of which are congenital. Congenital amino acid metabolism disorders specifically refer to those present from birth.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

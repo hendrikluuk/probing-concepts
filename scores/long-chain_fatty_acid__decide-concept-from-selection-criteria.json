@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A long-chain fatty acid is a type of fatty acid, but not all fatty acids are long-chain fatty acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Medium-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Medium-chain fatty acids (MCFAs) and long-chain fatty acids (LCFAs) differ in the number of carbon atoms; MCFAs typically have 6-12 carbon atoms, whereas LCFAs have 13 or more carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Medium-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Medium-chain fatty acids and long-chain fatty acids differ in the number of carbon atoms. Medium-chain fatty acids typically have 6-12 carbon atoms, while long-chain fatty acids have 13 or more carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Very long-chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A very long-chain fatty acid is a type of long-chain fatty acid, but not all long-chain fatty acids are very long-chain fatty acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid characterized by a long carbon chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain fatty acid and long-chain fatty acid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The concepts are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "Long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Long-chain fatty acid' and 'long-chain fatty acid' are equivalent as they refer to the same concept, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid with a long aliphatic tail.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'long-chain fatty acid' and 'long-chain fatty acid' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid distinguished by the length of the carbon chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'long-chain fatty acid' and 'long-chain fatty acid' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "long-chain fatty acid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of fatty acid characterized by a long aliphatic tail.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "omega-9 fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "omega-9 fatty acids are a type of fatty acid, but not all long-chain fatty acids are omega-9 fatty acids. Long-chain fatty acids include various types such as omega-3, omega-6, and others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "very long chain fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Very long chain fatty acids are a subset of long-chain fatty acids, but not all long-chain fatty acids are very long chain fatty acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "long-chain fatty acid",
+        "domain": "chemistry",
+        "response": "C13-C22 fatty acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "C13-C22 fatty acid refers to a specific range of carbon chain lengths, whereas long-chain fatty acids typically refer to fatty acids with 12 or more carbon atoms, which includes but is not limited to C13-C22.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

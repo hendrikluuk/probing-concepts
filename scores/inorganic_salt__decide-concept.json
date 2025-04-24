@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "mineral",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An inorganic salt is a type of mineral, but not all minerals are inorganic salts. Minerals can also include elements and compounds that are not salts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'inorganic salt' and 'inorganic salt' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "Inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Inorganic salt' and 'inorganic salt' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical, referring to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "Inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Inorganic salt' and 'inorganic salt' are identical except for capitalization, indicating they are synonyms and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound category, with no distinction between them.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are exactly the same and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound category, and there is no distinction between them.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "inorganic salt and inorganic salt are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "Mineral",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Minerals encompass a broad category of naturally occurring substances, which may include inorganic salts, but not all minerals are inorganic salts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "inorganic salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "inorganic salt and inorganic salt are the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "inorganic salt",
+        "domain": "chemistry",
+        "response": "The closest conceptual category that includes all entities that comply with the definition is \"non-carbonate salt\".",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Non-carbonate salt is a specific type of salt that excludes carbonates, whereas inorganic salt is a broader category that includes all salts not containing organic groups. Not all inorganic salts are non-carbonate salts because inorganic salts can include carbonates.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

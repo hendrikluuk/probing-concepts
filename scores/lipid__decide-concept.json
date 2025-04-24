@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a type of chemical compound that can be found in various substances, including lipids, but not all esters are lipids and not all lipids are esters.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "lipid and lipid are identical terms referring to the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "lipid and lipid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "Lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Lipid and lipid are the same term, differing only in capitalization, and refer to the same biological macromolecules.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same biological macromolecule, lipid.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "fatty acid ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fatty acid ester is a type of lipid, but not all lipids are fatty acid esters. Lipids include a broad category of molecules such as triglycerides, phospholipids, and sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "lipid and lipid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "fatty acid ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While many lipids are fatty acid esters, not all lipids are fatty acid esters. Lipids include a broader category of molecules such as steroids and phospholipids, which may not be fatty acid esters.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same category of organic compounds, so they are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same class of biomolecules, making them identical in meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "glyceride",
+        "judgement": {
+            "equivalent": false,
+            "reason": "glycerides are a type of lipid, but not all lipids are glycerides",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "Lipid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Lipid' and 'lipid' are identical except for capitalization, referring to the same biological molecules.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "lipid",
+        "domain": "chemistry",
+        "response": "Concept: \"fatty acid ester\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While fatty acid esters are a type of lipid, not all lipids are fatty acid esters. Lipids include a broader category such as triglycerides, phospholipids, and sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

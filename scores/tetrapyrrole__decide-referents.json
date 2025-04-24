@@ -1,0 +1,2137 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "bacteriopheophytin a",
+            "biladiene-ac",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane",
+                "bacteriopheophytin a"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "D-Urobilinogen",
+            "aglyconylcobinamide",
+            "biladiene-ac",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "aglyconylcobinamide",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bilin",
+                "preuroporphyrinogen",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin",
+                "D-Urobilinogen",
+                "biladiene-ac"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 7,
+            "FP": 13,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "phthalocyanine",
+            "porphyrin",
+            "bilin",
+            "corrole",
+            "chlorin",
+            "biladiene-ac",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "phthalocyanine",
+                "porphyrin",
+                "bilin",
+                "corrole",
+                "chlorin"
+            ],
+            "mismatches": [
+                "biladiene-ac",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilin"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bilin",
+                "preuroporphyrinogen",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 6,
+            "FP": 10,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "mismatches": [
+                "bilirubin IIIalpha",
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "preuroporphyrinogen",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 8,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "biladiene-ac",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilin",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "bacteriochlorin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bacteriopheophytin a"
+            ],
+            "mismatches": [
+                "bilene-b",
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 1,
+            "FP": 9,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilin",
+            "biladiene-ac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "bilin"
+            ],
+            "mismatches": [
+                "bilene-b",
+                "biladiene-ac"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilin",
+            "biladiene-ac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilin",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "D-Urobilinogen",
+            "biladiene-ac",
+            "zinc protoporphyrin",
+            "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bacteriopheophytin a",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "zinc protoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "preuroporphyrinogen",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin",
+                "D-Urobilinogen",
+                "biladiene-ac",
+                "bilin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 5,
+            "FP": 13,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "porphyrin",
+            "bilin",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phthalocyanine",
+                "porphyrin",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "biladiene-ac",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "zinc protoporphyrin",
+            "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "zinc protoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 7,
+            "FP": 6,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "mismatches": [
+                "bilene-b"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "isobacteriochlorin",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "bacteriopheophytin a",
+            "zinc protoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilin",
+                "bilirubin IIIalpha"
+            ],
+            "mismatches": [
+                "porphyrin",
+                "isobacteriochlorin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin",
+                "bacteriopheophytin a",
+                "zinc protoporphyrin"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 2,
+            "FP": 7,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "zinc protoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "zinc protoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "phthalocyanine",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "phthalocyanine",
+                "porphyrin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin",
+                "bilin"
+            ],
+            "mismatches": [
+                "bilirubin IIIalpha",
+                "bacteriopheophytin a",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 7,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "D-Urobilinogen",
+            "biladiene-ac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "D-Urobilinogen",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "D-Urobilinogen",
+            "aglyconylcobinamide",
+            "biladiene-ac",
+            "zinc protoporphyrin",
+            "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "aglyconylcobinamide",
+                "zinc protoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "bilene-b",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "preuroporphyrinogen",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin",
+                "D-Urobilinogen",
+                "biladiene-ac"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 8,
+            "FP": 14,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "D-Urobilinogen",
+            "aglyconylcobinamide",
+            "biladiene-ac",
+            "zinc protoporphyrin",
+            "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "mismatches": [
+                "bilene-b",
+                "bilirubin IIIalpha",
+                "cobalt corrinoid",
+                "ferroheme c",
+                "15,16-Dihydrobiliverdin ixa",
+                "bacteriopheophytin a",
+                "preuroporphyrinogen",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "D-Urobilinogen",
+                "aglyconylcobinamide",
+                "biladiene-ac",
+                "zinc protoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "meso-bromoporphyrin"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 8,
+            "FP": 15,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilin"
+            ],
+            "mismatches": [
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin",
+                "meso-bromoporphyrin"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 2,
+            "FP": 10,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bilin",
+                "preuroporphyrinogen",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 4,
+            "FP": 9,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "mismatches": [
+                "bilene-b",
+                "cobalt corrinoid",
+                "ferroheme c",
+                "meso-bromoporphyrin"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "preuroporphyrinogen",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "D-Urobilinogen",
+            "biladiene-ac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "preuroporphyrinogen",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "D-Urobilinogen",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 8,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "zinc protoporphyrin",
+            "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "zinc protoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 7,
+            "FP": 6,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "porphyrin",
+            "chlorin",
+            "bacteriochlorin",
+            "corrole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phthalocyanine",
+                "porphyrin",
+                "chlorin",
+                "bacteriochlorin",
+                "corrole"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "D-Urobilinogen",
+            "biladiene-ac",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "D-Urobilinogen",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 5,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "porphyrin",
+            "bilin",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "porphyrin",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "D-Urobilinogen",
+            "biladiene-ac",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "D-Urobilinogen",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 5,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "porphyrin",
+            "chlorin",
+            "bacteriochlorin",
+            "isobacteriochlorin",
+            "corrole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "porphyrin",
+                "chlorin",
+                "bacteriochlorin",
+                "isobacteriochlorin",
+                "corrole"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "porphyrin",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "bacteriopheophytin a",
+            "preuroporphyrinogen",
+            "(1R)-primary fluorescent chlorophyll catabolite",
+            "bacteriochlorin",
+            "chlorin",
+            "biladiene-ac",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "preuroporphyrinogen",
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane",
+                "porphyrin",
+                "bacteriopheophytin a",
+                "bacteriochlorin",
+                "chlorin"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "isobacteriochlorin",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "cis-heme d hydroxychlorin gamma-spirolactone",
+            "biladiene-ac",
+            "zinc protoporphyrin",
+            "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "zinc protoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "isobacteriochlorin",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin",
+                "biladiene-ac"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 7,
+            "FP": 9,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "porphyrin",
+            "chlorin",
+            "bacteriochlorin",
+            "isobacteriochlorin",
+            "corrole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "porphyrin",
+                "chlorin",
+                "bacteriochlorin",
+                "isobacteriochlorin",
+                "corrole"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilirubin IIIalpha",
+            "bilin",
+            "15,16-Dihydrobiliverdin ixa",
+            "D-Urobilinogen",
+            "biladiene-ac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilirubin IIIalpha",
+                "bilin",
+                "15,16-Dihydrobiliverdin ixa",
+                "D-Urobilinogen",
+                "biladiene-ac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "phthalocyanine",
+            "porphyrin",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriopheophytin a",
+            "bacteriochlorin",
+            "corrole",
+            "chlorin",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin",
+            "bilin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "phthalocyanine",
+                "porphyrin",
+                "bilin",
+                "bacteriochlorin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 5,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "porphyrin",
+            "bilin",
+            "chlorin",
+            "corrole",
+            "bacteriochlorin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "porphyrin",
+                "bilin",
+                "chlorin",
+                "corrole",
+                "bacteriochlorin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "porphyrin",
+            "bilin",
+            "bacteriopheophytin a",
+            "biladiene-ac",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilin",
+                "biladiene-ac"
+            ],
+            "mismatches": [
+                "bilane",
+                "porphyrin",
+                "bacteriopheophytin a",
+                "meso-bromoporphyrin"
+            ],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "phthalocyanine",
+            "porphyrin",
+            "bilirubin IIIalpha",
+            "cobalt corrinoid",
+            "ferroheme c",
+            "bilin",
+            "bacteriopheophytin a",
+            "corrole",
+            "chlorin",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cobalt corrinoid",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "bilane",
+                "phthalocyanine",
+                "porphyrin",
+                "bilirubin IIIalpha",
+                "bilin",
+                "corrole",
+                "chlorin"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 5,
+            "FP": 7,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "porphyrin",
+            "bilin",
+            "preuroporphyrinogen",
+            "biladiene-ac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "porphyrin",
+                "bilin"
+            ],
+            "mismatches": [
+                "preuroporphyrinogen",
+                "biladiene-ac"
+            ],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "linear tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "biladiene-ac",
+            "bilin",
+            "bilin",
+            "bilirubin IIIalpha",
+            "15,16-Dihydrobiliverdin ixa",
+            "D-Urobilinogen"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilene-b",
+                "biladiene-ac",
+                "bilin",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa",
+                "D-Urobilinogen"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(1R)-primary fluorescent chlorophyll catabolite",
+                "biladiene-ac",
+                "bilin",
+                "bilene-b",
+                "D-Urobilinogen",
+                "preuroporphyrinogen",
+                "bilirubin IIIalpha",
+                "15,16-Dihydrobiliverdin ixa"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cyclic tetrapyrrole",
+        "domain": "chemistry",
+        "response": [
+            "bilene-b",
+            "bilane",
+            "porphyrin",
+            "isobacteriochlorin",
+            "bacteriochlorin",
+            "chlorin",
+            "corrole",
+            "bilin",
+            "biladiene-ac",
+            "zinc protoporphyrin",
+            "meso-bromoporphyrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin"
+            ],
+            "mismatches": [
+                "bilene-b",
+                "bilane",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bacteriochlorin",
+                "chlorin",
+                "corrole",
+                "bilin",
+                "biladiene-ac"
+            ],
+            "true_referents": [
+                "aglyconylcobinamide",
+                "ferroheme c",
+                "bacteriopheophytin a",
+                "cobalt corrinoid",
+                "zinc protoporphyrin",
+                "meso-bromoporphyrin",
+                "cis-heme d hydroxychlorin gamma-spirolactone methyl ester",
+                "cis-heme d hydroxychlorin gamma-spirolactone"
+            ],
+            "TP": 2,
+            "FP": 9,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tetrapyrrole fundamental parent",
+        "domain": "chemistry",
+        "response": [
+            "bilane",
+            "porphyrin",
+            "bacteriochlorin",
+            "chlorin",
+            "corrole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "bilane",
+                "porphyrin",
+                "bacteriochlorin",
+                "chlorin",
+                "corrole"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "bacteriochlorin",
+                "phthalocyanine",
+                "porphyrin",
+                "isobacteriochlorin",
+                "bilin",
+                "bilane",
+                "chlorin",
+                "corrole"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    }
+]

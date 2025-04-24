@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "ribosomal protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribosomal proteins are a subset of proteins involved in translation, specifically as components of ribosomes, but not all translation regulation proteins are ribosomal proteins. Translation regulation proteins include a broader range of proteins that may influence translation at various stages and in different ways.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Translation regulatory protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Translation regulatory protein and translation regulation protein are different phrasings for proteins involved in the regulation of translation.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "translation factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A translation factor is any molecule that assists in the process of translation, which can include proteins and RNA molecules, whereas a translation regulation protein specifically refers to proteins involved in the regulation of translation.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Translation factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A translation factor is a protein or molecule involved in the process of translation, but not all translation regulation proteins are translation factors. Translation regulation proteins may include other proteins that regulate translation in different ways.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "translation regulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A translation regulator can be any molecule involved in the regulation of translation, including proteins, RNAs, or other types of molecules. A translation regulation protein specifically refers to proteins involved in this process.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "translation regulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A translation regulator can be any molecule involved in the regulation of translation, including proteins, RNA molecules, or other factors, whereas a translation regulation protein specifically refers to proteins involved in this process.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Translation Regulatory Protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Translation Regulatory Protein' and 'translation regulation protein' refer to the same concept, which involves proteins that regulate the process of translation in cells. The difference in capitalization does not imply a difference in meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Translation regulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Translation regulators can include various molecules such as proteins, RNAs, and other factors, while translation regulation proteins specifically refer to proteins involved in translation regulation.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Translational regulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A translational regulator is a broader term that includes any molecule involved in regulating translation, while a translation regulation protein specifically refers to proteins involved in this process. Not all translational regulators are proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "translation factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Translation factors are a broader category that includes various proteins and molecules involved in translation, whereas translation regulation proteins are specifically those that regulate the process. Not all translation factors are regulatory proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "translation factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Translation factors are a broader category that includes proteins and other molecules involved in the process of translation, while translation regulation proteins specifically refer to proteins that regulate the translation process.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "translation regulatory protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "translation regulatory protein and translation regulation protein are used interchangeably to describe proteins involved in regulating translation",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "translation regulator protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "translation regulator protein and translation regulation protein are synonyms, both referring to proteins involved in the regulation of translation.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Translation initiation factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Translation initiation factors are a subset of translation regulation proteins, but not all translation regulation proteins are initiation factors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Translation factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Translation factor refers to any molecule involved in the process of translation, which includes proteins, RNAs, and other factors. Translation regulation protein specifically refers to proteins that regulate translation, but not all translation factors are proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "translation regulation protein",
+        "domain": "biology",
+        "response": "Protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A translation regulation protein is a type of protein, but not all proteins are translation regulation proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

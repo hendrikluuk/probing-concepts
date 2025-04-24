@@ -1,0 +1,922 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"asperphenamate\", \"nortriptyline\", \"alpha-Methyl-m-tyramine\", \"N-methylbutan-2-amine\", \"2-Anilinoethanol\", \"3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile\", \"[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine\", \"N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide\", \"Vitroprocine H\", \"clortermine\", \"(R)-(+)-pindolol\", \"thenalidine\", \"benzphetamine\", \"N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine\", \"3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione\", \"5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine\", \"dextrofemine\", \"3-methylamino-1,2-propanediol\", \"mephedrone\", \"piperidine\", \"N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide\", \"trimethylamine N-oxide\", \"LSM-12226\", \"2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone\"]",
+                "siblings": "{\"alkylamines\": [\"N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide\", \"LSM-12226\", \"2-Anilinoethanol\", \"[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine\", \"3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile\", \"thenalidine\", \"trimethylamine N-oxide\", \"2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone\"], \"amphetamines\": [\"alpha-Methyl-m-tyramine\", \"asperphenamate\", \"clortermine\", \"mephedrone\", \"dextrofemine\", \"Vitroprocine H\", \"benzphetamine\", \"N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide\"], \"secondary amine\": [\"N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine\", \"3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione\", \"nortriptyline\", \"(R)-(+)-pindolol\", \"3-methylamino-1,2-propanediol\", \"piperidine\", \"N-methylbutan-2-amine\", \"5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide\", \"LSM-12226\", \"2-Anilinoethanol\", \"[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine\", \"3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile\", \"thenalidine\", \"trimethylamine N-oxide\", \"2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "N-methylbutan-2-amine",
+                "N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide",
+                "[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine",
+                "N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine",
+                "3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione",
+                "5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine",
+                "3-methylamino-1,2-propanediol",
+                "mephedrone",
+                "piperidine",
+                "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide",
+                "trimethylamine N-oxide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"asperphenamate\", \"nortriptyline\", \"alpha-Methyl-m-tyramine\", \"N-methylbutan-2-amine\", \"2-Anilinoethanol\", \"3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile\", \"[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine\", \"N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide\", \"Vitroprocine H\", \"clortermine\", \"(R)-(+)-pindolol\", \"thenalidine\", \"benzphetamine\", \"N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine\", \"3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione\", \"5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine\", \"dextrofemine\", \"3-methylamino-1,2-propanediol\", \"mephedrone\", \"piperidine\", \"N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide\", \"trimethylamine N-oxide\", \"LSM-12226\", \"2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone\"]",
+                "siblings": "{\"alkylamines\": [\"N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide\", \"LSM-12226\", \"2-Anilinoethanol\", \"[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine\", \"3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile\", \"thenalidine\", \"trimethylamine N-oxide\", \"2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone\"], \"amphetamines\": [\"alpha-Methyl-m-tyramine\", \"asperphenamate\", \"clortermine\", \"mephedrone\", \"dextrofemine\", \"Vitroprocine H\", \"benzphetamine\", \"N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide\"], \"secondary amine\": [\"N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine\", \"3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione\", \"nortriptyline\", \"(R)-(+)-pindolol\", \"3-methylamino-1,2-propanediol\", \"piperidine\", \"N-methylbutan-2-amine\", \"5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "amphetamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"alpha-Methyl-m-tyramine\", \"asperphenamate\", \"clortermine\", \"mephedrone\", \"dextrofemine\", \"Vitroprocine H\", \"benzphetamine\", \"N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "asperphenamate",
+                "alpha-Methyl-m-tyramine",
+                "benzphetamine",
+                "mephedrone",
+                "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide",
+                "LSM-12226"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"asperphenamate\", \"nortriptyline\", \"alpha-Methyl-m-tyramine\", \"N-methylbutan-2-amine\", \"2-Anilinoethanol\", \"3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile\", \"[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine\", \"N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide\", \"Vitroprocine H\", \"clortermine\", \"(R)-(+)-pindolol\", \"thenalidine\", \"benzphetamine\", \"N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine\", \"3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione\", \"5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine\", \"dextrofemine\", \"3-methylamino-1,2-propanediol\", \"mephedrone\", \"piperidine\", \"N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide\", \"trimethylamine N-oxide\", \"LSM-12226\", \"2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone\"]",
+                "siblings": "{\"alkylamines\": [\"N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide\", \"LSM-12226\", \"2-Anilinoethanol\", \"[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine\", \"3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile\", \"thenalidine\", \"trimethylamine N-oxide\", \"2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone\"], \"amphetamines\": [\"alpha-Methyl-m-tyramine\", \"asperphenamate\", \"clortermine\", \"mephedrone\", \"dextrofemine\", \"Vitroprocine H\", \"benzphetamine\", \"N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide\"], \"secondary amine\": [\"N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine\", \"3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione\", \"nortriptyline\", \"(R)-(+)-pindolol\", \"3-methylamino-1,2-propanediol\", \"piperidine\", \"N-methylbutan-2-amine\", \"5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "secondary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine\", \"3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione\", \"nortriptyline\", \"(R)-(+)-pindolol\", \"3-methylamino-1,2-propanediol\", \"piperidine\", \"N-methylbutan-2-amine\", \"5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "nortriptyline",
+                "alpha-Methyl-m-tyramine",
+                "N-methylbutan-2-amine",
+                "3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile",
+                "N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide",
+                "N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine",
+                "3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione",
+                "5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine",
+                "3-methylamino-1,2-propanediol",
+                "piperidine",
+                "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "promazine sulfoxide",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-{[5-(2-furyl)thien-2-yl]methyl}-N-methylamine"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "(Z)-dehydrotyrosine",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "tributylamine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "tributylamine",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "tributylamine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "tributylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-{[5-(2-furyl)thien-2-yl]methyl}-N-methylamine"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": []
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "(R)-fenpropidin"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "2-aminoethene-1-SO-thioperoxol",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "(R)-fenpropidin",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "(Z)-dehydrotyrosine",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "2-aminoethene-1-SO-thioperoxol",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "tributylamine",
+                "promazine sulfoxide",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "promazine sulfoxide",
+                "EPH",
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "flupyradifurone",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "promazine sulfoxide",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "flupyradifurone",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "(R)-fenpropidin",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "2-aminoethene-1-SO-thioperoxol",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "enamine",
+                "parent_concept": "amine",
+                "true_referents": "[\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamines",
+                "parent_concept": "amine",
+                "true_referents": "[\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"13-(2-methylcrotonoyloxy)lupanine\", \"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"promazine sulfoxide\", \"(Z)-dehydrotyrosine\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"EPH\", \"2-aminoethene-1-SO-thioperoxol\", \"N-benzylhexadecanamide\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"tributylamine\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"flupyradifurone\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"(R)-fenpropidin\", \"diaziquone\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diphenylpyraline\"]",
+                "siblings": "{\"enamine\": [\"2-aminoethene-1-SO-thioperoxol\", \"2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone\", \"3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine\", \"(Z)-dehydrotyrosine\", \"flupyradifurone\", \"4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid\", \"4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one\", \"diaziquone\"], \"alkylamines\": [\"3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone\", \"4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione\", \"7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide\", \"N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine\", \"[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide\", \"N-benzylhexadecanamide\", \"N-\\\\{[5-(2-furyl)thien-2-yl]methyl\\\\}-N-methylamine\", \"EPH\"], \"tertiary amine\": [\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "tertiary amine",
+                "parent_concept": "amine",
+                "true_referents": "[\"promazine sulfoxide\", \"terbinafine\", \"N-methyl-1,2,3,4-tetrahydroquinoline\", \"diphenylpyraline\", \"13-(2-methylcrotonoyloxy)lupanine\", \"tributylamine\", \"1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine\", \"(R)-fenpropidin\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "diphenylpyraline"
+            ]
+        }
+    ]
+}

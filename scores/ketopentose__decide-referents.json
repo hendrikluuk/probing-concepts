@@ -1,0 +1,2151 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "xylulose phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "mismatches": [
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose phosphate",
+                "D-ribulose",
+                "ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+            ],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "mismatches": [
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 8,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-ribulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "D-ribulose",
+            "D-ribulose 1,5-bisphosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "D-ribulose 1-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "mismatches": [
+                "D-ribulose 5-phosphate",
+                "D-ribulose",
+                "D-ribulose 1,5-bisphosphate",
+                "1-deoxy-D-xylulose",
+                "D-ribulose 1-phosphate",
+                "L-xylulose 5-phosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-ribulose 5-phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 5-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate"
+            ],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative",
+                "ribulose phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose 5-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative"
+            ],
+            "mismatches": [
+                "D-ribulose",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 9,
+            "FP": 1,
+            "FN": -1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "L-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose",
+            "D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "ribulose derivative",
+            "ribulose phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose derivative",
+                "ribulose phosphate"
+            ],
+            "mismatches": [
+                "D-ribulose",
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose",
+            "ribulose 1-phosphate",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose",
+                "ribulose 1-phosphate",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative",
+                "ribulose phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 9,
+            "FP": 2,
+            "FN": -1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+            ],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative",
+                "ribulose phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose",
+            "D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose",
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "ribulose 1-phosphate",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulose derivative",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 9,
+            "FP": 2,
+            "FN": -1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "xylulose phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "D-ribulose 1-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulose 5-phosphate",
+                "ribulosamine 3-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 7,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative",
+                "ribulose phosphate"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "ribulosamine 3-phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "ribulose derivative",
+            "L-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 5-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "xylulose phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "ribulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose phosphate",
+                "ribulosamine 3-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose derivative"
+            ],
+            "mismatches": [
+                "ribulose 1-phosphate",
+                "D-ribulose",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 8,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose",
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "ribulosamine 3-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "ribulose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose",
+                "ribulose 1-phosphate",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "mismatches": [
+                "ribulose 5-phosphate",
+                "ribulosamine 3-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "mismatches": [
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose 5-phosphate",
+            "ribulose 5-phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "ribulose phosphate",
+            "D-ribulose",
+            "L-ribulose 5-phosphate",
+            "ribulose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "ribulose phosphate",
+                "D-ribulose",
+                "L-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose 5-phosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "xylulose phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-xylulose 5-phosphate",
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-ribulose 5-phosphate",
+            "1-deoxy-D-xylulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulose phosphate",
+            "L-xylulose 5-phosphate",
+            "D-ribulose 1,5-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "ribulose phosphate"
+            ],
+            "mismatches": [
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "L-xylulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "ribulose 5-phosphate",
+            "D-ribulose",
+            "ribulose phosphate",
+            "D-ribulose 5-phosphate",
+            "D-ribulose 1-phosphate",
+            "ribulose derivative",
+            "D-ribulose 1,5-bisphosphate",
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "ribulose 5-phosphate",
+                "D-ribulose",
+                "ribulose phosphate",
+                "D-ribulose 5-phosphate",
+                "D-ribulose 1-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+            ],
+            "mismatches": [
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "xylulose",
+        "domain": "chemistry",
+        "response": [
+            "xylulose 5-phosphate",
+            "xylulose phosphate",
+            "D-xylulose 5-phosphate",
+            "L-xylulose 5-phosphate",
+            "1-deoxy-D-xylulose",
+            "1-deoxy-D-xylulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "D-xylulose 5-phosphate",
+                "L-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose phosphate",
+                "L-xylulose 5-phosphate",
+                "D-xylulose 5-phosphate",
+                "xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketopentose derivative",
+        "domain": "chemistry",
+        "response": [
+            "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate"
+            ],
+            "true_referents": [
+                "ribulosamine 3-phosphate",
+                "ribulose derivative",
+                "xylulose 5-phosphate",
+                "xylulose phosphate",
+                "ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-xylulose 5-phosphate",
+                "1-deoxy-D-xylulose 5-phosphate"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ribulose",
+        "domain": "chemistry",
+        "response": [
+            "D-ribulose",
+            "ribulose 5-phosphate",
+            "ribulose 1-phosphate",
+            "D-ribulose 5-phosphate",
+            "L-ribulose 5-phosphate",
+            "ribulose phosphate",
+            "D-ribulose 1,5-bisphosphate",
+            "ribulose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-ribulose",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose phosphate"
+            ],
+            "mismatches": [
+                "ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "ribulose derivative"
+            ],
+            "true_referents": [
+                "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate",
+                "D-ribulose 1,5-bisphosphate",
+                "D-ribulose 1-phosphate",
+                "L-ribulose 5-phosphate",
+                "ribulose 1-phosphate",
+                "D-ribulose 5-phosphate",
+                "ribulose phosphate",
+                "D-ribulose"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    }
+]

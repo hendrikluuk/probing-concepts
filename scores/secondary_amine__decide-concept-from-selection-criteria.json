@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "amine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A secondary amine is a type of amine, but not all amines are secondary amines. Amines can be primary, secondary, or tertiary.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "Amine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A secondary amine is a type of amine, but not all amines are secondary amines. Amines can also be primary or tertiary.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "Secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Secondary amine' and 'secondary amine' are identical in meaning, with the only difference being the capitalization, which does not affect their equivalence.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "amine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "a secondary amine is a type of amine, but not all amines are secondary amines",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical structure where a nitrogen atom is bonded to two alkyl or aryl groups and one hydrogen atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "amine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "a secondary amine is a specific type of amine, but not all amines are secondary amines",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both refer to the same chemical structure where a nitrogen atom is bonded to two alkyl or aryl groups and one hydrogen atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "Secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Secondary amine' and 'secondary amine' refer to the same chemical structure, with the only difference being capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "secondary amine and secondary amine are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'secondary amine' and 'secondary amine' are identical and refer to the same chemical structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "secondary amine and secondary amine are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "secondary amine",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'secondary amine' and 'secondary amine' are identical, thus they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "amine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A secondary amine is a type of amine, but not all amines are secondary amines. Amines can be primary, secondary, or tertiary depending on the number of alkyl or aryl groups attached to the nitrogen atom.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "amine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "a secondary amine is a type of amine, but not all amines are secondary amines",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "Amide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An amide is a compound containing a carbonyl group linked to a nitrogen atom, while a secondary amine is a nitrogen atom bonded to two alkyl or aryl groups. They are different classes of compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": "Amino acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An amino acid is a molecule containing both an amine group and a carboxyl group, while a secondary amine is a specific type of amine with two organic substituents. Not all amino acids are secondary amines, and not all secondary amines are amino acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

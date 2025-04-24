@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A gene can be any segment of DNA that codes for a functional product, which can include RNA or proteins in any organism, while a human protein coding gene specifically refers to a gene in humans that codes for a protein.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "a human protein coding gene is a type of gene, but not all genes are human protein coding genes",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "Protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene refers to any gene that codes for proteins, which can be found in any organism. A human protein-coding gene specifically refers to those found in humans. Not all protein-coding genes are human protein-coding genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "Protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Protein-coding gene refers to any gene that codes for a protein in any organism, whereas human protein coding gene specifically refers to genes that code for proteins in humans only.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene can be from any organism, whereas a human protein-coding gene specifically refers to genes coding for proteins in humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene can be found in any organism, while a human protein coding gene specifically refers to those found in humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "Protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene is a gene that codes for proteins in any organism, whereas a human protein coding gene specifically refers to those in humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "Protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene can be from any organism, not just humans, whereas a human protein-coding gene specifically refers to genes from humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene can be from any organism, whereas a human protein-coding gene specifically refers to genes in humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene is a gene that codes for proteins in any organism, while a human protein-coding gene specifically refers to genes that code for proteins in humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene refers to any gene that encodes a protein in any organism, while a human protein coding gene specifically refers to those in humans. Not all protein-coding genes are human protein coding genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene refers to any gene that codes for proteins across all organisms, whereas a human protein-coding gene specifically refers to those found in humans. Not all protein-coding genes are human protein-coding genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A gene is a segment of DNA that can code for proteins or have other functions, but not all genes are human protein coding genes. Some genes are non-coding, and some are found in organisms other than humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene refers to any gene that codes for a protein in any organism, whereas a human protein-coding gene specifically refers to genes in humans. Not all protein-coding genes are human protein-coding genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "protein-coding gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A protein-coding gene refers to any gene that codes for a protein in any organism, whereas a human protein-coding gene specifically refers to those found in humans. Not all protein-coding genes are human protein-coding genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "human protein coding gene",
+        "domain": "biology",
+        "response": "human gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A human gene can be any gene in the human genome, including non-coding genes, while a human protein coding gene specifically refers to genes that code for proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

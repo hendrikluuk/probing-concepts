@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same category of six-carbon sugars.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "Hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Hexose and hexose are the same term, referring to a monosaccharide with six carbon atoms, with only a difference in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "Hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Hexose and hexose are the same term, with only a difference in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "Hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Hexose and hexose refer to the same class of simple sugars with six carbon atoms, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hexose and hexose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "aldose or ketose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Aldose or ketose refers to types of monosaccharides based on the position of the carbonyl group, while hexose refers to a monosaccharide with six carbon atoms. Not all aldoses or ketoses are hexoses, as they can also have different numbers of carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "Glucose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Glucose is a specific type of hexose, but not all hexoses are glucose. Hexose is a category of sugars that includes glucose, fructose, galactose, and others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "Hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Hexose and hexose refer to the same class of monosaccharides containing six carbon atoms, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hexose and hexose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hexose and hexose are the same term, implying they are strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hexose and hexose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "aldose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An aldose is a monosaccharide with an aldehyde group, while a hexose is a monosaccharide with six carbon atoms. Not all aldoses are hexoses and not all hexoses are aldoses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "monosaccharide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hexose is a type of monosaccharide, but not all monosaccharides are hexoses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hexose and hexose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "hexose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hexose and hexose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "hexose",
+        "domain": "chemistry",
+        "response": "Glycolaldehyde",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Glycolaldehyde is a two-carbon sugar (an aldotriose), while hexose refers to a six-carbon sugar. Therefore, glycolaldehyde is not a hexose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

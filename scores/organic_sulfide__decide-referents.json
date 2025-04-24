@@ -1,0 +1,1753 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea"
+            ],
+            "mismatches": [
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "mismatches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "6-(Isopropylthio)purine",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+                "6-(Isopropylthio)purine",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol"
+            ],
+            "mismatches": [
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "sulprofos",
+            "methomyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulprofos",
+                "methomyl"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide",
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "methomyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "methomyl"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea"
+            ],
+            "mismatches": [
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "methomyl",
+            "sulprofos"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "methomyl",
+                "sulprofos"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea"
+            ],
+            "mismatches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "sulprofos"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulprofos"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Ethylisopropyl sulfide",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide",
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide",
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [
+                "Ethylisopropyl sulfide",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "sulprofos",
+            "methomyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulprofos",
+                "methomyl"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2,5-S,S'-dicysteinyldopa",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide",
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "mismatches": [
+                "2,5-S,S'-dicysteinyldopa",
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide",
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "2,5-S,S'-dicysteinyldopa",
+            "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "N,N-dihydroxy-L-trihomomethionine",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide",
+            "desulfoglucoiberin",
+            "S-polyprenyl-L-cysteine",
+            "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "sulprofos",
+            "glucoputranjivin",
+            "N,N-dihydroxytetrahomomethionine",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+            "6-(Isopropylthio)purine",
+            "letosteine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+            "LSM-18500",
+            "desulfoglucosinolic acid",
+            "PD173955"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "LSM-18500"
+            ],
+            "mismatches": [
+                "2,5-S,S'-dicysteinyldopa",
+                "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+                "N,N-dihydroxy-L-trihomomethionine",
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "desulfoglucoiberin",
+                "S-polyprenyl-L-cysteine",
+                "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "sulprofos",
+                "glucoputranjivin",
+                "N,N-dihydroxytetrahomomethionine",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "letosteine",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid",
+                "PD173955"
+            ],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 4,
+            "FP": 18,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "sulprofos",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "sulprofos",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide",
+            "S-polyprenyl-L-cysteine",
+            "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [
+                "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+                "S-polyprenyl-L-cysteine",
+                "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-{5-[2-(Phenylthio)acetyl]-2-thienyl}acetic acid",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-{5-[2-(Phenylthio)acetyl]-2-thienyl}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+            "N,N-dihydroxy-L-trihomomethionine",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide",
+            "S-polyprenyl-L-cysteine",
+            "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+            "sulprofos",
+            "N,N-dihydroxytetrahomomethionine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [
+                "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+                "N,N-dihydroxy-L-trihomomethionine",
+                "S-polyprenyl-L-cysteine",
+                "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+                "sulprofos",
+                "N,N-dihydroxytetrahomomethionine"
+            ],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "sulprofos"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulprofos"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "PD173955"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [
+                "PD173955"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "sulprofos",
+            "methomyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulprofos",
+                "methomyl"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2,5-S,S'-dicysteinyldopa",
+            "Ethylisopropyl sulfide",
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "6-(Isopropylthio)purine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [
+                "2,5-S,S'-dicysteinyldopa",
+                "Ethylisopropyl sulfide",
+                "6-(Isopropylthio)purine",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine",
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "sulprofos",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "sulprofos",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2,5-S,S'-dicysteinyldopa",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide",
+            "S-polyprenyl-L-cysteine",
+            "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "sulprofos",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "6-(Isopropylthio)purine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+                "sulprofos",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [
+                "2,5-S,S'-dicysteinyldopa",
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "S-polyprenyl-L-cysteine",
+                "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+                "6-(Isopropylthio)purine",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 4,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "Ethylisopropyl sulfide",
+            "S-polyprenyl-L-cysteine",
+            "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide"
+            ],
+            "mismatches": [
+                "S-polyprenyl-L-cysteine",
+                "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+                "6-(Isopropylthio)purine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide",
+            "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid",
+            "6-(Isopropylthio)purine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "mismatches": [
+                "Ethylisopropyl sulfide",
+                "6-(Isopropylthio)purine",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "desulfoglucosinolic acid",
+            "desulfoglucoiberin",
+            "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+            "2,5-S,S'-dicysteinyldopa",
+            "S-polyprenyl-L-cysteine",
+            "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide",
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one"
+            ],
+            "mismatches": [
+                "desulfoglucosinolic acid",
+                "desulfoglucoiberin",
+                "S-adenosyl-4-methylthio-2-oxobutanoic acid",
+                "2,5-S,S'-dicysteinyldopa",
+                "S-polyprenyl-L-cysteine",
+                "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 7,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "6-(Isopropylthio)purine",
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+            "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+            "S-polyprenyl-L-cysteine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol"
+            ],
+            "mismatches": [
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "S-[(2E,6E)-farnesyl]-L-cysteine methyl ester",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "S-polyprenyl-L-cysteine"
+            ],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "mismatches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aryl sulfide",
+        "domain": "chemistry",
+        "response": [
+            "2-{5-[2-(Phenylthio)acetyl]-2-thienyl}acetic acid",
+            "Ethylisopropyl sulfide",
+            "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+            "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-{5-[2-(Phenylthio)acetyl]-2-thienyl}acetic acid",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester"
+            ],
+            "mismatches": [
+                "Ethylisopropyl sulfide",
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "sulprofos",
+                "2-[[3-cyano-6-(2-furanyl)-4-(trifluoromethyl)-2-pyridinyl]thio]propanoic acid ethyl ester",
+                "1-[[4-[(3,4-dichlorophenyl)thio]-3-pyridinyl]sulfonyl]-3-propylurea",
+                "2-\\{5-[2-(Phenylthio)acetyl]-2-thienyl\\}acetic acid"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aliphatic sulfide",
+        "domain": "chemistry",
+        "response": [
+            "Ethylisopropyl sulfide",
+            "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+            "6-(Isopropylthio)purine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ethylisopropyl sulfide",
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one"
+            ],
+            "mismatches": [
+                "6-(Isopropylthio)purine"
+            ],
+            "true_referents": [
+                "3,3-dimethyl-1-(methylsulfanyl)butan-2-one",
+                "Ethylisopropyl sulfide",
+                "methomyl",
+                "letosteine"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "thiopurine",
+        "domain": "chemistry",
+        "response": [
+            "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+            "6-(Isopropylthio)purine",
+            "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine",
+                "6-(Isopropylthio)purine",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-18500",
+                "2-[[6-[(phenylmethyl)amino]-9-propan-2-yl-2-purinyl]amino]ethanol",
+                "6-(Isopropylthio)purine",
+                "N-[3-(1H-imidazol-3-ium-3-yl)propyl]-7H-purin-6-amine"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "imidothioate",
+        "domain": "chemistry",
+        "response": [
+            "letosteine",
+            "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine"
+            ],
+            "mismatches": [
+                "letosteine"
+            ],
+            "true_referents": [
+                "desulfoglucoiberin",
+                "glucoputranjivin",
+                "S-[(Z)-N-hydroxy-2-phenylethanimidoyl]-L-cysteinylglycine",
+                "desulfoglucosinolic acid"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 3
+        }
+    }
+]

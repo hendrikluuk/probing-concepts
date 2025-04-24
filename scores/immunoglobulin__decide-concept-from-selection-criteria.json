@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immune protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulins are a type of immune protein, but not all immune proteins are immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immune complex",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immune complex is formed when an antigen binds to an antibody, which can be an immunoglobulin, but immunoglobulins exist independently as antibodies without forming immune complexes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Immunoglobulin' and 'immunoglobulin' are equivalent as they refer to the same proteins, with the difference only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immune complex",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immune complex is a combination of an antigen and an antibody, typically an immunoglobulin. Immunoglobulins are antibodies but not all immunoglobulins form immune complexes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulin and immunoglobulin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immune complex",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immune complex is formed when an antigen binds to an antibody, which is often an immunoglobulin. However, not all immunoglobulins are part of immune complexes, as they can exist independently without being bound to an antigen.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Antibody",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antibody and immunoglobulin are synonyms, as antibodies are a type of immunoglobulin used by the immune system to identify and neutralize foreign objects like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Antibody",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Antibody and immunoglobulin are synonymous terms used to describe the same protein molecules produced by the immune system to identify and neutralize foreign objects like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Multi-subunit immune protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunoglobulins are a type of multi-subunit immune protein, but not all multi-subunit immune proteins are immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immune complex",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immune complex is formed when an antigen binds to an immunoglobulin (antibody), but not all immunoglobulins are part of immune complexes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulin and immunoglobulin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "antibody",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antibody and immunoglobulin are synonyms; both refer to the same protein produced by the immune system to identify and neutralize pathogens like bacteria and viruses.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "immunoglobulin and immunoglobulin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immune complex",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immune complex is a combination of an antigen and an antibody, while immunoglobulin refers to antibodies themselves. Not all immunoglobulins form immune complexes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "immune complex",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immune complex is a combination of an antigen and an antibody, while an immunoglobulin is a type of antibody. Not all immunoglobulins form immune complexes, and immune complexes involve more than just immunoglobulins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "immunoglobulin",
+        "domain": "biology",
+        "response": "Immunoglobulin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Immunoglobulin and immunoglobulin are the same term, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

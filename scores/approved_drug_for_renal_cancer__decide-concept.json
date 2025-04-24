@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a drug used to treat tumors, which can include a variety of cancers, but not all antineoplastic agents are specifically approved for renal cancer. Conversely, an approved drug for renal cancer is specifically indicated for renal cancer, but not all such drugs are classified as antineoplastic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "renal oncology medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A renal oncology medication is a type of treatment used in the context of kidney cancer, but not all renal oncology medications are necessarily approved drugs for renal cancer. Approval status can vary based on regulatory agency decisions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "Renal cell carcinoma treatment",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Renal cell carcinoma treatment includes various methods such as surgery, radiation, and drugs, while an approved drug for renal cancer is only one aspect of treatment.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "Antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a broader category of drugs used to treat cancer, while an approved drug for renal cancer is a specific type of antineoplastic agent. Not all antineoplastic agents are approved drugs for renal cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "renal cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A renal cancer medication may not necessarily be an approved drug, as it could be experimental or off-label. An approved drug for renal cancer specifically refers to medications that have been officially approved for treating renal cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "kidney cancer treatment",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Kidney cancer treatment can include various approaches such as surgery, radiation, and drugs, whereas approved drug for renal cancer specifically refers to pharmaceutical treatments that have been approved for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "Kidney cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A kidney cancer drug is a drug specifically targeting kidney cancer, but an approved drug for renal cancer refers to any drug that has been approved for treating renal cancer, which might not be specific to kidney cancer only.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "Kidney cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A kidney cancer drug is specifically designed to treat kidney cancer, but not all approved drugs for renal cancer are necessarily labeled as kidney cancer drugs, as they might be approved for other types of renal cancers or conditions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "Kidney cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A kidney cancer drug is specifically used for treating kidney cancer, but an approved drug for renal cancer may not necessarily be used for kidney cancer alone; it could be approved for other types of renal cancers as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "renal cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "renal cancer medication refers to any medication used to treat renal cancer, while an approved drug for renal cancer specifically refers to medications that have been officially approved for use in treating renal cancer. Not all renal cancer medications may be approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "renal cell carcinoma medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Not all renal cell carcinoma medications are approved drugs for renal cancer, as some may be experimental or used off-label.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "kidney cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A kidney cancer drug is specifically for treating kidney cancer, but an approved drug for renal cancer may include other types of renal cancers beyond just kidney cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a drug used to treat tumors, which includes but is not limited to drugs approved for renal cancer. Not all antineoplastic agents are approved for renal cancer, and not all drugs approved for renal cancer are antineoplastic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "Antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a drug used to treat cancer, but not all antineoplastic agents are approved drugs for renal cancer specifically.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "tyrosine kinase inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While some tyrosine kinase inhibitors are approved drugs for renal cancer, not all tyrosine kinase inhibitors have this approval, and not all approved drugs for renal cancer are tyrosine kinase inhibitors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for renal cancer",
+        "domain": "medicine",
+        "response": "Concept: \"drug approved to treat kidney cancer\"",
+        "judgement": {
+            "equivalent": true,
+            "reason": "kidney cancer and renal cancer are synonymous, and both phrases refer to drugs that have been approved for this condition",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

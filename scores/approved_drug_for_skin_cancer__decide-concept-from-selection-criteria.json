@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "Skin cancer treatment drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer treatment drug may not necessarily be an approved drug, as it could be in experimental stages or used off-label. An approved drug for skin cancer specifically implies it has received regulatory approval for treating skin cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "Approved skin cancer drug",
+        "judgement": {
+            "equivalent": true,
+            "reason": "An approved skin cancer drug and an approved drug for skin cancer refer to the same concept, as both imply a drug that has been approved for treating skin cancer.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "Antineoplastic drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Antineoplastic drugs are used to treat various types of cancer, not just skin cancer. An approved drug for skin cancer is a specific type of antineoplastic drug.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "Skin cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer drug may not necessarily be approved, whereas an approved drug for skin cancer has received official approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "skin cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer drug may not be approved, whereas an approved drug for skin cancer has been officially authorized for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "skin cancer treatment drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer treatment drug may not be approved, while an approved drug for skin cancer has received regulatory approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "Skin cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer drug refers to any drug used to treat skin cancer, while an approved drug for skin cancer specifically refers to drugs that have been approved by regulatory bodies for the treatment of skin cancer. Not all skin cancer drugs may be approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "Approved drug for skin cancer",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The difference between 'Approved' and 'approved' is purely a matter of capitalization, which does not affect the meaning. Both phrases refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "skin cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer drug may not necessarily be approved, while an approved drug for skin cancer specifically refers to a drug that has received regulatory approval for treating skin cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "FDA-approved skin cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An FDA-approved skin cancer drug specifically refers to a drug that has been approved by the FDA for treating skin cancer, whereas an approved drug for skin cancer could be approved by any regulatory body, not necessarily the FDA.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "skin cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer medication refers to any medication used to treat skin cancer, while an approved drug for skin cancer specifically refers to medications that have been approved by regulatory bodies for this use. Not all skin cancer medications may be approved drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "FDA-approved skin cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An FDA-approved skin cancer drug specifically refers to a drug that has been approved by the FDA, whereas an approved drug for skin cancer could refer to drugs approved by other regulatory bodies as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a type of drug that inhibits the growth of tumors, which can be used for various types of cancers, not just skin cancer. Not all antineoplastic agents are approved drugs for skin cancer, and not all approved drugs for skin cancer are antineoplastic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "Selective serotonin receptor inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Selective serotonin receptor inhibitors are a class of drugs typically used as antidepressants, whereas approved drugs for skin cancer are specifically used to treat skin cancer. These two categories do not overlap in function or application.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "skin cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A skin cancer medication may not be an approved drug, as it could be experimental or in clinical trials. Conversely, an approved drug for skin cancer is specifically one that has been authorized by regulatory agencies for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for skin cancer",
+        "domain": "medicine",
+        "response": "drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for skin cancer is a specific type of drug, but not all drugs are approved for skin cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

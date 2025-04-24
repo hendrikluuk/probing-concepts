@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "Hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A gastrointestinal hormone is a specific type of hormone, but not all hormones are gastrointestinal hormones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "Enterogastrone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Enterogastrone is a type of gastrointestinal hormone, but not all gastrointestinal hormones are enterogastrones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "Gastrointestinal Hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Gastrointestinal Hormone' and 'gastrointestinal hormone' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "Gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Gastrointestinal hormone' and 'gastrointestinal hormone' refer to the same concept, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'gastrointestinal hormone' and 'gastrointestinal hormone' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'gastrointestinal hormone' and 'gastrointestinal hormone' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'gastrointestinal hormone' and 'gastrointestinal hormone' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'gastrointestinal hormone' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "Enterohormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Enterohormone and gastrointestinal hormone are synonyms, both referring to hormones secreted by the gastrointestinal tract.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "gastrointestinal hormone and gastrointestinal hormone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrointestinal hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept and are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastrin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "gastrin is a specific type of gastrointestinal hormone, but not all gastrointestinal hormones are gastrin",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "GI hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "GI hormone is an abbreviation for gastrointestinal hormone, and they refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "gastrointestinal hormone",
+        "domain": "biology",
+        "response": "gastric hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A gastric hormone is a specific type of gastrointestinal hormone, but not all gastrointestinal hormones are gastric hormones. Gastrointestinal hormones include hormones that affect the entire digestive tract, whereas gastric hormones are specific to the stomach.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

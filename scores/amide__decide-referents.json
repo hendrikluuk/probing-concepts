@@ -1,0 +1,1906 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "N-(hydroxymethyl)phthalimide",
+            "fasudil",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "N-(hydroxymethyl)phthalimide",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "N-(hydroxymethyl)phthalimide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "mismatches": [
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "N-(hydroxymethyl)phthalimide",
+            "(R)-thalidomide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Pukeleimide B",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 0,
+            "FP": 8,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "N-(hydroxymethyl)phthalimide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "mismatches": [
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "N-(hydroxymethyl)phthalimide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "N-(hydroxymethyl)phthalimide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "N-carbonyldiazepane",
+            "Oxasetin",
+            "4-maleimido-TEMPO",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "(R)-thalidomide",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "N-carbonyldiazepane",
+                "Oxasetin",
+                "4-maleimido-TEMPO",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 9,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "Oxasetin",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "N-(hydroxymethyl)phthalimide",
+            "tentoxin",
+            "(R)-thalidomide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tentoxin"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "Oxasetin",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 9,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "N-(hydroxymethyl)phthalimide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "mismatches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "LSM-12859",
+            "tentoxin",
+            "LSM-13374",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "LSM-12859",
+                "tentoxin",
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 4,
+            "FP": 7,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "phenoxymethylpenicillin",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "dicarboximide fungicide",
+            "Oxasetin",
+            "4-maleimido-TEMPO",
+            "ML-7",
+            "DDR1-IN-1",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "epicillin",
+            "N-(hydroxymethyl)phthalimide",
+            "LSM-12859",
+            "tentoxin",
+            "LSM-13374",
+            "flucloxacilloyl-L-lysine",
+            "(R)-thalidomide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "fasudil",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phenoxymethylpenicillin",
+                "DDR1-IN-1",
+                "epicillin",
+                "LSM-12859",
+                "tentoxin",
+                "LSM-13374",
+                "flucloxacilloyl-L-lysine",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "dicarboximide fungicide",
+                "Oxasetin",
+                "4-maleimido-TEMPO",
+                "ML-7",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 8,
+            "FP": 15,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "mismatches": [
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "poly(amide) macromolecule",
+        "domain": "chemistry",
+        "response": [
+            "poly(6-aminohexanoic acid)",
+            "gamma-poly(glutamate) macromolecule",
+            "poly(L-arginine) macromolecule",
+            "benzylpenicilloyl-octa-L-lysine",
+            "penicilloyl polylysine",
+            "polyglycine macromolecule",
+            "poly(gamma-benzyl-L-glutamate) macromolecule",
+            "hexa-L-lysine monohydrobromide",
+            "poly(L-lysine) macromolecule"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "poly(6-aminohexanoic acid)",
+                "gamma-poly(glutamate) macromolecule",
+                "poly(L-arginine) macromolecule",
+                "penicilloyl polylysine",
+                "polyglycine macromolecule",
+                "poly(gamma-benzyl-L-glutamate) macromolecule",
+                "hexa-L-lysine monohydrobromide",
+                "poly(L-lysine) macromolecule"
+            ],
+            "mismatches": [
+                "benzylpenicilloyl-octa-L-lysine"
+            ],
+            "true_referents": [
+                "penicilloyl polylysine",
+                "poly(gamma-benzyl-L-glutamate) macromolecule",
+                "hexa-L-lysine monohydrobromide",
+                "gamma-poly(glutamate) macromolecule",
+                "poly(L-arginine) macromolecule",
+                "poly(L-lysine) macromolecule",
+                "poly(6-aminohexanoic acid)",
+                "polyglycine macromolecule"
+            ],
+            "TP": 8,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "N-acylpyrrolidine",
+        "domain": "chemistry",
+        "response": [
+            "1-[(2E,4E)-2,4-dodecadienoyl]pyrrolidine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-[(2E,4E)-2,4-dodecadienoyl]pyrrolidine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "LCL161",
+                "(1S)-2-[(2S,5R)-2-(aminomethyl)-5-ethynylpyrrolidin-1-yl]-1-cyclopentyl-2-oxoethanamine",
+                "Nosperin",
+                "(E)-1-[2-(Hydroxymethyl)pyrrolidin-1-yl]-2-methyldec-8-ene-1,3-dione",
+                "dextromoramide",
+                "captopril",
+                "ledipasvir",
+                "1-[(2E,4E)-2,4-dodecadienoyl]pyrrolidine"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "cefepime",
+            "amoxicillin diketopiperazine",
+            "benzylpenicilloyl-octa-L-lysine",
+            "penicilloyl polylysine",
+            "nocamycin E",
+            "benzylpenicilloyl-cysteine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cefepime",
+                "amoxicillin diketopiperazine",
+                "benzylpenicilloyl-octa-L-lysine",
+                "nocamycin E",
+                "benzylpenicilloyl-cysteine"
+            ],
+            "mismatches": [
+                "penicilloyl polylysine"
+            ],
+            "true_referents": [
+                "LSM-12303",
+                "amoxicillin diketopiperazine",
+                "nocamycin E",
+                "LSM-37699",
+                "benzylpenicilloyl-octa-L-lysine",
+                "cefepime",
+                "benzylpenicilloyl-cysteine",
+                "equisetin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "(R)-chlozolinate",
+            "N-carbonyldiazepane",
+            "dicarboximide fungicide",
+            "Oxasetin",
+            "4-maleimido-TEMPO",
+            "ML-7",
+            "DDR1-IN-1",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "tentoxin",
+            "LSM-13374",
+            "(R)-thalidomide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "DDR1-IN-1",
+                "tentoxin",
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(R)-chlozolinate",
+                "N-carbonyldiazepane",
+                "dicarboximide fungicide",
+                "Oxasetin",
+                "4-maleimido-TEMPO",
+                "ML-7",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 4,
+            "FP": 15,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "phenoxymethylpenicillin",
+            "N-sulfonyldiazepane",
+            "(R)-chlozolinate",
+            "N-carbonyldiazepane",
+            "dicarboximide fungicide",
+            "Oxasetin",
+            "4-maleimido-TEMPO",
+            "ML-7",
+            "DDR1-IN-1",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "epicillin",
+            "tentoxin",
+            "flucloxacilloyl-L-lysine",
+            "(R)-thalidomide",
+            "fasudil",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pukeleimide B",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "Oxasetin",
+                "4-maleimido-TEMPO",
+                "aminoglutethimide",
+                "(R)-thalidomide"
+            ],
+            "mismatches": [
+                "phenoxymethylpenicillin",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "ML-7",
+                "DDR1-IN-1",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "epicillin",
+                "tentoxin",
+                "flucloxacilloyl-L-lysine",
+                "fasudil",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 7,
+            "FP": 12,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "(R)-chlozolinate",
+            "N-carbonyldiazepane",
+            "dicarboximide fungicide",
+            "Oxasetin",
+            "4-maleimido-TEMPO",
+            "ML-7",
+            "DDR1-IN-1",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "LSM-12859",
+            "tentoxin",
+            "LSM-13374",
+            "(R)-thalidomide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "DDR1-IN-1",
+                "LSM-12859",
+                "tentoxin",
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(R)-chlozolinate",
+                "N-carbonyldiazepane",
+                "dicarboximide fungicide",
+                "Oxasetin",
+                "4-maleimido-TEMPO",
+                "ML-7",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 5,
+            "FP": 15,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(R)-chlozolinate",
+            "N-carbonyldiazepane",
+            "4-maleimido-TEMPO",
+            "ML-7",
+            "DDR1-IN-1",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "tentoxin",
+            "(R)-thalidomide",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pukeleimide B",
+                "(R)-chlozolinate",
+                "4-maleimido-TEMPO",
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide"
+            ],
+            "mismatches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-carbonyldiazepane",
+                "ML-7",
+                "DDR1-IN-1",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "tentoxin",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 6,
+            "FP": 8,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "4-maleimido-TEMPO",
+            "ML-7",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "N-(hydroxymethyl)phthalimide",
+            "(R)-thalidomide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "4-maleimido-TEMPO",
+                "ML-7",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 10,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(R)-chlozolinate",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R)-chlozolinate"
+            ],
+            "mismatches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "Oxasetin",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "(R)-thalidomide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "fasudil",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "Oxasetin",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 12,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+            "N-carbonyldiazepane",
+            "N-sulfonyldiazepane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "N-carbonyldiazepane",
+                "N-sulfonyldiazepane"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-carbonyldiazepane",
+            "N-sulfonyldiazepane",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-carbonyldiazepane",
+                "N-sulfonyldiazepane",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(R)-chlozolinate",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+            "(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(R)-chlozolinate",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(R)-1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "mismatches": [
+                "(R)-1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "(R)-chlozolinate",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(R)-chlozolinate"
+            ],
+            "mismatches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cyclic amide",
+        "domain": "chemistry",
+        "response": [
+            "Pukeleimide B",
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "N-(hydroxymethyl)phthalimide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide"
+            ],
+            "mismatches": [
+                "Pukeleimide B",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "N-(hydroxymethyl)phthalimide",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "LSM-13374",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "LSM-12859",
+                "tentoxin",
+                "phenoxymethylpenicillin",
+                "epicillin",
+                "DDR1-IN-1",
+                "flucloxacilloyl-L-lysine"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "N-acyldiazepane",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "N-carbonyldiazepane",
+                "ML-7",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "fasudil",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one",
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "secondary amide",
+        "domain": "chemistry",
+        "response": [
+            "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "N-sulfonyldiazepane",
+            "N-carbonyldiazepane",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+            "aminoglutethimide",
+            "N-(hydroxymethyl)phthalimide",
+            "(R)-thalidomide",
+            "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+            "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+            "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aminoglutethimide",
+                "N-(hydroxymethyl)phthalimide",
+                "(R)-thalidomide"
+            ],
+            "mismatches": [
+                "(S)-2-methyl-1-(4-methylisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "N-sulfonyldiazepane",
+                "N-carbonyldiazepane",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-methyl-1,4-diazepan-2-one",
+                "1-(1-hydroxyisoquinoline-5-sulfonyl)-1,4-diazepane",
+                "(3S)-N-(5-chloro-2-methylphenyl)-1-cyclohexyl-5-oxopyrrolidine-3-carboxamide",
+                "(3R)-4-[(3R)-3-amino-4-(2,4,5-trifluorophenyl)butanoyl]-3-(2,2,2-trifluoroethyl)-1,4-diazepan-2-one"
+            ],
+            "true_referents": [
+                "Oxasetin",
+                "aminoglutethimide",
+                "(R)-chlozolinate",
+                "dicarboximide fungicide",
+                "(R)-thalidomide",
+                "Pukeleimide B",
+                "4-maleimido-TEMPO",
+                "N-(hydroxymethyl)phthalimide"
+            ],
+            "TP": 3,
+            "FP": 7,
+            "FN": 5
+        }
+    }
+]

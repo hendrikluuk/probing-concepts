@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of protein associated with cell membranes.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "Membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Membrane protein' and 'membrane protein' are identical except for capitalization, so they refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "Integral membrane protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An integral membrane protein is a type of membrane protein, but not all membrane proteins are integral membrane proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "Membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Membrane protein' and 'membrane protein' are identical except for capitalization, which does not affect their meaning in a biological context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "membrane protein and membrane protein are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'membrane protein' and 'membrane protein' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "Membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same concept, with only a difference in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "Membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Membrane protein' and 'membrane protein' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept and are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of protein associated with cell membranes.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "membrane protein and membrane protein are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "membrane protein and membrane protein are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "membrane protein and membrane protein are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "membrane protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "membrane protein and membrane protein are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "membrane protein",
+        "domain": "biology",
+        "response": "Concept: \"membrane protein\"",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'Concept: membrane protein' and 'membrane protein' refer to the same idea, with the former simply indicating that it is a concept being discussed.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

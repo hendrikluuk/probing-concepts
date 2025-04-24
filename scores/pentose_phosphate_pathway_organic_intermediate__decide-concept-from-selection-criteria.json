@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic compounds, so the terms are interchangeable in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "6-Phosphogluconate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "6-Phosphogluconate is an organic intermediate in the pentose phosphate pathway, but there are other intermediates in the pathway as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Metabolite",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A metabolite is any substance produced during metabolism, which includes a wide range of molecules beyond just those in the pentose phosphate pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Pentose phosphate pathway intermediate' and 'pentose phosphate pathway organic intermediate' refer to the same intermediates involved in the pathway, which are organic by nature.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic molecules, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Ribulose 5-phosphate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribulose 5-phosphate is an organic intermediate in the pentose phosphate pathway, but not all pentose phosphate pathway intermediates are ribulose 5-phosphate.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Ribose 5-phosphate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose 5-phosphate is one specific intermediate in the pentose phosphate pathway, but not all pentose phosphate pathway intermediates are ribose 5-phosphate.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'pentose phosphate pathway intermediate' inherently refers to organic molecules, so both terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose phosphate pathway intermediate",
+        "judgement": {
+            "equivalent": true,
+            "reason": "All intermediates in the pentose phosphate pathway are organic compounds, so the terms are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "pentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "pentose refers to a type of sugar with five carbon atoms, whereas a pentose phosphate pathway organic intermediate specifically refers to compounds involved in the pentose phosphate pathway, which may include but are not limited to pentoses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "carbohydrate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Carbohydrates are a broad class of biomolecules, while pentose phosphate pathway organic intermediates are specific types of carbohydrates involved in a particular metabolic pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "Ribose-5-phosphate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose-5-phosphate is an organic intermediate in the pentose phosphate pathway, but there are other intermediates in this pathway besides ribose-5-phosphate.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "5-carbon sugar",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A 5-carbon sugar is a type of sugar with five carbon atoms, which can participate in various biological processes. The pentose phosphate pathway involves specific 5-carbon sugars, but not all 5-carbon sugars are intermediates of this pathway.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "pentose phosphate pathway organic intermediate",
+        "domain": "biology",
+        "response": "ribose 5-phosphate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose 5-phosphate is an intermediate in the pentose phosphate pathway, but not all intermediates in this pathway are ribose 5-phosphate.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

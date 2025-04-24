@@ -1,0 +1,1778 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-1-ol",
+            "medium-chain primary fatty alcohol",
+            "tricosan-2-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol"
+            ],
+            "mismatches": [
+                "tricosan-1-ol",
+                "tricosan-2-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "hexacosan-7-ol",
+            "tetracosan-11-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "hexacosan-7-ol",
+                "tetracosan-11-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "medium-chain primary fatty alcohol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol",
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol"
+            ],
+            "mismatches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol",
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 1,
+            "FP": 11,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol",
+            "pentyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol",
+                "pentyl acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "fatty alcohol 26:0",
+            "medium-chain primary fatty alcohol",
+            "(13Z)-octadecen-1-ol",
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "tricosan-10-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "(13Z)-octadecen-1-ol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "fatty alcohol 26:0",
+                "tricosan-1-ol",
+                "tricosan-10-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "fatty alcohol 26:0",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tetracosan-11-ol",
+            "tricosan-10-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fatty alcohol 26:0",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tetracosan-11-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "palmitoleyl alcohol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "medium-chain primary fatty alcohol",
+            "(13Z)-octadecen-1-ol",
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "(13Z)-octadecen-1-ol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-1-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "medium-chain primary fatty alcohol",
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 2,
+            "FP": 7,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "fatty alcohol 26:0",
+            "tricosan-9-ol",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fatty alcohol 26:0",
+                "tricosan-9-ol",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "medium-chain primary fatty alcohol",
+            "(13Z)-octadecen-1-ol",
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol",
+            "pentan-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "(13Z)-octadecen-1-ol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "tricosan-1-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol",
+                "pentan-1-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 3,
+            "FP": 7,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "medium-chain primary fatty alcohol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "palmitoleyl alcohol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 2,
+            "FP": 8,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentanol",
+            "pentan-3-ol",
+            "pentan-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentanol",
+                "pentan-3-ol",
+                "pentan-1-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "fatty alcohol 26:0",
+            "medium-chain primary fatty alcohol",
+            "(2E,6Z)-nona-2,6-dien-1-ol",
+            "(13Z)-octadecen-1-ol",
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "(13Z)-octadecen-1-ol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "fatty alcohol 26:0",
+                "tricosan-1-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6Z)-nona-2,6-dien-1-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [
+                "(2E,6Z)-nona-2,6-dien-1-ol"
+            ],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "medium-chain primary fatty alcohol",
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "pentan-1-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-1-ol",
+                "pentan-1-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-1-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "palmitoleyl alcohol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [
+                "palmitoleyl alcohol"
+            ],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6Z)-nona-2,6-dien-1-ol",
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [
+                "(2E,6Z)-nona-2,6-dien-1-ol"
+            ],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "medium-chain primary fatty alcohol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "palmitoleyl alcohol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "medium-chain primary fatty alcohol",
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 2,
+            "FP": 8,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-1-ol",
+            "palmitoleyl alcohol",
+            "tetracosan-11-ol",
+            "caprate phytyl ester",
+            "pentan-1-ol",
+            "laurate phytyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoleyl alcohol",
+                "caprate phytyl ester",
+                "laurate phytyl ester"
+            ],
+            "mismatches": [
+                "tricosan-1-ol",
+                "tetracosan-11-ol",
+                "pentan-1-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "hexacosan-7-ol",
+            "tetracosan-11-ol",
+            "tricosan-9-ol",
+            "tricosan-10-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "hexacosan-7-ol",
+                "tetracosan-11-ol",
+                "tricosan-9-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "tricosan-1-ol",
+            "tricosan-10-ol",
+            "tricosan-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "tricosan-9-ol",
+                "tricosan-1-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "primary fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-1-ol",
+            "hexacosan-8-ol",
+            "hexacosan-7-ol",
+            "tricosan-9-ol",
+            "tricosan-10-ol",
+            "tricosan-2-ol",
+            "palmitoleyl alcohol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoleyl alcohol"
+            ],
+            "mismatches": [
+                "tricosan-1-ol",
+                "hexacosan-8-ol",
+                "hexacosan-7-ol",
+                "tricosan-9-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "true_referents": [
+                "(13Z)-octadecen-1-ol",
+                "laurate phytyl ester",
+                "caprate phytyl ester",
+                "medium-chain primary fatty alcohol",
+                "2-hydroxyethyl octadecanoate",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "palmitoleyl alcohol",
+                "phosphomycoketide C32"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "very long-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "tricosan-9-ol",
+            "fatty alcohol 26:0",
+            "hexacosan-8-ol",
+            "tricosan-1-ol",
+            "hexacosan-7-ol",
+            "tricosan-10-ol",
+            "tetracosan-11-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-2-ol",
+                "tricosan-10-ol",
+                "hexacosan-8-ol",
+                "fatty alcohol 26:0",
+                "tetracosan-11-ol",
+                "tricosan-9-ol"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "short-chain fatty alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pentan-3-ol",
+            "pentan-1-ol",
+            "pentanol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pentyl acetate",
+                "pentyl octanoate",
+                "pentyl dodecanoate",
+                "pentan-3-ol",
+                "pentanol",
+                "dipentyl phthalate",
+                "pentan-1-ol",
+                "(S)-1'-methylbutyl caffeate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    }
+]

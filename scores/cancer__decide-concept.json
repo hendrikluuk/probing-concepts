@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cancer is a type of neoplasm, but not all neoplasms are cancerous. Neoplasms can be benign or malignant, whereas cancer specifically refers to malignant neoplasms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "neoplasia",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cancer is a type of neoplasia, but not all neoplasias are cancerous. Neoplasia refers to the process of abnormal and excessive growth of tissue, which can be benign or malignant, whereas cancer specifically refers to malignant neoplasia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cancer is a type of neoplasm, but not all neoplasms are cancerous. Neoplasm refers to any abnormal growth of tissue, which can be benign, pre-malignant, or malignant (cancerous).",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "Neoplasia",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neoplasia refers to the process of abnormal and uncontrolled cell growth, which can be benign or malignant, whereas cancer specifically refers to malignant neoplasms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "Cancer",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Cancer with an uppercase 'C' and cancer with a lowercase 'c' refer to the same disease contextually, and the difference is only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "cancer",
+        "judgement": {
+            "equivalent": true,
+            "reason": "cancer and cancer are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "Oncology",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Oncology is the field of medicine that deals with the study and treatment of cancer, but cancer refers specifically to the disease. Not all aspects of oncology are limited to cancer itself, as it also involves research, diagnosis, and prevention.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "malignant neoplasm",
+        "judgement": {
+            "equivalent": true,
+            "reason": "malignant neoplasm and cancer are synonyms, as both refer to uncontrolled and invasive growth of abnormal cells.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "cancer",
+        "judgement": {
+            "equivalent": true,
+            "reason": "cancer and cancer are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cancer is a type of neoplasm, but not all neoplasms are cancerous; some neoplasms can be benign.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cancer is a type of neoplasm, but not all neoplasms are cancerous. Neoplasms can be benign or malignant, while cancer specifically refers to malignant neoplasms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cancer is a type of neoplasm, but not all neoplasms are cancerous. Neoplasms can be benign or malignant, whereas cancer refers specifically to malignant neoplasms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cancer is a type of neoplasm, but not all neoplasms are cancerous. Neoplasm refers to any new and abnormal growth of tissue, which can be benign or malignant, whereas cancer specifically refers to malignant neoplasms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "Neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cancer is a type of neoplasm, but not all neoplasms are cancerous. Neoplasm refers to any new and abnormal growth of tissue, which can be benign or malignant, whereas cancer specifically refers to malignant neoplasms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "Neoplasm",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cancer is a type of neoplasm, but not all neoplasms are cancerous. Neoplasm is a general term for any new and abnormal growth of tissue, which can be benign or malignant, whereas cancer specifically refers to malignant neoplasms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "cancer",
+        "domain": "medicine",
+        "response": "Concept: \"cancer",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'cancer' is used in the same context and refers to the same medical condition in both instances.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

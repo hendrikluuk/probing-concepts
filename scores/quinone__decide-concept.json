@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "\u830b\u985e\u5316\u5408\u7269",
+        "judgement": {
+            "equivalent": false,
+            "reason": "\u830b\u985e\u5316\u5408\u7269 refers to a class of compounds that include quinones, but not all \u830b\u985e\u5316\u5408\u7269 are quinones. Quinones are a specific type of \u830b\u985e\u5316\u5408\u7269.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "benzophenone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "benzophenone and quinone are different types of organic compounds with distinct structures and functions. Benzophenone is a ketone with two phenyl groups, while quinone is a class of cyclic organic compounds with a fully conjugated cyclic dione structure.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "Quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Quinone and quinone refer to the same chemical compound, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "cyclic dione",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A cyclic dione is a type of compound with two ketone groups in a ring structure, but not all cyclic diones are quinones. Quinones are a specific type of cyclic dione where the carbonyl groups are conjugated with a double bond, typically derived from aromatic compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "A and B are identical terms referring to the same chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are the same chemical compound, hence they are strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "Benzoquinone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Benzoquinone is a specific type of quinone with benzene rings, but not all quinones are benzoquinones.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "quinone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "quinone and quinone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "quinone",
+        "domain": "chemistry",
+        "response": "Concept: \"aromatic compound\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "quinone is a type of aromatic compound, but not all aromatic compounds are quinones",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

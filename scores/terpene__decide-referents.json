@@ -1,0 +1,1616 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Thymol",
+            "Eucalyptol",
+            "Menthol",
+            "Acyclic Monoterpenes",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Thymol",
+                "Eucalyptol",
+                "Menthol",
+                "Acyclic Monoterpenes",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene",
+            "Norisoprenoids",
+            "Phytol",
+            "Vitamin K 1"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene",
+                "Norisoprenoids"
+            ],
+            "mismatches": [
+                "Phytol",
+                "Vitamin K 1"
+            ],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Taxoids"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Thymol",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Phorbol 12,13-Dibutyrate",
+            "Colforsin",
+            "Fenretinide",
+            "Ryanodine",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin",
+                "Ryanodine",
+                "Taxoids"
+            ],
+            "mismatches": [
+                "Camphanes",
+                "Fenretinide"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Thymol",
+            "Eucalyptol",
+            "Menthol",
+            "Acyclic Monoterpenes",
+            "Pyrethrins",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Menthol",
+                "Acyclic Monoterpenes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Ryanodine",
+            "Abscisic Acid",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Taxoids"
+            ],
+            "mismatches": [
+                "Abscisic Acid"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Thymol",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene",
+            "Etretinate",
+            "Fenretinide",
+            "Isotretinoin",
+            "Alitretinoin",
+            "Norisoprenoids",
+            "Phytol",
+            "Retinoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene",
+                "Etretinate",
+                "Fenretinide",
+                "Isotretinoin",
+                "Alitretinoin",
+                "Norisoprenoids",
+                "Retinoids"
+            ],
+            "mismatches": [
+                "Phytol"
+            ],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Ryanodine",
+            "Etretinate",
+            "Abscisic Acid",
+            "Colforsin",
+            "Fenretinide",
+            "Isotretinoin",
+            "Alitretinoin",
+            "Taxoids",
+            "Aconitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Colforsin",
+                "Taxoids",
+                "Aconitine"
+            ],
+            "mismatches": [
+                "Etretinate",
+                "Abscisic Acid",
+                "Fenretinide",
+                "Isotretinoin",
+                "Alitretinoin"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene",
+            "Norisoprenoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene",
+                "Norisoprenoids"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Phorbol 12,13-Dibutyrate",
+            "Ryanodine",
+            "Etretinate",
+            "Abscisic Acid",
+            "Colforsin",
+            "Phytol",
+            "Taxoids",
+            "Aconitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Colforsin",
+                "Phytol",
+                "Taxoids",
+                "Aconitine"
+            ],
+            "mismatches": [
+                "Camphanes",
+                "Etretinate",
+                "Abscisic Acid"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Acyclic Monoterpenes",
+            "Eucalyptol",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acyclic Monoterpenes",
+                "Eucalyptol",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Abscisic Acid",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Taxoids"
+            ],
+            "mismatches": [
+                "Abscisic Acid"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Thymol",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Phorbol 12,13-Dibutyrate",
+            "Colforsin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin"
+            ],
+            "mismatches": [
+                "Camphanes"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Iridoids",
+            "Thymol",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Pyrethrins",
+            "Isotretinoin",
+            "Alitretinoin",
+            "Norisoprenoids",
+            "Phytol",
+            "Retinoids",
+            "Taxoids",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [
+                "Isotretinoin",
+                "Alitretinoin",
+                "Norisoprenoids",
+                "Phytol",
+                "Retinoids",
+                "Taxoids"
+            ],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 8,
+            "FP": 6,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Ryanodine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Thymol",
+            "Eucalyptol",
+            "Menthol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Thymol",
+                "Eucalyptol",
+                "Menthol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Colforsin",
+            "Phytol",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin",
+                "Phytol",
+                "Taxoids"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Thymol",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Ryanodine",
+            "Abscisic Acid",
+            "Colforsin",
+            "Phytol",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Colforsin",
+                "Phytol",
+                "Taxoids"
+            ],
+            "mismatches": [
+                "Abscisic Acid"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Thymol",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Norisoprenoids",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [
+                "Norisoprenoids"
+            ],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Ryanodine",
+            "Abscisic Acid",
+            "Colforsin",
+            "Phytol",
+            "Vitamin K 1",
+            "Taxoids",
+            "Aconitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Colforsin",
+                "Phytol",
+                "Vitamin K 1",
+                "Taxoids",
+                "Aconitine"
+            ],
+            "mismatches": [
+                "Abscisic Acid"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Acyclic Monoterpenes",
+            "Eucalyptol",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acyclic Monoterpenes",
+                "Eucalyptol",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene",
+            "Abscisic Acid",
+            "Phytol",
+            "Norisoprenoids",
+            "Retinoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene",
+                "Abscisic Acid",
+                "Norisoprenoids",
+                "Retinoids"
+            ],
+            "mismatches": [
+                "Phytol"
+            ],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phytol",
+            "Ryanodine",
+            "Phorbol 12,13-Dibutyrate",
+            "Abscisic Acid",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phytol",
+                "Ryanodine",
+                "Phorbol 12,13-Dibutyrate",
+                "Taxoids"
+            ],
+            "mismatches": [
+                "Abscisic Acid"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Camphanes",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene",
+            "Retinoids",
+            "Norisoprenoids",
+            "Phytol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene",
+                "Retinoids",
+                "Norisoprenoids"
+            ],
+            "mismatches": [
+                "Phytol"
+            ],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Phorbol 12,13-Dibutyrate",
+            "Abscisic Acid",
+            "Phytol",
+            "Taxoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Phytol",
+                "Taxoids"
+            ],
+            "mismatches": [
+                "Camphanes",
+                "Abscisic Acid"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Phytol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [
+                "Phytol"
+            ],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Camphanes",
+            "Phorbol 12,13-Dibutyrate",
+            "Colforsin",
+            "Fenretinide",
+            "Phytol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Colforsin",
+                "Phytol"
+            ],
+            "mismatches": [
+                "Camphanes",
+                "Fenretinide"
+            ],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Monoterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Thymol",
+            "Eucalyptol",
+            "Acyclic Monoterpenes",
+            "Menthol",
+            "Cyclopentane Monoterpenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Cyclopentane Monoterpenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Iridoids",
+                "Thymol",
+                "Eucalyptol",
+                "Acyclic Monoterpenes",
+                "Menthol",
+                "Camphanes",
+                "Pyrethrins",
+                "Cyclopentane Monoterpenes"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Carotenoids",
+        "domain": "chemistry",
+        "response": [
+            "Lycopene",
+            "Fenretinide",
+            "Isotretinoin",
+            "Alitretinoin",
+            "Retinoids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lycopene",
+                "Fenretinide",
+                "Isotretinoin",
+                "Alitretinoin",
+                "Retinoids"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Abscisic Acid",
+                "Alitretinoin",
+                "Etretinate",
+                "Isotretinoin",
+                "Lycopene",
+                "Retinoids",
+                "Fenretinide",
+                "Norisoprenoids"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Diterpenes",
+        "domain": "chemistry",
+        "response": [
+            "Phorbol 12,13-Dibutyrate",
+            "Ryanodine",
+            "Taxoids",
+            "Aconitine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Phorbol 12,13-Dibutyrate",
+                "Ryanodine",
+                "Taxoids",
+                "Aconitine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Vitamin K 1",
+                "Ryanodine",
+                "Phytol",
+                "Taxoids",
+                "Colforsin",
+                "Aconitine",
+                "Phorbol 12,13-Dibutyrate",
+                "Vitamin K"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    }
+]

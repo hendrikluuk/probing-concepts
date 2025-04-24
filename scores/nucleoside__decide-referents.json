@@ -1,0 +1,1515 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-L-rhamnose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "N6-Methyl-2'-deoxyadenosine",
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "dTDP-L-rhamnose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "N6-Methyl-2'-deoxyadenosine",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "2,3-dihydroxybenzoyl 5'-adenylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "2,3-dihydroxybenzoyl 5'-adenylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "2,3-dihydroxybenzoyl 5'-adenylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "2,3-dihydroxybenzoyl 5'-adenylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "2,3-dihydroxybenzoyl 5'-adenylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "N6-Methyl-2'-deoxyadenosine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N6-Methyl-2'-deoxyadenosine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "2,3-dihydroxybenzoyl 5'-adenylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-L-rhamnose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 8,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-L-rhamnose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+            "oscr#21-CoA"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "oscr#21-CoA"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 8,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-L-rhamnose",
+            "2,3-dihydroxybenzoyl 5'-adenylate",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "mismatches": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-L-rhamnose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "3'-Amino-3'-deoxythymidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3'-Amino-3'-deoxythymidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "3'-Amino-3'-deoxythymidine glucuronide",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3'-Amino-3'-deoxythymidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "N6-Methyl-2'-deoxyadenosine",
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N6-Methyl-2'-deoxyadenosine",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "dTDP-L-rhamnose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "dTDP-L-rhamnose",
+            "2,3-dihydroxybenzoyl 5'-adenylate",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "mismatches": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+            "dTDP-L-rhamnose",
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+            "dTDP-L-rhamnose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "dTDP-L-rhamnose"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+            "dTDP-L-rhamnose",
+            "dTDP-3-dehydro-4,6-dideoxy-D-glucose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "deoxyribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "5-(2-aminoethyl)-2'-deoxyuridine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "5-(2-aminoethyl)-2'-deoxyuridine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "dTDP-L-rhamnose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "nucleoside phosphate",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "3'-Amino-3'-deoxythimidine glucuronide",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate",
+            "dTDP-L-rhamnose",
+            "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+            "2,3-dihydroxybenzoyl 5'-adenylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ],
+            "true_referents": [
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "farnesoyl-CoA",
+                "heptadecanoyl-CoA",
+                "(R)-2-hydroxyglutaryl-CoA",
+                "2-hydroxyhexacosanoyl-CoA",
+                "(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA",
+                "(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA",
+                "3-oxodocosanoyl-CoA"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ribonucleoside",
+        "domain": "chemistry",
+        "response": [
+            "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+            "5-(2-aminoethyl)-2'-deoxyuridine",
+            "N6-Methyl-2'-deoxyadenosine",
+            "p-nitrophenyl thymidine 5'-monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ],
+            "true_referents": [
+                "(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA",
+                "(R)-3-hydroxytetradecanoyl-CoA",
+                "(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA",
+                "long-chain 3-oxo-fatty acyl-CoA",
+                "oscr#21-CoA",
+                "(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA",
+                "(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    }
+]

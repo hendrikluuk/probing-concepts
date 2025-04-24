@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "Anxiolytic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Anxiolytic refers to a substance that reduces anxiety, while a sedative is a substance that induces calm or sleep. Not all anxiolytics are sedatives, and not all sedatives are anxiolytics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "anxiolytic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Anxiolytics are medications that specifically reduce anxiety, while sedatives are drugs that induce calmness or sleep. Not all anxiolytics are sedatives, and not all sedatives are anxiolytics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "Sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Sedative' and 'sedative' are equivalent as they refer to the same concept, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sedative and sedative are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "tranquilizer",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A tranquilizer is a type of sedative, but not all sedatives are tranquilizers. Sedatives include a broader category of substances that can calm or induce sleep, while tranquilizers specifically reduce tension or anxiety.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "Anxiolytic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Anxiolytic refers to a drug that reduces anxiety, while a sedative is a drug that induces calmness or sleep. Not all anxiolytics are sedatives and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept, meaning they are synonyms and interchangeable.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sedative and sedative are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sedative and sedative are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "anxiolytic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "anxiolytics are medications that specifically reduce anxiety, whereas sedatives are medications that induce calmness or sleep; not all anxiolytics are sedatives and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "sedative",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept and are used interchangeably.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "sedative",
+        "domain": "medicine",
+        "response": "Relaxant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A relaxant is a substance that reduces tension or stress, often targeting muscles, while a sedative is specifically intended to calm or induce sleep. Not all relaxants are sedatives, and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

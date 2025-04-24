@@ -1,0 +1,1666 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "Dibenzo[h,rst]pentaphene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Dibenzo[h,rst]pentaphene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide",
+            "3,5-di-tert-butylbenzaldehyde",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol",
+            "2-Methyl-1-phenyl-2-propanyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide",
+                "3,5-di-tert-butylbenzaldehyde",
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "2-Methyl-1-phenyl-2-propanyl acetate"
+            ],
+            "mismatches": [
+                "circumtrindene"
+            ],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin",
+            "salicin 6-phosphate",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin",
+                "salicin 6-phosphate",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "helicin",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [
+                "helicin"
+            ],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "2-Isopropyl-1,4-benzenediol",
+            "3,5-di-tert-butylbenzaldehyde",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-Isopropyl-1,4-benzenediol",
+                "3,5-di-tert-butylbenzaldehyde",
+                "1-isopentyl-2,3,4,6-tetramethylbenzene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin",
+            "trilobatin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin",
+                "trilobatin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "helicin",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [
+                "helicin"
+            ],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "3,5-di-tert-butylbenzaldehyde",
+            "2-Isopropyl-1,4-benzenediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "3,5-di-tert-butylbenzaldehyde",
+                "2-Isopropyl-1,4-benzenediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin",
+            "trilobatin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "trilobatin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "helicin",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [
+                "helicin"
+            ],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "3,5-di-tert-butylbenzaldehyde",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-di-tert-butylbenzaldehyde",
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "helicin",
+            "phlorizin",
+            "trilobatin",
+            "salicin",
+            "salicin 6-phosphate",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "helicin",
+                "phlorizin",
+                "trilobatin",
+                "salicin",
+                "salicin 6-phosphate",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "3,5-di-tert-butylbenzaldehyde",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-di-tert-butylbenzaldehyde",
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "helicin",
+            "phlorizin",
+            "salicin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "helicin",
+                "phlorizin",
+                "salicin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol",
+            "2-Methyl-1-phenyl-2-propanyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "2-Methyl-1-phenyl-2-propanyl acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin",
+            "salicin 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "Dibenzo[h,rst]pentaphene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Dibenzo[h,rst]pentaphene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "heptaphene"
+            ],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin",
+            "salicin 6-phosphate",
+            "3'-O-acetylsalicin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin",
+                "salicin 6-phosphate",
+                "3'-O-acetylsalicin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "3,5-di-tert-butylbenzaldehyde",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin",
+            "salicin",
+            "salicin 6-phosphate",
+            "2-Isopropyl-1,4-benzenediol",
+            "2-Methyl-1-phenyl-2-propanyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-di-tert-butylbenzaldehyde",
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "2-Methyl-1-phenyl-2-propanyl acetate"
+            ],
+            "mismatches": [
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin",
+                "salicin 6-phosphate"
+            ],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin",
+            "trilobatin",
+            "salicin",
+            "salicin 6-phosphate",
+            "3'-O-acetylsalicin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "trilobatin",
+                "salicin",
+                "salicin 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "Vat Yellow 4",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "3,5-di-tert-butylbenzaldehyde",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-di-tert-butylbenzaldehyde",
+                "1-isopentyl-2,3,4,6-tetramethylbenzene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "helicin",
+            "phlorizin",
+            "salicin",
+            "salicin 6-phosphate",
+            "trilobatin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "helicin",
+                "phlorizin",
+                "salicin",
+                "salicin 6-phosphate",
+                "trilobatin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol",
+            "2-Methyl-1-phenyl-2-propanyl acetate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "2-Methyl-1-phenyl-2-propanyl acetate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "helicin",
+            "phlorizin",
+            "salicin",
+            "salicin 6-phosphate",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin",
+            "trilobatin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "helicin",
+                "phlorizin",
+                "salicin",
+                "salicin 6-phosphate",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "trilobatin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol",
+            "3,5-di-tert-butylbenzaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "3,5-di-tert-butylbenzaldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin",
+            "trilobatin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin",
+                "trilobatin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "helicin",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [
+                "helicin"
+            ],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol"
+            ],
+            "mismatches": [
+                "benzo[c]phenanthrene",
+                "chrysene"
+            ],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "helicin",
+            "phlorizin",
+            "salicin",
+            "salicin 6-phosphate",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin",
+            "trilobatin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "helicin",
+                "phlorizin",
+                "salicin",
+                "salicin 6-phosphate",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "trilobatin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "Dibenzo[h,rst]pentaphene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Dibenzo[h,rst]pentaphene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "helicin",
+            "3,5-di-tert-butylbenzaldehyde",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol",
+            "Vat Yellow 4"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3,5-di-tert-butylbenzaldehyde",
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol"
+            ],
+            "mismatches": [
+                "circumtrindene",
+                "helicin",
+                "Vat Yellow 4"
+            ],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "phlorizin",
+            "salicin",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin",
+            "salicin 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "phlorizin",
+                "salicin",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "Dibenzo[h,rst]pentaphene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Dibenzo[h,rst]pentaphene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "monocyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "helicin",
+            "1-isopentyl-2,3,4,6-tetramethylbenzene",
+            "2-Isopropyl-1,4-benzenediol",
+            "3,5-di-tert-butylbenzaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "3,5-di-tert-butylbenzaldehyde"
+            ],
+            "mismatches": [
+                "circumtrindene",
+                "helicin"
+            ],
+            "true_referents": [
+                "1-isopentyl-2,3,4,6-tetramethylbenzene",
+                "2-Isopropyl-1,4-benzenediol",
+                "N3-[(4-tert-butylphenyl)methylideneamino]-1,2,4-triazole-3,4-diamine",
+                "3,5-di-tert-butylbenzaldehyde",
+                "O-Desmethyltramadol",
+                "2-Methyl-1-phenyl-2-propanyl acetate",
+                "AL-294",
+                "4-(4-tert-butylphenoxy)-N-(4,5-dihydrothiazol-2-yl)butanamide"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aryl beta-D-glucoside",
+        "domain": "chemistry",
+        "response": [
+            "salicin",
+            "phlorizin",
+            "trilobatin",
+            "2'-O-acetylsalicin",
+            "3'-O-acetylsalicin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "salicin",
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "3'-O-acetylsalicin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "phlorizin",
+                "trilobatin",
+                "2'-O-acetylsalicin",
+                "salicin",
+                "helicin",
+                "3'-O-acetylsalicin",
+                "3'-O-acetylsalicin",
+                "salicin 6-phosphate"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "polycyclic arene",
+        "domain": "chemistry",
+        "response": [
+            "circumtrindene",
+            "Dibenzo[h,rst]pentaphene",
+            "5-Hydroxybenzo[a]pyrene",
+            "benzo[c]phenanthrene",
+            "chrysene",
+            "pleiadene",
+            "heptaphene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "circumtrindene",
+                "Dibenzo[h,rst]pentaphene",
+                "5-Hydroxybenzo[a]pyrene",
+                "benzo[c]phenanthrene",
+                "chrysene",
+                "pleiadene",
+                "heptaphene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chrysene",
+                "pleiadene",
+                "Vat Yellow 4",
+                "circumtrindene",
+                "heptaphene",
+                "benzo[c]phenanthrene",
+                "5-Hydroxybenzo[a]pyrene",
+                "Dibenzo[h,rst]pentaphene"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    }
+]

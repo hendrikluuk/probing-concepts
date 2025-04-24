@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "carboxamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "carboxamide refers to any amide with a carbonyl group attached to a nitrogen, whereas primary amide specifically refers to an amide where the nitrogen is bonded to only one carbon atom and two hydrogens.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "N-alkanamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "N-alkanamide refers to a specific type of amide derived from alkanes, whereas primary amide is a broader category that includes any amide with a single alkyl or aryl group attached to the nitrogen. Not all primary amides are N-alkanamides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "Primary amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Primary amide' and 'primary amide' are identical except for capitalization, and both refer to the same chemical group characterized by a carbonyl group bonded to a nitrogen atom with two hydrogen atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "Formamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Formamide is a specific compound which is a primary amide, but not all primary amides are formamide.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "carboxamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "carboxamide refers to a broader category of compounds containing the carboxamide functional group, which includes primary, secondary, and tertiary amides, whereas primary amide specifically refers to amides where the nitrogen atom is bonded to one hydrogen atom and one alkyl or aryl group.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "primary amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "primary amide and primary amide refer to the same chemical functional group",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "primary amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'primary amide' and 'primary amide' are identical and refer to the same chemical functional group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "Primary amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Primary amide' and 'primary amide' are identical except for capitalization, indicating they refer to the same chemical functional group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "monocarboxamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Monocarboxamide and primary amide both refer to amides with one carboxamide group, where the nitrogen atom is attached to one carbonyl group and one hydrogen atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "primary amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "primary amide and primary amide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "primary amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "primary amide and primary amide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "formamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "formamide is a specific example of a primary amide, but not all primary amides are formamide.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "primary amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "primary amide and primary amide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A primary amide is a specific type of amide that has one hydrogen atom attached to the nitrogen atom, whereas 'amide' refers to a broader category that includes primary, secondary, and tertiary amides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "acetamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "acetamide is a specific example of a primary amide, but not all primary amides are acetamide.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "primary amide",
+        "domain": "chemistry",
+        "response": "The largest conceptual category that includes only entities that comply with the definition is \"carboxylic acid.\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A primary amide is derived from a carboxylic acid by replacing the hydroxyl group with an amino group, but not all carboxylic acids are primary amides, and not all primary amides are carboxylic acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

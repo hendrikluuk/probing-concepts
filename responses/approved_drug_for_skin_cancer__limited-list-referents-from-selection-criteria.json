@@ -1,0 +1,574 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "Imiquimod (IMQ)",
+                "Vismodegib (SMO)",
+                "Cetuximab (C225)",
+                "Talimogene laherparepvec (T-VEC)",
+                "Nivolumab (Opdivo)",
+                "Pembrolizumab (Keytruda)",
+                "Ipilimumab (Yervoy)",
+                "Vemurafenib (PLX4032)",
+                "Dabrafenib (TAFINISIO)",
+                "Trametinib (GSK1120212)",
+                "Binimetinib (MEK162)",
+                "Encorafenib (LGX818)",
+                "Cobimetinib (CG-100649)",
+                "Selumetinib (AZD6244)",
+                "Braftovi (Encorafenib)",
+                "Mektovi (Binimetinib)",
+                "Talazoparib (BMN-673)",
+                "Taselisib (GDC-0032)",
+                "Alpelisib (BYL719)",
+                "Atezolizumab (MPDL3280A)",
+                "Durvalumab (MEDI4736)",
+                "Avelumab (MSB0010718C)",
+                "Trabectedin (Yondelis)"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Vismodegib (Erivedge)",
+                "Sonidegib (Odomzo)",
+                "Dabrafenib (Tafinlar)",
+                "Trametinib (Mekinist)",
+                "Vemurafenib (Zelboraf)",
+                "Cobimetinib (Cotellic)",
+                "Dacomitinib (Vizimpro)",
+                "Binimetinib (Mektovi)",
+                "Ametrine (combination of vemurafenib and cobimetinib)",
+                "Encorafenib (Braftovi)",
+                "Binimetinib (Mektovi) in combination with encorafenib",
+                "Cetuximab (Erbitux)",
+                "Paclitaxel (in combination with carboplatin)",
+                "Doxorubicin (in combination with other drugs)",
+                "Carboplatin (in combination with other drugs)",
+                "Nivolumab (Opdivo)",
+                "Pembrolizumab (Keytruda)",
+                "Cemiplimab (Libtayo)",
+                "Atezolizumab (Tecentriq)",
+                "Ipilimumab (Yervoy)",
+                "Combination of ipilimumab and nivolumab",
+                "Combination of pembrolizumab and cemiplimab",
+                "Combination of dabrafenib and trametinib",
+                "Combination of vemurafenib and cobimetinib"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Dacarbazine (DTIC)",
+                "Temozolomide (TMZ)",
+                "Cisplatin",
+                "Carboplatin",
+                "Vemurafenib",
+                "Ipilimumab",
+                "Nivolumab",
+                "Pembrolizumab",
+                "Atezolizumab",
+                "Cemiplimab",
+                "Lenvatinib",
+                "Sorafenib",
+                "Pembrolizumab",
+                "Sonidegib",
+                "Vismodegib",
+                "Talimogene laherparepvec (T-VEC)",
+                "Ibritumomab tiuxetan",
+                "Avelumab",
+                "Durvalumab",
+                "Cobimetinib",
+                "Trametinib",
+                "Sunitinib",
+                "Nivolumab",
+                "Bempegaldesleukin"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "gemma-3",
+            "response": [
+                "5-Fluorouracil (5-FU)",
+                "Imiquimod (Aldara)",
+                "Retinoids (e.g., Tretinoin)",
+                "Interferon alfa-2b (Intron A)",
+                "Vismodegib (Erivedge)",
+                "Sonidegib (Odomzo)",
+                "Mohs Surgery (procedure using drugs for local anesthesia/hemostasis)",
+                "Topical Bleomycin",
+                "Photodynamic Therapy (with aminolevulinic acid)",
+                "Fluorouracil cream (Efudex)",
+                "Ingenol Mebutate (Picato)",
+                "Diclofenac (Solaraze)",
+                "Metimazole (Tapazole) - for cutaneous T-cell lymphoma",
+                "Acitretin (Soriatane)",
+                "Isotretinoin (Accutane)",
+                "Bevacizumab (Avastin) - off-label use",
+                "Cetuximab (Erbitux) - off-label use",
+                "Pembrolizumab (Keytruda) - for advanced melanoma",
+                "Nivolumab (Opdivo) - for advanced melanoma",
+                "Binimetinib (Mektovi)",
+                "Trametinib (Mekinist)",
+                "Cobimetinib (Cotellic)",
+                "Vemurafenib (Zelboraf)",
+                "Dabrafenib (Tafinlar)"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Vemurafenib (PLX4032)",
+                "Dabrafenib (GSK2118436)",
+                "Trametinib (GSK1120212)",
+                "Cobimetinib (GDC-0973)",
+                "Binimetinib (MEK162)",
+                "Encorafenib (LGX818)",
+                "Pembrolizumab (MK-3475)",
+                "Nivolumab (BMS-936558)",
+                "Ipilimumab (MDX-010)",
+                "Atezolizumab (MPDL3280A)",
+                "Cemiplimab (REGN2810)",
+                "Sonidegib (LDE225)",
+                "Vismodegib (GDC-0449)",
+                "Talimogene laherparepvec (T-VEC)",
+                "Imiquimod (Aldara)",
+                "Fluorouracil (5-FU)",
+                "Methotrexate (MTX)",
+                "Paclitaxel (Taxol)",
+                "Docetaxel (Taxotere)",
+                "Carboplatin (Paraplatin)",
+                "Dacarbazine (DTIC)",
+                "Temozolomide (Temodar)",
+                "Avelumab (MSB0010718C)",
+                "Cemiplimab-rwlc (Libtayo)"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Pembrolizumab (Keytruda)",
+                "Nivolumab (Opdivo)",
+                "Dabrafenib (Tafinlar)",
+                "Trametinib (Mekinist)",
+                "Vemurafenib (Zelboraf)",
+                "Imatinib (Gleevec)",
+                "Atezolizumab (Tecentriq)",
+                "Durvalumab (Imfinzi)",
+                "Talimogene laherparepvec (T-VEC)",
+                "Cemiplimab (Libtayo)",
+                "Ertugliflozin (Steglatro)",
+                "Sunitinib (Sutent)",
+                "Sorafenib (Nexavar)",
+                "Regorafenib (Stivarga)",
+                "Lenvatinib (Lenvima)",
+                "BRAF inhibitors",
+                "MEK inhibitors",
+                "Ipilimumab (Yervoy)",
+                "Axitinib (Inlyta)",
+                "Nintedanib (Ofev)",
+                "Selumetinib (Koselugo)",
+                "Cabozantinib (Cabometyx)",
+                "Tazemetostat (Tazverik)",
+                "Ruxolitinib (Jakafi)",
+                "Brentuximab vedotin (Adcetris)"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Cetuximab (Erbitux)",
+                "Dabrafenib (Tafinlar)",
+                "Imiquimod (Aldara)",
+                "Interferon (Intron A)",
+                "Ipilimumab (Yervoy)",
+                "Nivolumab (Opdivo)",
+                "Pembrolizumab (Keytruda)",
+                "Vemurafenib (Zelboraf)",
+                "Trametinib (Mekinist)",
+                "Avelumab (Bavencio)",
+                "Cobimetinib (Cotellic)",
+                "Binimetinib (Mektovi)",
+                "Encorafenib (Braftovi)",
+                "Vismodegib (Erivedge)",
+                "Sonomedin-C (Increlex)",
+                "Peginterferon Alfa-2b (Sylatron)",
+                "Interleukin-2 (Proleukin)",
+                "Electroporation Therapy with Bleomycin (Electrochemotherapy)",
+                "Vindesine (Eldisine)",
+                "Mitomycin (Mutamycin)",
+                "Paclitaxel (Taxol)",
+                "Docetaxel (Taxotere)",
+                "Fluorouracil (Efudex)",
+                "Carboplatin (Paraplatin)"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "Pembrolizumab (Keytruda)",
+                "Nivolumab (Opdivo)",
+                "Ipilimumab (Yervoy)",
+                "Atezolizumab (Tecentriq)",
+                "Avelumab (Bavencio)",
+                "Durvalumab (Imfinzi)",
+                "Cemiplimab (Libtayo)",
+                "Cobimetinib (Cotellic)",
+                "Trametinib (Mekinist)",
+                "Dabrafenib (Tafinlar)",
+                "Vemurafenib (Zelboraf)",
+                "Encorafenib (Braftovi)",
+                "Binimetinib (Mektovi)",
+                "Cobimetinib (Cotellic)",
+                "Dabrafenib (Tafinlar)",
+                "Vemurafenib (Zelboraf)",
+                "Encorafenib (Braftovi)",
+                "Binimetinib (Mektovi)",
+                "Trametinib (Mekinist)",
+                "Dabrafenib (Tafinlar)",
+                "Vemurafenib (Zelboraf)",
+                "Encorafenib (Braftovi)",
+                "Binimetinib (Mektovi)"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Vemurafenib (Zelboraf)",
+                "Dabrafenib (Tafinlar)",
+                "Trametinib (Mekinist)",
+                "Pembrolizumab (Keytruda)",
+                "Nivolumab (Opdivo)",
+                "Ipilimumab (Yervoy)",
+                "Cemiplimab (Libtayo)",
+                "Imiquimod (Aldara)",
+                "Fluorouracil (5-FU, Efudex)",
+                "Sonidegib (Odomzo)",
+                "Vismodegib (Erivedge)",
+                "Cobimetinib (Cotellic)",
+                "Encorafenib (Braftovi)",
+                "Talimogene laherparepvec (T-VEC, Imlygic)",
+                "Binimetinib (Mektovi)",
+                "Atezolizumab (Tecentriq)",
+                "Afatinib (Gilotrif)",
+                "Erlotinib (Tarceva)",
+                "Axitinib (Inlyta)",
+                "Brentuximab vedotin (Adcetris)",
+                "Selumetinib (Koselugo)",
+                "Lenvatinib (Lenvima)",
+                "Capmatinib (Tabrecta)",
+                "Pemetrexed (Alimta)"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Vemurafenib (PLX4032)",
+                "Dabrafenib (GSK2118436)",
+                "Encorafenib (LGX818)",
+                "Trametinib (GSK1120212)",
+                "Cobimetinib (GDC-0973)",
+                "Binimetinib (MEK162)",
+                "Pembrolizumab (Keytruda)",
+                "Nivolumab (Opdivo)",
+                "Ipilimumab (Yervoy)",
+                "Atezolizumab (Tecentriq)",
+                "Avelumab (Bavencio)",
+                "Cemiplimab (Libtayo)",
+                "Talimogene laherparepvec (T-VEC)",
+                "Aldesleukin (Proleukin)",
+                "Dacarbazine (DTIC)",
+                "Temozolomide (Temodar)",
+                "Imatinib (Gleevec)",
+                "Sonidegib (Odomzo)",
+                "Vismodegib (Erivedge)",
+                "Imiquimod (Aldara)",
+                "Fluorouracil (5-FU)",
+                "Interferon alfa-2b (Intron A)",
+                "Alitretinoin (Panretin)",
+                "Bexarotene (Targretin)"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Aldesleukin (IL-2)",
+                "Avelumab (Bavencio)",
+                "Binimetinib (Mektovi)",
+                "Braftovi (Encorafenib)",
+                "Cemiplimab (Libtayo)",
+                "Cobimetinib (Cotellic)",
+                "Dabrafenib (Tafinlar)",
+                "Dacarbazine",
+                "Encorafenib (Braftovi)",
+                "Imatinib (Gleevec)",
+                "Ipilimumab (Yervoy)",
+                "Mekinist (Trametinib)",
+                "Nivolumab (Opdivo)",
+                "Pembrolizumab (Keytruda)",
+                "Talimogene Laherparepvec (T-VEC, Imlygic)",
+                "Temozolomide (Temodar)",
+                "Trametinib (Mekinist)",
+                "Vemurafenib (Zelboraf)"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Vismodegib (VMD)",
+                "Sonidegib (SDG)",
+                "Ingenol mebutate",
+                "Fluorouracil (5-FU)",
+                "Imiquimod",
+                "Diclofenac sodium",
+                "Aminolevulinic acid (ALA)",
+                "Methyl aminolevulinate (MAL)",
+                "Efudex (5-FU)",
+                "Carac (5-FU)",
+                "Aldara (imiquimod)",
+                "Metvixia (MAL)",
+                "Levulan (ALA)",
+                "Solaraze (diclofenac)",
+                "Erivedge (VMD)",
+                "Odomzo (SDG)",
+                "Picato (ingenol mebutate)",
+                "Zyclara (imiquimod)",
+                "Ameluz (ALA)",
+                "Aktipak (ALA)",
+                "Aklief (trifarotene)",
+                "Tazverik (tazemetostat)",
+                "Libtayo (cemiplimab)",
+                "Keytruda (pembrolizumab)"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "Vemurafenib (VEM)",
+                "Dabrafenib (DAB)",
+                "Trametinib (TRA)",
+                "Cobimetinib (COB)",
+                "Encorafenib (ENC)",
+                "Binimetinib (BIN)",
+                "Vismodegib (VIS)",
+                "Sonidegib (SON)",
+                "Cemiplimab (CEM)",
+                "Pembrolizumab (PEM)",
+                "Nivolumab (NIV)",
+                "Ipilimumab (IPI)",
+                "Atezolizumab (ATE)",
+                "Avelumab (AVE)",
+                "Durvalumab (DUR)",
+                "Dostarlimab (DOS)",
+                "Lambrolizumab (LAM)",
+                "Tremelimumab (TRE)",
+                "Relatlimab (REL)",
+                "Spartalizumab (SPA)",
+                "Tebentafusp (TEB)",
+                "Bempegaldesleukin (BEM)",
+                "Lifileucel (LIF)",
+                "Tebentafusp-tebn (TEB-T)"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "Bexarotene (Targretin) (BEX)",
+                "Aldesleukin (Proleukin)",
+                "Bortezomib (Velcade)",
+                "Carboplatin (Paraplatin)",
+                "Cisplatin",
+                "Cyclophosphamide (Cytoxan)",
+                "Dacarbazine (DTIC-Dome)",
+                "Doxorubicin (Adriamycin)",
+                "Etoposide (VePesid)",
+                "Ifosfamide (Ifex)",
+                "Ixabepilone (Ixempra)",
+                "Paclitaxel (Taxol)",
+                "Pemetrexed (Alimta)",
+                "Pralatrexate (Folotyn)",
+                "Rapamycin (Sirolimus)",
+                "Temsirolimus (Torisel)",
+                "Thalidomide",
+                "Topotecan (Hycamtin)",
+                "Vemurafenib (Zelboraf)",
+                "Vincristine (Oncovin)"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Abraxane (ABR-001079)",
+                "Akt inhibitor (Akt1/2)",
+                "Alecensa (CH5424802)",
+                "Bafetinib (INNO-406)",
+                "Bexarotene (Targretin)",
+                "Cabozantinib (XL184)",
+                "Cetuximab (Erbitux)",
+                "Cobimetinib (GDC-0973)",
+                "Dabrafenib (Tafinlar)",
+                "Encorafenib (LGX818)",
+                "Erlotinib (Tarceva)",
+                "Ibrutinib (Imbruvica)",
+                "Ipilimumab (Yervoy)",
+                "Lapatinib (Tykerb)",
+                "Nemorazole (PD-0325901)",
+                "Nivolumab (Opdivo)",
+                "Olaparib (Lynparza)",
+                "Pacritinib (SB1518)",
+                "Pembrolizumab (Keytruda)",
+                "Sonidegib (Odomzo)",
+                "Sorafenib (Nexavar)",
+                "Trametinib (Mekinist)",
+                "Vemurafenib (Zelboraf)",
+                "Vismodegib (Erivedge)"
+            ]
+        }
+    ],
+    "amazon.titan-text-express-v1": [
+        {
+            "call": "limited-list-referents-from-selection-criteria",
+            "context": {
+                "selection_criteria": "[\"it is a drug\", \"it has been approved to treat skin cancer\"]",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "approved drug for skin cancer"
+            },
+            "model": "amazon.titan-text-express-v1",
+            "response": "{\n    \"1\": \"Adalimumab\" (Humira) ,\n    \"2\": \"Alemtuzumab\" (Campath),\n    \"3\": \"Amevive\" (Alefacept),\n    \"4\": \"Amevive\" (Alefacept),\n    \"5\": \"Amevive\" (Alefacept),\n    \"6\": \"Amevive\" (Alefacept),\n    \"7\": \"Amevive\" (Alefacept),\n    \"8\": \"Amevive\" (Alefacept),\n    \"9\": \"Amevive\" (Alefacept),\n    \"10\": \"Amevive\" (Alefacept),\n    \"11\": \"Amevive\" (Alefacept),\n    \"12\": \"Amevive\" (Alefacept),\n    \"13\": \"Amevive\" (Alefacept),\n    \"14\": \"Amevive\" (Alefacept),\n    \"15\": \"Amevive\" (Alefacept),\n    \"16\": \"Amevive\" (Alefacept),\n    \"17\": \"Amevive\" (Alefacept),\n    \"18\": \"Amevive\" (Alefacept),\n    \"19\": \"Amevive\" (Alefacept),\n    \"20\": \"Amevive\" (Alefacept),\n    \"21\": \"Amevive\" (Alefacept),\n    \"22\": \"Amevive\" (Alefacept),\n    \"23\": \"Amevive\" (Alefacept),\n    \"24\": \"Amevive\" (Alefacept)\n}"
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "symporter",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A symporter transports two or more ions or molecules in the same direction across a membrane, whereas an antiporter transports them in opposite directions. They are distinct types of transport proteins with different mechanisms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept of a transport protein that exchanges one or more ions or molecules across a membrane in opposite directions.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiport",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antiport and antiporter refer to the same concept of transporting two or more different molecules or ions across a membrane in opposite directions",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "secondary active transporter",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antiporter is a type of secondary active transporter, but not all secondary active transporters are antiporters. Secondary active transporters include both antiporters and symporters.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antiporter and antiporter are identical terms and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antiporter and antiporter are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "Antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Antiporter' and 'antiporter' refer to the same concept, which is a type of transport protein. The difference is only in capitalization, not in meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "Antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Antiporter and antiporter refer to the same concept; the difference is only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of membrane transport protein that moves two or more ions or molecules in opposite directions across a biological membrane.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antiporter and antiporter are the same term, thus they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both are identical terms referring to the same concept in biology, specifically a type of transporter protein that moves two or more different ions or molecules across a membrane in opposite directions.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept, which is a type of protein that transports two or more ions or molecules in opposite directions across a membrane.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same biological concept where two or more ions or molecules are transported in opposite directions across a membrane.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "antiporter and antiporter are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "antiporter",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of protein that transports two different ions or molecules across a membrane in opposite directions.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "antiporter",
+        "domain": "biology",
+        "response": "Symporter",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A symporter and an antiporter are both types of transport proteins, but they function differently. A symporter transports two or more ions or molecules in the same direction across a membrane, while an antiporter transports them in opposite directions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

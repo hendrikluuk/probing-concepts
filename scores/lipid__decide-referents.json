@@ -1,0 +1,2655 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "21-HDoHE"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 2,
+            "FP": 7,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "(2E,6E)-farnesoic acid"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "O-octanoylcarnitine",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 3,
+            "FP": 11,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "Polyporusterone F"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "Polyporusterone F"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "21-HDoHE"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "cis-2-dodecenoic acid",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "21-HDoHE"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "Polyporusterone F"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "21-HDoHE",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "8-HPETE methyl ester",
+            "9(S)-HPODE"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "E,E-9-HpODE",
+                "8-HPETE methyl ester",
+                "9(S)-HPODE"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 11,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "Polyporusterone F",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "Polyporusterone F",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 12,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "21-HDoHE"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 0,
+            "FP": 12,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "Polyporusterone F"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "Polyporusterone F"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "21-HDoHE",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "mismatches": [
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 15,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "Polyporusterone F"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "Polyporusterone F"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "3-methylbut-3-enoyl-CoA",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "E,E-9-HpODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 4,
+            "FP": 10,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "Polyporusterone F",
+            "(-)-trichodermadione A",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester",
+                "(-)-trichodermadione A",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "Polyporusterone F",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 4,
+            "FP": 17,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "Polyporusterone F",
+            "(-)-trichodermadione A",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "Polyporusterone F",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [
+                "(-)-trichodermadione A"
+            ],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "21-HDoHE"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 12,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "Polyporusterone F",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "Polyporusterone F",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 3,
+            "FP": 7,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 15,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "Polyporusterone F",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "Polyporusterone F",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 3,
+            "FP": 9,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 15,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "Polyporusterone F",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "Polyporusterone F",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE"
+            ],
+            "mismatches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 4,
+            "FP": 11,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 11,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 4,
+            "FP": 9,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 16,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "3-methylbut-3-enoyl-CoA",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "3-methylbut-3-enoyl-CoA",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 5,
+            "FP": 11,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "(2E,6E)-farnesoic acid",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "mismatches": [
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 3,
+            "FP": 8,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 14,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "lipid hydroperoxide",
+        "domain": "chemistry",
+        "response": [
+            "15(S)-HPETE 2-glyceryl ester",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "8-HPETE methyl ester"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "8-HPETE methyl ester"
+            ],
+            "mismatches": [
+                "21-HDoHE"
+            ],
+            "true_referents": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "cis-2-dodecenoic acid",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "(5alpha,25S)-3-oxocholestan-26-oic acid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "mismatches": [
+                "15(S)-HPETE 2-glyceryl ester",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "E,E-9-HpODE",
+                "9(S)-HPODE",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "8-HPETE methyl ester",
+                "15-HETE-T"
+            ],
+            "true_referents": [
+                "(2E,6E)-farnesoic acid",
+                "21-HDoHE",
+                "cis-2-dodecenoic acid",
+                "Hexyl 2-methyl-4-pentenoate",
+                "O-octanoylcarnitine",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "TP": 5,
+            "FP": 10,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fatty acid derivative",
+        "domain": "chemistry",
+        "response": [
+            "Hexyl 2-methyl-4-pentenoate",
+            "cis-2-dodecenoic acid",
+            "3-methylbut-3-enoyl-CoA",
+            "O-octanoylcarnitine",
+            "15(S)-HPETE 2-glyceryl ester",
+            "(2E,6E)-farnesoic acid",
+            "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+            "13-HPODE",
+            "E,E-9-HpODE",
+            "21-HDoHE",
+            "9(S)-HPODE",
+            "8-HPETE methyl ester",
+            "15-HETE-T",
+            "N6-palmitoyl-L-lysine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylbut-3-enoyl-CoA",
+                "15-HETE-T"
+            ],
+            "mismatches": [
+                "Hexyl 2-methyl-4-pentenoate",
+                "cis-2-dodecenoic acid",
+                "O-octanoylcarnitine",
+                "15(S)-HPETE 2-glyceryl ester",
+                "(2E,6E)-farnesoic acid",
+                "(9S,10E,12Z,14E,16S)-9,16-bis(hydroperoxy)octadecatrienoic acid",
+                "13-HPODE",
+                "E,E-9-HpODE",
+                "21-HDoHE",
+                "9(S)-HPODE",
+                "8-HPETE methyl ester",
+                "N6-palmitoyl-L-lysine"
+            ],
+            "true_referents": [
+                "Actinofuranone F",
+                "(-)-trichodermadione A",
+                "3-methylbut-3-enoyl-CoA",
+                "oscr#23",
+                "15-HETE-T",
+                "2-[(5,5-dimethyl-6H-[1,2,4]triazolo[3,4-a]isoquinolin-3-yl)thio]acetic acid propan-2-yl ester"
+            ],
+            "TP": 2,
+            "FP": 12,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": [
+            "17beta-Amino-5alpha-androstan-11beta-ol",
+            "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+            "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+            "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid",
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "7beta-hydroxy-3-oxo-5alpha-cholan-24-oic acid",
+                "17beta-Amino-5alpha-androstan-11beta-ol",
+                "Polyporusterone F",
+                "(5alpha,25S)-3-oxocholestan-26-oic acid",
+                "3beta-hydroxy-4alpha-formyl-4beta-methylsteroid",
+                "3alpha,6alpha,7beta,12alpha-Tetrahydroxy-5beta-cholan-24-oic Acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    }
+]

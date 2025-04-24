@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "Toxin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A mycotoxin is a specific type of toxin produced by fungi, but not all toxins are mycotoxins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "Fungal toxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Fungal toxin and mycotoxin are synonyms, as mycotoxins are toxins produced by fungi.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "Mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Mycotoxin and mycotoxin are the same term, just with different capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are the same term, thus they are strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept of toxic compounds produced by fungi.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "mycotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "mycotoxin and mycotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "Myctotoxin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Myctotoxin appears to be a typographical error or uncommon variant of the term mycotoxin. Mycotoxin is the correct term for toxic compounds produced by fungi.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "mycotoxin",
+        "domain": "medicine",
+        "response": "Mushroom poison",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mushroom poison refers specifically to toxic substances produced by mushrooms, while mycotoxin is a broader term that includes all toxic compounds produced by fungi, not just mushrooms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

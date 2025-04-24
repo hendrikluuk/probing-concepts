@@ -1,0 +1,1671 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "N-methylbutan-2-amine",
+            "N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide",
+            "[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine",
+            "N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine",
+            "3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione",
+            "5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine",
+            "3-methylamino-1,2-propanediol",
+            "mephedrone",
+            "piperidine",
+            "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide",
+            "trimethylamine N-oxide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide",
+                "[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine",
+                "trimethylamine N-oxide"
+            ],
+            "mismatches": [
+                "N-methylbutan-2-amine",
+                "N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine",
+                "3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione",
+                "5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine",
+                "3-methylamino-1,2-propanediol",
+                "mephedrone",
+                "piperidine",
+                "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide"
+            ],
+            "true_referents": [
+                "N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide",
+                "LSM-12226",
+                "2-Anilinoethanol",
+                "[5-Methyl-2-(trifluoromethyl)-3-furyl]methylamine",
+                "3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile",
+                "thenalidine",
+                "trimethylamine N-oxide",
+                "2-chloro-1-[4-(1-phenylethyl)-1-piperazinyl]ethanone"
+            ],
+            "TP": 3,
+            "FP": 8,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "amphetamines",
+        "domain": "chemistry",
+        "response": [
+            "asperphenamate",
+            "alpha-Methyl-m-tyramine",
+            "benzphetamine",
+            "mephedrone",
+            "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide",
+            "LSM-12226"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "asperphenamate",
+                "alpha-Methyl-m-tyramine",
+                "benzphetamine",
+                "mephedrone",
+                "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide"
+            ],
+            "mismatches": [
+                "LSM-12226"
+            ],
+            "true_referents": [
+                "alpha-Methyl-m-tyramine",
+                "asperphenamate",
+                "clortermine",
+                "mephedrone",
+                "dextrofemine",
+                "Vitroprocine H",
+                "benzphetamine",
+                "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "secondary amine",
+        "domain": "chemistry",
+        "response": [
+            "nortriptyline",
+            "alpha-Methyl-m-tyramine",
+            "N-methylbutan-2-amine",
+            "3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile",
+            "N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide",
+            "N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine",
+            "3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione",
+            "5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine",
+            "3-methylamino-1,2-propanediol",
+            "piperidine",
+            "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "nortriptyline",
+                "N-methylbutan-2-amine",
+                "N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine",
+                "3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione",
+                "5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine",
+                "3-methylamino-1,2-propanediol",
+                "piperidine"
+            ],
+            "mismatches": [
+                "alpha-Methyl-m-tyramine",
+                "3-amino-5-[3-(methylamino)propyl]-1H-pyrazole-4-carbonitrile",
+                "N-[3-(N-ethylanilino)propyl]-2,4-dimethyl-6-oxo-3-pyrancarboxamide",
+                "N-1S-(4-methylaminophenylmethyl)-2-oxo-propyl acetamide"
+            ],
+            "true_referents": [
+                "N-methyl-5-pyridin-4-yl-1,3,4-thiadiazol-2-amine",
+                "3-amino-4-(propylamino)cyclobut-3-ene-1,2-dione",
+                "nortriptyline",
+                "(R)-(+)-pindolol",
+                "3-methylamino-1,2-propanediol",
+                "piperidine",
+                "N-methylbutan-2-amine",
+                "5-methyl-n-(pyridin-3-ylmethyl)isoxazol-3-amine"
+            ],
+            "TP": 7,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "mismatches": [
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "promazine sulfoxide",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "N-{[5-(2-furyl)thien-2-yl]methyl}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "promazine sulfoxide",
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "mismatches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-{[5-(2-furyl)thien-2-yl]methyl}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "(Z)-dehydrotyrosine",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(Z)-dehydrotyrosine",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "mismatches": [
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine"
+            ],
+            "mismatches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+            "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "mismatches": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-benzylhexadecanamide",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "(R)-fenpropidin",
+            "diphenylpyraline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ],
+            "mismatches": [
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine"
+            ],
+            "mismatches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "tributylamine"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-{[5-(2-furyl)thien-2-yl]methyl}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "mismatches": [
+                "N-{[5-(2-furyl)thien-2-yl]methyl}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "terbinafine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "(R)-fenpropidin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "(R)-fenpropidin"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "13-(2-methylcrotonoyloxy)lupanine",
+            "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+            "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "2-aminoethene-1-SO-thioperoxol",
+            "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+            "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+            "tributylamine",
+            "terbinafine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "(R)-fenpropidin",
+            "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "mismatches": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "2-aminoethene-1-SO-thioperoxol",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 6,
+            "FP": 10,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+            "(Z)-dehydrotyrosine",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "2-aminoethene-1-SO-thioperoxol",
+            "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "(Z)-dehydrotyrosine",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "2-aminoethene-1-SO-thioperoxol",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "terbinafine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "promazine sulfoxide",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "promazine sulfoxide",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "mismatches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ],
+            "mismatches": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "(R)-fenpropidin",
+            "diphenylpyraline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "13-(2-methylcrotonoyloxy)lupanine",
+            "promazine sulfoxide",
+            "EPH",
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "flupyradifurone",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "(R)-fenpropidin",
+            "diphenylpyraline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "promazine sulfoxide",
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ],
+            "mismatches": [
+                "EPH",
+                "flupyradifurone"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 7,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+            "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ],
+            "mismatches": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "terbinafine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "(R)-fenpropidin",
+            "diphenylpyraline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "13-(2-methylcrotonoyloxy)lupanine",
+            "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+            "promazine sulfoxide",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "tributylamine",
+            "terbinafine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "flupyradifurone",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "(R)-fenpropidin",
+            "diphenylpyraline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "promazine sulfoxide",
+                "tributylamine",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin",
+                "diphenylpyraline"
+            ],
+            "mismatches": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "flupyradifurone",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 8,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "(R)-fenpropidin",
+            "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ],
+            "mismatches": [
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "(R)-fenpropidin"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ],
+            "mismatches": [
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "13-(2-methylcrotonoyloxy)lupanine",
+            "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "(Z)-dehydrotyrosine",
+            "2-aminoethene-1-SO-thioperoxol",
+            "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "2-aminoethene-1-SO-thioperoxol",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one"
+            ],
+            "mismatches": [
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "mismatches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline"
+            ],
+            "mismatches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "enamine",
+        "domain": "chemistry",
+        "response": [
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "mismatches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "2-aminoethene-1-SO-thioperoxol",
+                "2,5-bis(2-hydroxyethylamino)-3,6-diaziridinylbenzoquinone",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine",
+                "(Z)-dehydrotyrosine",
+                "flupyradifurone",
+                "4-[(5-oxo-2-phenyl-1,3-oxazol-4-ylidene)methylamino]but-2-enoic acid",
+                "4-[1-(benzylamino)ethylidene]-2-(2,4-dibromophenyl)-5-methyl-2,4-dihydropyrazol-3-one",
+                "diaziquone"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alkylamines",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "mismatches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "3-methyl-4-[(4'-methyl[2,2'-bipyridin]-4-yl)imino]but-2-en-2-amine"
+            ],
+            "true_referents": [
+                "3-(3-bromoanilino)-1-(5-methyl-2-furanyl)-1-propanone",
+                "4-(2-Thienylmethyl)-1lambda~6~,4-thiazinane-1,1-dione",
+                "7-[(3-chloro-6-methyl-5,5-dioxo-11H-benzo[c][2,1]benzothiazepin-11-yl)amino]-N-hydroxyheptanamide",
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "[3-(phenylmethyl)-2,4-dihydro-1H-1,3,5-triazin-6-yl]cyanamide",
+                "N-benzylhexadecanamide",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+                "EPH"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tertiary amine",
+        "domain": "chemistry",
+        "response": [
+            "tributylamine",
+            "N-methyl-1,2,3,4-tetrahydroquinoline",
+            "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+            "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine",
+            "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+            "diphenylpyraline"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tributylamine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "diphenylpyraline"
+            ],
+            "mismatches": [
+                "N-(4,6-dimethyl-2-pyrimidinyl)-1,3-bis(phenylmethyl)-2,4-dihydro-1,3,5-triazin-6-amine",
+                "N-\\{[5-(2-furyl)thien-2-yl]methyl\\}-N-methylamine"
+            ],
+            "true_referents": [
+                "promazine sulfoxide",
+                "terbinafine",
+                "N-methyl-1,2,3,4-tetrahydroquinoline",
+                "diphenylpyraline",
+                "13-(2-methylcrotonoyloxy)lupanine",
+                "tributylamine",
+                "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
+                "(R)-fenpropidin"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    }
+]

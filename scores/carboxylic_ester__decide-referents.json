@@ -1,0 +1,1904 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "parbenate",
+            "TMC-135B",
+            "(-)-trans-allethrin",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "TMC-135B",
+                "(-)-trans-allethrin",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [
+                "parbenate"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate",
+            "fluticasone propionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate",
+                "fluticasone propionate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "TMC-135B",
+            "(-)-trans-allethrin",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "TMC-135B",
+                "(-)-trans-allethrin",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate",
+            "betamethasone dipropionate",
+            "fluticasone propionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "fluticasone propionate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "(-)-trans-allethrin",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-trans-allethrin",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate",
+            "betamethasone dipropionate",
+            "fluticasone propionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "fluticasone propionate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "parbenate",
+            "(-)-trans-allethrin",
+            "cinerin II",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [
+                "parbenate"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "fluticasone propionate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fluticasone propionate",
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "parbenate",
+            "permethrin",
+            "(-)-trans-allethrin",
+            "cinerin II",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "permethrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [
+                "parbenate"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "long-chain fatty acid ethyl ester",
+            "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+            "ethyl arachidate",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl arachidate",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 0,
+            "FP": 9,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "betamethasone dipropionate",
+            "fluticasone propionate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "betamethasone dipropionate",
+                "fluticasone propionate",
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-palmityl-2-acyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [
+                "1-palmityl-2-acyl-3-capryloyl-sn-glycerol"
+            ],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "parbenate",
+            "permethrin",
+            "(-)-trans-allethrin",
+            "cinerin II",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "permethrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [
+                "parbenate"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "betamethasone dipropionate",
+            "fluticasone propionate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "betamethasone dipropionate",
+                "fluticasone propionate",
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "parbenate",
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "parbenate",
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "parbenate",
+            "permethrin",
+            "(-)-trans-allethrin",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "permethrin",
+                "(-)-trans-allethrin",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [
+                "parbenate"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "parbenate",
+            "fluticasone propionate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "fluticasone propionate",
+                "hexyl propanoate"
+            ],
+            "mismatches": [
+                "parbenate"
+            ],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "permethrin",
+            "(-)-trans-allethrin",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "permethrin",
+                "(-)-trans-allethrin",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin"
+            ],
+            "mismatches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol"
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            ""
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                ""
+            ],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+            "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "hexyl propanoate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cyclopropanecarboxylate ester",
+        "domain": "chemistry",
+        "response": [
+            "TMC-135B",
+            "(-)-trans-allethrin",
+            "(1R)-cis-imiprothrin",
+            "(1R)-cis-(alphaS)-cyfluthrin",
+            "cinerin II"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "TMC-135B",
+                "(-)-trans-allethrin",
+                "(1R)-cis-imiprothrin",
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "cinerin II"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(1R)-cis-(alphaS)-cyfluthrin",
+                "(1R)-cis-imiprothrin",
+                "(-)-trans-allethrin",
+                "cinerin II",
+                "permethrin",
+                "TMC-135B"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "propanoate ester",
+        "domain": "chemistry",
+        "response": [
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hexyl propanoate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "fluticasone propionate",
+                "ananolignan G",
+                "hexyl propanoate",
+                "betamethasone dipropionate",
+                "scopolamine",
+                "dextropropoxyphene"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "1-alkyl-2-acylglycerol",
+        "domain": "chemistry",
+        "response": [
+            "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+            "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+            "1-(alk-1-enyl)-2-acyl-sn-glycerol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-hexadecyl-2-acetyl-3-decanoyl-sn-glycerol",
+                "1-O-hexadecyl-2-O-lauroyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-stearoyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-myristoyl-sn-glycerol",
+                "1-(alk-1-enyl)-2-acyl-sn-glycerol",
+                "1-palmityl-2-acetyl-3-capryloyl-sn-glycerol"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ethyl ester",
+        "domain": "chemistry",
+        "response": [
+            "long-chain fatty acid ethyl ester",
+            "ethyl arachidate",
+            "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate",
+            "hexyl propanoate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "long-chain fatty acid ethyl ester",
+                "ethyl arachidate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "mismatches": [
+                "hexyl propanoate"
+            ],
+            "true_referents": [
+                "nitrendipine",
+                "parbenate",
+                "ethyl arachidate",
+                "long-chain fatty acid ethyl ester",
+                "diethyl 2-[(dimethoxyphosphorothioyl)thio]succinate",
+                "ethyl 2-amino-4-hydroxypyrimidine-5-carboxylate"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    }
+]

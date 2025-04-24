@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "unfolded protein response factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An unfolded protein response factor is a regulatory element involved in the unfolded protein response, while an unfolded protein response protein is a broader term that includes any protein involved in the unfolded protein response, including but not limited to regulatory factors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "unfolded protein response (UPR) sensor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An unfolded protein response (UPR) sensor is a specific type of protein that detects misfolded proteins in the endoplasmic reticulum, whereas an unfolded protein response protein could refer to any protein involved in the UPR pathway, not necessarily a sensor.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "Unfolded Protein Response (UPR) protein",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Unfolded Protein Response (UPR) protein' and 'unfolded protein response protein' refer to the same concept, with the latter being a non-abbreviated form of the former.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "ER stress sensor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ER stress sensors are a subset of proteins involved in the unfolded protein response, but not all unfolded protein response proteins are ER stress sensors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "unfolded protein response",
+        "judgement": {
+            "equivalent": false,
+            "reason": "The unfolded protein response is a cellular stress response related to the endoplasmic reticulum stress, whereas an unfolded protein response protein refers to specific proteins involved in this response. Not all aspects of the unfolded protein response are limited to these proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "unfolded protein response (UPR) sensor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An unfolded protein response (UPR) sensor is a specific type of protein involved in detecting misfolded proteins, whereas an unfolded protein response protein can refer to any protein involved in the UPR pathway, not just the sensors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "Unfolded protein response signal",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Unfolded protein response signal refers to the signaling pathway activated in response to unfolded proteins in the endoplasmic reticulum, whereas unfolded protein response protein refers to the proteins involved in or affected by this pathway. They are related but not equivalent concepts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "ER stress sensor protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ER stress sensor proteins are involved in detecting stress in the endoplasmic reticulum, while unfolded protein response proteins are involved in the broader response to this stress. Not all unfolded protein response proteins are ER stress sensor proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "ER stress sensor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ER stress sensors are a type of protein that detect stress in the endoplasmic reticulum, initiating the unfolded protein response. However, not all proteins involved in the unfolded protein response are ER stress sensors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "ER stress sensor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ER stress sensors are proteins that detect stress in the endoplasmic reticulum, while unfolded protein response proteins are involved in the broader response to such stress. Not all ER stress sensors are unfolded protein response proteins, and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "ER stress sensor protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ER stress sensor proteins are a subset of proteins involved in the unfolded protein response, but not all unfolded protein response proteins are ER stress sensor proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "ER stress protein",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ER stress proteins are involved in the unfolded protein response, but not all ER stress proteins are unfolded protein response proteins. The unfolded protein response is a specific cellular response to ER stress.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "unfolded protein response",
+        "judgement": {
+            "equivalent": false,
+            "reason": "unfolded protein response is a cellular stress response related to the endoplasmic reticulum stress, while unfolded protein response protein refers to specific proteins involved in this response. Not all aspects of the unfolded protein response are proteins, and not all proteins are involved in the unfolded protein response.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "unfolded protein response regulator",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An unfolded protein response regulator is a type of protein that regulates the unfolded protein response, but not all proteins involved in the unfolded protein response are regulators.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "ER stress sensor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ER stress sensors are a type of protein involved in detecting stress in the endoplasmic reticulum, which can trigger the unfolded protein response, but not all proteins involved in the unfolded protein response are ER stress sensors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "unfolded protein response protein",
+        "domain": "biology",
+        "response": "Endoplasmic reticulum stress",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Endoplasmic reticulum stress refers to a condition where the ER is overwhelmed with unfolded or misfolded proteins, triggering a cellular response. The unfolded protein response is a specific cellular reaction to ER stress, but not all aspects of ER stress are limited to unfolded protein response proteins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

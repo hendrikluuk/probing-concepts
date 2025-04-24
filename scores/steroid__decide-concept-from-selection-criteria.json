@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "M steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "M steroid is a specific type of steroid, but not all steroids are M steroids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same class of organic compounds characterized by a specific molecular structure, hence they are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same class of organic compounds characterized by a specific molecular structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "Steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Steroid and steroid are the same term, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "steroid and steroid are the same term and refer to the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same class of organic compounds characterized by a specific molecular structure.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "Steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Steroid and steroid refer to the same class of organic compounds, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "steroid and steroid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "steroid and steroid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "steroid and steroid are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'steroid' and 'steroid' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same class of organic compounds characterized by a molecular structure with four rings of carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'steroid' and 'steroid' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "steroid",
+        "domain": "chemistry",
+        "response": "Cannabinoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cannabinoids and steroids are distinct classes of organic compounds with different structures and functions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

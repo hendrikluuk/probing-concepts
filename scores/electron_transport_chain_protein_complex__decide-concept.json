@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "Oxidative phosphorylation complex",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Oxidative phosphorylation involves the electron transport chain, but it also includes ATP synthesis, which is not part of the electron transport chain protein complex. The electron transport chain protein complex is a component of oxidative phosphorylation but does not encompass the entire process.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "electron transport chain",
+        "judgement": {
+            "equivalent": false,
+            "reason": "The electron transport chain refers to the entire series of complexes and molecules involved in electron transfer, while an electron transport chain protein complex refers to individual complexes within the chain. Not all components of the electron transport chain are protein complexes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "ATP synthase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ATP synthase is an enzyme that synthesizes ATP, whereas the electron transport chain protein complex refers to a series of complexes involved in electron transport and proton pumping. ATP synthase is part of the process but not equivalent to the entire electron transport chain.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "Electron transport chain complex",
+        "judgement": {
+            "equivalent": true,
+            "reason": "In the context of cellular biology, 'electron transport chain complex' and 'electron transport chain protein complex' refer to the same set of protein complexes involved in the electron transport chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "ATP synthase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ATP synthase is a specific enzyme that synthesizes ATP, while the electron transport chain protein complex refers to a series of complexes involved in electron transport and energy production. ATP synthase is part of the electron transport chain but not all electron transport chain protein complexes are ATP synthase.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "ATP synthase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ATP synthase is an enzyme that synthesizes ATP, while the electron transport chain protein complex refers to a series of complexes involved in electron transport and energy production. ATP synthase is part of the electron transport chain but not all electron transport chain protein complexes are ATP synthase.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "ATP synthase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ATP synthase is an enzyme that synthesizes ATP, while the electron transport chain protein complex consists of multiple proteins involved in electron transport and ATP synthesis; ATP synthase is part of the electron transport chain but not all electron transport chain proteins are ATP synthase.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "ATP synthase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ATP synthase is an enzyme that synthesizes ATP and is part of the oxidative phosphorylation process, but it is not a protein complex of the electron transport chain. The electron transport chain consists of different protein complexes involved in electron transfer, while ATP synthase is responsible for ATP production.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "electron transport chain complex",
+        "judgement": {
+            "equivalent": true,
+            "reason": "electron transport chain complex and electron transport chain protein complex refer to the same set of protein complexes involved in the electron transport chain.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "electron transport chain complex",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'electron transport chain complex' and 'electron transport chain protein complex' refer to the same structures within the electron transport chain, as these complexes are composed of proteins.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "ATP synthase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ATP synthase is an enzyme that synthesizes ATP, but it is not part of the electron transport chain protein complexes, which are involved in electron transfer and creating a proton gradient for ATP synthesis.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "electron transport chain",
+        "judgement": {
+            "equivalent": false,
+            "reason": "The electron transport chain refers to a series of complexes and molecules that transfer electrons, while an electron transport chain protein complex refers to specific protein complexes within that chain. Not all components of the electron transport chain are protein complexes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "ATP synthase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ATP synthase is a specific enzyme that synthesizes ATP, while the electron transport chain protein complex refers to a group of proteins involved in electron transport and ATP production. Not all components of the electron transport chain are ATP synthase.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "Complex V",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Complex V is one of the protein complexes in the electron transport chain, but the electron transport chain consists of multiple complexes, not just Complex V.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "Electron transport chain complex",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Electron transport chain complex' and 'electron transport chain protein complex' refer to the same set of protein complexes involved in the electron transport chain process in cellular respiration.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "electron transport chain protein complex",
+        "domain": "biology",
+        "response": "Concept: \"mitochondrial respiratory chain complex I\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "mitochondrial respiratory chain complex I is a specific protein complex within the electron transport chain, but the electron transport chain includes other complexes as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

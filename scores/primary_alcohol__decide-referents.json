@@ -1,0 +1,1645 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "9,10,18-trihydroxyoctadecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+            "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "9,10,18-trihydroxyoctadecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+            "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "16-hydroxyhexadecanoyl-CoA",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "16-hydroxyhexadecanoyl-CoA",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "16-hydroxyhexadecanoyl-CoA",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(3R)-3,13-dihydroxytridecanoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+            "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "9,10,18-trihydroxyoctadecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "16-hydroxyhexadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [
+                "16-hydroxyhexadecanoic acid"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "16-hydroxyhexadecanoyl-CoA",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-Gluconyl ethanolamine",
+            "palmitoyl ethanolamide",
+            "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+            "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-Gluconyl ethanolamine",
+                "palmitoyl ethanolamide",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-Gluconyl ethanolamine",
+            "palmitoyl ethanolamide",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-Gluconyl ethanolamine",
+                "palmitoyl ethanolamide",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "16-hydroxyhexadecanoyl-CoA",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "16-hydroxyhexadecanoyl-CoA",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "N-(20-hydroxyarachidonoyl)ethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid"
+            ],
+            "mismatches": [
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "N-(20-hydroxyarachidonoyl)ethanolamine"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "palmitoyl ethanolamide",
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "Tricosanoyl-EA",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "palmitoyl ethanolamide",
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "Tricosanoyl-EA",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "farnesol",
+        "domain": "chemistry",
+        "response": [
+            "(2-cis,6-trans)-farnesol",
+            "(2-trans,6-cis)-farnesol",
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "(2E,6E)-farnesyl monophosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(2-cis,6-trans)-farnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2E,6E)-farnesyl monophosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "yanuthone K",
+                "yanuthone L",
+                "(2E,6E,10E)-omega-hydroxyfarnesol",
+                "(2-trans,6-cis)-farnesol",
+                "(2-cis,6-trans)-farnesol",
+                "(2E,6E)-farnesyl monophosphate",
+                "yanuthone M",
+                "yanuthone X1"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "omega-hydroxy fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "(2E,6E,10E)-omega-hydroxyfarnesol",
+            "9,10,18-trihydroxyoctadecanoic acid",
+            "(3R)-3,13-dihydroxytridecanoic acid",
+            "16-hydroxyhexadecanoyl-CoA"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "16-hydroxyhexadecanoyl-CoA"
+            ],
+            "mismatches": [
+                "(2E,6E,10E)-omega-hydroxyfarnesol"
+            ],
+            "true_referents": [
+                "16-hydroxyhexadecanoyl-CoA",
+                "9,10,18-trihydroxyoctadecanoic acid",
+                "(3R)-3,13-dihydroxytridecanoic acid",
+                "bhos#16",
+                "bhos#26",
+                "ibho#16",
+                "icos#17",
+                "ibho#18"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ethanolamine",
+        "domain": "chemistry",
+        "response": [
+            "N-Gluconyl ethanolamine",
+            "N-(20-hydroxyarachidonoyl)ethanolamine",
+            "palmitoyl ethanolamide",
+            "7,10,13,16-Docosatetraenoylethanolamine",
+            "Tricosanoyl-EA"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-Gluconyl ethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "palmitoyl ethanolamide",
+                "7,10,13,16-Docosatetraenoylethanolamine",
+                "Tricosanoyl-EA",
+                "N-Gluconyl ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-8,11,14-trienamide",
+                "N-(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoylethanolamine",
+                "N-(20-hydroxyarachidonoyl)ethanolamine",
+                "N-(2-hydroxyethyl)eicosa-5,8,11-trienamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    }
+]

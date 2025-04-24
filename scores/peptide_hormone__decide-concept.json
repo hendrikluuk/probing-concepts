@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "peptide hormone and peptide hormone are the same term and thus are strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A peptide hormone is a type of hormone, but not all hormones are peptide hormones. Hormones can also be steroids or other types of molecules.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "Peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Peptide hormone and peptide hormone are the same term with different capitalization, thus they are equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "Peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Peptide hormone' and 'peptide hormone' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "peptide hormone and peptide hormone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "peptide hormone and peptide hormone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "Peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Peptide hormone' and 'peptide hormone' refer to the same concept, just differing in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "Peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Peptide hormone' and 'peptide hormone' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "peptide hormone and peptide hormone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "peptide hormone and peptide hormone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "peptide hormone and peptide hormone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "neuropeptide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A neuropeptide is a type of peptide that acts as a neurotransmitter, whereas a peptide hormone is a peptide that acts as a hormone. Not all neuropeptides are peptide hormones and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "peptide hormone is a type of hormone, but not all hormones are peptide hormones",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "peptide hormone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "hormone peptide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "hormone peptide and peptide hormone are different ways to refer to the same concept, which is a peptide that functions as a hormone.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "peptide hormone",
+        "domain": "biology",
+        "response": "Hormone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A peptide hormone is a type of hormone, but not all hormones are peptide hormones. Hormones can also be steroid hormones or amine hormones, among others.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

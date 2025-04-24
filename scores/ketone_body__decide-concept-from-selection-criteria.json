@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ketone refers to a class of organic compounds characterized by a carbonyl group bonded to two hydrocarbon groups, whereas ketone bodies are specific compounds (acetoacetate, beta-hydroxybutyrate, and acetone) produced during the metabolism of fats.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "keto acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A keto acid is an organic compound that contains a ketone group and a carboxylic acid group, while a ketone body refers to specific compounds (acetoacetate, beta-hydroxybutyrate, and acetone) produced during the metabolism of fats. Not all keto acids are ketone bodies and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Ketone body' and 'ketone body' are identical in meaning; the difference is only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ketone bodies and ketone body refer to the same group of compounds; the difference is only in singular versus plural.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same chemical compounds produced during the breakdown of fats in the liver.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone is a type of organic compound characterized by a carbonyl group bonded to two carbon atoms, while a ketone body is a specific type of molecule (such as acetoacetate, beta-hydroxybutyrate, and acetone) produced during fat metabolism. Not all ketones are ketone bodies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone is a type of organic compound characterized by a carbonyl group bonded to two carbon atoms, whereas a ketone body is a specific type of molecule produced during fat metabolism, which includes acetoacetate, beta-hydroxybutyrate, and acetone. Not all ketones are ketone bodies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies and ketone body refer to the same chemical compounds, just in singular and plural form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies is the plural form of ketone body, referring to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compounds produced during the metabolism of fatty acids.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept in biochemistry, specifically the molecules produced during ketogenesis.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compounds produced during the metabolism of fatty acids.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketone is a type of organic compound characterized by a carbonyl group bonded to two hydrocarbon groups, while a ketone body is a specific type of ketone produced during fat metabolism. Not all ketones are ketone bodies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'ketone body' and 'ketone body' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "ketone is a functional group characterized by a carbonyl group bonded to two carbon atoms, while ketone bodies are specific compounds (acetoacetate, beta-hydroxybutyrate, and acetone) produced during fat metabolism.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "lipid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ketone bodies are a specific type of molecule produced during fat metabolism and are not synonymous with lipids, which are a broader class of molecules including fats, oils, and other related compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

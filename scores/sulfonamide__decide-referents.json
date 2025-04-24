@@ -1,0 +1,1905 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "nitrososulfamethoxazole",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfisomidine",
+            "nitrososulfamethoxazole",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "sulfamethoxazole hydroxylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "nitrososulfamethoxazole",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 7,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfamethoxazole hydroxylamine",
+            "N-acetylsulfamethoxazole",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-acetylsulfamethoxazole"
+            ],
+            "mismatches": [
+                "sulfamethoxazole hydroxylamine"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "chlorimuron-ethyl(1-)",
+            "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide",
+            "tribenuron",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "chlorimuron-ethyl(1-)",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide",
+                "tribenuron",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfasalazine",
+            "sulfisomidine",
+            "nitrososulfamethoxazole",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "sulfamethoxazole hydroxylamine",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 7,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "nitrososulfamethoxazole",
+            "sulfasalazine",
+            "sulfisomidine",
+            "nitrososulfamethoxazole",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "sulfamethoxazole hydroxylamine",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfasalazine",
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "nitrososulfamethoxazole",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "mismatches": [
+                "sulfaperin",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 7,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "chlorimuron-ethyl(1-)",
+            "5-chloro-N-(2-{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl}-2-hydroxypropyl)-2-methoxybenzamide",
+            "tribenuron",
+            "metazosulfuron",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "chlorimuron-ethyl(1-)",
+                "5-chloro-N-(2-{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl}-2-hydroxypropyl)-2-methoxybenzamide",
+                "tribenuron",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [
+                "sulfaperin",
+                "metazosulfuron"
+            ],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfasalazine",
+                "N-succinylsulfathiazole",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole",
+                "prontosil"
+            ],
+            "mismatches": [
+                "sulfaperin",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone",
+                "sulfamethoxazole hydroxylamine"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "tribenuron",
+            "tribenuron methyl",
+            "metsulfuron methyl",
+            "(R)-metazosulfuron"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "tribenuron",
+                "tribenuron methyl",
+                "metsulfuron methyl",
+                "(R)-metazosulfuron"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfisomidine",
+            "nitrososulfamethoxazole",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 7,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "prontosil",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "sulfisomidine",
+            "sulfamethoxazole hydroxylamine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfasalazine",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "mismatches": [
+                "sulfaperin",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "tribenuron",
+            "chlorimuron-ethyl(1-)",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "tribenuron",
+                "chlorimuron-ethyl(1-)",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "prontosil",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "prontosil",
+                "sulfisomidine",
+                "sulfathiourea"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "prontosil"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "prontosil"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "tribenuron",
+            "chlorimuron-ethyl(1-)",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "tribenuron",
+                "chlorimuron-ethyl(1-)",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfometuron methyl",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "sulfometuron methyl",
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 6,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "prontosil",
+            "sulfaguanidine",
+            "sulfisomidine",
+            "sulfamethoxazole hydroxylamine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "prontosil",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "mismatches": [
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "tribenuron",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "tribenuron",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "nitrososulfamethoxazole",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfasalazine",
+            "sulfisomidine",
+            "nitrososulfamethoxazole",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "N-acetylsulfamethoxazole",
+            "sulfamethoxazole hydroxylamine",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "nitrososulfamethoxazole",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 7,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "tribenuron",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "tribenuron",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [
+                "sulfaperin"
+            ],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfasalazine",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "sulfasalazine",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfasalazine",
+                "N-succinylsulfathiazole",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "mismatches": [
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfometuron methyl",
+            "sulfasalazine",
+            "triflusulfuron",
+            "nitrososulfamethoxazole",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "tribenuron",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "chlorimuron-ethyl(1-)",
+            "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide",
+            "sulfasalazine",
+            "sulfisomidine",
+            "nitrososulfamethoxazole",
+            "sulfamethoxypyridazine",
+            "(R)-metazosulfuron",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "tribenuron methyl",
+            "sulfamethoxazole hydroxylamine",
+            "metsulfuron methyl",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "tribenuron",
+                "chlorimuron-ethyl(1-)",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide",
+                "(R)-metazosulfuron",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "nitrososulfamethoxazole",
+                "sulfaguanidine",
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfisomidine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxypyridazine",
+                "sulfamazone",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 8,
+            "FP": 12,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "nitrososulfamethoxazole",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "nitrososulfamethoxazole",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "tribenuron",
+            "chlorimuron-ethyl(1-)",
+            "5-chloro-N-(2-{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl}-2-hydroxypropyl)-2-methoxybenzamide",
+            "(R)-metazosulfuron",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "tribenuron",
+                "chlorimuron-ethyl(1-)",
+                "5-chloro-N-(2-{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl}-2-hydroxypropyl)-2-methoxybenzamide",
+                "(R)-metazosulfuron",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfaguanidine",
+            "prontosil",
+            "sulfamethoxypyridazine",
+            "sulfisomidine",
+            "sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "prontosil",
+                "sulfisomidine"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfaguanidine",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfisomidine"
+            ],
+            "mismatches": [
+                "sulfaperin",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "tribenuron",
+            "chlorimuron-ethyl(1-)",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "tribenuron",
+                "chlorimuron-ethyl(1-)",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfasalazine",
+            "prontosil",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "sulfamethoxazole hydroxylamine",
+            "sulfasalazine",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "sulfamethoxazole hydroxylamine",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine"
+            ],
+            "mismatches": [
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "sulfisomidine",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "prontosil",
+            "sulfaguanidine",
+            "sulfathiourea",
+            "sulfisomidine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "prontosil",
+                "sulfathiourea",
+                "sulfisomidine"
+            ],
+            "mismatches": [
+                "sulfaguanidine"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "tribenuron",
+            "chlorimuron-ethyl(1-)",
+            "(R)-metazosulfuron",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "tribenuron",
+                "chlorimuron-ethyl(1-)",
+                "(R)-metazosulfuron",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfisomidine",
+            "nitrososulfamethoxazole",
+            "sulfamethoxypyridazine",
+            "N-acetylsulfamethoxazole",
+            "sulfamethoxazole hydroxylamine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxypyridazine"
+            ],
+            "mismatches": [
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaguanidine",
+            "sulfamazone",
+            "sulfamethoxazole hydroxylamine",
+            "sulfamethoxypyridazine",
+            "sulfanilamide",
+            "sulfaperin",
+            "sulfasalazine",
+            "sulfathiourea",
+            "sulfisomidine",
+            "N-acetylsulfamethoxazole",
+            "N-succinylsulfathiazole",
+            "nitrososulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine"
+            ],
+            "mismatches": [
+                "sulfaguanidine",
+                "sulfamazone",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfanilamide",
+                "sulfaperin"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 6,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "chlorimuron-ethyl(1-)",
+            "tribenuron",
+            "metsulfuron methyl",
+            "tribenuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "metsulfuron methyl",
+                "tribenuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "prontosil",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "sulfasalazine",
+            "sulfisomidine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "sulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaguanidine",
+                "sulfasalazine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "sulfisomidine",
+                "sulfathiourea",
+                "sulfamethoxazole"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "prontosil",
+            "sulfaguanidine",
+            "sulfanilamide",
+            "sulfasalazine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "prontosil",
+                "sulfasalazine"
+            ],
+            "mismatches": [
+                "sulfaguanidine",
+                "sulfanilamide"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfometuron methyl",
+            "triflusulfuron",
+            "chlorimuron-ethyl(1-)",
+            "tribenuron",
+            "tribenuron methyl",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfometuron methyl",
+                "triflusulfuron",
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "tribenuron methyl",
+                "metsulfuron methyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaperin",
+            "sulfometuron methyl",
+            "sulfasalazine",
+            "nitrososulfamethoxazole",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole",
+            "metsulfuron methyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaperin",
+                "sulfasalazine",
+                "nitrososulfamethoxazole",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "sulfometuron methyl",
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole",
+                "metsulfuron methyl"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 7,
+            "FP": 6,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfasalazine",
+            "sulfamethoxazole",
+            "sulfaguanidine",
+            "N-succinylsulfathiazole",
+            "prontosil",
+            "sulfamethoxazole hydroxylamine",
+            "sulfamethoxypyridazine",
+            "sulfamazone",
+            "sulfathiourea",
+            "N-acetylsulfamethoxazole"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfasalazine",
+                "N-succinylsulfathiazole",
+                "prontosil",
+                "sulfathiourea",
+                "N-acetylsulfamethoxazole"
+            ],
+            "mismatches": [
+                "sulfamethoxazole",
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": "[\"sulfamethuron\", \"sulfamethoxazole hydroxylamine\", \"sulfamethoxypyridazine\", \"sulfamethoxazole\", \"sulfaperin\", \"sulfasalazine\", \"sulfaguanidine\", \"sulfamethoxazole hydroxylamine\", \"sulfamethuron\", \"sulfamethoxazole\", \"sulfamethoxypyridazine\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"sulfamethoxazole\", \"",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sulfonamide antibiotic",
+        "domain": "chemistry",
+        "response": [
+            "sulfaguanidine",
+            "sulfisomidine",
+            "sulfamethoxazole hydroxylamine",
+            "sulfamethoxypyridazine",
+            "prontosil",
+            "sulfamazone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfaguanidine",
+                "sulfamethoxazole hydroxylamine",
+                "sulfamethoxypyridazine",
+                "sulfamazone"
+            ],
+            "mismatches": [
+                "sulfisomidine",
+                "prontosil"
+            ],
+            "true_referents": [
+                "sulfamethoxazole hydroxylamine",
+                "sulfasalazine",
+                "sulfamazone",
+                "sulfaguanidine",
+                "sulfamethoxypyridazine",
+                "nitrososulfamethoxazole",
+                "sulfamethoxazole hydroxylamine",
+                "sulfaperin"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sulfanilamide",
+        "domain": "chemistry",
+        "response": [
+            "sulfaguanidine",
+            "sulfisomidine",
+            "sulfanilamide"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sulfisomidine"
+            ],
+            "mismatches": [
+                "sulfaguanidine",
+                "sulfanilamide"
+            ],
+            "true_referents": [
+                "sulfasalazine",
+                "sulfathiourea",
+                "nitrososulfamethoxazole",
+                "prontosil",
+                "N-succinylsulfathiazole",
+                "N-acetylsulfamethoxazole",
+                "sulfisomidine",
+                "N-acetylsulfamethoxazole"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "N-sulfonylurea",
+        "domain": "chemistry",
+        "response": [
+            "sulfameturon methyl",
+            "triflusulfuron",
+            "tribenuron",
+            "tribenuron methyl",
+            "metsulfuron methyl",
+            "(R)-metazosulfuron",
+            "chlorimuron-ethyl(1-)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "triflusulfuron",
+                "tribenuron",
+                "tribenuron methyl",
+                "metsulfuron methyl",
+                "(R)-metazosulfuron",
+                "chlorimuron-ethyl(1-)"
+            ],
+            "mismatches": [
+                "sulfameturon methyl"
+            ],
+            "true_referents": [
+                "chlorimuron-ethyl(1-)",
+                "tribenuron",
+                "sulfometuron methyl",
+                "metsulfuron methyl",
+                "triflusulfuron",
+                "tribenuron methyl",
+                "(R)-metazosulfuron",
+                "5-chloro-N-(2-\\{4-[(cyclohexylcarbamoyl)aminosulfonyl]phenyl\\}-2-hydroxypropyl)-2-methoxybenzamide"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    }
+]

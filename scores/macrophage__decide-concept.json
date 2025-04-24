@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "phagocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "macrophages are a type of phagocyte, but not all phagocytes are macrophages",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophages",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophages is the plural form of macrophage, referring to the same type of immune cell.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of immune cell in the body.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of immune cell, so they are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "Macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Macrophage and macrophage are the same term with different capitalization, referring to the same type of immune cell.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms, thus strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "Neutrophil",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neutrophils and macrophages are both types of white blood cells involved in the immune response, but they are distinct cell types with different functions and characteristics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "macrophage",
+        "judgement": {
+            "equivalent": true,
+            "reason": "macrophage and macrophage are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "macrophage",
+        "domain": "biology",
+        "response": "Concept: \"macrophage\"",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'Concept: macrophage' and 'macrophage' refer to the same cell type in the immune system, thus they are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

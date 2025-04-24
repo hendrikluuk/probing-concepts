@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt refer to the same group of salts derived from alkaline earth metals.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt of a weak acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Alkaline earth metal salt of a weak acid is a subset of alkaline earth salt; not all alkaline earth salts are salts of weak acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt are synonyms as they both refer to salts containing alkaline earth metals.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "Acid salt",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Acid salt refers to a salt formed by partial neutralization of a diprotic or polyprotic acid, while alkaline earth salt refers to salts of alkaline earth metals like calcium, magnesium, etc. They are not synonymous or interchangeable.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt refer to the same category of compounds, as 'earth metal' is implied in the context of alkaline earth elements.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt refer to the same group of salts derived from alkaline earth metals",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "Alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt are synonyms, both referring to salts derived from alkaline earth metals.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt refer to the same group of compounds, as alkaline earth metals are the only metals in the alkaline earth group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "basic salt",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A basic salt is a salt that contains a hydroxide ion and can be derived from a strong base and a weak acid, whereas an alkaline earth salt specifically refers to salts containing alkaline earth metals such as magnesium or calcium. Not all basic salts are alkaline earth salts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt are synonymous terms referring to salts formed from alkaline earth metals, such as beryllium, magnesium, calcium, strontium, barium, and radium.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt refer to salts derived from alkaline earth metals, so they are synonymous.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt refer to the same group of salts formed from alkaline earth metals",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal carbonate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "alkaline earth metal carbonate is a specific type of alkaline earth salt, but not all alkaline earth salts are carbonates",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt are synonymous terms referring to salts formed from alkaline earth metals.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "alkaline earth metal salt",
+        "judgement": {
+            "equivalent": true,
+            "reason": "alkaline earth metal salt and alkaline earth salt are synonymous terms for salts derived from alkaline earth metals",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "alkaline earth salt",
+        "domain": "chemistry",
+        "response": "salt",
+        "judgement": {
+            "equivalent": false,
+            "reason": "alkaline earth salt is a type of salt, but not all salts are alkaline earth salts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,2310 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "alpha Subunit Glycoprotein Hormones",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins",
+            "Equine Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "alpha Subunit Glycoprotein Hormones",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins",
+                "Equine Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "gamma-Lipotropin",
+            "MSH Release-Inhibiting Hormone",
+            "Deamino Arginine Vasopressin",
+            "alpha-Endorphin",
+            "beta-Endorphin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "gamma-Lipotropin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-Endorphin"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin",
+                "alpha-Endorphin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "alpha Subunit Glycoprotein Hormones",
+            "Follicle Stimulating Hormone",
+            "alpha Subunit Glycoprotein Hormones",
+            "gamma-Lipotropin",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "gamma-Lipotropin",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "MSH Release-Inhibiting Hormone",
+            "Deamino Arginine Vasopressin",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "gamma-Lipotropin",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin",
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Short-Acting Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Short-Acting Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "gamma-Lipotropin",
+            "Triptorelin Pamoate",
+            "Equine Gonadotropins",
+            "MSH Release-Inhibiting Hormone",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins",
+            "alpha-Endorphin",
+            "Deamino Arginine Vasopressin",
+            "beta-Endorphin",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-Endorphin",
+                "Deamino Arginine Vasopressin",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "gamma-Lipotropin",
+                "Triptorelin Pamoate",
+                "Equine Gonadotropins",
+                "MSH Release-Inhibiting Hormone",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins",
+                "beta-Endorphin",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 3,
+            "FP": 11,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "gamma-Lipotropin",
+            "MSH Release-Inhibiting Hormone",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "gamma-Lipotropin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-Endorphin",
+                "beta-MSH"
+            ],
+            "mismatches": [
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Short-Acting Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Short-Acting Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Follicle Stimulating Hormone",
+            "MSH Release-Inhibiting Hormone",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "MSH Release-Inhibiting Hormone",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "MSH Release-Inhibiting Hormone",
+            "alpha-Endorphin",
+            "Deamino Arginine Vasopressin",
+            "beta-Endorphin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-Endorphin"
+            ],
+            "mismatches": [
+                "alpha-Endorphin",
+                "Deamino Arginine Vasopressin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "MSH Release-Inhibiting Hormone",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Follicle Stimulating Hormone",
+                "MSH Release-Inhibiting Hormone",
+                "Pituitary Gonadotropins"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "MSH Release-Inhibiting Hormone",
+            "Deamino Arginine Vasopressin",
+            "beta-Endorphin",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-Endorphin",
+                "beta-MSH"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin",
+                "gamma-MSH"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Proinsulin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Proinsulin"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "gamma-Lipotropin",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "gamma-Lipotropin",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Triptorelin Pamoate",
+            "MSH Release-Inhibiting Hormone",
+            "Deamino Arginine Vasopressin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Proinsulin",
+            "Short-Acting Insulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "MSH Release-Inhibiting Hormone",
+            "Triptorelin Pamoate",
+            "Deamino Arginine Vasopressin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone",
+                "Triptorelin Pamoate"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Short-Acting Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Short-Acting Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "alpha Subunit Glycoprotein Hormones",
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "alpha Subunit Glycoprotein Hormones",
+            "gamma-Lipotropin",
+            "Triptorelin Pamoate",
+            "Equine Gonadotropins",
+            "MSH Release-Inhibiting Hormone",
+            "beta Subunit Follicle Stimulating Hormone",
+            "alpha-Endorphin",
+            "Deamino Arginine Vasopressin",
+            "beta-Endorphin",
+            "alpha Subunit Glycoprotein Hormones",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Deamino Arginine Vasopressin",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "gamma-Lipotropin",
+                "Triptorelin Pamoate",
+                "Equine Gonadotropins",
+                "MSH Release-Inhibiting Hormone",
+                "beta Subunit Follicle Stimulating Hormone",
+                "beta-Endorphin",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 4,
+            "FP": 10,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "MSH Release-Inhibiting Hormone",
+            "beta Subunit Follicle Stimulating Hormone",
+            "alpha Subunit Glycoprotein Hormones",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "mismatches": [
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "gamma-MSH"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Short-Acting Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Short-Acting Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "alpha Subunit Glycoprotein Hormones",
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "gamma-Lipotropin",
+            "Triptorelin Pamoate",
+            "Equine Gonadotropins",
+            "MSH Release-Inhibiting Hormone",
+            "beta Subunit Follicle Stimulating Hormone",
+            "alpha-Endorphin",
+            "Deamino Arginine Vasopressin",
+            "beta-Endorphin",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Deamino Arginine Vasopressin",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "gamma-Lipotropin",
+                "Triptorelin Pamoate",
+                "Equine Gonadotropins",
+                "MSH Release-Inhibiting Hormone",
+                "beta Subunit Follicle Stimulating Hormone",
+                "beta-Endorphin",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 4,
+            "FP": 11,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Triptorelin Pamoate",
+            "Deamino Arginine Vasopressin",
+            "MSH Release-Inhibiting Hormone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Short-Acting Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Short-Acting Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "alpha Subunit Glycoprotein Hormones",
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "gamma-Lipotropin",
+            "Equine Gonadotropins",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "beta-MSH",
+            "gamma-MSH",
+            "Deamino Arginine Vasopressin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin"
+            ],
+            "mismatches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "gamma-Lipotropin",
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins",
+                "beta-Endorphin",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Terlipressin",
+            "MSH Release-Inhibiting Hormone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "mismatches": [
+                "Terlipressin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Proinsulin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Proinsulin"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "alpha Subunit Glycoprotein Hormones",
+            "Follicle Stimulating Hormone",
+            "gamma-Lipotropin",
+            "beta Subunit Follicle Stimulating Hormone",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Follicle Stimulating Hormone",
+                "gamma-Lipotropin",
+                "beta Subunit Follicle Stimulating Hormone",
+                "beta-Endorphin",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "MSH Release-Inhibiting Hormone",
+            "Deamino Arginine Vasopressin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Short-Acting Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Short-Acting Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "alpha Subunit Glycoprotein Hormones",
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "gamma-Lipotropin",
+            "MSH Release-Inhibiting Hormone",
+            "beta Subunit Follicle Stimulating Hormone",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "alpha Subunit Glycoprotein Hormones",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "gamma-Lipotropin",
+                "MSH Release-Inhibiting Hormone",
+                "beta Subunit Follicle Stimulating Hormone",
+                "beta-Endorphin",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 3,
+            "FP": 9,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "MSH Release-Inhibiting Hormone",
+            "gamma-Lipotropin",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone",
+                "gamma-Lipotropin",
+                "beta-Endorphin",
+                "beta-MSH"
+            ],
+            "mismatches": [
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Proinsulin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Proinsulin"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Follicle Stimulating Hormone",
+            "alpha Subunit Glycoprotein Hormones",
+            "gamma-Lipotropin",
+            "Triptorelin Pamoate",
+            "Equine Gonadotropins",
+            "MSH Release-Inhibiting Hormone",
+            "beta Subunit Follicle Stimulating Hormone",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "alpha Subunit Glycoprotein Hormones",
+            "Pituitary Gonadotropins",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "gamma-Lipotropin",
+                "Triptorelin Pamoate",
+                "Equine Gonadotropins",
+                "MSH Release-Inhibiting Hormone",
+                "beta Subunit Follicle Stimulating Hormone",
+                "beta-Endorphin",
+                "Pituitary Gonadotropins",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 3,
+            "FP": 10,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "MSH Release-Inhibiting Hormone",
+            "Deamino Arginine Vasopressin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "mismatches": [
+                "Deamino Arginine Vasopressin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Human Isophane Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "alpha Subunit Glycoprotein Hormones",
+            "Triptorelin Pamoate",
+            "Equine Gonadotropins",
+            "beta Subunit Follicle Stimulating Hormone",
+            "Pituitary Gonadotropins",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Triptorelin Pamoate",
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins",
+                "beta-Endorphin"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 3,
+            "FP": 8,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins",
+            "alpha Subunit Glycoprotein Hormones",
+            "beta Subunit Follicle Stimulating Hormone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins",
+                "alpha Subunit Glycoprotein Hormones",
+                "beta Subunit Follicle Stimulating Hormone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "alpha Subunit Glycoprotein Hormones",
+            "MSH Release-Inhibiting Hormone",
+            "beta-MSH",
+            "gamma-MSH",
+            "alpha-Endorphin",
+            "beta-Endorphin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-MSH",
+                "beta-Endorphin"
+            ],
+            "mismatches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "gamma-MSH",
+                "alpha-Endorphin"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Insulin",
+            "Proinsulin",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "MSH Release-Inhibiting Hormone",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Proinsulin"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "alpha-Endorphin",
+                "beta-Endorphin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-MSH",
+                "gamma-MSH"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "alpha Subunit Glycoprotein Hormones",
+            "gamma-Lipotropin",
+            "Triptorelin Pamoate",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins",
+            "beta Subunit Follicle Stimulating Hormone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "gamma-Lipotropin",
+                "Triptorelin Pamoate",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Gonadotropins",
+        "domain": "biology",
+        "response": [
+            "Follicle Stimulating Hormone",
+            "Menotropins",
+            "Equine Gonadotropins",
+            "Pituitary Gonadotropins",
+            "beta Subunit Follicle Stimulating Hormone",
+            "alpha Subunit Glycoprotein Hormones"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Follicle Stimulating Hormone",
+                "Menotropins",
+                "Equine Gonadotropins",
+                "Pituitary Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Equine Gonadotropins",
+                "beta Subunit Follicle Stimulating Hormone",
+                "alpha Subunit Glycoprotein Hormones",
+                "Menotropins",
+                "Pituitary Gonadotropins",
+                "Follicle Stimulating Hormone"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Hypothalamic Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "gamma-Lipotropin",
+            "MSH Release-Inhibiting Hormone",
+            "alpha-Endorphin",
+            "beta-Endorphin",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Somatostatin",
+                "gamma-Lipotropin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-Endorphin",
+                "beta-MSH"
+            ],
+            "mismatches": [
+                "alpha-Endorphin",
+                "gamma-MSH"
+            ],
+            "true_referents": [
+                "Somatostatin",
+                "Triptorelin Pamoate",
+                "beta-Endorphin",
+                "gamma-Lipotropin",
+                "beta-MSH",
+                "MSH Release-Inhibiting Hormone"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Pancreatic Hormones",
+        "domain": "biology",
+        "response": [
+            "Insulin",
+            "Human Isophane Insulin",
+            "Short-Acting Insulin",
+            "Proinsulin",
+            "Isophane Insulin",
+            "Insulin Detemir",
+            "Somatostatin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Insulin",
+                "Human Isophane Insulin",
+                "Short-Acting Insulin",
+                "Proinsulin",
+                "Isophane Insulin",
+                "Insulin Detemir"
+            ],
+            "mismatches": [
+                "Somatostatin"
+            ],
+            "true_referents": [
+                "Human Isophane Insulin",
+                "Proinsulin",
+                "Short-Acting Insulin",
+                "Insulin Detemir",
+                "Isophane Insulin",
+                "Insulin"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Pituitary Hormones",
+        "domain": "biology",
+        "response": [
+            "Somatostatin",
+            "Follicle Stimulating Hormone",
+            "alpha Subunit Glycoprotein Hormones",
+            "Pituitary Gonadotropins",
+            "gamma-Lipotropin",
+            "MSH Release-Inhibiting Hormone",
+            "beta-MSH",
+            "gamma-MSH"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha Subunit Glycoprotein Hormones",
+                "gamma-MSH"
+            ],
+            "mismatches": [
+                "Somatostatin",
+                "Follicle Stimulating Hormone",
+                "Pituitary Gonadotropins",
+                "gamma-Lipotropin",
+                "MSH Release-Inhibiting Hormone",
+                "beta-MSH"
+            ],
+            "true_referents": [
+                "gamma-MSH",
+                "Deamino Arginine Vasopressin",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha Subunit Glycoprotein Hormones",
+                "alpha-Endorphin",
+                "Terlipressin"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 4
+        }
+    }
+]

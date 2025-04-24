@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "arylsulfonamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "arylsulfonamide is a specific type of sulfonamide, but not all sulfonamides are arylsulfonamides",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "Sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Sulfonamide and sulfonamide refer to the same class of compounds and are just different capitalizations of the same term.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "Sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Sulfonamide and sulfonamide refer to the same chemical compound class, with the difference being only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "Sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Sulfonamide and sulfonamide refer to the same chemical compound class, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "alkyl sulfonamide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "alkyl sulfonamide is a specific type of sulfonamide, but not all sulfonamides are alkyl sulfonamides",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide refer to the same chemical compound and are therefore identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "Sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Sulfonamide and sulfonamide are the same term, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are the same term and therefore identical in meaning",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are the same chemical compound, therefore they are strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "Sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Sulfonamide' and 'sulfonamide' refer to the same chemical compound class, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": " sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are the same term, referring to the same chemical group or compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "sulfonamide",
+        "domain": "chemistry",
+        "response": "sulfonamide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "sulfonamide and sulfonamide are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

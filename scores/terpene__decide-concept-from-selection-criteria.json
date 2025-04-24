@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "polyprenol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Polyprenol is a type of terpene, but not all terpenes are polyprenols. Terpenes are a large and diverse class of organic compounds, while polyprenols are a specific subset of terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Polyisoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Polyisoprene is a polymer of isoprene units and is classified as a type of rubber, while terpenes are a larger class of organic compounds made of isoprene units. Not all terpenes are polyisoprenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Terpene' and 'terpene' refer to the same class of organic compounds, with the only difference being the capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a broader class of compounds that also encompasses steroids and other related structures.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "polyterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A polyterpene is a polymer made up of terpene units, but not all terpenes are polyterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "hemiterpene polymer",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hemiterpene polymer is a specific type of polymer made from hemiterpenes, which are a subclass of terpenes. Not all terpenes are hemiterpene polymers.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a broader class of compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A terpene is a type of isoprenoid, but not all isoprenoids are terpenes. Isoprenoids include a broader category of compounds beyond just terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "polyterpene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A polyterpene is a polymer made up of terpene units, but not all terpenes are polyterpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "terpenoids are a subclass of terpenes that include additional functional groups, so not all terpenoids are terpenes and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "terpenoids are a large class of organic chemicals derived from terpenes, but not all terpenoids are terpenes as they can include modified terpenes with additional functional groups.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a broader class of compounds beyond just terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Terpene' and 'terpene' refer to the same class of organic compounds, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "limonene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "limonene is a specific type of terpene, but not all terpenes are limonene",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

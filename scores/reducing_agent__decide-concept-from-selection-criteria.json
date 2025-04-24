@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "oxidizing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxidizing agent gains electrons and is reduced in a chemical reaction, whereas a reducing agent loses electrons and is oxidized. They are opposite in function.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept in chemistry, which is a substance that donates electrons in a redox reaction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "Reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Reducing agent' and 'reducing agent' are identical except for capitalization and refer to the same concept in chemistry.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "Reductant",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Reductant and reducing agent are synonyms; both refer to a substance that donates electrons in a chemical reaction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "reducing agent and reducing agent are the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'reducing agent' and 'reducing agent' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "Reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Reducing agent' and 'reducing agent' are identical, differing only in capitalization, and thus are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "Reductant",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Reductant and reducing agent are synonyms; both refer to a substance that donates electrons in a chemical reaction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'reducing agent' and 'reducing agent' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept in chemistry, which is a substance that donates electrons to another substance in a redox chemical reaction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept in chemistry.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "oxidizing agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxidizing agent gains electrons and is reduced in a chemical reaction, while a reducing agent loses electrons and is oxidized. They are opposite in function.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept in chemistry, which is a substance that donates electrons to another substance, reducing its oxidation state.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reductant",
+        "judgement": {
+            "equivalent": true,
+            "reason": "reductant and reducing agent are synonyms and refer to a substance that donates electrons in a chemical reaction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "reducing agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "reducing agent and reducing agent are identical terms and therefore strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "reducing agent",
+        "domain": "chemistry",
+        "response": "Redox agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reducing agent is a type of redox agent that donates electrons, but a redox agent can also be an oxidizing agent which accepts electrons.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

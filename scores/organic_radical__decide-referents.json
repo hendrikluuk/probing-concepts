@@ -1,0 +1,2265 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "alpha-amino-acid radical cation",
+            "TOAC",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [
+                "alpha-amino-acid radical cation"
+            ],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "mismatches": [
+                "D-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "singlet methanediyl",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "singlet methanediyl",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "TOAC",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "mismatches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "organic radical cation",
+            "alpha-amino-acid radical cation",
+            "4-acetamido-TEMPO"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tyrosinyl radical cation",
+                "organic radical cation"
+            ],
+            "mismatches": [
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation",
+                "4-acetamido-TEMPO"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "methanuidyl",
+            "acyl carbene",
+            "singlet methanediyl",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "singlet methanediyl",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [
+                "methanuidyl"
+            ],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "TOAC",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "alpha-amino-acid radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "D-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "3-cyano-PROXYL",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation",
+            "organic radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation",
+                "organic radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "3-cyano-PROXYL",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "TOAC",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "D-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "L-tryptophanyl radical cation",
+                "organic radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "singlet methanediyl",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "organic radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "singlet methanediyl",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "D-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "methanuidyl",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "methaniumyl",
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "L-tyrosinyl radical cation",
+            "4-acetamido-TEMPO",
+            "singlet methanediyl",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation",
+            "TOAC",
+            "oxidooxomethyl",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "methanuidyl",
+                "D-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation",
+                "organic radical cation",
+                "methaniumyl",
+                "oxidooxomethyl"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical",
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "singlet methanediyl",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "TOAC",
+                "4-acetamido-TEMPO",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 6,
+            "FP": 10,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "4-acetamido-TEMPO",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-acetamido-TEMPO"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "D-tryptophanyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "D-tryptophanyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "L-tryptophanyl radical cation",
+                "organic radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "methaniumyl",
+            "1,3-dimethylimidazol-2-ylidene",
+            "singlet methanediyl",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [
+                "methaniumyl"
+            ],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "TOAC"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "mismatches": [
+                "TOAC"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation",
+            "methaniumyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "organic radical cation",
+                "L-tyrosinyl radical cation",
+                "methaniumyl"
+            ],
+            "mismatches": [
+                "L-tryptophanyl radical cation",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "singlet methanediyl",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "TOAC",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "L-tyrosinyl radical cation",
+            "4-acetamido-TEMPO",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation",
+            "TOAC",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "organic radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical cation",
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 3,
+            "FP": 9,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "methanuidyl",
+            "acyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "singlet methanediyl",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [
+                "methanuidyl"
+            ],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "TOAC",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "D-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "methaniumyl",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "L-tryptophanyl radical cation",
+                "organic radical cation",
+                "methaniumyl",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "singlet methanediyl",
+            "imidazol-2-ylidenes",
+            "imidoyl carbene",
+            "vinyl carbene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl",
+                "imidazol-2-ylidenes",
+                "imidoyl carbene",
+                "vinyl carbene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "TOAC",
+            "4-acetamido-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "mismatches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "organic radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "imidoyl carbene",
+            "imidazol-2-ylidenes",
+            "singlet methanediyl",
+            "vinyl carbene",
+            "1,3-dimethylimidazol-2-ylidene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "imidoyl carbene",
+                "imidazol-2-ylidenes",
+                "singlet methanediyl",
+                "vinyl carbene",
+                "1,3-dimethylimidazol-2-ylidene"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "TOAC",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "TOAC",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "mismatches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "organic radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tryptophanyl radical cation",
+                "organic radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "imidoyl carbene",
+            "singlet methanediyl",
+            "vinyl carbene",
+            "1,3-dimethylimidazol-2-ylidene",
+            "imidazol-2-ylidenes"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "imidoyl carbene",
+                "singlet methanediyl",
+                "vinyl carbene",
+                "1,3-dimethylimidazol-2-ylidene",
+                "imidazol-2-ylidenes"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "3-cyano-PROXYL",
+            "4-oxo-TEMPO",
+            "3-(2-iodacetamido)-PROXYL"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "D-tyrosinyl radical cation",
+                "3-cyano-PROXYL",
+                "4-oxo-TEMPO",
+                "3-(2-iodacetamido)-PROXYL"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": [
+            "acyl carbene",
+            "imidoyl carbene",
+            "vinyl carbene",
+            "methanuidyl",
+            "1,3-dimethylimidazol-2-ylidene"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "acyl carbene",
+                "imidoyl carbene",
+                "vinyl carbene",
+                "1,3-dimethylimidazol-2-ylidene"
+            ],
+            "mismatches": [
+                "methanuidyl"
+            ],
+            "true_referents": [
+                "imidoyl carbene",
+                "vinyl carbene",
+                "acyl carbene",
+                "imidazol-2-ylidenes",
+                "1,3-dimethylimidazol-2-ylidene",
+                "singlet methanediyl"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aminoxyls",
+        "domain": "chemistry",
+        "response": [
+            "4-oxo-TEMPO",
+            "4-acetamido-TEMPO",
+            "3-cyano-PROXYL",
+            "3-(2-iodacetamido)-PROXYL",
+            "TOAC"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "3-(2-iodacetamido)-PROXYL",
+                "TOAC"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3-(2-iodacetamido)-PROXYL",
+                "4-oxo-TEMPO",
+                "4-acetamido-TEMPO",
+                "4-acetamido-TEMPO",
+                "3-cyano-PROXYL",
+                "TOAC"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alpha-amino-acid radical",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "D-tyrosinyl radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical cation",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation"
+            ],
+            "mismatches": [
+                "L-tyrosinyl radical cation"
+            ],
+            "true_referents": [
+                "L-cysteinyl radical",
+                "alpha-amino-acid radical cation",
+                "D-tyrosinyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tryptophanyl radical",
+                "L-tryptophanyl radical"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "organic radical ion",
+        "domain": "chemistry",
+        "response": [
+            "L-cysteinyl radical",
+            "L-tryptophanyl radical",
+            "D-tryptophanyl radical cation",
+            "L-tryptophanyl radical cation",
+            "L-tyrosinyl radical cation",
+            "D-tyrosinyl radical cation",
+            "alpha-amino-acid radical cation",
+            "organic radical cation"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tryptophanyl radical cation",
+                "L-tryptophanyl radical cation",
+                "L-tyrosinyl radical cation",
+                "organic radical cation"
+            ],
+            "mismatches": [
+                "L-cysteinyl radical",
+                "L-tryptophanyl radical",
+                "D-tyrosinyl radical cation",
+                "alpha-amino-acid radical cation"
+            ],
+            "true_referents": [
+                "methanuidyl",
+                "methaniumyl",
+                "L-tyrosinyl radical cation",
+                "oxidooxomethyl",
+                "organic radical cation",
+                "D-tryptophanyl radical cation"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "carbene",
+        "domain": "chemistry",
+        "response": "assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant<|end_header_id|><|start_header_id|>assistant",
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    }
+]

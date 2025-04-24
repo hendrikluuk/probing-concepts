@@ -1,0 +1,1726 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Glycolates",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Glycolates",
+            "Urocanic Acid",
+            "Glucuronides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Glycolates",
+                "Glucuronides"
+            ],
+            "mismatches": [
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Glycolates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Glycolates"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid"
+            ],
+            "mismatches": [
+                "Urocanic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Urethane",
+            "Succinates",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid",
+            "Glucuronides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urethane",
+                "Succinates",
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates",
+                "4-Aminobenzoic Acid",
+                "Glucuronides"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates"
+            ],
+            "mismatches": [
+                "Gentisates",
+                "Urocanic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid"
+            ],
+            "mismatches": [
+                "Urocanic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Glycolates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Glycolates"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Glycolates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Glycolates"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "Mandelic Acids"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Urocanic Acid",
+            "Ethacrynic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Glycolates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Glycolates"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Gentisates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Succinates",
+            "Diatrizoate",
+            "Glycolates",
+            "Calcium Gluconate",
+            "Gold Sodium Thiomalate",
+            "Glucuronides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Succinates",
+                "Gold Sodium Thiomalate"
+            ],
+            "mismatches": [
+                "Diatrizoate",
+                "Glycolates",
+                "Calcium Gluconate",
+                "Glucuronides"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Glycolates",
+            "Calcium Gluconate",
+            "Glucuronides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Glycolates",
+                "Calcium Gluconate",
+                "Glucuronides"
+            ],
+            "mismatches": [
+                "Gentisates"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates"
+            ],
+            "mismatches": [
+                "Gentisates",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Succinates",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Succinates",
+                "Ethacrynic Acid",
+                "Urocanic Acid",
+                "Glycolates"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Succinates",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Succinates",
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Gentisates",
+                "Ethacrynic Acid",
+                "Glycolates",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Succinates",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "Calcium Gluconate",
+            "4-Aminobenzoic Acid",
+            "Glucuronides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates",
+                "Calcium Gluconate",
+                "Glucuronides"
+            ],
+            "mismatches": [
+                "Succinates",
+                "Gentisates",
+                "Urocanic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Urocanic Acid",
+                "Glycolates"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Mandelic Acids",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "Glycolates",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid",
+            "Glucuronides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates",
+                "Glucuronides"
+            ],
+            "mismatches": [
+                "Gentisates",
+                "Urocanic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "Urocanic Acid",
+                "Glycolates"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "Calcium Gluconate",
+            "4-Aminobenzoic Acid",
+            "Glucuronides"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates",
+                "Calcium Gluconate",
+                "4-Aminobenzoic Acid",
+                "Glucuronides"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates"
+            ],
+            "mismatches": [
+                "Gentisates",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "Urocanic Acid"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Mandelic Acids",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "4-Aminobenzoic Acid",
+            "Gentisates"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Ascorbic Acid",
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "4-Aminobenzoic Acid",
+                "Gentisates"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Ascorbic Acid",
+            "Mandelic Acids",
+            "Urocanic Acid",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Ascorbic Acid",
+                "Mandelic Acids",
+                "Ethacrynic Acid"
+            ],
+            "mismatches": [
+                "Urocanic Acid",
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Acids, Carbocyclic",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Gentisates",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gentisates",
+                "4-Aminobenzoic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ethacrynic Acid",
+                "Urocanic Acid",
+                "Glycolates"
+            ],
+            "true_referents": [
+                "Thalidomide",
+                "Metoclopramide",
+                "Metrizamide",
+                "Pactamycin",
+                "Gentisates",
+                "4-Aminobenzoic Acid",
+                "Indoramin",
+                "Diatrizoate"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Acids, Acyclic",
+        "domain": "chemistry",
+        "response": [
+            "Chlorpropham",
+            "Mandelic Acids",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "Urocanic Acid",
+            "Glycolates",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chlorpropham",
+                "Urocanic Acid"
+            ],
+            "mismatches": [
+                "Mandelic Acids",
+                "Ascorbic Acid",
+                "Ethacrynic Acid",
+                "Glycolates",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Urocanic Acid",
+                "Succinates",
+                "Dimethyldithiocarbamate",
+                "Agent Orange",
+                "Chlorpropham",
+                "Urethane",
+                "Remifentanil",
+                "Gold Sodium Thiomalate"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Hydroxy Acids",
+        "domain": "chemistry",
+        "response": [
+            "Mandelic Acids",
+            "Gentisates",
+            "Glycolates",
+            "Urocanic Acid",
+            "Ascorbic Acid",
+            "Ethacrynic Acid",
+            "4-Aminobenzoic Acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mandelic Acids",
+                "Glycolates",
+                "Ascorbic Acid",
+                "Ethacrynic Acid"
+            ],
+            "mismatches": [
+                "Gentisates",
+                "Urocanic Acid",
+                "4-Aminobenzoic Acid"
+            ],
+            "true_referents": [
+                "Zanamivir",
+                "Ethacrynic Acid",
+                "Calcium Gluconate",
+                "Glycolates",
+                "Mandelic Acids",
+                "Glucuronides",
+                "Ascorbic Acid",
+                "Metoclopramide"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "telomere maintenance gene and telomere maintenance gene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomerase-associated gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Telomerase-associated genes are specifically involved with the enzyme telomerase, which is a part of the telomere maintenance process, but not all telomere maintenance genes are directly associated with telomerase. Telomere maintenance can involve other pathways and mechanisms beyond telomerase.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere-associated gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Telomere-associated genes are involved in various aspects related to telomeres, while telomere maintenance genes specifically refer to those involved directly in maintaining telomere length and function. Not all telomere-associated genes are directly involved in maintenance.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "Telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical except for capitalization, implying they refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomerase gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "The telomerase gene is one specific gene involved in telomere maintenance, but there are other genes involved in telomere maintenance as well. Therefore, not all telomere maintenance genes are telomerase genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomerase gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "telomerase gene is one specific type of telomere maintenance gene, but not all telomere maintenance genes are telomerase genes",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "Telomere gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Telomere gene refers to a specific gene located at the telomere, while telomere maintenance gene refers to any gene involved in the maintenance and regulation of telomeres, which may include multiple genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "Telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Telomere maintenance gene' and 'telomere maintenance gene' are equivalent as they are identical except for capitalization, which does not change the meaning in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept without any distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept without any distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept without any distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomerase gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "telomerase gene is one type of telomere maintenance gene, but there are other genes involved in telomere maintenance that are not telomerase genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'telomere maintenance gene' and 'telomere maintenance gene' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same concept, as they are identical terms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomerase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Telomerase is an enzyme that helps maintain telomeres, but not all telomere maintenance genes encode telomerase.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "telomere maintenance gene",
+        "domain": "biology",
+        "response": "telomere-maintenance gene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'telomere-maintenance gene' and 'telomere maintenance gene' refer to the same concept, with the difference being only in the use of a hyphen.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

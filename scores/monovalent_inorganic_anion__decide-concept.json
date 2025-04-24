@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent_anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monovalent inorganic anion is a specific type of monovalent anion, but not all monovalent anions are inorganic",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion can be organic or inorganic, whereas a monovalent inorganic anion specifically refers to inorganic species.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion can be either organic or inorganic, but a monovalent inorganic anion specifically refers to inorganic ions, hence not all monovalent anions are monovalent inorganic anions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent inorganic anion is a specific type of monovalent anion, but not all monovalent anions are inorganic; some can be organic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monovalent inorganic anion is a subset of monovalent anion, as monovalent anions can be organic or inorganic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion can be organic or inorganic, but a monovalent inorganic anion specifically refers to inorganic species only.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion can be either organic or inorganic, whereas a monovalent inorganic anion specifically refers to inorganic anions only.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "monovalent inorganic anion is a subset of monovalent anion, as monovalent anions can be organic or inorganic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monoanion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monoanion is an anion with a single negative charge, but not all monovalent inorganic anions are monoanions. Monovalent inorganic anions can include organic anions as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion refers to any anion with a single negative charge, which can be organic or inorganic. A monovalent inorganic anion specifically refers to inorganic anions with a single negative charge, thus not all monovalent anions are inorganic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Monovalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monovalent anion can be either organic or inorganic, whereas a monovalent inorganic anion specifically refers to inorganic anions only.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "halogen anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A halogen anion is a type of monovalent inorganic anion, but not all monovalent inorganic anions are halogen anions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "monovalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Concept: \"chloride\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Chloride is a specific type of monovalent inorganic anion, but not all monovalent inorganic anions are chloride.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

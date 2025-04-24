@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "Bone marrow cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Bone marrow cell' and 'bone marrow cell' are equivalent as they refer to the same type of cell, with the only difference being capitalization, which does not affect meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "Hematopoietic stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hematopoietic stem cells are a specific type of cell found in the bone marrow that give rise to all blood cells, but not all bone marrow cells are hematopoietic stem cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "bone marrow cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "bone marrow cell and bone marrow cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "Hematopoietic cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hematopoietic cells are cells that give rise to all other blood cells and can be found in the bone marrow, but not all bone marrow cells are hematopoietic cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "bone marrow cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "bone marrow cell and bone marrow cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "bone marrow cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same entity without any distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "Bone marrow cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Bone marrow cell' and 'bone marrow cell' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "Blood cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Blood cells are produced in the bone marrow, but bone marrow cells include a variety of cell types beyond just blood cells, such as stromal cells and osteoblasts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "bone marrow cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "bone marrow cell and bone marrow cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "hematopoietic stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "hematopoietic stem cells are a type of bone marrow cell, but not all bone marrow cells are hematopoietic stem cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "bone marrow cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of cell found in bone marrow.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "hematopoietic stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "hematopoietic stem cells are a type of bone marrow cell, but not all bone marrow cells are hematopoietic stem cells",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "hematopoietic stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "hematopoietic stem cells are a type of bone marrow cell, but not all bone marrow cells are hematopoietic stem cells",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "bone marrow cells can include stem cells, but not all stem cells are bone marrow cells as stem cells can also be found in other tissues.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "hematopoietic cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bone marrow cells are a type of hematopoietic cell, but not all hematopoietic cells are bone marrow cells as they can also be found in other tissues like the blood and spleen.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "bone marrow cell",
+        "domain": "biology",
+        "response": "Hematopoietic stem cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hematopoietic stem cells are a type of bone marrow cell, but not all bone marrow cells are hematopoietic stem cells. Bone marrow also contains other types of cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

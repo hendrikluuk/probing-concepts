@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opiate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opiate is a type of narcotic agent, but not all narcotic agents are opiates",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While opioids are a class of narcotic agents, not all narcotic agents are opioids. Narcotic agents can include other substances like certain barbiturates and benzodiazepines, which are not opioids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioid is a type of narcotic agent, but not all narcotic agents are opioids. Narcotic agents can include other substances like certain non-opioid medications and illegal drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioids are a type of narcotic agent, but not all narcotic agents are opioids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioids are a class of narcotic agents, but not all narcotic agents are opioids",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioids are a type of narcotic agent, but not all narcotic agents are opioids. Narcotic agents can also include other substances such as certain non-opioid medications.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "Opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While opioids are a type of narcotic agent, not all narcotic agents are opioids. Narcotic agents can include other substances such as certain non-opioid analgesics and some sedatives.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "Opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Opioids are a class of narcotic agents, but not all narcotic agents are opioids. Narcotic agents can include other substances beyond opioids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioid is a type of narcotic agent, but not all narcotic agents are opioids. Narcotic agents include a broader category of substances.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioid is a type of narcotic agent, but not all narcotic agents are opioids. Narcotic agents can include other substances such as certain non-opioid analgesics and sedatives.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While opioids are a type of narcotic agent, not all narcotic agents are opioids. Narcotic agents can include other substances such as certain non-opioid analgesics or sedatives.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioid is a type of narcotic agent, but not all narcotic agents are opioids. Narcotic agents can include other substances such as certain barbiturates and benzodiazepines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While opioids are a type of narcotic agent, not all narcotic agents are opioids. Narcotic agents can include other substances such as certain non-opioid medications.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioid is a type of narcotic agent, but not all narcotic agents are opioids",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "Opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While opioids are a type of narcotic agent, not all narcotic agents are opioids. Narcotic agents can include other substances like certain anesthetics and drugs that are not classified as opioids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "narcotic agent",
+        "domain": "medicine",
+        "response": "opioid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "opioids are a type of narcotic agent, but not all narcotic agents are opioids. Narcotic agents can include other substances like certain non-opioid drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

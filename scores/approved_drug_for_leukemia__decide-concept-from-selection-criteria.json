@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "leukemia drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A leukemia drug refers to any drug used to treat leukemia, which may include experimental or unapproved drugs, whereas an approved drug for leukemia specifically refers to drugs that have been approved by regulatory agencies for the treatment of leukemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "Leukemia treatment drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for leukemia is specifically authorized for use, whereas a leukemia treatment drug may not yet be approved or could be used off-label.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "Anti-leukemic drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anti-leukemic drug is intended to treat leukemia, but not all anti-leukemic drugs are approved for use, and not all approved drugs for leukemia are classified strictly as anti-leukemic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "Antileukemic drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antileukemic drug is designed to combat leukemia, but not all antileukemic drugs are necessarily approved drugs for leukemia as they could be in experimental stages or not yet approved by regulatory bodies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "leukemia drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A leukemia drug refers to any drug used to treat leukemia, which may include experimental or off-label drugs, while an approved drug for leukemia specifically refers to drugs that have received regulatory approval for treating leukemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "leukemia treatment drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for leukemia is a leukemia treatment drug, but not all leukemia treatment drugs are necessarily approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "Leukemia medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Leukemia medication refers to any medication used to treat leukemia, while an approved drug for leukemia specifically refers to those medications that have been officially approved by regulatory agencies. Not all leukemia medications are approved drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "Leukemia treatment drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A leukemia treatment drug may not necessarily be an approved drug for leukemia, as it could be experimental or in clinical trials, while an approved drug for leukemia has passed regulatory approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "antileukemic drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antileukemic drug is designed to combat leukemia, but not all antileukemic drugs are necessarily approved for leukemia treatment.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "antileukemic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antileukemic agent is any substance that can fight leukemia, but not all antileukemic agents are approved drugs for leukemia as some may be in experimental or research stages.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "leukemia medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Leukemia medication refers to any medication used to treat leukemia, which may include experimental or off-label drugs, whereas an approved drug for leukemia specifically refers to medications that have received regulatory approval for this purpose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "antileukemic drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antileukemic drug is intended to treat leukemia, but not all antileukemic drugs may be approved for use. Conversely, an approved drug for leukemia is specifically authorized for treatment, but it may not cover all antileukemic drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for leukemia is a type of cancer medication, but not all cancer medications are approved drugs for leukemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "Chemotherapy agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A chemotherapy agent is a type of treatment used for cancer, which may include drugs approved for leukemia, but not all chemotherapy agents are approved drugs for leukemia and not all approved drugs for leukemia are chemotherapy agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "Antileukemic drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antileukemic drug is designed to combat leukemia, but not all antileukemic drugs are necessarily approved for use in treating leukemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for leukemia",
+        "domain": "medicine",
+        "response": "cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for leukemia is a specific type of cancer drug, but not all cancer drugs are approved drugs for leukemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

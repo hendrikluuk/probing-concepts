@@ -1,0 +1,872 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "N6-Methyl-2'-deoxyadenosine",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "gpt-4o",
+            "response": []
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "N6-Methyl-2'-deoxyadenosine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": []
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "oscr#21-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "o1-mini",
+            "response": []
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "3'-Amino-3'-deoxythymidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "3'-Amino-3'-deoxythymidine glucuronide",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "N6-Methyl-2'-deoxyadenosine",
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-L-rhamnose",
+                "2,3-dihydroxybenzoyl 5'-adenylate",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "dTDP-L-rhamnose"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "dTDP-L-rhamnose",
+                "dTDP-3-dehydro-4,6-dideoxy-D-glucose"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "deoxyribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "5-(2-aminoethyl)-2'-deoxyuridine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "nucleoside phosphate",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "3'-Amino-3'-deoxythimidine glucuronide",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate",
+                "dTDP-L-rhamnose",
+                "dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose",
+                "2,3-dihydroxybenzoyl 5'-adenylate"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"3-oxodocosanoyl-CoA\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"farnesoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"N6-Methyl-2'-deoxyadenosine\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"dTDP-L-rhamnose\", \"2-hydroxyhexacosanoyl-CoA\", \"2,3-dihydroxybenzoyl 5'-adenylate\", \"heptadecanoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"oscr#21-CoA\", \"(R)-2-hydroxyglutaryl-CoA\"]",
+                "siblings": "{\"deoxyribonucleoside\": [\"dTDP-3-dehydro-4,6-dideoxy-D-glucose\", \"2'-deoxy-5-(4,5-dihydroxypentyl)uridine\", \"N6-Methyl-2'-deoxyadenosine\", \"3'-Amino-3'-deoxythimidine glucuronide\", \"dTDP-L-rhamnose\", \"p-nitrophenyl thymidine 5'-monophosphate\", \"5-(2-aminoethyl)-2'-deoxyuridine\", \"dTDP-2,3-dehydro-2,6-dideoxy-4-keto-alpha-D-glucose\"], \"nucleoside phosphate\": [\"2,3-dihydroxybenzoyl 5'-adenylate\", \"farnesoyl-CoA\", \"heptadecanoyl-CoA\", \"(R)-2-hydroxyglutaryl-CoA\", \"2-hydroxyhexacosanoyl-CoA\", \"(16Z,19Z,22Z,25Z,28Z,31Z)-3-oxotetratriacontahexaenoyl-CoA\", \"(R,S)-[hydroxy(phenyl)methyl]succinyl-CoA\", \"3-oxodocosanoyl-CoA\"], \"ribonucleoside\": [\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "ribonucleoside",
+                "parent_concept": "nucleoside",
+                "true_referents": "[\"(2E,14Z,17Z,20Z,23Z,26Z,29Z)-dotriacontaheptaenoyl-CoA\", \"(R)-3-hydroxytetradecanoyl-CoA\", \"(3R,8Z,11Z,14Z)-3-hydroxyicosatrienoyl-CoA\", \"long-chain 3-oxo-fatty acyl-CoA\", \"oscr#21-CoA\", \"(8Z,11Z,14Z,17Z)-3-oxoicosatetraenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z,31Z)-tetratriacontahexaenoyl-CoA\", \"(8Z,11Z,14Z)-3-oxoicosa-8,11,14-trienoyl-CoA\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "2'-deoxy-5-(4,5-dihydroxypentyl)uridine",
+                "5-(2-aminoethyl)-2'-deoxyuridine",
+                "N6-Methyl-2'-deoxyadenosine",
+                "p-nitrophenyl thymidine 5'-monophosphate"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2043 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-dehydroecdysone",
+            "3-O-acetylecdysone 2-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "21-dehydrocortisol",
+            "20alpha-dihydroprednisone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "16alpha-hydroxytestosterone",
+            "21-dehydrocortisone",
+            "19-hydroxytestosterone",
+            "prednisolone-16alpha-carboxylic acid",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside",
+            "16-Hydroxyprogesterone",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "cyproterone acetate",
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+                "21-dehydrocortisol",
+                "20alpha-dihydroprednisone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "21-dehydrocortisone",
+                "prednisolone-16alpha-carboxylic acid",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "16-Hydroxyprogesterone",
+                "3-dehydroecdysone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 2,
+            "FP": 12,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "21-dehydrocortisol",
+            "16alpha-hydroxytestosterone",
+            "21-dehydrocortisone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "19-hydroxytestosterone",
+            "prednisolone-16alpha-carboxylic acid",
+            "16-Hydroxyprogesterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "cyproterone acetate",
+                "21-dehydrocortisol",
+                "21-dehydrocortisone",
+                "prednisolone-16alpha-carboxylic acid",
+                "16-Hydroxyprogesterone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "testosterone-3-CMO-Hist",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "testosterone-3-CMO-Hist",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "testosterone-3-CMO-Hist",
+            "16alpha-hydroxytestosterone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "19-hydroxytestosterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "testosterone-3-CMO-Hist",
+            "beclomethasone dipropionate",
+            "3-O-acetylecdysone 2-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "testosterone-3-CMO-Hist",
+                "beclomethasone dipropionate",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "cyproterone acetate",
+            "testosterone-3-CMO-Hist",
+            "20alpha-dihydroprednisone",
+            "16alpha-hydroxytestosterone",
+            "19-hydroxytestosterone",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "20alpha-dihydroprednisone",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate",
+            "3-O-acetylecdysone 2-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "16alpha-hydroxytestosterone",
+            "19-hydroxytestosterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "21-dehydrocortisol",
+            "testosterone-3-CMO-Hist",
+            "20alpha-dihydroprednisone",
+            "16alpha-hydroxytestosterone",
+            "21-dehydrocortisone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "beclomethasone dipropionate",
+            "19-hydroxytestosterone",
+            "prednisolone-16alpha-carboxylic acid",
+            "16-Hydroxyprogesterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "cyproterone acetate",
+                "21-dehydrocortisol",
+                "20alpha-dihydroprednisone",
+                "21-dehydrocortisone",
+                "beclomethasone dipropionate",
+                "prednisolone-16alpha-carboxylic acid",
+                "16-Hydroxyprogesterone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "21-dehydrocortisol",
+            "16alpha-hydroxytestosterone",
+            "21-dehydrocortisone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "19-hydroxytestosterone",
+            "16-Hydroxyprogesterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "cyproterone acetate",
+                "21-dehydrocortisol",
+                "21-dehydrocortisone",
+                "16-Hydroxyprogesterone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "21-dehydrocortisol",
+            "20alpha-dihydroprednisone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "16alpha-hydroxytestosterone",
+            "21-dehydrocortisone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "19-hydroxytestosterone",
+            "prednisolone-16alpha-carboxylic acid",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside",
+            "16-Hydroxyprogesterone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+                "21-dehydrocortisol",
+                "20alpha-dihydroprednisone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "21-dehydrocortisone",
+                "prednisolone-16alpha-carboxylic acid",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "16-Hydroxyprogesterone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 3,
+            "FP": 12,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "CE(22:4)",
+            "testosterone-3-CMO-Hist",
+            "deoxycholic acid-2,2,4,4-d4",
+            "20alpha-dihydroprednisone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "16alpha-hydroxytestosterone",
+            "21-dehydrocortisone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "CE(22:4(7Z,10Z,13Z,16Z))",
+            "beclomethasone dipropionate",
+            "19-hydroxytestosterone",
+            "prednisolone-16alpha-carboxylic acid",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside",
+            "16-Hydroxyprogesterone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "CE(22:4)",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "mismatches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+                "testosterone-3-CMO-Hist",
+                "deoxycholic acid-2,2,4,4-d4",
+                "20alpha-dihydroprednisone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "16alpha-hydroxytestosterone",
+                "21-dehydrocortisone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "beclomethasone dipropionate",
+                "19-hydroxytestosterone",
+                "prednisolone-16alpha-carboxylic acid",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "16-Hydroxyprogesterone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 3,
+            "FP": 16,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "cyproterone acetate",
+            "testosterone-3-CMO-Hist",
+            "16alpha-hydroxytestosterone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "19-hydroxytestosterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "cyproterone acetate"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "16alpha-hydroxytestosterone",
+            "19-hydroxytestosterone",
+            "6-dehydrotestosterone 17-glucosiduronic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate",
+            "3-O-acetylecdysone 2-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "testosterone-3-CMO-Hist",
+            "16alpha-hydroxytestosterone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "19-hydroxytestosterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "testosterone-3-CMO-Hist",
+            "beclomethasone dipropionate",
+            "3-O-acetylecdysone 2-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "testosterone-3-CMO-Hist",
+                "beclomethasone dipropionate",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "cyproterone acetate",
+            "testosterone-3-CMO-Hist",
+            "20alpha-dihydroprednisone",
+            "16alpha-hydroxytestosterone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "beclomethasone dipropionate",
+            "19-hydroxytestosterone",
+            "16-Hydroxyprogesterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "20alpha-dihydroprednisone",
+                "beclomethasone dipropionate",
+                "16-Hydroxyprogesterone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate",
+            "3-O-acetylecdysone 2-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "16alpha-hydroxytestosterone",
+            "6-dehydrotestosterone 17-glucosiduronic acid",
+            "19-hydroxytestosterone",
+            "16-Hydroxyprogesterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "16alpha-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "cyproterone acetate",
+                "16-Hydroxyprogesterone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "21-dehydrocortisol",
+            "22-deoxy-20,21-dihydroxyecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+                "21-dehydrocortisol",
+                "22-deoxy-20,21-dihydroxyecdysone"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "cyproterone acetate",
+            "testosterone-3-CMO-Hist",
+            "16alpha-hydroxytestosterone",
+            "19-hydroxytestosterone",
+            "prednisolone-16alpha-carboxylic acid",
+            "16-Hydroxyprogesterone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "prednisolone-16alpha-carboxylic acid",
+                "16-Hydroxyprogesterone"
+            ],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "cyproterone acetate",
+            "beclomethasone dipropionate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cholane derivative",
+        "domain": "chemistry",
+        "response": [
+            "sodium cholate",
+            "Sodium taurodeoxycholate hydrate",
+            "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol",
+            "deoxycholic acid-2,2,4,4-d4",
+            "chenodeoxycholic acid-3-O-beta-D-glucoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "sodium cholate",
+                "Sodium taurodeoxycholate hydrate",
+                "deoxycholic acid-2,2,4,4-d4",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside"
+            ],
+            "mismatches": [
+                "24-Nor-5beta-chol-22-ene-3alpha,12alpha-diol"
+            ],
+            "true_referents": [
+                "Sodium taurodeoxycholate hydrate",
+                "chenodeoxycholic acid-3-O-beta-D-glucoside",
+                "sodium cholate",
+                "deoxycholic acid-2,2,4,4-d4"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ecdysteroid",
+        "domain": "chemistry",
+        "response": [
+            "(25R)-11alpha,20,26-trihydroxyecdysone",
+            "22-deoxy-20,21-dihydroxyecdysone",
+            "3-O-acetylecdysone 2-phosphate",
+            "3-dehydroecdysone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate",
+                "3-dehydroecdysone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "22-deoxy-20,21-dihydroxyecdysone",
+                "3-dehydroecdysone",
+                "(25R)-11alpha,20,26-trihydroxyecdysone",
+                "3-O-acetylecdysone 2-phosphate"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "C19-steroid",
+        "domain": "chemistry",
+        "response": [
+            "testosterone-3-CMO-Hist",
+            "16alpha-hydroxytestosterone",
+            "19-hydroxytestosterone",
+            "6-dehydrotestosterone 17-glucosiduronic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "testosterone-3-CMO-Hist",
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "16alpha-hydroxytestosterone",
+                "19-hydroxytestosterone",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "steroid ester",
+        "domain": "chemistry",
+        "response": [
+            "cyproterone acetate",
+            "beclomethasone dipropionate",
+            "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+            "testosterone-3-CMO-Hist",
+            "6-dehydrotestosterone 17-glucosiduronic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate"
+            ],
+            "mismatches": [
+                "cyproterone acetate",
+                "beclomethasone dipropionate",
+                "testosterone-3-CMO-Hist",
+                "6-dehydrotestosterone 17-glucosiduronic acid"
+            ],
+            "true_referents": [
+                "CE(22:4)",
+                "5alpha,17alpha-Pregn-2-en-20-yn-17-ol acetate",
+                "Pipecuronium bromide",
+                "CE(22:4(7Z,10Z,13Z,16Z))"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 3
+        }
+    }
+]

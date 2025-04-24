@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "Amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Amide and amide refer to the same chemical group, with the difference in capitalization being non-substantive.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "Amines",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Amines and amides are different classes of compounds; amines contain a nitrogen atom bonded to carbon atoms, while amides have a carbonyl group attached to a nitrogen atom.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "Amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Amide and amide refer to the same chemical functional group and are synonyms, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amide and amide are the same chemical compound and term",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound class characterized by a carbonyl group linked to a nitrogen atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same chemical functional group characterized by a carbonyl group linked to a nitrogen atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "Amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Amide and amide refer to the same chemical functional group, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "Amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Amide and amide refer to the same chemical group, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "primary amide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A primary amide is a specific type of amide, but not all amides are primary amides. Amides can also be secondary or tertiary.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amide and amide are identical terms and refer to the same chemical functional group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amide and amide are identical terms and refer to the same chemical functional group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amide and amide are identical terms and refer to the same chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amide and amide are the same chemical group and term",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same chemical functional group characterized by a carbonyl group attached to a nitrogen atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "amide",
+        "judgement": {
+            "equivalent": true,
+            "reason": "amide and amide are the same chemical functional group, hence they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "amide",
+        "domain": "chemistry",
+        "response": "carboxylic acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "carboxylic acid and amide are different functional groups in organic chemistry. A carboxylic acid contains a carbonyl group (C=O) and a hydroxyl group (OH) attached to the same carbon, while an amide contains a carbonyl group (C=O) bonded to a nitrogen atom. They have different structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

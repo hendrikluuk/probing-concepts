@@ -1,0 +1,1986 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "isobutyraldehyde",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "isobutyraldehyde",
+                "glutaraldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "2-methylpropanal",
+            "2-methylpropanal O-methyloxime"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-methylpropanal O-methyloxime"
+            ],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "2-methylpropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "3-[(4-aminobutyl)amino]propanal",
+            "3-sulfolactaldehyde",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "3-sulfolactaldehyde",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal",
+            "2-methylpropanal oxime",
+            "2-methylpropanal O-methyloxime",
+            "(2Z,4E)-4-hydroxymuconic semialdehyde",
+            "(E)-4-hydroxynon-2-enal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "(2Z,4E)-4-hydroxymuconic semialdehyde",
+                "(E)-4-hydroxynon-2-enal"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 0,
+            "FP": 8,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "2-methylpropanal oxime",
+            "2-methylpropanal O-methyloxime"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime"
+            ],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+            "isobutyraldehyde",
+            "3-methylthiopropanal",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde",
+            "3-methoxy-4-hydroxyphenylglycolaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "isobutyraldehyde",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde",
+                "3-methoxy-4-hydroxyphenylglycolaldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "methylglyoxal",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [
+                "methylglyoxal",
+                "hydroxypyruvaldehyde"
+            ],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+            "isobutyraldehyde",
+            "3-methylthiopropanal",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "isobutyraldehyde",
+                "glutaraldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "glycolaldehyde phosphate",
+            "isobutyraldehyde",
+            "3-methylthiopropanal",
+            "3-sulfolactaldehyde",
+            "hydroxypyruvaldehyde",
+            "(E)-4-hydroxynon-2-enal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "glycolaldehyde phosphate",
+                "isobutyraldehyde",
+                "3-sulfolactaldehyde",
+                "hydroxypyruvaldehyde",
+                "(E)-4-hydroxynon-2-enal"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "isobutyraldehyde",
+            "2-methylpropanal oxime",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime"
+            ],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "isobutyraldehyde",
+            "2-methylpropanal oxime",
+            "methylglyoxal",
+            "3-methylthiopropanal",
+            "glutaraldehyde",
+            "2-(hydroxymethyl)-4-oxobutanoic acid",
+            "2-methylpropanal O-methyloxime"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthiopropanal",
+                "2-(hydroxymethyl)-4-oxobutanoic acid"
+            ],
+            "mismatches": [
+                "but-2-enedial",
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "methylglyoxal",
+                "glutaraldehyde",
+                "2-methylpropanal O-methyloxime"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "glycolaldehyde phosphate",
+            "3-[(4-aminobutyl)amino]propanal",
+            "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+            "isobutyraldehyde",
+            "bixin dialdehyde",
+            "2-methylpropanal oxime",
+            "methylglyoxal",
+            "3-methoxy-4-hydroxyphenylglycolaldehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "3-methylthiopropanal",
+            "3-sulfolactaldehyde",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde",
+            "2-(hydroxymethyl)-4-oxobutanoic acid",
+            "(2Z,4E)-4-hydroxymuconic semialdehyde",
+            "2-methylpropanal O-methyloxime",
+            "(E)-4-hydroxynon-2-enal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "2-(hydroxymethyl)-4-oxobutanoic acid"
+            ],
+            "mismatches": [
+                "but-2-enedial",
+                "glycolaldehyde phosphate",
+                "isobutyraldehyde",
+                "bixin dialdehyde",
+                "2-methylpropanal oxime",
+                "methylglyoxal",
+                "3-methoxy-4-hydroxyphenylglycolaldehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "3-sulfolactaldehyde",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde",
+                "(2Z,4E)-4-hydroxymuconic semialdehyde",
+                "2-methylpropanal O-methyloxime",
+                "(E)-4-hydroxynon-2-enal"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 4,
+            "FP": 14,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "3-[(4-aminobutyl)amino]propanal",
+            "isobutyraldehyde",
+            "bixin dialdehyde",
+            "2-methylpropanal oxime",
+            "methylglyoxal",
+            "3-methoxy-4-hydroxyphenylglycolaldehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "3-methylthiopropanal",
+            "3-sulfolactaldehyde",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde",
+            "2-(hydroxymethyl)-4-oxobutanoic acid",
+            "(2Z,4E)-4-hydroxymuconic semialdehyde",
+            "2-methylpropanal O-methyloxime",
+            "(E)-4-hydroxynon-2-enal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "3-sulfolactaldehyde",
+                "2-methylpropanal O-methyloxime"
+            ],
+            "mismatches": [
+                "but-2-enedial",
+                "3-[(4-aminobutyl)amino]propanal",
+                "bixin dialdehyde",
+                "methylglyoxal",
+                "3-methoxy-4-hydroxyphenylglycolaldehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "3-methylthiopropanal",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde",
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(2Z,4E)-4-hydroxymuconic semialdehyde",
+                "(E)-4-hydroxynon-2-enal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 4,
+            "FP": 12,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "all-trans-dehydroretinal",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "(E)-4-hydroxynon-2-enal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "mismatches": [
+                "all-trans-dehydroretinal",
+                "(E)-4-hydroxynon-2-enal"
+            ],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "omega-oxo fatty acid",
+        "domain": "chemistry",
+        "response": [
+            "20-oxoarachidonic acid",
+            "16-oxohexadecanoic acid",
+            "10-oxocapric acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "20-oxoarachidonic acid",
+                "16-oxohexadecanoic acid",
+                "10-oxocapric acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "1-O-hexadecyl-2-(5-oxovaleroyl)-sn-glycero-3-phosphocholine",
+                "16-oxohexadecanoic acid",
+                "20-oxoarachidonic acid",
+                "10-oxocapric acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "citronellal",
+        "domain": "chemistry",
+        "response": [
+            "(S)-(-)-citronellal",
+            "(R)-(+)-citronellal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-(-)-citronellal",
+                "(R)-(+)-citronellal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "hydroxycitronellal",
+                "citronellic acid",
+                "(R)-(+)-citronellal",
+                "(S)-(-)-citronellal"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "(S)-lactaldehyde",
+            "3-aminopropanal",
+            "isobutyraldehyde",
+            "D-3-sulfolactaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(S)-lactaldehyde",
+                "3-aminopropanal",
+                "isobutyraldehyde",
+                "D-3-sulfolactaldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(S)-lactaldehyde",
+                "3-aminopropanal",
+                "isobutyraldehyde",
+                "D-3-sulfolactaldehyde"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "arenecarbaldehyde",
+        "domain": "chemistry",
+        "response": [
+            "3-amino-4-hydroxybenzaldehyde",
+            "(4-hydroxyphenyl)acetaldehyde",
+            "3,4-dihydroxyphenylacetaldehyde",
+            "hydroxybenzaldehyde",
+            "4-acetoxy benzaldehyde",
+            "4-hydroxybenzaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-amino-4-hydroxybenzaldehyde",
+                "hydroxybenzaldehyde",
+                "4-acetoxy benzaldehyde",
+                "4-hydroxybenzaldehyde"
+            ],
+            "mismatches": [
+                "(4-hydroxyphenyl)acetaldehyde",
+                "3,4-dihydroxyphenylacetaldehyde"
+            ],
+            "true_referents": [
+                "3-amino-4-hydroxybenzaldehyde",
+                "4-acetoxy benzaldehyde",
+                "hydroxybenzaldehyde",
+                "4-hydroxybenzaldehyde"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "isobutyraldehyde",
+            "3-methylthiopropanal",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "isobutyraldehyde",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "isobutyraldehyde",
+            "2-methylpropanal oxime",
+            "3-methylthiopropanal",
+            "2-methylpropanal O-methyloxime"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime"
+            ],
+            "mismatches": [
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "glutaraldehyde",
+            "bixin dialdehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "glutaraldehyde",
+                "bixin dialdehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "glycolaldehyde phosphate",
+            "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+            "isobutyraldehyde",
+            "3-methoxy-4-hydroxyphenylglycolaldehyde",
+            "3-methylthiopropanal",
+            "hydroxypyruvaldehyde",
+            "2-(hydroxymethyl)-4-oxobutanoic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "2-(hydroxymethyl)-4-oxobutanoic acid"
+            ],
+            "mismatches": [
+                "glycolaldehyde phosphate",
+                "isobutyraldehyde",
+                "3-methoxy-4-hydroxyphenylglycolaldehyde",
+                "hydroxypyruvaldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 3,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "3-methylthiopropanal",
+            "2-methylpropanal oxime",
+            "2-methylpropanal O-methyloxime",
+            "isobutyraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "isobutyraldehyde"
+            ],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "methylglyoxal",
+            "glutaraldehyde",
+            "aflatoxin B1 dialdehyde(1-)"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "glutaraldehyde",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "mismatches": [
+                "methylglyoxal"
+            ],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "isobutyraldehyde",
+            "2-methylpropanal",
+            "methylglyoxal",
+            "3-methylthiopropanal",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde",
+            "(2Z,4E)-4-hydroxymuconic semialdehyde",
+            "(E)-4-hydroxynon-2-enal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "but-2-enedial",
+                "isobutyraldehyde",
+                "2-methylpropanal",
+                "methylglyoxal",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde",
+                "(2Z,4E)-4-hydroxymuconic semialdehyde",
+                "(E)-4-hydroxynon-2-enal"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "isobutyraldehyde",
+            "2-methylpropanal oxime",
+            "3-methylthiopropanal",
+            "2-methylpropanal O-methyloxime"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime"
+            ],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "glycolaldehyde phosphate",
+            "isobutyraldehyde",
+            "methylglyoxal",
+            "3-methylthiopropanal",
+            "3-sulfolactaldehyde",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "but-2-enedial",
+                "glycolaldehyde phosphate",
+                "isobutyraldehyde",
+                "methylglyoxal",
+                "3-sulfolactaldehyde",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "isobutyraldehyde",
+            "3-methylthiopropanal",
+            "hydroxypyruvaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "isobutyraldehyde"
+            ],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal",
+                "hydroxypyruvaldehyde"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "glycolaldehyde phosphate",
+            "3-methoxy-4-hydroxyphenylglycolaldehyde",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "glycolaldehyde phosphate",
+                "3-methoxy-4-hydroxyphenylglycolaldehyde",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal",
+            "all-trans-dehydroretinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "all-trans-dehydroretinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "2-methylpropanal",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "2-methylpropanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alpha-CH2-containing aldehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "isobutyraldehyde",
+            "methylglyoxal",
+            "3-methylthiopropanal",
+            "glutaraldehyde",
+            "hydroxypyruvaldehyde",
+            "2-methylpropanal O-methyloxime",
+            "(2Z,4E)-4-hydroxymuconic semialdehyde",
+            "(E)-4-hydroxynon-2-enal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthiopropanal"
+            ],
+            "mismatches": [
+                "but-2-enedial",
+                "isobutyraldehyde",
+                "methylglyoxal",
+                "glutaraldehyde",
+                "hydroxypyruvaldehyde",
+                "2-methylpropanal O-methyloxime",
+                "(2Z,4E)-4-hydroxymuconic semialdehyde",
+                "(E)-4-hydroxynon-2-enal"
+            ],
+            "true_referents": [
+                "2-(hydroxymethyl)-4-oxobutanoic acid",
+                "(4-hydroxy-3-methoxyphenyl)acetaldehyde",
+                "3-methylthiopropanal",
+                "3-[(4-aminobutyl)amino]propanal"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "retinals",
+        "domain": "chemistry",
+        "response": [
+            "(3S)-all-trans-3-hydroxyretinal",
+            "all-trans-dehydroretinal",
+            "(3R)-11-cis-3-hydroxyretinal",
+            "9-cis-retinal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(3S)-all-trans-3-hydroxyretinal",
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "all-trans-dehydroretinal",
+                "(3R)-11-cis-3-hydroxyretinal",
+                "9-cis-retinal",
+                "(3S)-all-trans-3-hydroxyretinal"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "propanals",
+        "domain": "chemistry",
+        "response": [
+            "3-[(4-aminobutyl)amino]propanal",
+            "2-methylpropanal oxime",
+            "2-methylpropanal O-methyloxime",
+            "3-methylthiopropanal"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime"
+            ],
+            "mismatches": [
+                "3-[(4-aminobutyl)amino]propanal",
+                "3-methylthiopropanal"
+            ],
+            "true_referents": [
+                "isobutyraldehyde",
+                "2-methylpropanal oxime",
+                "2-methylpropanal O-methyloxime",
+                "3-sulfolactaldehyde"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "dialdehyde",
+        "domain": "chemistry",
+        "response": [
+            "but-2-enedial",
+            "bixin dialdehyde",
+            "aflatoxin B1 dialdehyde(1-)",
+            "glutaraldehyde"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "but-2-enedial",
+                "bixin dialdehyde",
+                "aflatoxin B1 dialdehyde(1-)",
+                "glutaraldehyde"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "glutaraldehyde",
+                "bixin dialdehyde",
+                "but-2-enedial",
+                "aflatoxin B1 dialdehyde(1-)"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    }
+]

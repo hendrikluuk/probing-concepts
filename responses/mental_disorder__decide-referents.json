@@ -1,0 +1,987 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "Munchausen Syndrome",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social",
+                "Hoarding Disorder",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "Depressive Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Hypochondriasis",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Anxiety, Separation",
+                "Neurotic Disorders",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Depression, Postpartum",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "Neurasthenia",
+                "Neurocirculatory Asthenia",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Neurasthenia",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Anxiety, Separation",
+                "Neurotic Disorders",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Body Dysmorphic Disorders",
+                "Neurocirculatory Asthenia",
+                "Hypochondriasis",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Trichotillomania",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Neurotic Disorders",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "Anxiety, Separation",
+                "Premenstrual Dysphoric Disorder",
+                "Body Dysmorphic Disorders",
+                "Depressive Disorder, Treatment-Resistant",
+                "Hypochondriasis",
+                "Seasonal Affective Disorder",
+                "Trichotillomania",
+                "Depressive Disorder",
+                "Globus Sensation",
+                "Neurotic Disorders",
+                "Panic Disorder",
+                "Hoarding Disorder",
+                "Phobic Disorders",
+                "Depression, Postpartum",
+                "Phobia, Social",
+                "Bipolar and Related Disorders"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Neurasthenia",
+                "Body Dysmorphic Disorders",
+                "Neurocirculatory Asthenia",
+                "Hypochondriasis",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Anxiety, Separation",
+                "Hypochondriasis",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Depression, Postpartum",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Neurasthenia",
+                "Body Dysmorphic Disorders",
+                "Neurocirculatory Asthenia",
+                "Hypochondriasis",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Neurocirculatory Asthenia",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Seasonal Affective Disorder",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Conversion Disorder",
+                "Body Dysmorphic Disorders",
+                "Globus Sensation",
+                "Neurocirculatory Asthenia",
+                "Munchausen Syndrome",
+                "Munchausen Syndrome by Proxy",
+                "Body Integrity Identity Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social",
+                "Generalized Anxiety Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Depressive Disorder, Treatment-Resistant",
+                "Depressive Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders",
+                "Seasonal Affective Disorder"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Body Dysmorphic Disorders",
+                "Hypochondriasis",
+                "Trichotillomania",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Conversion Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "Depressive Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "Neurasthenia",
+                "Munchausen Syndrome",
+                "Hypochondriasis",
+                "Neurocirculatory Asthenia",
+                "Conversion Disorder",
+                "Body Dysmorphic Disorders",
+                "Trichotillomania",
+                "Globus Sensation"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "Neurasthenia",
+                "Anxiety, Separation",
+                "Hypochondriasis",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "Neurasthenia",
+                "Depressive Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Premenstrual Dysphoric Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Depression, Postpartum",
+                "Bipolar and Related Disorders"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Somatoform Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Neurasthenia",
+                "Hypochondriasis",
+                "Body Dysmorphic Disorders",
+                "Conversion Disorder",
+                "Munchausen Syndrome",
+                "Munchausen Syndrome by Proxy",
+                "Globus Sensation",
+                "Neurocirculatory Asthenia",
+                "Body Integrity Identity Disorder"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Anxiety Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Anxiety, Separation",
+                "Panic Disorder",
+                "Phobic Disorders",
+                "Phobia, Social",
+                "Hypochondriasis"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"Neurasthenia\", \"Munchausen Syndrome\", \"Anxiety, Separation\", \"Premenstrual Dysphoric Disorder\", \"Body Dysmorphic Disorders\", \"Depressive Disorder, Treatment-Resistant\", \"Neurocirculatory Asthenia\", \"Hypochondriasis\", \"Seasonal Affective Disorder\", \"Trichotillomania\", \"Depressive Disorder\", \"Munchausen Syndrome by Proxy\", \"Globus Sensation\", \"Neurotic Disorders\", \"Panic Disorder\", \"Hoarding Disorder\", \"Body Integrity Identity Disorder\", \"Bipolar Disorder\", \"Cyclothymic Disorder\", \"Phobic Disorders\", \"Depression, Postpartum\", \"Phobia, Social\", \"Bipolar and Related Disorders\", \"Conversion Disorder\"]",
+                "siblings": "{\"Somatoform Disorders\": [\"Hypochondriasis\", \"Munchausen Syndrome\", \"Globus Sensation\", \"Body Integrity Identity Disorder\", \"Body Dysmorphic Disorders\", \"Munchausen Syndrome by Proxy\", \"Neurasthenia\", \"Conversion Disorder\"], \"Anxiety Disorders\": [\"Phobic Disorders\", \"Panic Disorder\", \"Anxiety, Separation\", \"Phobia, Social\", \"Trichotillomania\", \"Hoarding Disorder\", \"Neurotic Disorders\", \"Neurocirculatory Asthenia\"], \"Mood Disorders\": [\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]}",
+                "n": "24",
+                "domain": "medicine",
+                "concept": "Mood Disorders",
+                "parent_concept": "mental disorder",
+                "true_referents": "[\"Bipolar and Related Disorders\", \"Depression, Postpartum\", \"Depressive Disorder, Treatment-Resistant\", \"Seasonal Affective Disorder\", \"Cyclothymic Disorder\", \"Depressive Disorder\", \"Bipolar Disorder\", \"Premenstrual Dysphoric Disorder\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Premenstrual Dysphoric Disorder",
+                "Depressive Disorder, Treatment-Resistant",
+                "Depressive Disorder",
+                "Seasonal Affective Disorder",
+                "Bipolar Disorder",
+                "Cyclothymic Disorder",
+                "Bipolar and Related Disorders",
+                "Depression, Postpartum"
+            ]
+        }
+    ]
+}

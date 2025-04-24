@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "ribose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "D-ribose is a specific enantiomer of ribose, but ribose can refer to either D-ribose or L-ribose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are identical terms referring to the same molecule.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are identical terms referring to the same molecule.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-Ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-Ribose and D-ribose are different capitalizations of the same chemical compound, thus they are synonyms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are identical terms referring to the same chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "ribose isomer",
+        "judgement": {
+            "equivalent": false,
+            "reason": "D-ribose is a specific isomer of ribose, but ribose isomers include other forms such as L-ribose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are identical terms, referring to the same chemical compound.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "Aldopentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "D-ribose is an example of an aldopentose, but not all aldopentoses are D-ribose. Aldopentose refers to a class of sugars with five carbon atoms and an aldehyde group, whereas D-ribose is a specific type of aldopentose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are the same compound, therefore they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-sugar",
+        "judgement": {
+            "equivalent": false,
+            "reason": "D-ribose is a specific type of D-sugar, but not all D-sugars are D-ribose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are identical and refer to the same molecule.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are identical terms referring to the same sugar molecule.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are the same chemical compound and therefore are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "Ribose isomer",
+        "judgement": {
+            "equivalent": false,
+            "reason": "D-ribose is a specific isomer of ribose, but not all ribose isomers are D-ribose. Ribose can have different isomers, such as L-ribose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-ribose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "D-ribose and D-ribose are identical terms referring to the same pentose sugar molecule.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "D-ribose",
+        "domain": "chemistry",
+        "response": "D-glyceraldehyde",
+        "judgement": {
+            "equivalent": false,
+            "reason": "D-glyceraldehyde and D-ribose are both sugars, but they are different types. D-glyceraldehyde is a triose, while D-ribose is a pentose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

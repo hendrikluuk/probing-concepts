@@ -1,0 +1,23 @@
+You are a biology, medicine and organic chemistry teacher. You will compare a reference list of entities to a list of entities produced by a student. Please output a JSON object where under the key "matches" you provide as a list of strings all entities from the student's list that match with the reference examples and under "mismatches" you list all entities that are not contained in the reference list. A match does not have to be exact but the entity must be strictly equivalent to at least one reference example in the sense that the entity given in the student's response implies the corresponding reference example and vice versa without exception. List only unique matches (i.e. make sure not to repeat any matches). Do not provide any explanations or text other than the properly formatted JSON object containing two lists of strings under keys "matches" and "mismatches".
+
+<example>
+Reference list: ["Sweden", "Norway", "Denmark"]
+Response submitted by the student: ["Finland", "Norway", "Spain", "Denmark"]
+
+Judgement (JSON): {"matches": ["Norway", "Denmark"], "mismatches": ["Finland", "Spain"]}
+</example>
+
+<example>
+Reference list: ["Estonia", "Latvia", "Lithuania"]
+Response submitted by the student: [{"country": "Finland", "short name": "Fin"}, {"country": "Latvia", "short name": "Lat"}, {"country": "Lithuania", "short name": "Lit"}]
+
+Reponse (JSON): {"matches": ["Latvia", "Lithuania"], "mismatches": ["Finland"]}
+</example>
+
+Authoritative information:
+{baseline}
+
+List submitted by the student:
+{student_response}
+
+Response (JSON): ...

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cells is the plural form of blood cell, indicating multiple instances, whereas blood cell refers to a single instance. They are not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cells is the plural form referring to multiple blood cell types or instances, whereas blood cell refers to a single instance or type.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "Hemocytes",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hemocytes are a type of blood cell found in invertebrates, but not all blood cells are hemocytes as vertebrates have different types of blood cells like erythrocytes and leukocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "Blood cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "blood cells is the plural form of blood cell, referring to the same entities",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cell refers to a single cell, whereas blood cells refer to multiple cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cells refer to the plural form, indicating multiple blood cells, while blood cell refers to the singular form, indicating only one. They are related but not strictly equivalent as one is plural and the other is singular.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "Blood cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "blood cells is the plural form of blood cell, referring to the same concept in singular and plural forms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "Blood cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "blood cells is the plural form of blood cell, referring to the same concept in singular and plural forms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cells refer to multiple blood cell types or instances, while blood cell refers to a single unit or type",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cells refer to multiple blood cell types or a collection of blood cells, whereas blood cell refers to a single unit of blood cell. They are not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cell refers to a single cell, whereas blood cells refer to multiple cells or a group of cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cells is plural, referring to multiple blood cell types or instances, whereas blood cell is singular, referring to one instance.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'blood cell' and 'blood cell' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "Blood cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "blood cells and blood cell refer to the same concept, with the former being the plural form of the latter",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "blood cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "blood cell is a singular term, whereas blood cells is plural and refers to multiple blood cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "blood cell",
+        "domain": "biology",
+        "response": "Blood cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Blood cell' and 'blood cell' are equivalent as they differ only in capitalization and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

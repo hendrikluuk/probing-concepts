@@ -1,0 +1,972 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "dibenzothiazol-2-yl disulfide",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "(ethylsulfanyl)methanethiol",
+                "ethanethiol",
+                "Cyclopentanethiol"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "dibenzothiazol-2-yl disulfide",
+                "thioanisole",
+                "tyrphostin AG 825"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "dibenzothiazol-2-yl disulfide",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "2-Pentanethiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol",
+                "3-mercaptopentanol"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "pyridine-2-thiol",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol",
+                "thioanisole"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "(ethylsulfanyl)methanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "pyridine-2-thiol",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "Cyclopentanethiol",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "2-Pentanethiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "pyridine-2-thiol",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "dibenzothiazol-2-yl disulfide",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "(ethylsulfanyl)methanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "dibenzothiazol-2-yl disulfide",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol",
+                "3-mercaptopentanol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "pyridine-2-thiol",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "thioanisole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "Cyclopentanethiol",
+                "ethanethiol",
+                "3-mercaptopentanol",
+                "thioanisole"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "thioanisole",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "2-Pentanethiol",
+                "1,8-Octanedithiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol",
+                "3-mercaptopentanol",
+                "2-thio-N(6)-(Delta(2)-isopentenyl)adenosine",
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "coenzyme A",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "3-oxoisooctadecanoyl-CoA",
+                "methylpropanoyl-CoA",
+                "trans-2-heptadecenoyl-CoA",
+                "(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA",
+                "(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA",
+                "(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA",
+                "(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA",
+                "cyclohexa-1,4-diene-1-carbonyl-CoA"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "aryl thiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "pyrimidine-2-thiol",
+                "pyridine-2-thiol",
+                "thioanisole",
+                "4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid",
+                "dibenzothiazol-2-yl disulfide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"2-Pentanethiol\", \"3-oxoisooctadecanoyl-CoA\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"methylpropanoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"pyrimidine-2-thiol\", \"1,8-Octanedithiol\", \"pyridine-2-thiol\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"2-Ethyl-1-hexanethiol\", \"(ethylsulfanyl)methanethiol\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"Cyclopentanethiol\", \"demeton-S-methyl\", \"ethanethiol\", \"3-mercaptopentanol\", \"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"dibenzothiazol-2-yl disulfide\", \"thioanisole\", \"tyrphostin AG 825\"]",
+                "siblings": "{\"coenzyme A\": [\"(11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA\", \"trans-2-heptadecenoyl-CoA\", \"3-oxoisooctadecanoyl-CoA\", \"methylpropanoyl-CoA\", \"(2E,19Z,22Z,25Z,28Z)-tetratriacontapentaenoyl-CoA\", \"cyclohexa-1,4-diene-1-carbonyl-CoA\", \"(3R,13Z,16Z,19Z,22Z,25Z)-3-hydroxyoctacosapentaenoyl-CoA\", \"(12Z,15Z,18Z,21Z,24Z)-triacontapentaenoyl-CoA\"], \"aryl thiol\": [\"2-thio-N(6)-L-threonylcarbamoyladenine 5'-monophosphate\", \"tyrphostin AG 825\", \"pyridine-2-thiol\", \"4-[(2-chloro-5-thiazolyl)methylthio]benzoic acid\", \"pyrimidine-2-thiol\", \"dibenzothiazol-2-yl disulfide\", \"2-thio-N(6)-(Delta(2)-isopentenyl)adenosine\", \"thioanisole\"], \"alkanethiol\": [\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkanethiol",
+                "parent_concept": "thiol",
+                "true_referents": "[\"(ethylsulfanyl)methanethiol\", \"demeton-S-methyl\", \"Cyclopentanethiol\", \"2-Pentanethiol\", \"2-Ethyl-1-hexanethiol\", \"1,8-Octanedithiol\", \"3-mercaptopentanol\", \"ethanethiol\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "2-Pentanethiol",
+                "2-Ethyl-1-hexanethiol",
+                "Cyclopentanethiol",
+                "ethanethiol",
+                "cyclohexanethiol"
+            ]
+        }
+    ]
+}

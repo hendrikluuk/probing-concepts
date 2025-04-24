@@ -1,0 +1,996 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "Putrescine_d4",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "1-Hexadecylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "Allylamine",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide",
+                "N-acetylcysteamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "Putrescine_d4",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "N-acetylcysteamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "Putrescine_d4",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "2-(1H-benzimidazol-2-yl)aniline",
+                "4-(4-nitrophenylazo)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "2,4-dimethylpentan-3-amine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "Putrescine_d4",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine",
+                "L-arginine 2-naphthylamide"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "Allylamine",
+                "isopentylamine",
+                "1-Hexadecylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "Allylamine",
+                "isopentylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "Putrescine_d4",
+                "N-lauryldiethanolamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "o1-mini",
+            "response": []
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "rimantadine",
+                "Allylamine",
+                "Putrescine_d4",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "2,4,4-trimethyl-2-Pentanamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Allylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine",
+                "Putrescine_d4"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "N-(3-aminopropyl)-4-aminobutanal",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "Putrescine_d4",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "Putrescine_d4",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "alkylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "1,2-diamino-2-methylpropane",
+                "2,4-dimethylpentan-3-amine",
+                "1-(1-adamantyl)ethanamine",
+                "2,4,4-trimethyl-2-Pentanamine",
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine",
+                "N-lauryldiethanolamine"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary arylamine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "4-(4-nitrophenylazo)aniline",
+                "2-(1H-benzimidazol-2-yl)aniline"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"1,2-diamino-2-methylpropane\", \"2,4-dimethylpentan-3-amine\", \"1-(1-adamantyl)ethanamine\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\", \"N-acetylcysteamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"2,4,4-trimethyl-2-Pentanamine\", \"4-(4-nitrophenylazo)aniline\", \"rimantadine\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"Allylamine\", \"2-isopropylaminoethylamine\", \"Putrescine_d4\", \"N-lauryldiethanolamine\", \"isopentylamine\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"1-Hexadecylamine\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"alachlor\", \"cysteamine\", \"2-(1H-benzimidazol-2-yl)aniline\", \"Spenolimycin\", \"L-arginine 2-naphthylamide\"]",
+                "siblings": "{\"alkylamine\": [\"1-(1-adamantyl)ethanamine\", \"1-Hexadecylamine\", \"Allylamine\", \"Putrescine_d4\", \"rimantadine\", \"2,4,4-trimethyl-2-Pentanamine\", \"1,2-diamino-2-methylpropane\", \"N-[Bis(3-aminopropyl)amino]-N-hydroxynitrous amide\"], \"primary arylamine\": [\"2-(1H-benzimidazol-2-yl)aniline\", \"alachlor\", \"L-arginine 2-naphthylamide\", \"(2R,2'R)-2,2'-[(2-Iodo-1,3-phenylene)bis(oxy)]bis[N-(2,4,6-trimethylphenyl)propanamide]\", \"N-(3,4-dichlorophenyl)-2-[(2,4-dichlorophenyl)methoxyiminomethyl]-3-(dimethylamino)-2-propenamide\", \"1-[(2,3-dimethyl-4-imidazolyl)methyl]-N-[4-(2-furanyl)phenyl]-3-piperidinecarboxamide\", \"N-(3-fluoro-4-methylphenyl)-1-(2-pyrimidinyl)-3-piperidinecarboxamide\", \"4-(4-nitrophenylazo)aniline\"], \"primary aliphatic amine\": [\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary aliphatic amine",
+                "parent_concept": "primary amine",
+                "true_referents": "[\"Spenolimycin\", \"cysteamine\", \"isopentylamine\", \"2-isopropylaminoethylamine\", \"N-(3-aminopropyl)-4-aminobutanal\", \"N-lauryldiethanolamine\", \"N-acetylcysteamine\", \"2,4-dimethylpentan-3-amine\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "Allylamine",
+                "2-isopropylaminoethylamine",
+                "isopentylamine",
+                "1-Hexadecylamine",
+                "cysteamine"
+            ]
+        }
+    ]
+}

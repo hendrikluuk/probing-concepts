@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "tertiary alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A tertiary alcohol has the hydroxyl group connected to a carbon atom that is bonded to three other carbon atoms, whereas a secondary alcohol has the hydroxyl group connected to a carbon atom that is bonded to two other carbon atoms. Thus, not all tertiary alcohols are secondary alcohols and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'secondary alcohol' and 'secondary alcohol' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "Secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The capitalization difference does not affect the meaning; both refer to the same chemical classification.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "Secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical structure where the hydroxyl group is attached to a carbon atom that is connected to two other carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of alcohol where the hydroxyl group is attached to a secondary carbon atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical structure where the hydroxyl group is attached to a secondary carbon atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "Secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Secondary alcohol' and 'secondary alcohol' are identical except for capitalization, which does not affect their meaning in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "Alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A secondary alcohol is a type of alcohol, but not all alcohols are secondary alcohols. Alcohols can also be primary or tertiary.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same chemical classification of alcohols, where the hydroxyl group is attached to a secondary carbon atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "tertiary alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "tertiary alcohols and secondary alcohols are different classes of alcohols based on the carbon atom to which the hydroxyl group is attached. In tertiary alcohols, the carbon is attached to three other carbon atoms, whereas in secondary alcohols, it is attached to two other carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical structure, where a hydroxyl group is attached to a secondary carbon atom.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "secondary alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'secondary alcohol' and 'secondary alcohol' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A secondary alcohol is a type of alcohol, but not all alcohols are secondary alcohols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "secondary alcohol is a type of alcohol, but not all alcohols are secondary alcohols",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "tertiary alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A tertiary alcohol has the hydroxyl group connected to a carbon atom that is attached to three other carbon atoms, whereas a secondary alcohol has the hydroxyl group connected to a carbon atom that is attached to two other carbon atoms. Therefore, they are distinct types of alcohols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "secondary alcohol",
+        "domain": "chemistry",
+        "response": "Concept: \"alcohol\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "secondary alcohol is a type of alcohol, but not all alcohols are secondary alcohols",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

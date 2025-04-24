@@ -1,0 +1,1900 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "D-tagatose 1,6-bisphosphate",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "beta-D-tagatofuranose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate",
+                "D-tagatose"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 6,
+            "FP": 3,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative",
+            "3-deoxyglucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative",
+                "3-deoxyglucosone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "deoxyketohexose derivative",
+            "3-deoxyglucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative",
+                "3-deoxyglucosone"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "tagatose derivative",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatopyranose",
+            "D-tagatose 1,6-bisphosphate",
+            "D-tagatopyranose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "3-dehydro-D-glucoside",
+                "deoxyketohexose phosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "deoxyketohexose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 8,
+            "FP": 6,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "3-dehydro-D-guloside",
+            "3-deoxyglucosone",
+            "3-deoxy-3-methyl-beta-D-fructofuranose",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-deoxyglucosone",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "deoxyketohexose derivative"
+            ],
+            "mismatches": [
+                "3-dehydro-D-glucoside",
+                "3-dehydro-D-guloside"
+            ],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "tagatose derivative",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatofuranose",
+            "D-tagatopyranose",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "D-tagatopyranose"
+            ],
+            "mismatches": [
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-deoxyglucosone",
+            "3-deoxy-3-methyl-beta-D-fructofuranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-deoxyglucosone",
+                "3-deoxy-3-methyl-beta-D-fructofuranose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "deoxyketohexose derivative",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "L-rhamnulose 1-phosphate",
+            "L-fuculose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose derivative",
+                "keto-D-tagatose 6-phosphate",
+                "L-rhamnulose 1-phosphate",
+                "L-fuculose"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "beta-D-tagatopyranose",
+            "D-tagatopyranose",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "D-tagatopyranose"
+            ],
+            "mismatches": [
+                "tagatose derivative",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 5,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative",
+            "3-deoxyglucosone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative",
+                "3-deoxyglucosone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose 1,6-bisphosphate",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "D-tagatopyranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "D-tagatopyranose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "tagatose derivative",
+            "L-rhamnulose 1-phosphate",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate",
+            "L-rhamnulose 1-phosphate",
+            "3-deoxy-3-methyl-beta-D-fructofuranose",
+            "L-fuculose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "L-rhamnulose 1-phosphate",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "L-fuculose"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 4,
+            "FP": 9,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "tagatose derivative",
+            "beta-D-tagatopyranose",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "beta-D-tagatopyranose"
+            ],
+            "mismatches": [
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "beta-D-tagatopyranose",
+            "keto-D-tagatose 6-phosphate",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 8,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "tagatose derivative",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 5,
+            "FP": 5,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "beta-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "deoxyketohexose phosphate",
+            "3-dehydro-D-guloside",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "mismatches": [
+                "3-dehydro-D-glucoside",
+                "3-dehydro-D-guloside"
+            ],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "3-dehydro-D-guloside",
+            "L-rhamnulose 1-phosphate",
+            "D-tagatopyranose",
+            "3-deoxyglucosone",
+            "ascopyrone M",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate",
+            "L-rhamnulose 1-phosphate",
+            "3-deoxy-3-methyl-beta-D-fructofuranose",
+            "3-dehydro-D-guloside",
+            "L-fuculose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "L-rhamnulose 1-phosphate",
+                "D-tagatopyranose",
+                "3-deoxyglucosone",
+                "ascopyrone M",
+                "D-tagatopyranose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "L-fuculose"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 6,
+            "FP": 11,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "keto-D-tagatose 6-phosphate",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 8,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-deoxyglucosone",
+            "L-fuculose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-deoxyglucosone",
+                "L-fuculose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "L-rhamnulose 1-phosphate",
+            "beta-D-tagatopyranose",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate",
+            "3-deoxy-3-methyl-beta-D-fructofuranose",
+            "L-fuculose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "L-rhamnulose 1-phosphate",
+                "beta-D-tagatopyranose",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "L-fuculose"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 4,
+            "FP": 12,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "D-tagatopyranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "D-tagatopyranose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-deoxyglucosone",
+            "L-fuculose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-deoxyglucosone",
+                "L-fuculose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "3-dehydro-D-guloside",
+            "beta-D-tagatopyranose",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatopyranose",
+            "3-deoxyglucosone",
+            "ascopyrone M",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate",
+            "3-deoxy-3-methyl-beta-D-fructofuranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative",
+                "D-tagatopyranose",
+                "3-deoxyglucosone",
+                "ascopyrone M",
+                "D-tagatopyranose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 6,
+            "FP": 12,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "D-tagatopyranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "D-tagatopyranose"
+            ],
+            "mismatches": [
+                "tagatose derivative"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "3-dehydro-D-guloside",
+            "L-rhamnulose 1-phosphate",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "beta-D-tagatopyranose",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative",
+            "D-tagatopyranose",
+            "3-deoxyglucosone",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate",
+            "L-rhamnulose 1-phosphate",
+            "3-deoxy-3-methyl-beta-D-fructofuranose",
+            "3-dehydro-D-guloside",
+            "L-fuculose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "L-rhamnulose 1-phosphate",
+                "beta-D-tagatopyranose",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative",
+                "D-tagatopyranose",
+                "3-deoxyglucosone",
+                "D-tagatopyranose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "L-fuculose"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 6,
+            "FP": 13,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate",
+            "tagatose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "D-tagatose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-deoxyglucosone",
+            "deoxyketohexose derivative",
+            "deoxyketohexose phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-deoxyglucosone",
+                "deoxyketohexose derivative",
+                "deoxyketohexose phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative",
+            "keto-D-tagatose 6-phosphate",
+            "3-deoxyglucosone",
+            "ascopyrone M"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative",
+                "keto-D-tagatose 6-phosphate",
+                "3-deoxyglucosone",
+                "ascopyrone M"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "keto-D-tagatose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "tagatose derivative",
+            "beta-D-tagatofuranose",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "beta-D-tagatopyranose",
+            "keto-D-tagatose 6-phosphate",
+            "D-tagatopyranose",
+            "D-tagatopyranose 1-phosphate",
+            "D-tagatose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatopyranose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "3-dehydro-D-glucoside",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "3-dehydro-D-guloside",
+            "deoxyketohexose derivative",
+            "3-deoxyglucosone",
+            "3-deoxy-3-methyl-beta-D-fructofuranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative",
+                "3-deoxyglucosone",
+                "3-deoxy-3-methyl-beta-D-fructofuranose"
+            ],
+            "mismatches": [
+                "3-dehydro-D-glucoside",
+                "keto-D-tagatose",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside"
+            ],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "keto-D-tagatose",
+            "deoxyketohexose phosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "tagatose derivative",
+            "3-dehydro-D-guloside",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucoside",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "3-dehydro-D-guloside"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-tagoside",
+            "keto-D-tagatose",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatofuranose",
+            "tagatose derivative",
+            "D-tagatofuranose 1,6-bisphosphate",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "D-tagatopyranose",
+            "D-tagatose 1,6-bisphosphate",
+            "D-tagatopyranose 1-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate"
+            ],
+            "mismatches": [
+                "3-dehydro-D-tagoside",
+                "tagatose derivative",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "D-tagatose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "3-deoxyketohexose phosphate",
+            "keto-D-tagatose",
+            "deoxyketohexose derivative",
+            "3-deoxyglucosone",
+            "3-deoxy-3-methyl-beta-D-fructofuranose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose derivative",
+                "3-deoxyglucosone",
+                "3-deoxy-3-methyl-beta-D-fructofuranose"
+            ],
+            "mismatches": [
+                "3-deoxyketohexose phosphate",
+                "keto-D-tagatose"
+            ],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "3-dehydro-D-glucoside",
+            "keto-D-tagatose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-dehydro-D-glucoside",
+                "keto-D-tagatose 1,6-bisphosphate"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tagatose",
+        "domain": "chemistry",
+        "response": [
+            "D-tagatopyranose",
+            "keto-D-tagatose",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "D-tagatose 1,6-bisphosphate",
+            "tagatose derivative",
+            "alpha-D-tagatofuranose",
+            "beta-D-tagatofuranose",
+            "beta-D-tagatopyranose",
+            "D-tagatofuranose 1,6-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-tagatopyranose",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "alpha-D-tagatofuranose",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "mismatches": [
+                "keto-D-tagatose 1,6-bisphosphate",
+                "D-tagatose 1,6-bisphosphate",
+                "tagatose derivative",
+                "D-tagatofuranose 1,6-bisphosphate"
+            ],
+            "true_referents": [
+                "alpha-D-tagatofuranose",
+                "D-tagatopyranose",
+                "D-tagatopyranose 1-phosphate",
+                "keto-D-tagatose",
+                "keto-D-tagatose 6-phosphate",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "beta-D-tagatofuranose",
+                "beta-D-tagatopyranose"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "deoxyketohexose",
+        "domain": "chemistry",
+        "response": [
+            "deoxyketohexose phosphate",
+            "deoxyketohexose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "deoxyketohexose phosphate",
+                "deoxyketohexose derivative"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "L-rhamnulose 1-phosphate",
+                "deoxyketohexose derivative",
+                "L-rhamnulose 1-phosphate",
+                "3-deoxy-3-methyl-beta-D-fructofuranose",
+                "3-deoxyglucosone",
+                "deoxyketohexose phosphate",
+                "ascopyrone M",
+                "L-fuculose"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketohexose derivative",
+        "domain": "chemistry",
+        "response": [
+            "keto-D-tagatose",
+            "deoxyketohexose derivative",
+            "keto-D-tagatose 1,6-bisphosphate",
+            "keto-D-tagatose 6-phosphate",
+            "tagatose derivative"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "keto-D-tagatose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "mismatches": [
+                "keto-D-tagatose",
+                "deoxyketohexose derivative",
+                "keto-D-tagatose 6-phosphate"
+            ],
+            "true_referents": [
+                "3-dehydro-D-guloside",
+                "D-tagatose 1,6-bisphosphate",
+                "topiramate",
+                "keto-D-tagatose 1,6-bisphosphate",
+                "3-dehydro-D-guloside",
+                "3-dehydro-D-glucoside",
+                "D-tagatofuranose 1,6-bisphosphate",
+                "tagatose derivative"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    }
+]

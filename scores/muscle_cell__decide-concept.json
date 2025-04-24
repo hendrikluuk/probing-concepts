@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "muscle cell and muscle cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle fiber",
+        "judgement": {
+            "equivalent": false,
+            "reason": "muscle fibers are composed of multiple muscle cells (myocytes), so not all muscle fibers are single muscle cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "Muscle cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "muscle cell refers to a single cell, while muscle cells refer to multiple cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "Muscle fiber",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A muscle fiber is composed of multiple muscle cells (also known as myocytes), so they are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "muscle cells is simply the plural form of muscle cell, and both refer to the same type of cell.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "muscle cells refers to multiple muscle cell units, whereas muscle cell refers to a single unit.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "Muscle cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Muscle cells refer to multiple cells, whereas muscle cell refers to a single cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "Muscle cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Muscle cells refer to multiple cells, while muscle cell refers to a single cell. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "myocyte",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myocyte and muscle cell are synonyms, both referring to the same type of cell found in muscle tissue.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle fibers",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A muscle fiber is a single muscle cell, but the term 'muscle fibers' typically refers to multiple muscle cells. Therefore, they are not strictly equivalent as 'muscle fibers' implies more than one muscle cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "myocyte",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myocyte and muscle cell are synonyms; both refer to the same type of cell found in muscle tissue.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "muscle cells refer to multiple muscle cells, whereas muscle cell refers to a single muscle cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "muscle cell and muscle cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "Muscle cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Muscle cells refer to multiple muscle cells, while muscle cell refers to a single muscle cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "muscle cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "muscle cell and muscle cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "muscle cell",
+        "domain": "biology",
+        "response": "Muscle cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Muscle cell' and 'muscle cell' refer to the same biological entity, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

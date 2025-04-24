@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "tca cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'tca cycle enzyme' and 'TCA cycle enzyme' are equivalent as they refer to the same set of enzymes involved in the tricarboxylic acid cycle, with the only difference being the capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "tricarboxylic acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "TCA cycle is an abbreviation for tricarboxylic acid cycle, so both terms refer to enzymes involved in the same biochemical cycle.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "TCA cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same concept, namely enzymes involved in the TCA cycle.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "Metabolic enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "TCA cycle enzymes are a subset of metabolic enzymes, but not all metabolic enzymes are involved in the TCA cycle.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "citric acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The citric acid cycle and the TCA cycle are different names for the same metabolic pathway, so enzymes involved in either are the same.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "tricarboxylic acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "TCA cycle is an abbreviation for tricarboxylic acid cycle, so they refer to the same cycle and its enzymes.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "TCA cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept without exceptions.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "Tricarboxylic acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Tricarboxylic acid cycle and TCA cycle are different names for the same metabolic pathway, and thus their enzymes are equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "tricarboxylic acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "TCA cycle is the abbreviation for tricarboxylic acid cycle, so tricarboxylic acid cycle enzyme and TCA cycle enzyme refer to the same enzymes involved in the cycle.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "TCA cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same concept, as they are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "TCA cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "TCA cycle enzyme and TCA cycle enzyme are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "tricarboxylic acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "TCA cycle is the abbreviation for tricarboxylic acid cycle, so tricarboxylic acid cycle enzyme and TCA cycle enzyme refer to the same enzymes involved in this cycle.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "enzyme",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A TCA cycle enzyme is a specific type of enzyme involved in the TCA cycle, but not all enzymes are TCA cycle enzymes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "Aconitase",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Aconitase is an enzyme in the TCA cycle, but not all TCA cycle enzymes are aconitase.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "tricarboxylic acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "tricarboxylic acid cycle and TCA cycle are synonymous terms, so their enzymes are equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "TCA cycle enzyme",
+        "domain": "biology",
+        "response": "tricarboxylic acid cycle enzyme",
+        "judgement": {
+            "equivalent": true,
+            "reason": "TCA cycle stands for the tricarboxylic acid cycle, so tricarboxylic acid cycle enzyme and TCA cycle enzyme refer to the same enzymes involved in this metabolic pathway.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,1698 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9",
+            "3-demethylubiquinone-9(1-)",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-demethylubiquinone-9",
+                "3-demethylubiquinone-9(1-)",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethylubiquinone-9",
+            "3-demethyl-5-methylmenaquinone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 1,
+            "FP": 5,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "Mansonone C",
+            "Saliniquinone E",
+            "delta-Indomycinone",
+            "rhodomycin D",
+            "Penipurdin A",
+            "13-deoxycarminomycin",
+            "nanaomycin A",
+            "Sterekunthal B",
+            "Pseudoalteromone A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Saliniquinone E",
+                "delta-Indomycinone",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "mismatches": [
+                "Mansonone C",
+                "rhodomycin D",
+                "13-deoxycarminomycin",
+                "nanaomycin A",
+                "Pseudoalteromone A"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "pyrroloquinoline quinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethyl-5-methylmenaquinone",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "3-demethylubiquinone-9",
+            "rhodomycin D",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pyrroloquinoline quinone",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "Saliniquinone E",
+                "3-demethylubiquinone-9",
+                "rhodomycin D"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethylubiquinone-9",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethylubiquinone-9"
+            ],
+            "mismatches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "Gephyromycin",
+            "3-demethyl-5-methylmenaquinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "Mycenon",
+            "3-demethylubiquinone-9",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "nanaomycin A",
+            "7-O-geranyl-2-O,3-dimethylflaviolin",
+            "laccaridione A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mansonone C",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "Mycenon",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "laccaridione A"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "Gephyromycin",
+                "3-demethyl-5-methylmenaquinone",
+                "Saliniquinone E",
+                "3-demethylubiquinone-9",
+                "nanaomycin A",
+                "7-O-geranyl-2-O,3-dimethylflaviolin"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 5,
+            "FP": 7,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "3-demethyl-5-methylmenaquinone",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "3-demethylubiquinone-9",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "3-demethylubiquinone-9"
+            ],
+            "mismatches": [
+                "Mansonone C",
+                "pyrroloquinoline quinone",
+                "Saliniquinone E",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 3,
+            "FP": 7,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "3-demethyl-5-methylmenaquinone",
+            "pyrroloquinoline quinone",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "3-demethylubiquinone-9",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "nanaomycin A",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mansonone C",
+                "pyrroloquinoline quinone",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "3-demethylubiquinone-9",
+                "nanaomycin A",
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 5,
+            "FP": 6,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "Gephyromycin",
+            "3-demethyl-5-methylmenaquinone",
+            "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "Mycenon",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "delta-Indomycinone",
+            "3-demethylubiquinone-9",
+            "rhodomycin D",
+            "Penipurdin A",
+            "13-deoxycarminomycin",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "nanaomycin A",
+            "7-O-geranyl-2-O,3-dimethylflaviolin",
+            "laccaridione A",
+            "Sterekunthal B",
+            "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Pseudoalteromone A",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "3-demethylubiquinone-9",
+                "rhodomycin D",
+                "13-deoxycarminomycin",
+                "nanaomycin A",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "Pseudoalteromone A"
+            ],
+            "mismatches": [
+                "Mansonone C",
+                "Gephyromycin",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "pyrroloquinoline quinone",
+                "Saliniquinone E",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "Mycenon",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "delta-Indomycinone",
+                "Penipurdin A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "laccaridione A",
+                "Sterekunthal B",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 8,
+            "FP": 16,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "Gephyromycin",
+            "3-demethyl-5-methylmenaquinone",
+            "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "Mycenon",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "delta-Indomycinone",
+            "3-demethylubiquinone-9",
+            "rhodomycin D",
+            "Penipurdin A",
+            "13-deoxycarminomycin",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "nanaomycin A",
+            "7-O-geranyl-2-O,3-dimethylflaviolin",
+            "laccaridione A",
+            "Sterekunthal B",
+            "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Pseudoalteromone A",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Gephyromycin",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "delta-Indomycinone",
+                "Penipurdin A",
+                "Sterekunthal B",
+                "Aloe emodin"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "Mansonone C",
+                "3-demethyl-5-methylmenaquinone",
+                "pyrroloquinoline quinone",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "Mycenon",
+                "3-demethylubiquinone-9",
+                "rhodomycin D",
+                "13-deoxycarminomycin",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "nanaomycin A",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "laccaridione A",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Pseudoalteromone A"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 8,
+            "FP": 16,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "Gephyromycin",
+            "3-demethyl-5-methylmenaquinone",
+            "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "Mycenon",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "delta-Indomycinone",
+            "3-demethylubiquinone-9",
+            "rhodomycin D",
+            "Penipurdin A",
+            "13-deoxycarminomycin",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "nanaomycin A",
+            "7-O-geranyl-2-O,3-dimethylflaviolin",
+            "laccaridione A",
+            "Sterekunthal B",
+            "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Pseudoalteromone A",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mansonone C",
+                "pyrroloquinoline quinone",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "Mycenon",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "laccaridione A",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "Gephyromycin",
+                "3-demethyl-5-methylmenaquinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "delta-Indomycinone",
+                "3-demethylubiquinone-9",
+                "rhodomycin D",
+                "Penipurdin A",
+                "13-deoxycarminomycin",
+                "nanaomycin A",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "Sterekunthal B",
+                "Pseudoalteromone A",
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 8,
+            "FP": 16,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethylubiquinone-9",
+            "3-demethyl-5-methylmenaquinone",
+            "Saliniquinone E",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "7-O-geranyl-2-O,3-dimethylflaviolin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin"
+            ],
+            "mismatches": [
+                "Saliniquinone E",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "Aloe emodin",
+            "rhodomycin D"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin"
+            ],
+            "mismatches": [
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "rhodomycin D"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "3-demethyl-5-methylmenaquinone",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "delta-Indomycinone",
+            "3-demethylubiquinone-9",
+            "rhodomycin D",
+            "13-deoxycarminomycin",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "nanaomycin A",
+            "laccaridione A",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "3-demethylubiquinone-9",
+                "rhodomycin D",
+                "13-deoxycarminomycin",
+                "nanaomycin A"
+            ],
+            "mismatches": [
+                "Mansonone C",
+                "pyrroloquinoline quinone",
+                "Saliniquinone E",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "delta-Indomycinone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "laccaridione A",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 6,
+            "FP": 10,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "Mansonone C",
+            "3-demethyl-5-methylmenaquinone",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "delta-Indomycinone",
+            "3-demethylubiquinone-9",
+            "rhodomycin D",
+            "13-deoxycarminomycin",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "nanaomycin A",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "delta-Indomycinone",
+                "Aloe emodin"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "Mansonone C",
+                "3-demethyl-5-methylmenaquinone",
+                "pyrroloquinoline quinone",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "3-demethylubiquinone-9",
+                "rhodomycin D",
+                "13-deoxycarminomycin",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "nanaomycin A",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 4,
+            "FP": 11,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethylubiquinone-9",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethylubiquinone-9"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 4,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "Mycenon",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "laccaridione A",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin"
+            ],
+            "mismatches": [
+                "Mycenon",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "laccaridione A",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethyl-5-methylmenaquinone",
+            "pyrroloquinoline quinone",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "3-demethylubiquinone-9",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "3-demethylubiquinone-9"
+            ],
+            "mismatches": [
+                "pyrroloquinoline quinone",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethylubiquinone-9",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethylubiquinone-9",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "Aloe emodin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "Aloe emodin"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethyl-5-methylmenaquinone",
+            "3-demethylubiquinone-9",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "3-demethylubiquinone-9"
+            ],
+            "mismatches": [
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethylubiquinone-9",
+            "3-demethyl-5-methylmenaquinone",
+            "pyrroloquinoline quinone",
+            "Saliniquinone E",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Saliniquinone E"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "pyrroloquinoline quinone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 1,
+            "FP": 6,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "3-demethylubiquinone-9(1-)",
+            "3-demethyl-5-methylmenaquinone",
+            "3-demethylubiquinone-9",
+            "Saliniquone E",
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [
+                "3-demethylubiquinone-9(1-)",
+                "3-demethyl-5-methylmenaquinone",
+                "3-demethylubiquinone-9",
+                "Saliniquone E"
+            ],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "p-quinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+            ],
+            "true_referents": [
+                "3-demethylubiquinone-9",
+                "3-demethyl-5-methylmenaquinone",
+                "7-O-geranyl-2-O,3-dimethylflaviolin",
+                "3-demethylubiquinone-9(1-)",
+                "Pseudoalteromone A",
+                "nanaomycin A",
+                "rhodomycin D",
+                "13-deoxycarminomycin"
+            ],
+            "TP": 0,
+            "FP": 3,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "acenoquinone",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+            "5-Chloro-2-hydroxy-p-benzoquinone",
+            "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid"
+            ],
+            "mismatches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone"
+            ],
+            "true_referents": [
+                "Saliniquinone E",
+                "4-bromo-1-hydroxyanthraquinone-2-carboxylic acid",
+                "Aloe emodin",
+                "Gephyromycin",
+                "delta-Indomycinone",
+                "Xanthorin 1-O-methyl ether 8-O-beta-D-ge",
+                "Penipurdin A",
+                "Sterekunthal B"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "orthoquinones",
+        "domain": "chemistry",
+        "response": [
+            "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+            "5-Chloro-2-hydroxy-p-benzoquinone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "5-Chloro-2-hydroxy-p-benzoquinone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Mycenon",
+                "2-Hydroxy-4-imino-2,5-cyclohexadienone",
+                "laccaridione A",
+                "3-[4-(p-chlorophenyl)cyclohexyl]-4-hydroxy-1,2-naphthoquinone",
+                "6-(2-amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid",
+                "pyrroloquinoline quinone",
+                "5-Chloro-2-hydroxy-p-benzoquinone",
+                "Mansonone C"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    }
+]

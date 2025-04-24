@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibacterial",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibacterial refers to anything that prevents the growth of bacteria, while an antibacterial agent specifically refers to a substance or compound that achieves this effect. Not all antibacterials are agents; some could be processes or materials.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibacterial agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept without any distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibacterial",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibacterial refers to anything that destroys or inhibits the growth of bacteria, while an antibacterial agent specifically refers to substances used for this purpose. Not all antibacterials are agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibacterial agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept without any distinction.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antibiotic is a type of antibacterial agent, but not all antibacterial agents are antibiotics. Antibacterial agents can include substances like disinfectants and antiseptics, which are not antibiotics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibiotics are a subset of antibacterial agents, but not all antibacterial agents are antibiotics. Antibacterial agents can include disinfectants and antiseptics, which are not antibiotics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antibiotic is a type of antibacterial agent, but not all antibacterial agents are antibiotics. Antibacterial agents can include substances like disinfectants and antiseptics, which are not classified as antibiotics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antibiotic is a type of antibacterial agent, but not all antibacterial agents are antibiotics. Antibacterial agents can include other substances like antiseptics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibacterial agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibiotic refers to a broader category including substances that can kill or inhibit the growth of bacteria, while antibacterial agent specifically targets bacteria. Not all antibiotics are antibacterial agents as some may target fungi or parasites.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibacterial agent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'antibacterial agent' is identical to 'antibacterial agent', indicating they are the same concept without any differences.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibacterial",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibacterial refers to anything that prevents bacterial growth, while antibacterial agent specifically refers to substances or compounds that achieve this effect.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibiotics are a subset of antibacterial agents, but not all antibacterial agents are antibiotics as some may be antiseptics or disinfectants.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Antibiotics are a subset of antibacterial agents, but not all antibacterial agents are antibiotics. Some antibacterial agents can be antiseptics or disinfectants that are not classified as antibiotics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "antibiotic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibiotics are a type of antibacterial agent, but not all antibacterial agents are antibiotics. Antibacterial agents can include other substances like disinfectants and antiseptics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "antibacterial agent",
+        "domain": "medicine",
+        "response": "ANTIBIOTIC",
+        "judgement": {
+            "equivalent": false,
+            "reason": "antibiotics are a type of antibacterial agent, but not all antibacterial agents are antibiotics. Antibacterial agents can also include substances like antiseptics and disinfectants, which are not classified as antibiotics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

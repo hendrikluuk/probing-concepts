@@ -1,0 +1,212 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "lipid-lowering drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lipid-lowering drug is used to reduce lipid levels in the blood, which may include drugs approved for hypercholesterolemia, but not all lipid-lowering drugs are specifically approved for hypercholesterolemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "hypolipidemic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hypolipidemic agent is a substance used to lower lipid levels in the blood, but not all hypolipidemic agents are approved drugs specifically for hypercholesterolemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "lipid-lowering drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lipid-lowering drug is any drug that reduces lipid levels, but not all lipid-lowering drugs are approved for hypercholesterolemia. Additionally, an approved drug for hypercholesterolemia may not necessarily be a lipid-lowering drug if it works through other mechanisms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "lipid-lowering drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lipid-lowering drug is designed to lower lipid levels, but not all lipid-lowering drugs are approved specifically for hypercholesterolemia, and there are approved drugs for hypercholesterolemia that may not primarily function as lipid-lowering drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "Lipid-lowering drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lipid-lowering drug is designed to lower lipid levels, but not all lipid-lowering drugs are approved specifically for hypercholesterolemia. Additionally, there may be approved drugs for hypercholesterolemia that do not primarily function as lipid-lowering agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "Statins",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Statins are a class of drugs used to lower cholesterol, but not all approved drugs for hypercholesterolemia are statins. Other drugs like bile acid sequestrants and cholesterol absorption inhibitors are also used to treat hypercholesterolemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "Lipid-lowering medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Lipid-lowering medications are used to lower lipid levels, but not all of them are specifically approved drugs for hypercholesterolemia, and not all approved drugs for hypercholesterolemia are lipid-lowering medications.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "lipid-lowering drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lipid-lowering drug is a type of medication that reduces lipid levels in the blood, which can include drugs that are not specifically approved for hypercholesterolemia. Conversely, an approved drug for hypercholesterolemia specifically targets high cholesterol levels but may not include all types of lipid-lowering drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "lipid-lowering medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Lipid-lowering medications are used to reduce lipid levels, including cholesterol, but not all lipid-lowering medications are specifically approved drugs for hypercholesterolemia. Additionally, some approved drugs for hypercholesterolemia may have other primary functions beyond lipid-lowering.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "Hypolipidemic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hypolipidemic agent is a substance used to lower lipid levels in the blood, which may include drugs not specifically approved for hypercholesterolemia, while an approved drug for hypercholesterolemia specifically targets high cholesterol and has regulatory approval for that condition.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "hypolipidemic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Hypolipidemic refers to any agent that lowers lipid levels, which may include drugs not approved for hypercholesterolemia. Not all hypolipidemic agents are approved drugs specifically for hypercholesterolemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "statin",
+        "judgement": {
+            "equivalent": false,
+            "reason": "statin is a class of drugs used to lower cholesterol, but not all statins are approved drugs for hypercholesterolemia, and there are other approved drugs for hypercholesterolemia that are not statins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "Hypolipidemic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A hypolipidemic agent is a broader category of substances that lower lipid levels, which may include drugs for hypercholesterolemia, but not all hypolipidemic agents are approved drugs specifically for hypercholesterolemia.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "Lipid-lowering drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lipid-lowering drug is used to lower lipid levels, but not all lipid-lowering drugs are specifically approved for hypercholesterolemia. Also, drugs approved for hypercholesterolemia may have other mechanisms or purposes beyond lowering lipids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for hypercholesterolemia",
+        "domain": "medicine",
+        "response": "Lipid-lowering drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lipid-lowering drug is designed to lower lipid levels, but not all lipid-lowering drugs are approved specifically for hypercholesterolemia. Additionally, there are drugs approved for hypercholesterolemia that may not be classified strictly as lipid-lowering drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

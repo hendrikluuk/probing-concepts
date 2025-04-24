@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "oxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxide is a compound containing oxygen and another element, whereas a divalent inorganic anion refers to any negatively charged ion with a valency of two, which is not limited to oxides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "divalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A divalent anion can be either organic or inorganic, but a divalent inorganic anion specifically refers to inorganic species only.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Divalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Dianion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A dianion is any ion with a -2 charge, which can be organic or inorganic, while a divalent inorganic anion specifically refers to inorganic ions with a -2 charge.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "sulfide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "sulfide is a specific type of divalent inorganic anion, but not all divalent inorganic anions are sulfides",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "divalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "dichromate",
+        "judgement": {
+            "equivalent": false,
+            "reason": "dichromate is a specific type of divalent inorganic anion, but not all divalent inorganic anions are dichromates",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Divalent inorganic anion",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical in spelling and meaning, referring to the same chemical concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "dianion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A dianion is any ion with a -2 charge, while a divalent inorganic anion specifically refers to inorganic ions with a -2 charge. Not all dianions are necessarily inorganic, as some can be organic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "divalent anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A divalent anion can be organic or inorganic, whereas a divalent inorganic anion is specifically inorganic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "diatomic inorganic anion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A diatomic inorganic anion consists of two atoms, while a divalent inorganic anion has a charge of -2. Not all diatomic anions are divalent, and not all divalent anions are diatomic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "dianion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A dianion is any ion with a -2 charge, which can be organic or inorganic, while a divalent inorganic anion specifically refers to inorganic ions with a -2 charge. Therefore, a dianion is not strictly equivalent to a divalent inorganic anion.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "carbonate ion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "carbonate ion is a specific type of divalent inorganic anion, but not all divalent inorganic anions are carbonate ions",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "Oxide ion",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxide ion is a divalent inorganic anion, but not all divalent inorganic anions are oxide ions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "oxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oxide is a compound containing oxygen and another element, while a divalent inorganic anion refers to an anion with a -2 charge, which can include oxides but also other anions like sulfates.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "divalent inorganic anion",
+        "domain": "chemistry",
+        "response": "CHLORIDE",
+        "judgement": {
+            "equivalent": false,
+            "reason": "chloride is a monovalent inorganic anion, not divalent",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

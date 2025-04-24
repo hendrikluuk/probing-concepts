@@ -1,0 +1,2110 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "Isariotin K",
+            "Rutacridone epoxide",
+            "Truncaquinone A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Isariotin K",
+                "Rutacridone epoxide",
+                "Truncaquinone A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 8,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "1-pentadecylglycerone 3-phosphate",
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "1-oleylglycerone 3-phosphate",
+            "4-O-methylrhodomycin D",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+            "carbonyl cyanide p-trifluoromethoxyphenylhydrazone",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "Rutacridone epoxide",
+            "7,8,3',4'-Tetrahydroxyisoflavone",
+            "DHAP(8:0)",
+            "Truncaquinone A",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "DHAP(6:0)",
+            "CCCP",
+            "1-oleoylglycerone 3-phosphate",
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)",
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-O-methylrhodomycin D",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "Truncaquinone A",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "CCCP",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 6,
+            "FP": 17,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+            "7,8,3',4'-Tetrahydroxyisoflavone",
+            "Truncaquinone A",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "Truncaquinone A"
+            ],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 2,
+            "FP": 7,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "Isariotin K",
+            "4-O-methylrhodomycin D",
+            "Rutacridone epoxide",
+            "Truncaquinone A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Isariotin K",
+                "4-O-methylrhodomycin D",
+                "Rutacridone epoxide",
+                "Truncaquinone A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "Isariotin K",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-O-methylrhodomycin D",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "Rutacridone epoxide",
+            "Truncaquinone A",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Isariotin K",
+                "4-O-methylrhodomycin D",
+                "Rutacridone epoxide",
+                "Truncaquinone A"
+            ],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+            "Rutacridone epoxide",
+            "Truncaquinone A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Rutacridone epoxide",
+                "Truncaquinone A"
+            ],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 2,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "carbonyl cyanide p-trifluoromethoxyphenylhydrazone",
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 0,
+            "FP": 6,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-indole-3-carbonyl nitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-indole-3-carbonyl nitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 0,
+            "FP": 7,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "benzoylacetonitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "benzoylacetonitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cyclic ketone",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+            "Truncaquinone A",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Truncaquinone A"
+            ],
+            "mismatches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one",
+                "hydroxyacetone"
+            ],
+            "true_referents": [
+                "Rutacridone epoxide",
+                "7,8,3',4'-Tetrahydroxyisoflavone",
+                "6-\\{3-[(progesterone-4-yl)thiopropionyl]amino\\}hexanoic acid",
+                "Truncaquinone A",
+                "4-O-methylrhodomycin D",
+                "Isariotin K"
+            ],
+            "TP": 1,
+            "FP": 7,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "6-(acylmethyl)-4-hydroxy-2H-pyran-2-one",
+        "domain": "chemistry",
+        "response": [
+            "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+            "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+            "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+            "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+            "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "4-hydroxy-6-(3-methyl-2-oxoheptadecyl)pyran-2-one",
+                "4-hydroxy-6-(4-methyl-2-oxododecyl)pyran-2-one",
+                "4-hydroxy-6-(13-hydroxy-2-oxononadecyl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxotetradecyl)pyran-2-one",
+                "4-hydroxy-6-(2-oxoundec-10-en-1-yl)pyran-2-one",
+                "4-hydroxy-6-(13-methyl-2-oxononadecyl)pyran-2-one"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "propanones",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "benzoylacetonitrile",
+            "hydroxyacetone"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "hydroxyacetone"
+            ],
+            "mismatches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "benzoylacetonitrile"
+            ],
+            "true_referents": [
+                "DHAP(6:0)",
+                "1-oleoylglycerone 3-phosphate",
+                "hydroxyacetone",
+                "1-pentadecylglycerone 3-phosphate",
+                "1-oleylglycerone 3-phosphate",
+                "DHAP(8:0)"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketonitrile",
+        "domain": "chemistry",
+        "response": [
+            "2-(4-fluorophenyl)-3-oxobutyronitrile",
+            "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+            "benzoylacetonitrile",
+            "4-hydroxy-indole-3-carbonyl nitrile"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "benzoylacetonitrile",
+                "4-hydroxy-indole-3-carbonyl nitrile"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "benzoylacetonitrile",
+                "2-(4-fluorophenyl)-3-oxobutyronitrile",
+                "CCCP",
+                "4-hydroxy-indole-3-carbonyl nitrile",
+                "2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile",
+                "carbonyl cyanide p-trifluoromethoxyphenylhydrazone"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    }
+]

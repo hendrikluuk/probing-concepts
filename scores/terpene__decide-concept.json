@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "polyisoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "polyisoprene is a polymer of isoprene units, while terpenes are a broader class of hydrocarbons composed of isoprene units, but not all terpenes are polyisoprene.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a broader category of compounds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a broader class of compounds beyond just terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a broader class of compounds beyond just terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a broader class of compounds beyond just terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "polyisoprene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Polyisoprene is a polymer of isoprene units, while a terpene is a class of hydrocarbons built from isoprene units but not necessarily in polymer form. Therefore, all polyisoprenes are terpenes, but not all terpenes are polyisoprenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms, referring to the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are the same term, hence they are equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Terpenoids are a class of naturally occurring organic chemicals derived from terpenes, but not all terpenoids are terpenes. Terpenes are hydrocarbons, while terpenoids may contain additional functional groups.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Isoprenoid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "All terpenes are isoprenoids, but not all isoprenoids are terpenes. Isoprenoids include a larger class of molecules beyond just terpenes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "terpene",
+        "judgement": {
+            "equivalent": true,
+            "reason": "terpene and terpene are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "terpene",
+        "domain": "chemistry",
+        "response": "Terpenes",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Terpenes is the plural form of terpene, referring to the same class of compounds.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

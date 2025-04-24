@@ -1,0 +1,1935 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Limbic Lobe",
+            "Brain Anterior Commissure"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Limbic Lobe"
+            ],
+            "mismatches": [
+                "Brain Anterior Commissure"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Pontine Tegmentum",
+            "Spinal Trigeminal Nucleus",
+            "Spinal Trigeminal Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Pontine Tegmentum",
+                "Spinal Trigeminal Nucleus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Limbic Lobe",
+            "Septum Pellucidum",
+            "Brain Anterior Commissure"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Brain Anterior Commissure"
+            ],
+            "mismatches": [
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Schaffer Collaterals",
+            "Substantia Innominata",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Schaffer Collaterals",
+                "Substantia Innominata",
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Mediodorsal Thalamic Nucleus",
+                "Ventromedial Hypothalamic Nucleus",
+                "Brain Anterior Commissure"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus",
+            "Spinal Trigeminal Nucleus",
+            "Cerebellopontine Angle"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus",
+                "Cerebellopontine Angle"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Claustrum",
+            "Area Postrema",
+            "Schaffer Collaterals",
+            "Substantia Innominata",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Lactotrophs",
+            "Midline Thalamic Nuclei",
+            "Sensorimotor Cortex",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Substantia Innominata",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Sensorimotor Cortex",
+                "Ventromedial Hypothalamic Nucleus",
+                "Brain Anterior Commissure"
+            ],
+            "mismatches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Schaffer Collaterals",
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Lactotrophs",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 7,
+            "FP": 10,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus",
+            "Cerebellopontine Angle"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus",
+                "Cerebellopontine Angle"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Sensorimotor Cortex",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Sensorimotor Cortex",
+                "Ventromedial Hypothalamic Nucleus",
+                "Substantia Innominata",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 7,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Limbic Lobe",
+            "Arcuate Nucleus of Hypothalamus",
+            "Septum Pellucidum",
+            "Ventromedial Hypothalamic Nucleus",
+            "Substantia Innominata",
+            "Mediodorsal Thalamic Nucleus",
+            "Central Amygdaloid Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Limbic Lobe",
+                "Arcuate Nucleus of Hypothalamus",
+                "Septum Pellucidum",
+                "Substantia Innominata",
+                "Central Amygdaloid Nucleus"
+            ],
+            "mismatches": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Mediodorsal Thalamic Nucleus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Amygdala",
+            "Substantia Innominata",
+            "Mediodorsal Thalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Substantia Innominata",
+                "Mediodorsal Thalamic Nucleus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Septum Pellucidum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus",
+            "Cerebellopontine Angle"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus",
+                "Cerebellopontine Angle"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Sensorimotor Cortex",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Sensorimotor Cortex",
+                "Ventromedial Hypothalamic Nucleus",
+                "Substantia Innominata",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 8,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Limbic Lobe",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [
+                "Ventromedial Hypothalamic Nucleus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Limbic Lobe",
+            "Amygdala",
+            "Septum Pellucidum",
+            "Substantia Innominata"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Substantia Innominata"
+            ],
+            "mismatches": [
+                "Limbic Lobe",
+                "Amygdala",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Septum Pellucidum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Substantia Innominata",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Substantia Innominata",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Ventromedial Hypothalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Claustrum",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Ventromedial Hypothalamic Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Limbic Lobe",
+                "Septum Pellucidum",
+                "Substantia Innominata"
+            ],
+            "mismatches": [
+                "Claustrum",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Ventromedial Hypothalamic Nucleus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 4,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Mediodorsal Thalamic Nucleus",
+            "Spinal Trigeminal Nucleus",
+            "Midline Thalamic Nuclei",
+            "Ventromedial Hypothalamic Nucleus",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus"
+            ],
+            "mismatches": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Ventromedial Hypothalamic Nucleus",
+                "Substantia Innominata",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 7,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Amygdala",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Mediodorsal Thalamic Nucleus",
+                "Ventromedial Hypothalamic Nucleus",
+                "Substantia Innominata",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 6,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Substantia Innominata",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Substantia Innominata",
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [
+                "Claustrum",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Ventromedial Hypothalamic Nucleus",
+                "Middle Hypothalamus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus",
+            "Cerebellopontine Angle"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus",
+                "Cerebellopontine Angle"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Schaffer Collaterals",
+            "Substantia Innominata",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Lactotrophs",
+            "Midline Thalamic Nuclei",
+            "Sensorimotor Cortex",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Substantia Innominata",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Sensorimotor Cortex",
+                "Ventromedial Hypothalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Schaffer Collaterals",
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Lactotrophs",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 8,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Septum Pellucidum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Substantia Innominata",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Sensorimotor Cortex",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Substantia Innominata",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Sensorimotor Cortex",
+                "Ventromedial Hypothalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 8,
+            "FP": 4,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Septum Pellucidum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus",
+            "Spinal Trigeminal Nucleus",
+            "Cerebellopontine Angle"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus",
+                "Cerebellopontine Angle"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Sensorimotor Cortex",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Mediodorsal Thalamic Nucleus",
+                "Sensorimotor Cortex",
+                "Ventromedial Hypothalamic Nucleus",
+                "Substantia Innominata",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 7,
+            "FP": 4,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Septum Pellucidum",
+            "Limbic Lobe",
+            "Arcuate Nucleus of Hypothalamus",
+            "Ventromedial Hypothalamic Nucleus",
+            "Mediodorsal Thalamic Nucleus",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Arcuate Nucleus of Hypothalamus"
+            ],
+            "mismatches": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 5,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Pontine Tegmentum",
+            "Cerebellopontine Angle"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Midline Thalamic Nuclei",
+            "Sensorimotor Cortex",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Mediodorsal Thalamic Nucleus",
+                "Midline Thalamic Nuclei",
+                "Sensorimotor Cortex",
+                "Ventromedial Hypothalamic Nucleus",
+                "Substantia Innominata",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 8,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Midline Thalamic Nuclei",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Ventromedial Hypothalamic Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum",
+                "Substantia Innominata"
+            ],
+            "mismatches": [
+                "Midline Thalamic Nuclei",
+                "Ventromedial Hypothalamic Nucleus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Area Postrema",
+            "Spinal Trigeminal Nucleus",
+            "Pontine Tegmentum",
+            "Cochlear Nucleus",
+            "Spinal Trigeminal Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Area Postrema",
+                "Spinal Trigeminal Nucleus",
+                "Pontine Tegmentum",
+                "Cochlear Nucleus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Claustrum",
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Ventromedial Hypothalamic Nucleus",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Claustrum",
+                "Mediodorsal Thalamic Nucleus",
+                "Ventromedial Hypothalamic Nucleus",
+                "Substantia Innominata",
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Arcuate Nucleus of Hypothalamus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 6,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Limbic Lobe",
+            "Septum Pellucidum",
+            "Substantia Innominata"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Limbic Lobe",
+                "Septum Pellucidum",
+                "Substantia Innominata"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Pontine Tegmentum",
+            "Spinal Trigeminal Nucleus",
+            "Cochlear Nucleus",
+            "Arcuate Nucleus of Hypothalamus",
+            "Brain Anterior Commissure",
+            "Cerebellopontine Angle"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Spinal Trigeminal Nucleus",
+                "Cochlear Nucleus",
+                "Cerebellopontine Angle"
+            ],
+            "mismatches": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Brain Anterior Commissure"
+            ],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 5,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Limbic Lobe",
+            "Amygdala",
+            "Septum Pellucidum",
+            "Brain Anterior Commissure",
+            "Middle Hypothalamus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Brain Anterior Commissure",
+                "Middle Hypothalamus"
+            ],
+            "mismatches": [
+                "Limbic Lobe",
+                "Amygdala",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Limbic System",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Central Amygdaloid Nucleus",
+            "Limbic Lobe",
+            "Mediodorsal Thalamic Nucleus",
+            "Septum Pellucidum",
+            "Ventromedial Hypothalamic Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Amygdala",
+                "Central Amygdaloid Nucleus",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "mismatches": [
+                "Mediodorsal Thalamic Nucleus",
+                "Ventromedial Hypothalamic Nucleus"
+            ],
+            "true_referents": [
+                "Arcuate Nucleus of Hypothalamus",
+                "Schaffer Collaterals",
+                "Septum Pellucidum",
+                "Limbic Lobe",
+                "Central Amygdaloid Nucleus",
+                "Substantia Innominata",
+                "Amygdala",
+                "Lactotrophs"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Brain Stem",
+        "domain": "medicine",
+        "response": [
+            "Pedunculopontine Tegmental Nucleus",
+            "Barrington's Nucleus",
+            "Pontine Tegmentum",
+            "Area Postrema",
+            "Cochlear Nucleus",
+            "Spinal Trigeminal Nucleus"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Pedunculopontine Tegmental Nucleus",
+                "Barrington's Nucleus",
+                "Pontine Tegmentum",
+                "Area Postrema",
+                "Cochlear Nucleus",
+                "Spinal Trigeminal Nucleus"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Cochlear Nucleus",
+                "Area Postrema",
+                "Pedunculopontine Tegmental Nucleus",
+                "Pontine Tegmentum",
+                "Cerebellopontine Angle",
+                "Spinal Trigeminal Nucleus",
+                "Spinal Trigeminal Nucleus",
+                "Barrington's Nucleus"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Prosencephalon",
+        "domain": "medicine",
+        "response": [
+            "Amygdala",
+            "Limbic Lobe",
+            "Septum Pellucidum",
+            "Substantia Innominata",
+            "Claustrum"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Substantia Innominata",
+                "Claustrum"
+            ],
+            "mismatches": [
+                "Amygdala",
+                "Limbic Lobe",
+                "Septum Pellucidum"
+            ],
+            "true_referents": [
+                "Ventromedial Hypothalamic Nucleus",
+                "Claustrum",
+                "Sensorimotor Cortex",
+                "Midline Thalamic Nuclei",
+                "Middle Hypothalamus",
+                "Mediodorsal Thalamic Nucleus",
+                "Brain Anterior Commissure",
+                "Substantia Innominata"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 6
+        }
+    }
+]

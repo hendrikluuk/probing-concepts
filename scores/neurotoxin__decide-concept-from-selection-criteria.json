@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Neurotoxin and neurotoxin are the same term with different capitalization, referring to a substance that is poisonous or destructive to nerve tissue.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Local anesthetic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Local anesthetics are substances that cause reversible loss of sensation, whereas neurotoxins are toxins that damage nerve tissues. Not all local anesthetics are neurotoxins and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same concept of a substance that is poisonous or destructive to nerve tissue.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Neurotoxin and neurotoxin are the same word with different capitalization, meaning they refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Neurotoxin' and 'neurotoxin' are equivalent as they refer to the same concept, with the only difference being capitalization, which does not affect meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "anesthetic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anesthetic is a substance used to induce insensitivity to pain, often used in medical procedures, whereas a neurotoxin is a poison that acts on the nervous system. Not all anesthetics are neurotoxins, and not all neurotoxins are used as anesthetics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Neurotoxin and neurotoxin are the same term, only differing in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Neurotoxin' and 'neurotoxin' are equivalent as they refer to the same concept, just with different capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Neurotoxin and neurotoxin are the same term with different capitalization, referring to a substance that is poisonous or destructive to nerve tissue.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

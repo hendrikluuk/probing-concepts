@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "Ribose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose is an aldopentose, not a ketopentose. A ketopentose is a monosaccharide with five carbon atoms and a ketone group, whereas ribose has an aldehyde group.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "Ribulose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribulose is a specific type of ketopentose, but not all ketopentoses are ribulose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "Ribulose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribulose is a specific type of ketopentose, but not all ketopentoses are ribulose.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "Ketopentose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ketopentose and ketopentose are the same term, just differing in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "ketopentose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of sugar molecule, a monosaccharide with five carbon atoms and a ketone group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "ketopentose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketopentose and ketopentose are identical terms and refer to the same type of sugar molecule.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "Ribulose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribulose is a specific type of ketopentose, but not all ketopentoses are ribulose",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "2-ketopentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A 2-ketopentose is a specific type of ketopentose with the carbonyl group on the second carbon, but not all ketopentoses have the carbonyl group on the second carbon.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "ketopentose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketopentose and ketopentose are identical terms, referring to the same category of monosaccharides with five carbon atoms and a ketone group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "ribulose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribulose is a specific type of ketopentose, but not all ketopentoses are ribulose. Ketopentose is a broader category that includes other sugars as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "ketopentose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketopentose and ketopentose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "2-ketopentose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A 2-ketopentose is a specific type of ketopentose with the keto group at the second carbon position, but ketopentose is a broader category that includes any pentose sugar with a keto group, regardless of its position.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "monosaccharide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketopentose is a type of monosaccharide, but not all monosaccharides are ketopentoses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "Ribose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ribose is an aldopentose, not a ketopentose. Ketopentoses are pentose sugars with a ketone group, whereas ribose has an aldehyde group.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "ketopentose",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketopentose and ketopentose are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ketopentose",
+        "domain": "chemistry",
+        "response": "Ketose",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A ketopentose is a specific type of ketose, but not all ketoses are ketopentoses. Ketoses are sugars with a ketone group, and ketopentoses are ketoses with five carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

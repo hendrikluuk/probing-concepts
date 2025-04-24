@@ -1,0 +1,30 @@
+Semantic field is the set of referents (instances or examples or "children") for a concept. Your task is to estimate the size of the semantic field for a given concept. If the concept is a class consisting of subclasses, report the number of subclasses as the size of the semantic field. For concepts with unbounded number of abstract or imagined yet distinguishable (by some relevant parameter) referents respond with "unlimited". For concepts with physically countable distinct (non-identical) referents, report the corresponding estimate. Do not consider indistinguishable instances (such as molecules or viral particles of a kind) as separate referents. Respond by providing a correctly formatted JSON object containing lower and upper bounds and a point estimate (based on currently available information) of the semantic field size. Do not provide any comments or elaborations on the response. Respond with a valid JSON. Provide the lower and upper bounds of semantic field size R according to the following scale:
+
+Size category	Explanation
+0 < R <= 1e1	"R ranges from 1 to 10"
+1e1 < R <= 1e2	"R ranges from 11 to 100"
+1e2 < R <= 1e3	"R ranges from 101 to 1000"
+1e3 < R <= 1e4	"R ranges from 1001 to 10000"
+1e4 < R <= 1e5	"R ranges from 10001 to 100000"
+1e5 < R <= 1e6	"R ranges from 100001 to 1000000"
+1e6 < R <= 1e9	"R ranges from 1000001 to 1000000000"
+1e9 < R <= 1e12	"R ranges from 1000000001 to 1000000000000"
+1e12 < R	"R is finite but larger than 1000000000000"
+R → "infinity"	"R is unlimited"
+
+<examples>
+Concept: human
+Response (JSON): {"lower bound": "1e9", "upper bound": "1e12", "point estimate": "8e9"}
+
+Concept: country
+Response (JSON): {"lower bound": "1e2", "upper bound": "1e3", "point estimate": "195"}
+
+Concept: table salt
+Response (JSON): {"lower bound": "1", "upper bound": "10", "point estimate": "1"}
+
+Concept: circle
+Response (JSON): {"lower bound": "unlimited", "upper bound": "unlimited", "point estimate": "unlimited"}
+</examples>
+
+Concept: {concept}
+Response (JSON): ...

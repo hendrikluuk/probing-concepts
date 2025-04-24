@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'neurotoxin' is identical in both A and B, indicating they are strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neuromuscular blocking agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A neuromuscular blocking agent is a drug that specifically blocks transmission at the neuromuscular junction, causing paralysis of the affected skeletal muscles. A neurotoxin is a broader category of toxins that can cause damage to nervous tissue, which may include but is not limited to neuromuscular blocking effects.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "local anesthetic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "local anesthetics are drugs that cause reversible loss of sensation, while neurotoxins are substances that damage nerve tissues; not all neurotoxins are used as anesthetics, and not all anesthetics are neurotoxic.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neural blockers",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Neural blockers are agents that inhibit nerve transmission, while neurotoxins are substances that damage or destroy nerve tissue. Not all neural blockers are neurotoxins, and not all neurotoxins function as neural blockers.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neuromuscular blocker",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A neuromuscular blocker is a type of drug that affects nerve-muscle communication, while a neurotoxin is a broader category of toxins that can damage nerve tissue. Not all neurotoxins are neuromuscular blockers, and not all neuromuscular blockers are classified as neurotoxins.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Neurotoxin' and 'neurotoxin' refer to the same concept, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Neurotoxin and neurotoxin are the same word with different capitalization, meaning they are equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "anesthetic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anesthetic is a substance that induces insensitivity to pain, whereas a neurotoxin is a poison that acts on the nervous system. Not all anesthetics are neurotoxins, and not all neurotoxins are used as anesthetics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Neurotoxin' and 'neurotoxin' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "neurotoxin and neurotoxin are identical terms referring to substances that are poisonous or destructive to nerve tissue.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "neurotoxin",
+        "domain": "medicine",
+        "response": "Neurotoxin",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Neurotoxin and neurotoxin are the same term with different capitalization",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "hematopoietic cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "myeloid cells are a subset of hematopoietic cells, but not all hematopoietic cells are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myeloid cell and myeloid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myeloid cell and myeloid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Leukocytes are white blood cells, which include both myeloid and lymphoid cells. Myeloid cells are a subset of leukocytes, but not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of cell, thus they are identical and interchangeable.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "myeloid cell and myeloid cell are identical terms and thus strictly equivalent",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Leukocytes are white blood cells, which include both myeloid and lymphoid cells. Myeloid cells are a subset of leukocytes, so not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Leukocyte is a general term for white blood cells, which include both myeloid and lymphoid cells. Myeloid cells are a subset of leukocytes, but not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "myeloid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of cell derived from the myeloid lineage.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "leukocytes include all white blood cells, whereas myeloid cells are a specific group of leukocytes that originate from the myeloid lineage.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "leukocytes are white blood cells, which include various types such as lymphoid and myeloid cells, but not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A leukocyte is a type of white blood cell, which includes both myeloid and lymphoid cells. Myeloid cells are a subset of leukocytes, so not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "leukocyte refers to white blood cells, which include lymphoid cells and myeloid cells, but not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Leukocyte is a general term for white blood cells, which includes both myeloid and lymphoid cells. Myeloid cells are a subset of leukocytes, but not all leukocytes are myeloid cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "leukocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "leukocyte refers to all white blood cells, including lymphoid and myeloid cells, but myeloid cell is a specific type of leukocyte.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "myeloid cell",
+        "domain": "biology",
+        "response": "Concept: \"granulocyte\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Granulocytes are a type of myeloid cell, but not all myeloid cells are granulocytes. Myeloid cells also include other types like monocytes and megakaryocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

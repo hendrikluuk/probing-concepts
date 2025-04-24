@@ -1,0 +1,2036 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "B-Cell Activating Factor",
+            "Interleukin-15",
+            "Interleukin-10",
+            "OX40 Ligand",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Interleukin-27",
+            "Leukocyte Migration-Inhibitory Factors",
+            "Interferon-gamma",
+            "Tumor Necrosis Factor-alpha",
+            "Interleukin-2",
+            "Interleukin-9"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "B-Cell Activating Factor",
+                "Interleukin-15",
+                "Interleukin-10",
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Interleukin-27",
+                "Tumor Necrosis Factor-alpha",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 3,
+            "FP": 8,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha",
+            "Lymphotoxin alpha1, beta2 Heterotrimer"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha",
+                "Lymphotoxin alpha1, beta2 Heterotrimer"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "B-Cell Activating Factor",
+            "Interferon beta-1a",
+            "Interleukin-15",
+            "Interleukin-10",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Suppressor Factors, Immunologic",
+            "Leukocyte Migration-Inhibitory Factors",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Granulocyte Colony-Stimulating Factor",
+            "Interferon Lambda",
+            "Interferon-gamma",
+            "Tumor Necrosis Factor-alpha",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Suppressor Factors, Immunologic",
+                "Leukocyte Migration-Inhibitory Factors",
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "B-Cell Activating Factor",
+                "Interferon beta-1a",
+                "Interleukin-15",
+                "Interleukin-10",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Granulocyte Colony-Stimulating Factor",
+                "Interferon Lambda",
+                "Tumor Necrosis Factor-alpha",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 4,
+            "FP": 11,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon Type I",
+            "Interferon alpha-2",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interleukin-15",
+            "Interleukin-10",
+            "Interleukin-27",
+            "Interleukin-9",
+            "Interleukin-2",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "mismatches": [
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interleukin-15",
+            "Interleukin-10",
+            "OX40 Ligand",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Interleukin-27",
+            "Leukocyte Migration-Inhibitory Factors",
+            "Interferon-gamma",
+            "Tumor Necrosis Factor-alpha",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "Interleukin-15",
+                "Interleukin-10",
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Interleukin-27",
+                "Tumor Necrosis Factor-alpha",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 3,
+            "FP": 7,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha",
+            "Lymphotoxin alpha1, beta2 Heterotrimer"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha",
+                "Lymphotoxin alpha1, beta2 Heterotrimer"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interleukin-15",
+            "Interleukin-10",
+            "Interleukin-27",
+            "Interferon-gamma",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha",
+            "Lymphotoxin alpha1, beta2 Heterotrimer"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha",
+                "Lymphotoxin alpha1, beta2 Heterotrimer"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interleukin-15",
+            "Interleukin-10",
+            "Interleukin-27",
+            "Interferon-gamma",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interleukin-15",
+            "Interleukin-10",
+            "Interleukin-27",
+            "Interleukin-9",
+            "Interleukin-2",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "mismatches": [
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 2,
+            "FP": 4,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "B-Cell Activating Factor",
+            "Interferon beta-1a",
+            "Interleukin-15",
+            "Interleukin-10",
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "OX40 Ligand",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Suppressor Factors, Immunologic",
+            "Interleukin-27",
+            "Leukocyte Migration-Inhibitory Factors",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Chemokine CCL4",
+            "Granulocyte Colony-Stimulating Factor",
+            "Interferon Lambda",
+            "Interferon-gamma",
+            "Tumor Necrosis Factor-alpha",
+            "Chemokine CCL18",
+            "Thrombopoietin",
+            "Interleukin-9",
+            "Interleukin-2",
+            "Lenograstim",
+            "Stem Cell Factor"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Suppressor Factors, Immunologic",
+                "Leukocyte Migration-Inhibitory Factors",
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "B-Cell Activating Factor",
+                "Interferon beta-1a",
+                "Interleukin-15",
+                "Interleukin-10",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Interleukin-27",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Chemokine CCL4",
+                "Granulocyte Colony-Stimulating Factor",
+                "Interferon Lambda",
+                "Tumor Necrosis Factor-alpha",
+                "Chemokine CCL18",
+                "Thrombopoietin",
+                "Interleukin-9",
+                "Lenograstim",
+                "Stem Cell Factor"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 4,
+            "FP": 20,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interleukin-15",
+            "Interleukin-10",
+            "Interleukin-27",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "Interferon beta-1a",
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 2,
+            "FP": 8,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interleukin-15",
+            "Interleukin-10",
+            "Suppressor Factors, Immunologic",
+            "Interleukin-27",
+            "Leukocyte Migration-Inhibitory Factors",
+            "Interferon-gamma",
+            "Tumor Necrosis Factor-alpha",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Suppressor Factors, Immunologic",
+                "Leukocyte Migration-Inhibitory Factors",
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "Tumor Necrosis Factor-alpha",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha",
+            "Lymphotoxin alpha1, beta2 Heterotrimer"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha",
+                "Lymphotoxin alpha1, beta2 Heterotrimer"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "B-Cell Activating Factor",
+            "Interleukin-15",
+            "Interleukin-10",
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "OX40 Ligand",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Interleukin-27",
+            "Chemokine CCL4",
+            "Interferon-gamma",
+            "Tumor Necrosis Factor-alpha",
+            "Chemokine CCL18",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "B-Cell Activating Factor",
+                "Interleukin-15",
+                "Interleukin-10",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Interleukin-27",
+                "Chemokine CCL4",
+                "Tumor Necrosis Factor-alpha",
+                "Chemokine CCL18",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 2,
+            "FP": 12,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "B-Cell Activating Factor",
+            "Interleukin-15",
+            "Interleukin-10",
+            "OX40 Ligand",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Suppressor Factors, Immunologic",
+            "Interleukin-27",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "B-Cell Activating Factor",
+                "Interleukin-15",
+                "Interleukin-10",
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Interleukin-27",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 2,
+            "FP": 7,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "B-Cell Activating Factor",
+            "Interleukin-15",
+            "Interleukin-10",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Suppressor Factors, Immunologic",
+            "Interleukin-27",
+            "Leukocyte Migration-Inhibitory Factors",
+            "Interferon-gamma",
+            "Tumor Necrosis Factor-alpha",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Suppressor Factors, Immunologic",
+                "Leukocyte Migration-Inhibitory Factors",
+                "Interferon-gamma",
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "B-Cell Activating Factor",
+                "Interleukin-15",
+                "Interleukin-10",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Interleukin-27",
+                "Tumor Necrosis Factor-alpha",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 4,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha",
+            "Lymphotoxin alpha1, beta2 Heterotrimer"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha",
+                "Lymphotoxin alpha1, beta2 Heterotrimer"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "B-Cell Activating Factor",
+            "Interleukin-15",
+            "Interleukin-10",
+            "Interleukin-27",
+            "Interleukin-2",
+            "Interferon-gamma",
+            "OX40 Ligand",
+            "Lymphotoxin alpha1, beta2 Heterotrimer",
+            "Suppressor Factors, Immunologic",
+            "Leukocyte Migration-Inhibitory Factors"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interleukin-2",
+                "Interferon-gamma",
+                "Suppressor Factors, Immunologic",
+                "Leukocyte Migration-Inhibitory Factors"
+            ],
+            "mismatches": [
+                "B-Cell Activating Factor",
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Interferons",
+        "domain": "biology",
+        "response": [
+            "Interferon beta-1a",
+            "Interferon alpha-2",
+            "Interferon Type I",
+            "Interferon Lambda",
+            "Interferon-gamma"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interferon beta-1a",
+                "Interferon alpha-2",
+                "Interferon Type I",
+                "Interferon Lambda"
+            ],
+            "mismatches": [
+                "Interferon-gamma"
+            ],
+            "true_referents": [
+                "Interferon beta-1a",
+                "Interferon Type I",
+                "Interferon alpha-2",
+                "Interferon Lambda"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Lymphokines",
+        "domain": "biology",
+        "response": [
+            "Interleukin-15",
+            "Interleukin-10",
+            "Interleukin-27",
+            "Interleukin-9",
+            "Interleukin-2"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Interleukin-2"
+            ],
+            "mismatches": [
+                "Interleukin-15",
+                "Interleukin-10",
+                "Interleukin-27",
+                "Interleukin-9"
+            ],
+            "true_referents": [
+                "Leukocyte Migration-Inhibitory Factors",
+                "Suppressor Factors, Immunologic",
+                "Interleukin-2",
+                "Interferon-gamma"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Chemokines",
+        "domain": "biology",
+        "response": [
+            "Chemokine CCL1",
+            "Chemokine CCL19",
+            "Chemokine CCL4",
+            "Chemokine CCL18"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4",
+                "Chemokine CCL18"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Chemokine CCL18",
+                "Chemokine CCL1",
+                "Chemokine CCL19",
+                "Chemokine CCL4"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Tumor Necrosis Factors",
+        "domain": "biology",
+        "response": [
+            "Tumor Necrosis Factor-alpha",
+            "Lymphotoxin alpha1, beta2 Heterotrimer"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "Tumor Necrosis Factor-alpha",
+                "Lymphotoxin alpha1, beta2 Heterotrimer"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "OX40 Ligand",
+                "Lymphotoxin alpha1, beta2 Heterotrimer",
+                "Tumor Necrosis Factor-alpha",
+                "B-Cell Activating Factor"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 2
+        }
+    }
+]

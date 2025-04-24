@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "anticancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anticancer drug is a general term for any drug used to treat cancer, whereas an approved drug for colorectal cancer is specific to drugs that have been approved for treating colorectal cancer. Not all anticancer drugs are approved for colorectal cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "chemopreventive agent for colorectal cancer",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A chemopreventive agent is used to prevent cancer, not necessarily approved as a treatment, whereas an approved drug for colorectal cancer is used for treatment and has regulatory approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "Antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a type of drug used to treat cancer, but not all antineoplastic agents are approved drugs specifically for colorectal cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "Anticancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anticancer drug is a general term for any drug that combats cancer, whereas an approved drug for colorectal cancer is specific to drugs that have been approved for treating colorectal cancer specifically. Not all anticancer drugs are approved for colorectal cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "colorectal cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A colorectal cancer drug may not necessarily be approved, whereas an approved drug for colorectal cancer has received regulatory approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "colorectal cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for colorectal cancer is a type of colorectal cancer medication, but not all colorectal cancer medications are approved drugs, as some may be experimental or not yet approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "Colorectal cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for colorectal cancer is a type of colorectal cancer medication, but not all colorectal cancer medications are approved drugs. Some may be experimental or off-label uses.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "Colorectal cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A colorectal cancer drug may not necessarily be approved, as it could be experimental or in clinical trials, whereas an approved drug for colorectal cancer is specifically one that has received regulatory approval for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "colorectal cancer drugs",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Approved drug for colorectal cancer refers to drugs that have received regulatory approval for treating colorectal cancer, while colorectal cancer drugs can include both approved and experimental drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "Colorectal cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A colorectal cancer drug may not necessarily be approved, whereas an approved drug for colorectal cancer is specifically one that has been authorized for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "colorectal cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A colorectal cancer drug may not necessarily be approved, whereas an approved drug for colorectal cancer implies it has been authorized for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "colorectal cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A colorectal cancer drug may not necessarily be an approved drug, as it could be experimental or in clinical trials. Conversely, an approved drug for colorectal cancer is specifically sanctioned for use, implying regulatory approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "anticancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anticancer drug is a broad category that includes drugs for various types of cancer, while an approved drug for colorectal cancer is specific to one type of cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "Antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a broader category that includes any drug used to treat cancer, whereas an approved drug for colorectal cancer is a specific application of an antineoplastic agent. Not all antineoplastic agents are approved for colorectal cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "Colorectal cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A colorectal cancer drug refers to any drug used to treat colorectal cancer, while an approved drug for colorectal cancer specifies that the drug has received regulatory approval for this specific use. Not all colorectal cancer drugs may be approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for colorectal cancer",
+        "domain": "medicine",
+        "response": "The closest conceptual category that includes all entities that comply with the definition you provided is \"colon cancer drug\".",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A colon cancer drug refers to any drug used to treat colon cancer, whether approved or experimental, while an approved drug for colorectal cancer specifically refers to drugs that have been authorized for use in treating colorectal cancer by a regulatory body.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

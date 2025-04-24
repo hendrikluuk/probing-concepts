@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive bacterial infections and Gram-negative bacterial infections are caused by different types of bacteria with distinct cell wall structures and staining properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infection",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive bacterial infections and Gram-negative bacterial infections are caused by different types of bacteria with distinct cell wall structures, and they are not interchangeable.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive bacterial infections are caused by bacteria with thick peptidoglycan cell walls that retain the crystal violet stain, while Gram-negative bacterial infections are caused by bacteria with thinner cell walls and an outer membrane, which do not retain the stain. They are fundamentally different types of bacterial infections.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-negative bacterial infection",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both A and B refer to the same condition, with no distinction between them.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-negative bacterial infection",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'gram-negative bacterial infection' and 'Gram-negative bacterial infection' are equivalent as they refer to the same type of bacterial infection, with only a difference in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive bacterial infections are caused by bacteria with a thick peptidoglycan layer and no outer membrane, while Gram-negative bacterial infections are caused by bacteria with a thin peptidoglycan layer and an outer membrane. They are distinct categories of bacterial infections.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Bacterial infection that shows up as pink in gram-staining",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Bacterial infections that show up as pink in gram-staining are gram-negative, as gram-negative bacteria do not retain the crystal violet stain and appear pink after gram-staining.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-negative bacterial infection",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'gram-negative bacterial infection' and 'Gram-negative bacterial infection' are equivalent as they refer to the same type of bacterial infection, with the only difference being capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-negative bacterial infection",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'gram-negative bacterial infection' and 'Gram-negative bacterial infection' differ only in capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive and Gram-negative bacterial infections are different due to the distinct cell wall structures and staining properties of the bacteria involved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive and Gram-negative bacterial infections are caused by different types of bacteria with distinct cell wall structures and staining properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive and Gram-negative bacterial infections are caused by different types of bacteria with distinct cell wall structures.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive and Gram-negative bacterial infections are caused by different types of bacteria with distinct cell wall structures and staining properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Gram-positive bacterial infection",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Gram-positive and Gram-negative bacterial infections are caused by different types of bacteria with distinct cell wall structures and characteristics.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "Gram-negative bacterial infection",
+        "domain": "medicine",
+        "response": "Pneumonia",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Pneumonia is an inflammatory condition of the lung that can be caused by various pathogens, including viruses, bacteria (both Gram-positive and Gram-negative), fungi, and other microorganisms. A Gram-negative bacterial infection is just one possible cause of pneumonia, not equivalent to pneumonia itself.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

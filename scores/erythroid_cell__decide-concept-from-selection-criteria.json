@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythrocyte precursor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythrocyte precursor is a type of erythroid cell, but not all erythroid cells are erythrocyte precursors as erythroid cells include various stages of development.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Erythrocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An erythrocyte is a type of erythroid cell, but not all erythroid cells are erythrocytes. Erythroid cells include erythrocyte precursors as well.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "erythroid cell and erythroid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Erythrocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An erythrocyte is a type of erythroid cell, but not all erythroid cells are erythrocytes. Erythroid cells also include immature stages like erythroblasts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'erythroid cell' and 'erythroid cell' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "erythroid cell and erythroid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythrocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An erythrocyte is a mature red blood cell, while an erythroid cell refers to any cell in the lineage leading to erythrocytes, including immature stages like erythroblasts.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Red blood cell precursor",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Red blood cell precursors are also referred to as erythroid cells, as they are the cells in the lineage leading to mature red blood cells.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "erythroid cells is the plural form of erythroid cell, so while all erythroid cells are erythroid cells, the terms are not strictly equivalent because one refers to multiple cells and the other to a single cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same type of cell, making them strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "erythroid cell and erythroid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "erythroid cell and erythroid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythrocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An erythrocyte is a mature red blood cell, while an erythroid cell refers to any cell in the lineage of red blood cells, including precursor cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Reticulocyte",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reticulocyte is an immature erythroid cell, but not all erythroid cells are reticulocytes. Erythroid cells include all stages of red blood cell development, from progenitors to mature erythrocytes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "erythroid cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "erythroid cell and erythroid cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "erythroid cell",
+        "domain": "biology",
+        "response": "Red blood cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Red blood cells are mature erythroid cells, but erythroid cells also include precursors like erythroblasts, so not all erythroid cells are red blood cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

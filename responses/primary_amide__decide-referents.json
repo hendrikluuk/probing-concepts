@@ -1,0 +1,938 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "N-acetylsulfamethoxazole",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-acetylsulfamethoxazole",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "Bupicomide"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "Bupicomide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "adenosylcob(III)yrinic acid a,c-diamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "adenosylcob(III)yrinic acid a,c-diamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine",
+                "N-acetylsulfamethoxazole",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-acetylsulfamethoxazole"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "sotalol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "Aldoifosfamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "sulfonamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "sulfaphenazole",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-acetylsulfamethoxazole",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "carboxamide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide",
+                "4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide",
+                "N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide",
+                "N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide",
+                "tenofovir alafenamide",
+                "Bupicomide"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"ethoxy(isopropylamino)phosphinate\", \"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"sulfaphenazole\", \"Lys-Lys-Cys\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Aldoifosfamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"Karnamicin C4\", \"Nicosulfuron-tp ausn\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"Karnamicin A3\", \"N-acetylsulfamethoxazole\", \"4-Hydroxyifosfamide\", \"GlyTouCan G39397SW\", \"tenofovir alafenamide\", \"Arg-Phe-Asn\", \"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"sotalol\", \"Bupicomide\", \"Phe-Cys-Pro\", \"Staphylopeptide A\"]",
+                "siblings": "{\"sulfonamide\": [\"N-[[1-(benzenesulfonyl)-4-piperidinyl]methyl]benzenesulfonamide\", \"N-[4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl]-3-methoxy-2-thiophenesulfonamide\", \"2,4-dichloro-5-(diethylsulfamoyl)-N-(1,3,4-thiadiazol-2-yl)benzamide\", \"4-[[4-(4-methoxyphenyl)-2-thiazolyl]amino]benzenesulfonamide\", \"sulfaphenazole\", \"Nicosulfuron-tp ausn\", \"sotalol\", \"N-acetylsulfamethoxazole\"], \"carboxamide\": [\"3-hydroxy-3-(3-hydroxy-4-methoxyphenyl)propanoyl-CoA\", \"Phe-Cys-Pro\", \"Lys-Lys-Cys\", \"N-nonadecanoyl-4-hydroxy-15-methylhexadecasphinganine\", \"adenosylcob(III)yrinic acid a,c-diamide\", \"GlyTouCan G39397SW\", \"Staphylopeptide A\", \"Arg-Phe-Asn\"], \"phosphoramide\": [\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "phosphoramide",
+                "parent_concept": "primary amide",
+                "true_referents": "[\"Tris(2-methyl-1-aziridinyl)phosphine oxide\", \"Karnamicin A3\", \"ethoxy(isopropylamino)phosphinate\", \"Karnamicin C4\", \"Bupicomide\", \"Aldoifosfamide\", \"tenofovir alafenamide\", \"4-Hydroxyifosfamide\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "ethoxy(isopropylamino)phosphinate",
+                "Tris(2-methyl-1-aziridinyl)phosphine oxide",
+                "Aldoifosfamide",
+                "4-Hydroxyifosfamide",
+                "tenofovir alafenamide"
+            ]
+        }
+    ]
+}

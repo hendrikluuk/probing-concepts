@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "anticholinergic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "anticholinergic refers to a broader category of drugs that block the action of acetylcholine at muscarinic receptors, whereas antinicotinic agents specifically block acetylcholine at nicotinic receptors. Not all anticholinergic drugs are antinicotinic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that inhibit the action of nicotine on nicotinic receptors",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that inhibit the action of acetylcholine on nicotinic receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "Cholinergic antagonist",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cholinergic antagonists block the action of acetylcholine at cholinergic receptors, which include both nicotinic and muscarinic receptors. Antinicotinic agents specifically block nicotinic receptors, so while all antinicotinic agents are cholinergic antagonists, not all cholinergic antagonists are antinicotinic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that block the action of acetylcholine on nicotinic receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that block the action of acetylcholine on nicotinic receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "Nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both refer to substances that block nicotinic acetylcholine receptors",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "Nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that block the action of acetylcholine on nicotinic receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that inhibit the action of nicotine at nicotinic receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that block nicotinic acetylcholine receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic acetylcholine receptor antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic acetylcholine receptor antagonist and antinicotinic agent are synonymous terms used to describe substances that block the action of acetylcholine on nicotinic receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that block the action of acetylcholine on nicotinic receptors.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms as both refer to substances that block the action of acetylcholine on nicotinic receptors",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "Anticholinergic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Anticholinergic refers to drugs that block the action of acetylcholine in the nervous system, while antinicotinic agents specifically block nicotinic receptors, which are a subset of cholinergic receptors. Not all anticholinergic drugs are antinicotinic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that block the action of acetylcholine on nicotinic receptors",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "antinicotinic agent",
+        "domain": "medicine",
+        "response": "Nicotinic antagonist",
+        "judgement": {
+            "equivalent": true,
+            "reason": "nicotinic antagonist and antinicotinic agent are synonyms, both referring to substances that inhibit the action of acetylcholine on nicotinic receptors",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

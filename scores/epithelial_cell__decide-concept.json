@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cell",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epithelial cell and epithelial cell are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells refer to multiple epithelial cell units, while epithelial cell refers to a single unit. They are not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epithelial cells is the plural form of epithelial cell, indicating they are the same concept in singular and plural forms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "Epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Epithelial cells refer to multiple cells, while epithelial cell refers to a single cell. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells is the plural form of epithelial cell, indicating multiple cells, whereas epithelial cell refers to a single cell.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells refer to multiple epithelial cell units, whereas epithelial cell refers to a single unit.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "Epithelial cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epithelial cells and epithelial cell refer to the same type of cell, with the former being the plural form and the latter being the singular form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "Epithelial cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epithelial cells is the plural form of epithelial cell, referring to the same type of cell.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelium",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelium is a tissue composed of epithelial cells, but an individual epithelial cell is not the entire epithelium tissue",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells is a plural form referring to multiple epithelial cell units, whereas epithelial cell refers to a single unit.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells refer to multiple epithelial cell units, while epithelial cell refers to a single unit",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells is the plural form referring to multiple epithelial cell units, while epithelial cell refers to a single unit",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "epithelial cells refers to the plural form of epithelial cell, and both terms refer to the same type of cell.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "Epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells refer to multiple cells, while epithelial cell refers to a single cell",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells refer to multiple epithelial cell units, whereas epithelial cell refers to a single unit.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "epithelial cell",
+        "domain": "biology",
+        "response": "epithelial cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "epithelial cells refer to multiple cells, whereas epithelial cell refers to a single cell",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

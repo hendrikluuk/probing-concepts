@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While some immunosuppressive cytokines can have anti-inflammatory effects, not all immunosuppressive cytokines are strictly anti-inflammatory. Immunosuppressive cytokines may have broader roles in immune regulation, and anti-inflammatory cytokines specifically reduce inflammation.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all immunosuppressive cytokines can have anti-inflammatory effects, not all anti-inflammatory cytokines are classified as immunosuppressive. The terms are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While many immunosuppressive cytokines are anti-inflammatory, not all anti-inflammatory cytokines are immunosuppressive. Immunosuppressive cytokines broadly suppress the immune response, while anti-inflammatory cytokines specifically reduce inflammation.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Immunosuppressant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immunosuppressant is a broader category of substances that reduce immune system activity, while an anti-inflammatory cytokine is a specific type of molecule that can have immunosuppressive effects but not all immunosuppressants are anti-inflammatory cytokines.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While some immunosuppressive cytokines have anti-inflammatory effects, not all immunosuppressive cytokines are anti-inflammatory and vice versa. The terms are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While many immunosuppressive cytokines have anti-inflammatory effects, not all anti-inflammatory cytokines are immunosuppressive. Immunosuppressive cytokines specifically suppress the immune response, which can include actions beyond anti-inflammatory effects.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all immunosuppressive cytokines can have anti-inflammatory effects, not all anti-inflammatory cytokines are considered immunosuppressive. The terms overlap but are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Immunosuppressant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Immunosuppressants are a broad category of drugs that reduce immune system activity, while anti-inflammatory cytokines are specific proteins that reduce inflammation. Not all immunosuppressants are anti-inflammatory cytokines, and not all anti-inflammatory cytokines act as immunosuppressants.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While some immunosuppressive cytokines are anti-inflammatory, not all anti-inflammatory cytokines are immunosuppressive, and vice versa. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all immunosuppressive cytokines can have anti-inflammatory effects, not all anti-inflammatory cytokines are immunosuppressive. Some anti-inflammatory cytokines may act by different mechanisms that do not involve direct immunosuppression.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While many immunosuppressive cytokines are anti-inflammatory, not all anti-inflammatory cytokines are immunosuppressive. Immunosuppressive cytokines specifically downregulate immune responses, whereas anti-inflammatory cytokines primarily reduce inflammation, which can occur without suppressing the immune system.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressive cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While immunosuppressive cytokines can have anti-inflammatory effects, not all anti-inflammatory cytokines are immunosuppressive. Some anti-inflammatory cytokines may reduce inflammation without suppressing the immune system.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressant",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An immunosuppressant is a broader category of drugs or agents that reduce the efficacy of the immune system, while anti-inflammatory cytokines are specific signaling molecules that can reduce inflammation but do not encompass all immunosuppressive actions.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Tumor necrosis factor-alpha inhibitor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Tumor necrosis factor-alpha inhibitors are a class of medications that specifically inhibit the activity of TNF-alpha, a pro-inflammatory cytokine, but not all anti-inflammatory cytokines are TNF-alpha inhibitors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "immunosuppressant cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While some immunosuppressant cytokines have anti-inflammatory effects, not all immunosuppressant cytokines are anti-inflammatory, and not all anti-inflammatory cytokines are immunosuppressant.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "anti-inflammatory cytokine",
+        "domain": "biology",
+        "response": "Cytokine",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cytokine is a general term for proteins involved in cell signaling, while anti-inflammatory cytokines are a specific subset that specifically reduce inflammation. Not all cytokines are anti-inflammatory.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

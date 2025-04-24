@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "Alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fatty alcohol is a specific type of alcohol, but not all alcohols are fatty alcohols",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "long-chain alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all fatty alcohols are long-chain alcohols, not all long-chain alcohols are fatty alcohols. Fatty alcohols are a specific subset of long-chain alcohols typically derived from natural fats and oils.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "long-chain alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A long-chain alcohol is a type of alcohol with a long carbon chain, but not all long-chain alcohols are fatty alcohols. Fatty alcohols are a specific subset of long-chain alcohols typically derived from natural fats and oils.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "Fatty alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Fatty alcohol' and 'fatty alcohol' are identical except for capitalization, which does not affect their meaning in this context.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "fatty alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'fatty alcohol' and 'fatty alcohol' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "long-chain alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all fatty alcohols are long-chain alcohols, not all long-chain alcohols are classified as fatty alcohols. Fatty alcohols specifically refer to long-chain alcohols that are derived from natural fats and oils, typically containing 8-22 carbon atoms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "Long-chain alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Long-chain alcohols are a broad category that includes fatty alcohols, but not all long-chain alcohols are fatty alcohols. Fatty alcohols are a specific type of long-chain alcohol derived from fatty acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "Long-chain alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "While all fatty alcohols are long-chain alcohols, not all long-chain alcohols are necessarily fatty alcohols. Fatty alcohols specifically refer to long-chain alcohols derived from fatty acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "fatty alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'fatty alcohol' and 'fatty alcohol' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "fatty alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "fatty alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound class, so they are identical.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "fatty alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical compound category.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "fatty alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "fatty alcohol and fatty alcohol are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "long-chain alkyl alcohol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "long-chain alkyl alcohols are commonly referred to as fatty alcohols in organic chemistry",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "long-chain alcohol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A long-chain alcohol refers to alcohols with a long carbon chain, which can include both fatty alcohols and other types of long-chain alcohols. Fatty alcohols are a subset of long-chain alcohols typically derived from natural fats and oils.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "fatty alcohol",
+        "domain": "chemistry",
+        "response": "Concept: \"alkane\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "alkanes are saturated hydrocarbons, while fatty alcohols are a type of alcohol derived from fatty acids, containing a hydroxyl group, which alkanes do not have.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

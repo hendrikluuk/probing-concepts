@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cholinesterase inhibitors refer to a class of drugs that inhibit the enzyme cholinesterase, whereas cholinesterase inhibitor refers to a single member of this class. Therefore, not all cholinesterase inhibitors can be referred to as a single cholinesterase inhibitor.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cholinesterase inhibitor refers to a single substance, while cholinesterase inhibitors refer to a group of substances. The plural form implies multiple inhibitors, which means the terms are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "Cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Cholinesterase inhibitors and cholinesterase inhibitor refer to the same class of drugs, with the former being the plural form and the latter being the singular form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "Cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Cholinesterase inhibitors and cholinesterase inhibitor refer to the same class of drugs that inhibit cholinesterase, with the former being plural and the latter being singular.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cholinesterase inhibitors refer to a class of drugs, whereas cholinesterase inhibitor refers to a single drug within that class. The plural form implies multiple inhibitors, while the singular form refers to just one.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "cholinesterase inhibitor",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "Cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Cholinesterase inhibitors and cholinesterase inhibitor refer to the same class of drugs, with the former being the plural form and the latter being the singular form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "Cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Cholinesterase inhibitors and cholinesterase inhibitor refer to the same class of drugs; the former is plural while the latter is singular.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "Cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Cholinesterase inhibitors and cholinesterase inhibitor refer to the same class of drugs, with the former being the plural form and the latter being the singular form.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "anticholinesterase",
+        "judgement": {
+            "equivalent": true,
+            "reason": "anticholinesterase and cholinesterase inhibitor are synonyms, as both refer to substances that inhibit the enzyme cholinesterase.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "cholinesterase inhibitor",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "cholinesterase inhibitors",
+        "judgement": {
+            "equivalent": false,
+            "reason": "cholinesterase inhibitors is a plural term referring to any number of cholinesterase inhibitor substances, whereas cholinesterase inhibitor is a singular term referring to one such substance.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "cholinesterase inhibitor",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "Anticholinesterases",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Anticholinesterases and cholinesterase inhibitors are synonyms, both referring to substances that inhibit the enzyme cholinesterase.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "Anticholinesterase",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Anticholinesterase and cholinesterase inhibitor are synonyms, both referring to substances that inhibit the enzyme cholinesterase.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "cholinesterase inhibitor",
+        "domain": "medicine",
+        "response": "ANTICHOLINESTERASES",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Anticholinesterases and cholinesterase inhibitors are synonyms, both referring to substances that inhibit the enzyme cholinesterase.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "nonpolar solvent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A nonpolar solvent is not necessarily aprotic, and an aprotic solvent is not necessarily nonpolar. Nonpolar solvents have no significant dipole moment, while aprotic solvents do not donate protons (H+). Some nonpolar solvents can be protic, and some aprotic solvents can be polar.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are identical terms, referring to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are the same term with different capitalization, thus they are equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are the same term, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "non-protic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "non-protic solvent and aprotic solvent are synonyms; both refer to solvents that do not donate protons (hydrogen ions) in solution.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "neutral solvent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A neutral solvent has a pH of 7, while an aprotic solvent lacks hydrogen atoms capable of forming hydrogen bonds. Not all neutral solvents are aprotic, and not all aprotic solvents are neutral.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "inert solvent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An inert solvent is one that does not react with the substances in a chemical reaction, whereas an aprotic solvent is a type of solvent that lacks hydrogen atoms capable of forming hydrogen bonds. Not all inert solvents are aprotic, and not all aprotic solvents are inert.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Non-aqueous solvent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A non-aqueous solvent is any solvent that is not water, which can be protic or aprotic, whereas an aprotic solvent specifically lacks hydrogen atoms that can form hydrogen bonds.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Aprotic solvent and aprotic solvent are the same term with different capitalization, meaning they are synonyms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'aprotic solvent' and 'aprotic solvent' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'aprotic solvent' and 'aprotic solvent' are identical and thus strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "aprotic solvent and aprotic solvent are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Lewis base",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A Lewis base is a substance that can donate a pair of electrons, while an aprotic solvent is a solvent that does not donate protons. Not all Lewis bases are aprotic solvents, and not all aprotic solvents are Lewis bases.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "aprotic solvent",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "aprotic solvent",
+        "domain": "chemistry",
+        "response": "Lewis acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A Lewis acid is a chemical species that can accept an electron pair, whereas an aprotic solvent is a type of solvent that does not donate hydrogen ions. Not all Lewis acids are aprotic solvents, and not all aprotic solvents are Lewis acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

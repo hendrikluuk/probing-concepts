@@ -1,0 +1,1494 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydrowithaferin A",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(-)-gallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(-)-gallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(-)-gallocatechin",
+            "(-)-gallocatechin gallate",
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(-)-gallocatechin",
+                "(-)-gallocatechin gallate"
+            ],
+            "mismatches": [
+                "2,3-dihydrowithaferin A",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+            "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+            "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+            "(+)-catechin-(4alpha->8)-(-)-epigallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [
+                "withaferin A"
+            ],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "withalongolide C",
+            "withalongolide B",
+            "withalongolide H",
+            "withalongolide A",
+            "withalongolide G"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "withalongolide C",
+                "withalongolide B",
+                "withalongolide H",
+                "withalongolide A",
+                "withalongolide G"
+            ],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 0,
+            "FP": 5,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(-)-gallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(-)-gallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(18S)-resolvin E2",
+            "pyriculol",
+            "2,3-dinor-TXB1",
+            "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(18S)-resolvin E2",
+                "pyriculol",
+                "2,3-dinor-TXB1",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+            "(-)-gallocatechin",
+            "(-)-gallocatechin gallate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(-)-gallocatechin",
+                "(-)-gallocatechin gallate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydro-3beta-O-sulfate withaferin A",
+            "2,3-dihydrowithaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+            "(+)-gallocatechin",
+            "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+            "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+            "(-)-gallocatechin gallate",
+            "(-)-gallocatechin",
+            "(+)-catechin-(4alpha->8)-(-)-epigallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+                "(-)-gallocatechin gallate",
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(18S)-resolvin E2",
+            "dihydropyriculol",
+            "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+            "pyriculol",
+            "(+)-gallocatechin",
+            "(+)-isoepoxydon",
+            "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+            "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+            "(-)-gallocatechin gallate",
+            "(4S)-2,3-dehydroleucopelargonidin",
+            "withalongolide A",
+            "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+            "(-)-gallocatechin",
+            "withalongolide G",
+            "(2R,3S,4S)-leucodelphinidin",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin",
+                "(2R,3S,4S)-leucodelphinidin"
+            ],
+            "mismatches": [
+                "(18S)-resolvin E2",
+                "dihydropyriculol",
+                "pyriculol",
+                "(+)-isoepoxydon",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "withalongolide A",
+                "withalongolide G",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 7,
+            "FP": 9,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(18S)-resolvin E2",
+            "dihydropyriculol",
+            "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+            "withalongolide C",
+            "withalongolide B",
+            "pyriculol",
+            "sitoindoside IX",
+            "(+)-gallocatechin",
+            "withalongolide H",
+            "(+)-isoepoxydon",
+            "2,3-dinor-TXB1",
+            "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+            "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+            "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+            "(-)-gallocatechin gallate",
+            "(4S)-2,3-dehydroleucopelargonidin",
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+            "withalongolide A",
+            "2,3-dihydrowithaferin A",
+            "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+            "(-)-gallocatechin",
+            "withalongolide G",
+            "(2R,3S,4S)-leucodelphinidin",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(18S)-resolvin E2",
+                "dihydropyriculol",
+                "pyriculol",
+                "(+)-isoepoxydon",
+                "2,3-dinor-TXB1",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "withalongolide C",
+                "withalongolide B",
+                "sitoindoside IX",
+                "(+)-gallocatechin",
+                "withalongolide H",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+                "(-)-gallocatechin gallate",
+                "withalongolide A",
+                "2,3-dihydrowithaferin A",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin",
+                "withalongolide G",
+                "(2R,3S,4S)-leucodelphinidin",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 8,
+            "FP": 16,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(-)-gallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(-)-gallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(-)-gallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(-)-gallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "pyriculol",
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "pyriculol",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(-)-gallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(-)-gallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydrowithaferin A",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "dihydropyriculol",
+            "pyriculol",
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "dihydropyriculol",
+                "pyriculol",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+            "(+)-gallocatechin",
+            "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+            "(-)-gallocatechin",
+            "(-)-gallocatechin gallate",
+            "(+)-catechin-(4alpha->8)-(-)-epigallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+                "(-)-gallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydrowithaferin A",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "(18S)-resolvin E2",
+            "withalongolide C",
+            "withalongolide B",
+            "withalongolide H",
+            "(+)-isoepoxydon",
+            "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+            "withalongolide A",
+            "withalongolide G",
+            "(2R,3S,4S)-leucodelphinidin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(18S)-resolvin E2",
+                "(+)-isoepoxydon",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [
+                "withalongolide C",
+                "withalongolide B",
+                "withalongolide H",
+                "withalongolide A",
+                "withalongolide G",
+                "(2R,3S,4S)-leucodelphinidin"
+            ],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 4,
+            "FP": 6,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+            "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+            "(-)-gallocatechin",
+            "(+)-gallocatechin",
+            "(2R,3S,4S)-leucodelphinidin",
+            "(4S)-2,3-dehydroleucopelargonidin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+                "(-)-gallocatechin",
+                "(+)-gallocatechin",
+                "(2R,3S,4S)-leucodelphinidin"
+            ],
+            "mismatches": [
+                "(4S)-2,3-dehydroleucopelargonidin"
+            ],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A",
+            "withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydrowithaferin A",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "mismatches": [
+                "withaferin A"
+            ],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+            "(+)-gallocatechin",
+            "(+)-isoepoxydon",
+            "(+)-catechin-(4alpha->8)-(+)-gallocatechin",
+            "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+            "(-)-gallocatechin gallate",
+            "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+            "(-)-gallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin"
+            ],
+            "mismatches": [
+                "(+)-isoepoxydon",
+                "(+)-catechin-(4alpha->8)-(+)-gallocatechin"
+            ],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydro-3beta-O-sulfate withaferin A",
+            "withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "mismatches": [
+                "withaferin A"
+            ],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "flavan-3,3',4',5,5',7-hexol",
+        "domain": "chemistry",
+        "response": [
+            "(+)-gallocatechin",
+            "(-)-gallocatechin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "(+)-gallocatechin",
+                "(-)-gallocatechin"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "(-)-gallocatechin",
+                "(+)-catechin-(4alpha->6)-(+)-gallocatechin",
+                "(+)-gallocatechin",
+                "(+)-catechin-(4alpha->8)-(-)-epigallocatechin",
+                "(-)-gallocatechin gallate",
+                "(+)-gallocatechin-(4alpha->8)-(+)-catechin",
+                "(2R,3S,4S)-leucodelphinidin",
+                "(-)-epicatechin-(4beta->8)-(+)-gallocatechin"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "withaferin A",
+        "domain": "chemistry",
+        "response": [
+            "2,3-dihydro-3beta-O-sulfate withaferin A",
+            "2,3-dihydrowithaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "2,3-dihydrowithaferin A"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2,3-dihydro-3beta-O-sulfate withaferin A",
+                "withalongolide C",
+                "withalongolide A",
+                "withalongolide B",
+                "2,3-dihydrowithaferin A",
+                "withalongolide H",
+                "withalongolide G",
+                "sitoindoside IX"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "secondary allylic alcohol",
+        "domain": "chemistry",
+        "response": [
+            "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+            "2,3-dihydrowithaferin A",
+            "2,3-dihydro-3beta-O-sulfate withaferin A"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol"
+            ],
+            "mismatches": [
+                "2,3-dihydrowithaferin A",
+                "2,3-dihydro-3beta-O-sulfate withaferin A"
+            ],
+            "true_referents": [
+                "pyriculol",
+                "(4S)-2,3-dehydroleucopelargonidin",
+                "(+)-isoepoxydon",
+                "1,4,4,7a-tetramethyl-2,4,5,7a-tetrahydro-1H-inden-2-ol",
+                "(13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid",
+                "2,3-dinor-TXB1",
+                "dihydropyriculol",
+                "(18S)-resolvin E2"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    }
+]

@@ -1,0 +1,979 @@
+{
+    "qwen-v2.5-14b-instruct": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "tricosan-1-ol",
+                "medium-chain primary fatty alcohol",
+                "tricosan-2-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "hexacosan-7-ol",
+                "tetracosan-11-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "qwen-v2.5-14b-instruct",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "phi-v4": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "medium-chain primary fatty alcohol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol",
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "phi-v4",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol",
+                "pentyl acetate"
+            ]
+        }
+    ],
+    "mistral-small-instruct-24B": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "fatty alcohol 26:0",
+                "medium-chain primary fatty alcohol",
+                "(13Z)-octadecen-1-ol",
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "tricosan-10-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "fatty alcohol 26:0",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tetracosan-11-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "mistral-small-instruct-24B",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "gemma-3": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "palmitoleyl alcohol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "gemma-3",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "gpt-4o": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "medium-chain primary fatty alcohol",
+                "(13Z)-octadecen-1-ol",
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "gpt-4o",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "gpt-4o-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "medium-chain primary fatty alcohol",
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "fatty alcohol 26:0",
+                "tricosan-9-ol",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "gpt-4o-mini",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "gpt-4-32k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "medium-chain primary fatty alcohol",
+                "(13Z)-octadecen-1-ol",
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol",
+                "pentan-1-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "gpt-4-32k",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "gpt-35-turbo-16k": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "medium-chain primary fatty alcohol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "palmitoleyl alcohol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "gpt-35-turbo-16k",
+            "response": [
+                "pentanol",
+                "pentan-3-ol",
+                "pentan-1-ol"
+            ]
+        }
+    ],
+    "o1-mini": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "fatty alcohol 26:0",
+                "medium-chain primary fatty alcohol",
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "(13Z)-octadecen-1-ol",
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "o1-mini",
+            "response": [
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-5-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "medium-chain primary fatty alcohol",
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "pentan-1-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "anthropic.claude-3-5-sonnet-v1:0",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-opus-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "palmitoleyl alcohol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "anthropic.claude-3-opus-v1:0",
+            "response": [
+                "(2E,6Z)-nona-2,6-dien-1-ol",
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-sonnet-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "medium-chain primary fatty alcohol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "palmitoleyl alcohol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "anthropic.claude-3-sonnet-v1:0",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "anthropic.claude-3-haiku-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "tricosan-1-ol",
+                "palmitoleyl alcohol",
+                "tetracosan-11-ol",
+                "caprate phytyl ester",
+                "pentan-1-ol",
+                "laurate phytyl ester"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "tricosan-9-ol",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "anthropic.claude-3-haiku-v1:0",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ],
+    "meta.llama3-8b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "hexacosan-7-ol",
+                "tetracosan-11-ol",
+                "tricosan-9-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "meta.llama3-8b-instruct-v1:0",
+            "response": [
+                "tricosan-9-ol",
+                "tricosan-1-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol"
+            ]
+        }
+    ],
+    "meta.llama3-70b-instruct-v1:0": [
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "primary fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "tricosan-1-ol",
+                "hexacosan-8-ol",
+                "hexacosan-7-ol",
+                "tricosan-9-ol",
+                "tricosan-10-ol",
+                "tricosan-2-ol",
+                "palmitoleyl alcohol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "very long-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "tricosan-9-ol",
+                "fatty alcohol 26:0",
+                "hexacosan-8-ol",
+                "tricosan-1-ol",
+                "hexacosan-7-ol",
+                "tricosan-10-ol",
+                "tetracosan-11-ol"
+            ]
+        },
+        {
+            "call": "decide-referents",
+            "context": {
+                "entities": "[\"tricosan-9-ol\", \"fatty alcohol 26:0\", \"hexacosan-8-ol\", \"medium-chain primary fatty alcohol\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"(13Z)-octadecen-1-ol\", \"tricosan-1-ol\", \"dipentyl phthalate\", \"hexacosan-7-ol\", \"(S)-1'-methylbutyl caffeate\", \"palmitoleyl alcohol\", \"2-hydroxyethyl octadecanoate\", \"tricosan-10-ol\", \"pentyl octanoate\", \"tetracosan-11-ol\", \"phosphomycoketide C32\", \"pentyl dodecanoate\", \"tricosan-2-ol\", \"caprate phytyl ester\", \"pentyl acetate\", \"pentan-3-ol\", \"pentan-1-ol\", \"pentanol\", \"laurate phytyl ester\"]",
+                "siblings": "{\"primary fatty alcohol\": [\"(13Z)-octadecen-1-ol\", \"laurate phytyl ester\", \"caprate phytyl ester\", \"medium-chain primary fatty alcohol\", \"2-hydroxyethyl octadecanoate\", \"(2E,6Z)-nona-2,6-dien-1-ol\", \"palmitoleyl alcohol\", \"phosphomycoketide C32\"], \"very long-chain fatty alcohol\": [\"tricosan-1-ol\", \"hexacosan-7-ol\", \"tricosan-2-ol\", \"tricosan-10-ol\", \"hexacosan-8-ol\", \"fatty alcohol 26:0\", \"tetracosan-11-ol\", \"tricosan-9-ol\"], \"short-chain fatty alcohol\": [\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]}",
+                "n": "24",
+                "domain": "chemistry",
+                "concept": "short-chain fatty alcohol",
+                "parent_concept": "fatty alcohol",
+                "true_referents": "[\"pentyl acetate\", \"pentyl octanoate\", \"pentyl dodecanoate\", \"pentan-3-ol\", \"pentanol\", \"dipentyl phthalate\", \"pentan-1-ol\", \"(S)-1'-methylbutyl caffeate\"]"
+            },
+            "model": "meta.llama3-70b-instruct-v1:0",
+            "response": [
+                "pentan-3-ol",
+                "pentan-1-ol",
+                "pentanol"
+            ]
+        }
+    ]
+}

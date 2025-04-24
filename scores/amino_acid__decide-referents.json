@@ -1,0 +1,2018 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "XMC",
+            "methomyl",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "XMC",
+                "methomyl",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophan 2-naphthylamide",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "3-methylthioaspartic acid",
+            "allothreonine",
+            "2-amino-3-oxoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "mismatches": [
+                "allothreonine"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [
+                "allothreonine"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methomyl",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methomyl",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "aceclofenac",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "aceclofenac",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [
+                "allothreonine"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methomyl",
+            "XMC",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methomyl",
+                "XMC",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "aceclofenac",
+            "5-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "aceclofenac",
+                "5-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methomyl",
+            "XMC",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methomyl",
+                "XMC",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "2-amino-3-oxoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "2-amino-3-oxoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "aceclofenac",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "aceclofenac",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [
+                "allothreonine"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methiocarb",
+            "bendiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "TP": 0,
+            "FP": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "aceclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aceclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "methomyl",
+            "XMC",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "methomyl",
+                "XMC",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "allothreonine",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "aceclofenac",
+            "5-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "aceclofenac",
+                "5-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [
+                "allothreonine"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methomyl",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methomyl",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "3-methylthioaspartic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "2-amino-3-oxoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methomyl",
+            "XMC",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methomyl",
+                "XMC",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophan 2-naphthylamide",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [
+                "allothreonine"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methomyl",
+            "XMC",
+            "bendiocarb",
+            "methiocarb"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methomyl",
+                "XMC",
+                "bendiocarb",
+                "methiocarb"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophan 2-naphthylamide",
+            "aceclofenac",
+            "3-methylthioaspartic acid",
+            "allothreonine",
+            "2-amino-3-oxoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine"
+            ],
+            "mismatches": [
+                "aceclofenac",
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "diclofenac beta-D-glucosiduronic acid",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "diclofenac beta-D-glucosiduronic acid",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-amino-3-oxoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-amino-3-oxoadipic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "bendiocarb",
+            "methiocarb",
+            "methomyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "bendiocarb",
+                "methiocarb",
+                "methomyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophan 2-naphthylamide",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 2,
+            "FP": 3,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "aceclofenac",
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac",
+            "diclofenac beta-D-glucosiduronic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-amino-3-oxoadipic acid",
+            "3-methylthioaspartic acid",
+            "5-adenylyl-2-aminoadipic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "fenobucarb",
+            "methomyl",
+            "bendiocarb",
+            "methiocarb",
+            "XMC"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "fenobucarb",
+                "methomyl",
+                "bendiocarb",
+                "methiocarb",
+                "XMC"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophan 2-naphthylamide",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine"
+            ],
+            "mismatches": [
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac",
+            "3'-hydroxy-4'-methoxydiclofenac",
+            "diclofenac beta-D-glucosiduronic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "2-amino-3-oxoadipic acid",
+            "aerobactin"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "2-amino-3-oxoadipic acid"
+            ],
+            "mismatches": [
+                "aerobactin"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 2,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "metolcarb",
+            "methiocarb",
+            "bendiocarb",
+            "XMC"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "metolcarb",
+                "methiocarb",
+                "bendiocarb",
+                "XMC"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "alpha-amino acid",
+        "domain": "chemistry",
+        "response": [
+            "L-tryptophan",
+            "3-methylthioaspartic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "allothreonine"
+            ],
+            "mismatches": [
+                "L-tryptophan",
+                "3-methylthioaspartic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid"
+            ],
+            "true_referents": [
+                "(E)-thiourocanate thione form",
+                "L-tryptophan 2-naphthylamide",
+                "allothreonine",
+                "PS(18:2_20:0)",
+                "aerobactin",
+                "tirofiban"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "diclofenac",
+        "domain": "chemistry",
+        "response": [
+            "diclofenac beta-D-glucosiduronic acid",
+            "3'-hydroxy-4'-methoxydiclofenac",
+            "4'-hydroxydiclofenac quinone imine",
+            "5-hydroxydiclofenac",
+            "5-hydroxydiclofenac quinone imine",
+            "aceclofenac"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "diclofenac beta-D-glucosiduronic acid",
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "5-hydroxydiclofenac quinone imine",
+                "aceclofenac"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "3'-hydroxy-4'-methoxydiclofenac",
+                "aceclofenac",
+                "4'-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac quinone imine",
+                "5-hydroxydiclofenac",
+                "diclofenac beta-D-glucosiduronic acid"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "amino dicarboxylic acid",
+        "domain": "chemistry",
+        "response": [
+            "N-(2-hydroxyethyl)iminodiacetic acid",
+            "2-amino-3-oxoadipic acid",
+            "5-adenylyl-2-aminoadipic acid",
+            "3-methylthioaspartic acid",
+            "allothreonine"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "N-(2-hydroxyethyl)iminodiacetic acid",
+                "2-amino-3-oxoadipic acid",
+                "5-adenylyl-2-aminoadipic acid",
+                "3-methylthioaspartic acid"
+            ],
+            "mismatches": [
+                "allothreonine"
+            ],
+            "true_referents": [
+                "5-adenylyl-2-aminoadipic acid",
+                "2-amino-3-oxoadipic acid",
+                "3-methylthioaspartic acid",
+                "20-oxoleukotriene E4",
+                "14-carboxy-15,16,17,18,19,20-hexanor-leukotriene E3",
+                "N-(2-hydroxyethyl)iminodiacetic acid"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "methylcarbamic acid",
+        "domain": "chemistry",
+        "response": [
+            "methiocarb",
+            "bendiocarb",
+            "methomyl"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "methiocarb",
+                "bendiocarb",
+                "methomyl"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "XMC",
+                "fenobucarb",
+                "metolcarb",
+                "methomyl",
+                "methiocarb",
+                "bendiocarb"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 3
+        }
+    }
+]

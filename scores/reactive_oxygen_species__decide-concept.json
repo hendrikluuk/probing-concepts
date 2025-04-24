@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "reduction product",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A reduction product is a result of a reduction reaction, whereas reactive oxygen species are specific types of oxygen-containing molecules that are highly reactive. Not all reduction products are reactive oxygen species and vice versa.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "Reactive oxygen species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Reactive oxygen species' and 'reactive oxygen species' are identical except for capitalization, and refer to the same concept in biology and chemistry.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "Reactive Oxygen Species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Reactive Oxygen Species' and 'reactive oxygen species' are equivalent, differing only in capitalization, which does not alter their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "Reactive oxygen species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Reactive oxygen species' and 'reactive oxygen species' are identical except for capitalization, which does not affect their meaning.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "reactive oxygen species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "superoxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "superoxide is a type of reactive oxygen species, but not all reactive oxygen species are superoxide",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "Reactive oxygen species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Reactive oxygen species' and 'reactive oxygen species' refer to the same concept and are simply capitalized differently.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "Superoxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Superoxide is a type of reactive oxygen species, but not all reactive oxygen species are superoxides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "superoxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "superoxide is a type of reactive oxygen species, but not all reactive oxygen species are superoxide",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "reactive oxygen species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'reactive oxygen species' and 'reactive oxygen species' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "reactive oxygen species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "A and B are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "reactive oxygen species",
+        "judgement": {
+            "equivalent": true,
+            "reason": "reactive oxygen species and reactive oxygen species are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "free radical",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A free radical is an atom or molecule with an unpaired electron, which makes it highly reactive, while reactive oxygen species (ROS) are a subset of free radicals that specifically contain oxygen. Therefore, not all free radicals are reactive oxygen species.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "Superoxides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Superoxides are a type of reactive oxygen species, but not all reactive oxygen species are superoxides.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "superoxides",
+        "judgement": {
+            "equivalent": false,
+            "reason": "superoxides are a type of reactive oxygen species, but not all reactive oxygen species are superoxides",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "reactive oxygen species",
+        "domain": "chemistry",
+        "response": "Superoxide",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Superoxide is a type of reactive oxygen species, but not all reactive oxygen species are superoxide.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

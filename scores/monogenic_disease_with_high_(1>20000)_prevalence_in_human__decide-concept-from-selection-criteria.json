@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Mono-genetic disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monogenetic disorder refers to any disease caused by a mutation in a single gene, regardless of prevalence. A monogenic disease with high prevalence specifically refers to those that are common (affecting more than 1 in 20,000 people), thus not all monogenetic disorders are highly prevalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "phi-v4",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Autosomal Dominant Genetic Disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An autosomal dominant genetic disorder is a type of monogenic disease, but not all autosomal dominant disorders have a high prevalence. The prevalence criterion (1>20000) is not met by all autosomal dominant disorders.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Common Mendelian disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A common Mendelian disorder is a type of monogenic disease, but not all monogenic diseases have a high prevalence. Some may be rare.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gemma-3",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Mendelian disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mendelian disorder refers to diseases caused by a single gene mutation, but not all Mendelian disorders have high prevalence (1>20000) in humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "common monogenic disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "A common monogenic disease is defined as a monogenic disease with high prevalence, typically greater than 1 in 20,000 in humans.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4o-mini",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "rare genetic disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A rare genetic disorder is not necessarily a monogenic disease, as it can be caused by multiple genetic factors. Additionally, a rare disorder is defined by its low prevalence, typically affecting fewer than 1 in 2,000 people, contrary to the high prevalence described.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-4-32k",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Rare monogenic disease",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A rare monogenic disease is a specific type of monogenic disease with low prevalence, while a monogenic disease with high prevalence is not considered rare. Therefore, not all monogenic diseases with high prevalence are rare monogenic diseases.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Rare genetic disease",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A rare genetic disease is not necessarily monogenic and can have a prevalence higher or lower than 1 in 20,000. Monogenic diseases are a subset of genetic diseases, and rarity is defined by prevalence, which can vary.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "o1-mini",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "common monogenic disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "A common monogenic disease is defined as a monogenic disease with high prevalence, specifically greater than 1 in 20,000 in humans.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "common monogenic disease",
+        "judgement": {
+            "equivalent": true,
+            "reason": "A common monogenic disease is defined as a monogenic disease with high prevalence in humans, typically greater than 1 in 20,000.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "rare monogenic disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A rare monogenic disorder is a type of monogenic disease, but not all monogenic diseases have high prevalence. A high prevalence monogenic disease is not necessarily rare.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "monogenic disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monogenic disorder refers to any disorder caused by a mutation in a single gene, regardless of its prevalence. A monogenic disease with high prevalence in humans is a specific subset of monogenic disorders that occur frequently. Not all monogenic disorders have high prevalence.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "rare genetic disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A rare genetic disorder is defined by its low prevalence, typically affecting fewer than 1 in 2,000 people, whereas a monogenic disease with high prevalence implies a higher occurrence rate, contradicting the definition of 'rare'.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Monogenic disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A monogenic disorder refers to any disorder caused by a mutation in a single gene, regardless of its prevalence. A monogenic disease with high prevalence specifically refers to those monogenic disorders that occur frequently in the population. Therefore, not all monogenic disorders have high prevalence.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "Mendelian disorder",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Mendelian disorders are genetic disorders caused by a single gene mutation, but they can vary widely in prevalence. Not all Mendelian disorders have a high prevalence (1>20000) in humans.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept-from-selection-criteria",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "monogenic disease with high (1>20000) prevalence in human",
+        "domain": "medicine",
+        "response": "genetic disease",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A genetic disease can be caused by mutations in one or more genes, whereas a monogenic disease is specifically caused by a mutation in a single gene. Additionally, genetic diseases can have varying prevalence rates, whereas the given definition specifies a high prevalence (1>20000), which is not applicable to all genetic diseases.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

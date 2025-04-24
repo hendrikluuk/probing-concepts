@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "connective_tissue_cell",
+        "judgement": {
+            "equivalent": false,
+            "reason": "connective tissue cells include a variety of cell types such as fibroblasts, adipocytes, and immune cells, whereas stromal cells specifically refer to the supportive cells found in the connective tissue of organs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "stromal cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stromal cells refer to the plural form, indicating multiple stromal cell units, whereas stromal cell refers to a single unit. They are not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblasts are a type of stromal cell, but not all stromal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "Fibroblast",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Fibroblasts are a type of stromal cell, but not all stromal cells are fibroblasts. Stromal cells include a variety of cell types that form the connective tissue framework of tissues and organs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "stromal cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stromal cells refer to a group or population of stromal cell, whereas stromal cell refers to a single cell. They are related but not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblasts are a type of stromal cell, but not all stromal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "Stromal cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Stromal cells refer to a group of stromal cell types, whereas stromal cell refers to an individual cell. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "Fibroblast",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fibroblast is a type of stromal cell, but not all stromal cells are fibroblasts. Stromal cells include a variety of cell types that form the connective tissue framework of an organ.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A fibroblast is a type of stromal cell, but not all stromal cells are fibroblasts. Stromal cells can include various cell types such as fibroblasts, adipocytes, and endothelial cells.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "stromal cells",
+        "judgement": {
+            "equivalent": true,
+            "reason": "stromal cells and stromal cell refer to the same type of cell, with the former being the plural form and the latter being the singular form",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "fibroblasts",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblasts are a type of stromal cell, but not all stromal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "stromal cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stromal cells refer to multiple stromal cell units, while stromal cell refers to a single unit. They are not strictly equivalent as one is singular and the other is plural.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblast is a type of stromal cell, but not all stromal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "fibroblast",
+        "judgement": {
+            "equivalent": false,
+            "reason": "fibroblasts are a type of stromal cell, but not all stromal cells are fibroblasts",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "stromal cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stromal cells refers to multiple stromal cell units, whereas stromal cell refers to a single unit. They are related but not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "stromal cell",
+        "domain": "biology",
+        "response": "connective tissue cells",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stromal cells are a type of connective tissue cell, but not all connective tissue cells are stromal cells",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ketone is a functional group in organic chemistry characterized by a carbonyl group bonded to two carbon atoms, whereas ketone bodies are specific types of molecules (acetoacetate, beta-hydroxybutyrate, and acetone) produced during fat metabolism.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketoacid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Ketoacids are a type of organic acid that contains a ketone group, whereas ketone bodies are specific compounds produced during ketogenesis, including acetoacetate, beta-hydroxybutyrate, and acetone. Not all ketoacids are ketone bodies, and not all ketone bodies are ketoacids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The term 'ketone bodies' refers to the collective group of compounds that are ketone bodies, while 'ketone body' refers to an individual member of this group. In context, they refer to the same concept, just at different scales (plural vs. singular).",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ketone bodies and ketone body refer to the same chemical compounds, with 'bodies' being the plural form of 'body'.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies is the plural form of ketone body, referring to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies is the plural form of ketone body, referring to the same concept in singular and plural.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies and ketone body refer to the same concept, with 'ketone bodies' being the plural form of 'ketone body'",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ketone bodies and ketone body refer to the same group of compounds and are used interchangeably in the context of biochemistry and medical science.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone body and ketone body are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'ketone body' and 'ketone body' are identical and therefore strictly equivalent.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies is the plural form of ketone body, referring to the same concept in singular and plural.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone body",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies and ketone body refer to the same chemical compounds, just in singular and plural forms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies is the plural form of ketone body, referring to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "ketone bodies",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone bodies and ketone body refer to the same chemical compounds, with 'ketone bodies' being the plural form",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ketone body",
+        "domain": "chemistry",
+        "response": "Keto acids",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Keto acids are organic compounds that contain both a ketone and a carboxylic acid group, while ketone bodies are specific compounds (acetoacetate, beta-hydroxybutyrate, and acetone) produced during fat metabolism. Not all keto acids are ketone bodies, and not all ketone bodies are keto acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

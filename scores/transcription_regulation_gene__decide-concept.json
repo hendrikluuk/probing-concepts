@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor gene specifically codes for proteins that bind to DNA and regulate transcription, while a transcription regulation gene can refer to any gene involved in the regulation of transcription, not just those coding for transcription factors.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that binds to specific DNA sequences to regulate transcription, whereas a transcription regulation gene is a gene that encodes such a protein. Not all transcription regulation genes are transcription factors themselves.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that helps regulate the transcription of genes, while a transcription regulation gene is a gene that may encode such a protein or be involved in the regulation process. Not all transcription regulation genes encode transcription factors, and transcription factors are not genes themselves.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "Transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that binds to specific DNA sequences to regulate transcription, whereas a transcription regulation gene is a gene that encodes such factors or related regulatory components. Not all transcription regulation genes encode transcription factors, and not all transcription factors are directly encoded by transcription regulation genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor gene is a gene that codes for a protein involved in regulating transcription, but not all transcription regulation genes are transcription factor genes. Some may be involved in transcription regulation through other mechanisms.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that regulates the transcription of genes, while a transcription regulation gene is a gene that can code for such a protein. Not all transcription regulation genes produce transcription factors directly, and not all transcription factors are encoded by a single transcription regulation gene.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "Transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that binds to specific DNA sequences to regulate transcription, whereas a transcription regulation gene is a gene that encodes a protein involved in the regulation of transcription, which may or may not be a transcription factor itself.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "Transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that binds to specific DNA sequences to regulate transcription, while a transcription regulation gene is a gene that encodes such a protein. Not all transcription regulation genes are transcription factors themselves, as they may encode other components involved in regulation.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "regulatory gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A regulatory gene is involved in controlling the expression of one or more other genes, and while transcription regulation genes are a type of regulatory gene, not all regulatory genes are involved in transcription regulation.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that helps regulate the transcription of genes, whereas a transcription regulation gene is a gene that codes for such proteins. Not all transcription regulation genes directly encode transcription factors, and not all transcription factors are products of a single gene, hence they are not strictly equivalent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor gene",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor gene is a gene that codes for a protein involved in regulating transcription, whereas a transcription regulation gene refers to any gene involved in the regulation of transcription, which may include transcription factors but also other types of regulatory genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that helps regulate the transcription of genes, whereas a transcription regulation gene is a gene that codes for such a regulatory protein. Not all transcription regulation genes encode transcription factors, and transcription factors are not genes themselves.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that helps regulate the transcription of genes, whereas a transcription regulation gene is a gene that encodes for proteins like transcription factors. Not all transcription regulation genes encode transcription factors, and not all transcription factors are directly encoded by transcription regulation genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "Transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that binds to specific DNA sequences to regulate transcription, while a transcription regulation gene is a gene that codes for such factors or is involved in the regulation of transcription. Not all transcription regulation genes directly code for transcription factors, and not all transcription factors are the result of transcription regulation genes.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "Transcription factor",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that binds to specific DNA sequences to regulate the transcription of genes, whereas a transcription regulation gene refers to a gene that encodes a product involved in regulating transcription, which may or may not be a transcription factor.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "transcription regulation gene",
+        "domain": "biology",
+        "response": "Concept: \"transcription factor\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A transcription factor is a protein that binds to specific DNA sequences to regulate the transcription of genes, while a transcription regulation gene is a gene that codes for a product involved in the regulation of transcription, which may include transcription factors but also other regulatory elements.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

@@ -1,0 +1,1709 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside"
+            ],
+            "mismatches": [
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate"
+            ],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrulose 1-phosphate",
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "D-keto-manno-heptulose",
+            "3-dehydro-L-gulonic acid 6-phosphate",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [
+                "L-erythrulose 1-phosphate",
+                "D-keto-manno-heptulose",
+                "ketoaldotetrose"
+            ],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 3,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "Coriose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [
+                "Coriose"
+            ],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "D-keto-manno-heptulose",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "D-keto-manno-heptulose",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+            "manno-heptulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate"
+            ],
+            "mismatches": [
+                "manno-heptulose"
+            ],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 1,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrose",
+            "aldotetrose",
+            "ketotetrose",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrose",
+                "aldotetrose",
+                "ketotetrose",
+                "ketoaldotetrose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate",
+            "Coriose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate",
+                "Coriose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-dehydro-L-gulonic acid 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "threose derivative",
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "threose derivative",
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "D-keto-manno-heptulose",
+            "2-dehydro-L-idonic acid",
+            "sedoheptulose",
+            "manno-heptulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-L-idonic acid"
+            ],
+            "mismatches": [
+                "D-keto-manno-heptulose",
+                "sedoheptulose",
+                "manno-heptulose"
+            ],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrulose 1-phosphate",
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "Coriose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrulose 1-phosphate",
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [
+                "Coriose"
+            ],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 6,
+            "FP": 1,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-dehydro-L-gulonic acid 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrulose 1-phosphate",
+            "threose derivative",
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrulose 1-phosphate",
+                "threose derivative",
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulose",
+            "manno-heptulose",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulose",
+                "manno-heptulose",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-L-idonic acid"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-L-idonic acid"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrose",
+            "aldotetrose",
+            "ketotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrose",
+                "aldotetrose",
+                "ketotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-dehydro-L-gulonic acid 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrulose 1-phosphate",
+            "threose derivative",
+            "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrulose 1-phosphate",
+                "threose derivative",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+            "3-dehydro-L-gulonic acid 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "threose derivative",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "threose derivative",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "sedoheptulosan",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid"
+            ],
+            "mismatches": [
+                "sedoheptulosan",
+                "ketoaldotetrose"
+            ],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrulose 1-phosphate",
+            "threose derivative",
+            "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrulose 1-phosphate",
+                "threose derivative",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-dehydro-L-gulonic acid 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 4,
+            "FP": 0,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-dehydro-L-gulonic acid 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "threose derivative",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "threose derivative",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "Coriose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "Coriose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "3-dehydro-L-gulonic acid 6-phosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 2,
+            "FP": 0,
+            "FN": 6
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrulose 1-phosphate",
+            "threose derivative",
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrulose 1-phosphate",
+                "threose derivative",
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 7,
+            "FP": 0,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "2-dehydro-3-deoxy-L-rhamnonic acid",
+            "2-dehydro-L-idonic acid",
+            "3-dehydro-L-gulonic acid 6-phosphate",
+            "ketotetrose",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "2-dehydro-L-idonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [
+                "ketotetrose",
+                "ketoaldotetrose"
+            ],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrose",
+            "ketotetrose",
+            "aldotetrose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrose",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 5,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 6,
+            "FP": 0,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "D-keto-manno-heptulose",
+            "2-dehydro-L-idonic acid",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-L-idonic acid"
+            ],
+            "mismatches": [
+                "D-keto-manno-heptulose",
+                "ketoaldotetrose"
+            ],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 7
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrose",
+            "L-erythrulose 1-phosphate",
+            "sedoheptulose",
+            "ketotetrose",
+            "aldotetrose",
+            "Coriose",
+            "ketoaldotetrose",
+            "D-erythrulose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrose",
+                "L-erythrulose 1-phosphate",
+                "ketotetrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose"
+            ],
+            "mismatches": [
+                "sedoheptulose",
+                "Coriose"
+            ],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 6,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "heptose",
+        "domain": "chemistry",
+        "response": [
+            "alpha-D-sedoheptulopyranose 7-phosphate",
+            "D-keto-manno-heptulose",
+            "sedoheptulosan",
+            "sedoheptulose",
+            "manno-heptulose",
+            "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+            "sedoheptulose 1,7-bisphosphate",
+            "Coriose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "D-keto-manno-heptulose",
+                "sedoheptulosan",
+                "sedoheptulose",
+                "manno-heptulose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "sedoheptulose 1,7-bisphosphate",
+                "Coriose"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "Coriose",
+                "2,4-di-O-phospho-D-glycero-alpha-D-manno-heptoside",
+                "D-keto-manno-heptulose",
+                "alpha-D-sedoheptulopyranose 7-phosphate",
+                "sedoheptulosan",
+                "sedoheptulose 1,7-bisphosphate",
+                "manno-heptulose",
+                "sedoheptulose"
+            ],
+            "TP": 8,
+            "FP": 0,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketoaldonic acid",
+        "domain": "chemistry",
+        "response": [
+            "D-keto-manno-heptulose",
+            "2-dehydro-L-idonic acid",
+            "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+            "3-dehydro-L-gulonic acid 6-phosphate",
+            "ketoaldotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "2-dehydro-L-idonic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "3-dehydro-L-gulonic acid 6-phosphate"
+            ],
+            "mismatches": [
+                "D-keto-manno-heptulose",
+                "ketoaldotetrose"
+            ],
+            "true_referents": [
+                "2-dehydro-L-idonic acid",
+                "2-dehydro-3-deoxy-L-rhamnonic acid",
+                "3-dehydro-L-gulonic acid 6-phosphate",
+                "N-acetyl-beta-neuraminic acid",
+                "3-deoxy-alpha-D-manno-oct-2-ulopyranosonic acid 5-phosphate",
+                "L-ascorbic acid 6-phosphate",
+                "N-acetylneuraminic acids",
+                "alpha-D-Kdo-4P-O(CH2)3S(CH2)2NH(polyacrylamide) macromolecule"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 5
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "tetrose",
+        "domain": "chemistry",
+        "response": [
+            "L-erythrose",
+            "aldotetrose",
+            "ketoaldotetrose",
+            "Coriose",
+            "D-erythrulose",
+            "ketotetrose"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "L-erythrose",
+                "aldotetrose",
+                "ketoaldotetrose",
+                "D-erythrulose",
+                "ketotetrose"
+            ],
+            "mismatches": [
+                "Coriose"
+            ],
+            "true_referents": [
+                "aldotetrose",
+                "threose derivative",
+                "ketotetrose",
+                "D-erythrulose",
+                "ketoaldotetrose",
+                "N(6)-(D-erythrulosyl)-L-lysinium zwitterion",
+                "L-erythrulose 1-phosphate",
+                "L-erythrose"
+            ],
+            "TP": 5,
+            "FP": 1,
+            "FN": 3
+        }
+    }
+]

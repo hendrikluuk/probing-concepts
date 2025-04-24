@@ -1,0 +1,2190 @@
+[
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol",
+            "episterol",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [
+                "episterol",
+                "daucosterol"
+            ],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "delta7-stigmasterol",
+                "daucosterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 0,
+            "FP": 2,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "stigmasterol",
+            "episterol",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "daucosterol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "stigmasterol",
+                "episterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "5-dehydroepisterol",
+            "cycloartenol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "stigmasterol",
+            "clionasterol",
+            "5alpha-androst-16-en-3alpha-ol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "episterol",
+            "daucosterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "6-deoxotyphasterol",
+                "5alpha-androst-16-en-3alpha-ol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "avenasterol",
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "5-dehydroepisterol",
+                "cycloartenol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "stigmasterol",
+                "clionasterol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "episterol",
+                "daucosterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 3,
+            "FP": 14,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "5-dehydroepisterol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "stigmasterol",
+            "(24S,26)-dihydroxycholesterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "5-dehydroepisterol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "stigmasterol",
+                "(24S,26)-dihydroxycholesterol",
+                "28-nortyphasterol",
+                "clionasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 3,
+            "FP": 11,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "phi-v4",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "5-dehydroepisterol",
+            "cycloartenol",
+            "stigmasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "episterol",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-dehydroepisterol",
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "stigmasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "episterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "delta7-stigmasterol",
+            "episterol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "episterol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 3,
+            "FP": 2,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "cycloartenol",
+            "stigmasterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "stigmasterol",
+                "28-nortyphasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 3,
+            "FP": 7,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol",
+            "episterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "episterol"
+            ],
+            "mismatches": [
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "6-deoxotyphasterol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "5-dehydroepisterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "clionasterol",
+            "(24S,26)-dihydroxycholesterol",
+            "28-nortyphasterol",
+            "episterol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "6-deoxotyphasterol",
+                "5-dehydroepisterol",
+                "clionasterol",
+                "(24S,26)-dihydroxycholesterol",
+                "28-nortyphasterol",
+                "episterol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gemma-3",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "cycloartenol",
+            "stigmasterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "daucosterol",
+            "episterol",
+            "delta7-stigmasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "stigmasterol",
+                "28-nortyphasterol",
+                "episterol",
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 3,
+            "FP": 6,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "5-dehydroepisterol",
+            "clionasterol",
+            "delta7-stigmasterol",
+            "episterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "episterol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "5-dehydroepisterol",
+                "clionasterol",
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "5-dehydroepisterol",
+            "cycloartenol",
+            "stigmasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-dehydroepisterol",
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "stigmasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 4,
+            "FP": 5,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4o-mini",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "stigmasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "daucosterol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "stigmasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [],
+            "mismatches": [
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 0,
+            "FP": 1,
+            "FN": 4
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-4-32k",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "5-dehydroepisterol",
+            "cycloartenol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "stigmasterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "delta7-stigmasterol",
+            "daucosterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-dehydroepisterol",
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "stigmasterol",
+                "28-nortyphasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 4,
+            "FP": 9,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "7alpha,25-dihydroxycholesterol",
+            "5-dehydroepisterol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "28-nortyphasterol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "delta7-stigmasterol",
+            "episterol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "28-nortyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "7alpha,25-dihydroxycholesterol",
+                "5-dehydroepisterol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,26)-dihydroxycholesterol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "delta7-stigmasterol",
+                "episterol",
+                "(24S,25)-dihydroxycholesterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 2,
+            "FP": 11,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "7alpha,25-dihydroxycholesterol",
+            "5-dehydroepisterol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "7alpha,25-dihydroxycholesterol",
+                "5-dehydroepisterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,26)-dihydroxycholesterol",
+                "28-nortyphasterol",
+                "clionasterol",
+                "delta7-stigmasterol",
+                "daucosterol",
+                "(24S,25)-dihydroxycholesterol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 3,
+            "FP": 13,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "5-dehydroepisterol",
+            "cycloartenol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "stigmasterol",
+            "(24S,26)-dihydroxycholesterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "cholesteryl 6-O-decanoyl-beta-D-galactoside",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "cholesteryl elaidate",
+            "5alpha-androst-16-en-3alpha-ol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-dehydroepisterol",
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "stigmasterol",
+                "(24S,26)-dihydroxycholesterol",
+                "28-nortyphasterol",
+                "cholesteryl 6-O-decanoyl-beta-D-galactoside",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "cholesteryl elaidate",
+                "5alpha-androst-16-en-3alpha-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "delta7-stigmasterol",
+                "episterol",
+                "(24S,25)-dihydroxycholesterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 4,
+            "FP": 20,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "7alpha,25-dihydroxycholesterol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "stigmasterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "delta7-stigmasterol",
+            "episterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "episterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "stigmasterol",
+                "28-nortyphasterol",
+                "clionasterol",
+                "delta7-stigmasterol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "avenasterol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "avenasterol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "(24S,26)-dihydroxycholesterol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 7,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "o1-mini",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "stigmasterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "stigmasterol",
+                "28-nortyphasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 2,
+            "FP": 9,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "5-dehydroepisterol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "delta7-stigmasterol",
+            "episterol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "5-dehydroepisterol",
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "cycloartenol",
+            "stigmasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "stigmasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5-dehydroepisterol",
+            "delta7-stigmasterol",
+            "episterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "episterol"
+            ],
+            "mismatches": [
+                "5-dehydroepisterol",
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 1,
+            "FP": 2,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 2,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "5-dehydroepisterol",
+            "cycloartenol",
+            "stigmasterol",
+            "28-nortyphasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol",
+            "6alpha-hydroxy-28-nortyphasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5-dehydroepisterol",
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "stigmasterol",
+                "28-nortyphasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 4,
+            "FP": 8,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "episterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "mismatches": [
+                "delta7-stigmasterol",
+                "daucosterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 2,
+            "FP": 2,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "6-deoxotyphasterol",
+            "avenasterol",
+            "cycloartenol",
+            "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+            "28-nortyphasterol",
+            "clionasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+            "stigmasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "cycloartenol",
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "6-deoxotyphasterol",
+                "avenasterol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "28-nortyphasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "delta7-stigmasterol",
+                "episterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "stigmasterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 3,
+            "FP": 12,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "5alpha-androst-16-en-3alpha-ol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 3,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol",
+            "episterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "episterol"
+            ],
+            "mismatches": [
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "(24S,26)-dihydroxycholesterol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "stigmasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "daucosterol",
+            "cycloartenol",
+            "clionasterol",
+            "delta7-stigmasterol",
+            "episterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "daucosterol",
+                "cycloartenol",
+                "clionasterol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "stigmasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 1
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol",
+            "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+            "episterol",
+            "daucosterol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "mismatches": [
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "episterol",
+                "daucosterol",
+                "(24S,25)-dihydroxycholesterol",
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 2,
+            "FP": 5,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol",
+            "episterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "episterol"
+            ],
+            "mismatches": [
+                "delta7-stigmasterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 1,
+            "FP": 1,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol",
+            "6alpha-hydroxy-28-nortyphasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "5,6alpha-epoxy-5alpha-cholestan-3beta-ol",
+                "(24S,26)-dihydroxycholesterol",
+                "6alpha-hydroxy-28-nortyphasterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 3,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol",
+            "avenasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "clionasterol",
+            "daucosterol",
+            "delta7-stigmasterol",
+            "episterol",
+            "stigmasterol",
+            "25-hydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "clionasterol",
+                "daucosterol"
+            ],
+            "mismatches": [
+                "5alpha-androst-16-en-3alpha-ol",
+                "avenasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol",
+                "stigmasterol",
+                "25-hydroxycholesterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 2,
+            "FP": 7,
+            "FN": 2
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "3alpha-sterol",
+        "domain": "chemistry",
+        "response": [
+            "5alpha-androst-16-en-3alpha-ol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "mismatches": [],
+            "true_referents": [
+                "28-nortyphasterol",
+                "6-deoxotyphasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "5alpha-androst-16-en-3alpha-ol"
+            ],
+            "TP": 1,
+            "FP": 0,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "Delta(7)-sterol",
+        "domain": "chemistry",
+        "response": [
+            "delta7-stigmasterol",
+            "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+            "6alpha-hydroxy-28-nortyphasterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol"
+            ],
+            "mismatches": [
+                "delta7-stigmasterol",
+                "6alpha-hydroxy-28-nortyphasterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "4alpha-hydroxymethyl-5alpha-ergosta-7,24(28)-dien-3beta-ol",
+                "4alpha-formyl-ergosta-7,24(28)-dien-3beta-ol",
+                "3beta-hydroxy-5alpha-ergosta-7,24(28)-diene-4alpha-carboxylic acid",
+                "episterol"
+            ],
+            "TP": 1,
+            "FP": 4,
+            "FN": 3
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "oxysterol",
+        "domain": "chemistry",
+        "response": [
+            "25-hydroxycholesterol",
+            "7alpha,25-dihydroxycholesterol",
+            "(25R)-7alpha,26-dihydroxycholesterol",
+            "(24S,26)-dihydroxycholesterol",
+            "(24S,25)-dihydroxycholesterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "25-hydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol"
+            ],
+            "mismatches": [
+                "(24S,26)-dihydroxycholesterol"
+            ],
+            "true_referents": [
+                "25-hydroxycholesterol",
+                "(25R)-7alpha,26-dihydroxycholesterol",
+                "(24S,25)-dihydroxycholesterol",
+                "7alpha,25-dihydroxycholesterol"
+            ],
+            "TP": 4,
+            "FP": 1,
+            "FN": 0
+        }
+    },
+    {
+        "test": "decide-referents",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "phytosterols",
+        "domain": "chemistry",
+        "response": [
+            "avenasterol",
+            "stigmasterol",
+            "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+            "delta7-stigmasterol",
+            "episterol",
+            "daucosterol",
+            "cycloartenol",
+            "clionasterol"
+        ],
+        "scorer": "gpt-4o",
+        "judgement": {
+            "matches": [
+                "daucosterol",
+                "cycloartenol",
+                "clionasterol"
+            ],
+            "mismatches": [
+                "avenasterol",
+                "stigmasterol",
+                "beta-sitosterol glucoside-3'-O-hexacosanoicate",
+                "delta7-stigmasterol",
+                "episterol"
+            ],
+            "true_referents": [
+                "5-dehydroepisterol",
+                "clionasterol",
+                "cycloartenol",
+                "daucosterol"
+            ],
+            "TP": 3,
+            "FP": 5,
+            "FN": 1
+        }
+    }
+]

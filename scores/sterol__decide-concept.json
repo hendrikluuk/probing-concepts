@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Steroids are a broad class of organic compounds that include sterols, but not all steroids are sterols. Sterols are a specific subgroup of steroids characterized by a hydroxyl group at a specific position on the steroid skeleton.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Steroids are a broad class of organic compounds that include sterols, but not all steroids are sterols. Sterols are a subgroup of steroids characterized by a hydroxyl group at the 3-position of the A-ring.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "Bile acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bile acids are a subgroup of sterols, but not all sterols are bile acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "bile acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bile acids are a subset of sterols, but not all sterols are bile acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "sterol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "cholesterol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cholesterol is a type of sterol, but not all sterols are cholesterol.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "bile acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bile acids are a subset of sterols, but not all sterols are bile acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "Cholesterol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cholesterol is a type of sterol, but not all sterols are cholesterol.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "stanol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "stanol is a saturated derivative of sterol, but not all sterols are stanols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "sterol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "sterol",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'sterol' and 'sterol' are identical and refer to the same concept.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "steroids are a broad class of organic compounds that include sterols, but not all steroids are sterols. Sterols are a specific subgroup of steroids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "steroid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A steroid is a broad class of organic compounds with four rings arranged in a specific molecular configuration, while a sterol is a subgroup of steroids with a hydroxyl group at a specific position. Not all steroids are sterols.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "pregnanediol",
+        "judgement": {
+            "equivalent": false,
+            "reason": "pregnanediol is a metabolite of progesterone and a type of steroid, but not all steroids are sterols, and pregnanediol specifically is not classified as a sterol.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "bile acid",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Bile acids are a subset of sterols, but not all sterols are bile acids.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "sterol",
+        "domain": "chemistry",
+        "response": "Concept: \"cholesterol\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Cholesterol is a specific type of sterol, but not all sterols are cholesterol.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

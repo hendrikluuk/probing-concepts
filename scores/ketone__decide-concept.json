@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms are identical and refer to the same chemical compound group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "Ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Ketone and ketone refer to the same chemical compound class, and the difference is only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms, referring to the same chemical compound group",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound characterized by a carbonyl group bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "Ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "The terms 'Ketone' and 'ketone' refer to the same chemical functional group, differing only in capitalization.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms are identical and refer to the same chemical functional group characterized by a carbonyl group bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "ketone and ketone are identical terms, referring to the same chemical compound group.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester and a ketone are different types of organic compounds. An ester contains a carbonyl group bonded to an alkoxy group, while a ketone contains a carbonyl group bonded to two carbon atoms. They have different structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ketone",
+        "judgement": {
+            "equivalent": true,
+            "reason": "Both terms refer to the same chemical compound class characterized by a carbonyl group bonded to two carbon atoms.",
+            "TP": 1,
+            "FP": 0
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "an ester is an organic compound derived from an acid where at least one -OH group is replaced by an -O-alkyl group, while a ketone is an organic compound characterized by a carbonyl group bonded to two hydrocarbon groups; they are different functional groups with distinct structures and properties",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "ester",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An ester is a compound derived from an acid in which at least one -OH group is replaced by an -O-alkyl group, while a ketone is a compound with a carbonyl group bonded to two carbon atoms. They are different functional groups with distinct structures and properties.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "ketone",
+        "domain": "chemistry",
+        "response": "Concept: \"aryl\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "aryl refers to a functional group derived from aromatic rings, while ketone is a functional group characterized by a carbonyl group bonded to two hydrocarbon groups. Not all aryl compounds are ketones and not all ketones are aryl.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]

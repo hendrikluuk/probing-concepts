@@ -1,0 +1,226 @@
+[
+    {
+        "test": "decide-concept",
+        "responder": "qwen-v2.5-14b-instruct",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a drug used to treat cancer by inhibiting the growth of cancer cells, but not all antineoplastic agents are approved drugs specifically for lung cancer. Additionally, there are approved drugs for lung cancer that may not be classified strictly as antineoplastic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "phi-v4",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "lung cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An approved drug for lung cancer is a type of lung cancer medication, but not all lung cancer medications are approved drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "mistral-small-instruct-24B",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "anticancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anticancer drug is a general term for any drug used to treat cancer, while an approved drug for lung cancer is specific to drugs that have been approved for treating lung cancer. Not all anticancer drugs are approved for lung cancer, and not all approved drugs for lung cancer are used for other types of cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gemma-3",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "Antineoplastic agent",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An antineoplastic agent is a drug used to treat cancer by inhibiting the growth of cancer cells, but not all antineoplastic agents are approved drugs specifically for lung cancer. Similarly, an approved drug for lung cancer is designed to treat lung cancer, but it may not necessarily fit the broader category of antineoplastic agents.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "anticancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anticancer drug is a general term for any drug used to treat cancer, while an approved drug for lung cancer is specific to drugs approved for treating lung cancer. Not all anticancer drugs are approved for lung cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4o-mini",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "lung cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "lung cancer medication may include experimental or off-label treatments, whereas approved drug for lung cancer specifically refers to medications that have received regulatory approval for this indication.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-4-32k",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "Lung cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lung cancer medication is any medication intended to treat lung cancer, but not all of these medications are approved drugs. Approved drugs for lung cancer specifically refer to those medications that have received regulatory approval for use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "gpt-35-turbo-16k",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "lung cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lung cancer drug may not necessarily be approved, while an approved drug for lung cancer is specifically one that has received approval for treating lung cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "o1-mini",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "lung cancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lung cancer drug refers to any drug used to treat lung cancer, while an approved drug for lung cancer specifically refers to drugs that have been officially approved for use in treating lung cancer by regulatory agencies.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-5-sonnet-v1:0",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "lung cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lung cancer medication may not be an approved drug, as it could be experimental or off-label; likewise, an approved drug for lung cancer is specific to those that have passed regulatory approval.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-opus-v1:0",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "lung cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Lung cancer medication refers to any medication used to treat lung cancer, while an approved drug for lung cancer specifically refers to medications that have been approved by regulatory bodies. Not all lung cancer medications may be approved drugs.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-sonnet-v1:0",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "lung cancer medication",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Lung cancer medication refers to any medication used to treat lung cancer, which may include experimental or off-label drugs, while approved drug for lung cancer specifically refers to drugs that have received regulatory approval for this use.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "anthropic.claude-3-haiku-v1:0",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "oncological drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An oncological drug is any drug used to treat cancer, whereas an approved drug for lung cancer specifically treats lung cancer. Not all oncological drugs are approved for lung cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-8b-instruct-v1:0",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "Anticancer drug",
+        "judgement": {
+            "equivalent": false,
+            "reason": "An anticancer drug is a general term for any drug used to treat cancer, whereas an approved drug for lung cancer is specifically authorized for treating lung cancer. Not all anticancer drugs are approved for lung cancer.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "meta.llama3-70b-instruct-v1:0",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "antineoplastic",
+        "judgement": {
+            "equivalent": false,
+            "reason": "Antineoplastic refers to any agent that works against tumor growth, which includes a wide range of drugs not limited to those approved for lung cancer. An approved drug for lung cancer is a specific type of antineoplastic agent.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    },
+    {
+        "test": "decide-concept",
+        "responder": "amazon.titan-text-express-v1",
+        "concept": "approved drug for lung cancer",
+        "domain": "medicine",
+        "response": "Concept: \"lung cancer drug\"",
+        "judgement": {
+            "equivalent": false,
+            "reason": "A lung cancer drug refers to any drug used to treat lung cancer, whereas an approved drug for lung cancer specifically refers to drugs that have received official approval for use in treating lung cancer. Not all lung cancer drugs may be approved.",
+            "TP": 0,
+            "FP": 1
+        },
+        "scorer": "gpt-4o"
+    }
+]
