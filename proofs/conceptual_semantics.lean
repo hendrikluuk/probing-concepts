@@ -63,11 +63,11 @@ def equivalentSelectionCriteria (a b : Entity → Prop) : Prop := ∀ x: Entity,
 def equivalentConcepts (C D : Set (Entity → Prop)) : Prop := R_C C = R_C D
 
 /-
-            ***  2.2 Properties ***
+            ***  A.1 Properties ***
 -/
 
 /-
-    2.2.1 Compositionality of concepts and noun phrases
+    A.1.1 Compositionality of concepts and noun phrases
 -/
 
 /-
@@ -89,7 +89,7 @@ theorem additiveCompositionalityBackward (c : Entity → Prop) : R_C C ⊆ R_C (
     exact hp.left
 
 /-
-    2.2.2 Compositionality of meaning
+    A.1.2 Compositionality of meaning
 -/
 
 /-
@@ -108,7 +108,7 @@ theorem meaninglessConcept (a b : Entity → Prop) (hx: ∀ x: Entity, ¬(a x �
 
 
 /-
-    2.2.3 Compositionality of logical operations in natural language
+    A.1.3 Compositionality of logical operations in natural language
 -/
 
 /-
