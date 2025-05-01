@@ -1,3 +1,7 @@
+Copy-paste the code from `conceptual_semantics.lean` to [Lean 4 web editor](https://live.lean-lang.org/) and see whether everything checks out.
+
+OR
+
 1. Install Lean 4 and VS Code following
    these [instructions](https://leanprover-community.github.io/get_started.html).
 
@@ -8,4 +12,4 @@
 
 4. Drop `conceptual_semantics.lean` file into the cloned folder and open the folder in VS Code.
 
-5. Click on the `conceptual_semantics.lean` file to open it up
+5. Click on the `conceptual_semantics.lean` file to open it up and see whether everything checks out.
